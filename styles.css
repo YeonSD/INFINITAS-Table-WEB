@@ -48,7 +48,7 @@ select {
 }
 
 .app-shell {
-  width: calc(100vw - 20px);
+  width: auto;
   margin: 10px 10px 20px;
   display: grid;
   gap: 10px;
@@ -61,7 +61,7 @@ select {
   }
 
   .app-shell {
-    min-width: 1040px;
+    min-width: 1020px;
   }
 }
 
@@ -5399,9 +5399,24 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
     gap: 12px;
   }
 
+  .account-hero-name {
+    font-size: 36px;
+  }
+
   .account-medals {
     margin-left: auto;
+    grid-template-columns: repeat(3, 96px);
+    gap: 10px;
     justify-content: end;
+  }
+
+  .medal-slot {
+    height: 96px;
+  }
+
+  .medal-image {
+    width: 72px;
+    height: 72px;
   }
 }
 
