@@ -12,9 +12,6 @@ const SOURCE_RADAR_PATH = path.join(SOURCE_DIR, 'song-radar-sp.source.csv');
 const OUTPUT_PATH = path.join(SEED_DIR, 'chart_metadata.seed.json');
 
 const RADAR_AXES = ['NOTES', 'PEAK', 'SCRATCH', 'SOFLAN', 'CHARGE', 'CHORD'];
-const EXCLUDED_CHART_KEYS = new Set([
-  'SP12H|polʞamaиia|L'
-]);
 
 function titleKey(value) {
   return String(value || '')
@@ -163,6 +160,7 @@ function overlayRankTables(rows, rankTablesPayload) {
         if (!title || !['H', 'A', 'L'].includes(type)) return;
         const chartKey = `${tableKey}|${titleKey(title)}|${type}`;
         const existing = rowMap.get(chartKey);
+        if (!existing) return;
         const radar = data.radar || {};
         const next = {
           chart_key: chartKey,
@@ -196,9 +194,7 @@ function overlayRankTables(rows, rankTablesPayload) {
 }
 
 function sortRows(rows) {
-  return [...rows]
-    .filter((row) => !EXCLUDED_CHART_KEYS.has(String(row?.chart_key || '').trim()))
-    .sort((a, b) => {
+  return [...rows].sort((a, b) => {
     if (a.table_key !== b.table_key) return a.table_key.localeCompare(b.table_key);
     if (Number(a.source_sort_index || 999) !== Number(b.source_sort_index || 999)) {
       return Number(a.source_sort_index || 999) - Number(b.source_sort_index || 999);
