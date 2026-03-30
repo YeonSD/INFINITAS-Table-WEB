@@ -55,6 +55,16 @@ select {
   padding-bottom: 120px;
 }
 
+@media (min-width: 901px) {
+  body {
+    overflow-x: auto;
+  }
+
+  .app-shell {
+    min-width: 1040px;
+  }
+}
+
 .panel {
   background: var(--panel);
   border: 1px solid #c9c9c9;
