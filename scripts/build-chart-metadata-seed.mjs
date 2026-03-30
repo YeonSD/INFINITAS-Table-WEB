@@ -12,22 +12,29 @@ const SOURCE_RADAR_PATH = path.join(SOURCE_DIR, 'song-radar-sp.source.csv');
 const OUTPUT_PATH = path.join(SEED_DIR, 'chart_metadata.seed.json');
 
 const RADAR_AXES = ['NOTES', 'PEAK', 'SCRATCH', 'SOFLAN', 'CHARGE', 'CHORD'];
+const CATEGORY_UNCLASSIFIED = '\uBBF8\uBD84\uB958';
+const CATEGORY_INFINITAS_ONLY = 'INFINITAS \uC804\uC6A9\uACE1';
+const CATEGORY_GIRYOKU_S_PLUS = '\uC9C0\uB825S+';
+const CATEGORY_GIRYOKU_B_PLUS = '\uC9C0\uB825B+';
+const CATEGORY_GIRYOKU_B = '\uC9C0\uB825B';
+const CATEGORY_GIRYOKU_C = '\uC9C0\uB825C';
+const CATEGORY_GIRYOKU_A = '\uC9C0\uB825A';
 const TITLE_CHAR_FOLD_MAP = new Map([
-  ['ø', 'o'],
-  ['Ø', 'o'],
-  ['æ', 'ae'],
-  ['Æ', 'ae'],
-  ['œ', 'oe'],
-  ['Œ', 'oe'],
-  ['ß', 'ss'],
-  ['ð', 'd'],
-  ['Ð', 'd'],
-  ['đ', 'd'],
-  ['Đ', 'd'],
-  ['ł', 'l'],
-  ['Ł', 'l'],
-  ['þ', 'th'],
-  ['Þ', 'th']
+  ['\u00f8', 'o'],
+  ['\u00d8', 'o'],
+  ['\u00e6', 'ae'],
+  ['\u00c6', 'ae'],
+  ['\u0153', 'oe'],
+  ['\u0152', 'oe'],
+  ['\u00df', 'ss'],
+  ['\u00f0', 'd'],
+  ['\u00d0', 'd'],
+  ['\u0111', 'd'],
+  ['\u0110', 'd'],
+  ['\u0142', 'l'],
+  ['\u0141', 'l'],
+  ['\u00fe', 'th'],
+  ['\u00de', 'th']
 ]);
 
 function titleKey(value) {
@@ -35,10 +42,19 @@ function titleKey(value) {
     .normalize('NFKC')
     .toLowerCase()
     .replace(/[\u2018\u2019\u0060\u00b4]/gu, "'")
+    .replace(/[\u201c\u201d\u301d\u301e\uff02]/gu, '"')
+    .replace(/\ufe0f/gu, '')
+    .replace(/[\u2661\u2665\u2764]/gu, '')
+    .replace(/[\u2020\u2021]/gu, '')
+    .replace(/\uff01/gu, '!')
+    .replace(/\uff1f/gu, '?')
     .replace(/[\u301c\uff5e]/gu, '~')
     .replace(/\s*~\s*/gu, '~')
+    .replace(/\s*\(\s*/gu, '(')
+    .replace(/\s*\)\s*/gu, ')')
+    .replace(/\.\s+/gu, '.')
     .normalize('NFKD')
-    .replace(/\p{Diacritic}/gu, '')
+    .replace(/[\u0300-\u036f]/gu, '')
     .replace(/\u00a0/gu, ' ');
   return [...normalized]
     .map((ch) => TITLE_CHAR_FOLD_MAP.get(ch) || ch)
@@ -52,11 +68,14 @@ function chartKey(tableKey, title, type) {
 }
 
 const MANUAL_CATEGORY_OVERRIDES = new Map([
-  [chartKey('SP12H', 'Chronoxia', 'A'), { category: 'INFINITAS 전용곡', source_sort_index: 20, classification_status: 'classified' }],
-  [chartKey('SP12H', 'ポチコの幸せな日常', 'A'), { category: 'INFINITAS 전용곡', source_sort_index: 20, classification_status: 'classified' }],
-  [chartKey('SP12H', 'If', 'L'), { category: 'INFINITAS 전용곡', source_sort_index: 20, classification_status: 'classified' }],
-  [chartKey('SP12H', 'Reflux', 'L'), { category: 'INFINITAS 전용곡', source_sort_index: 20, classification_status: 'classified' }],
-  [chartKey('SP12H', 'ACTØ', 'A'), { category: '지력C', source_sort_index: 13, classification_status: 'classified' }]
+  [chartKey('SP12H', 'Chronoxia', 'A'), { category: CATEGORY_INFINITAS_ONLY, source_sort_index: 20, classification_status: 'classified' }],
+  [chartKey('SP12H', '\u30dd\u30c1\u30b3\u306e\u5e78\u305b\u306a\u65e5\u5e38', 'A'), { category: CATEGORY_INFINITAS_ONLY, source_sort_index: 20, classification_status: 'classified' }],
+  [chartKey('SP12H', 'If', 'L'), { category: CATEGORY_INFINITAS_ONLY, source_sort_index: 20, classification_status: 'classified' }],
+  [chartKey('SP12H', 'Reflux', 'L'), { category: CATEGORY_INFINITAS_ONLY, source_sort_index: 20, classification_status: 'classified' }],
+  [chartKey('SP12H', 'ACT\u00d8', 'A'), { category: CATEGORY_GIRYOKU_C, source_sort_index: 13, classification_status: 'classified' }],
+  [chartKey('SP12H', '3y3s(Long ver.)', 'A'), { category: CATEGORY_GIRYOKU_S_PLUS, source_sort_index: 1, classification_status: 'classified' }],
+  [chartKey('SP12H', 'Hollywood Galaxy(DJ NAGAI Remix)', 'A'), { category: CATEGORY_INFINITAS_ONLY, source_sort_index: 20, classification_status: 'classified' }],
+  [chartKey('SP12H', '\u30d4\u30a2\u30ce\u5354\u594f\u66f2\u7b2c1\u756a\"\u880d\u706b\"', 'A'), { category: CATEGORY_GIRYOKU_A, source_sort_index: 7, classification_status: 'classified' }]
 ]);
 
 function parseCsvLine(line) {
@@ -123,8 +142,8 @@ function dominantAxis(radar) {
 
 function inferClassificationStatus(category) {
   const name = String(category || '').trim();
-  if (/미정/i.test(name)) return 'provisional';
-  if (/미분류/i.test(name)) return 'uncategorized';
+  if (/\uBBF8\uC815/i.test(name)) return 'provisional';
+  if (/\uBBF8\uBD84\uB958/i.test(name)) return 'uncategorized';
   return 'classified';
 }
 
@@ -160,12 +179,12 @@ function buildRadarRowsFromCsv(csvText) {
     rows.push({
       chart_key: chartKey(tableKey, title, type),
       table_key: tableKey,
-      table_title: `IIDX INFINITAS SP ☆${level} Hard Gauge Rank`,
+      table_title: `IIDX INFINITAS SP \u2606${level} Hard Gauge Rank`,
       level,
       song_title: title,
       normalized_title: titleKey(title),
       chart_type: type,
-      category: '미분류',
+      category: CATEGORY_UNCLASSIFIED,
       source_sort_index: 999,
       classification_status: 'uncategorized',
       bpm: '',
@@ -207,7 +226,7 @@ function overlayRankTables(rows, rankTablesPayload) {
           song_title: title,
           normalized_title: titleKey(title),
           chart_type: type,
-          category: String(category.category || '').trim() || '미분류',
+          category: String(category.category || '').trim() || CATEGORY_UNCLASSIFIED,
           source_sort_index: Number(category.sortindex || existing.source_sort_index || 999),
           classification_status: inferClassificationStatus(category.category),
           bpm: String(data.bpm || existing.bpm || ''),

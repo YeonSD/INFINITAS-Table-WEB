@@ -1,5 +1,5 @@
 {
-  "publishedAt": "2026-03-30T08:26:07.504Z",
+  "publishedAt": "2026-03-30T09:39:10.002Z",
   "rankTables": {
     "SP10H": {
       "tableinfo": {
@@ -198,25 +198,6 @@
                   "CHORD": 17.15
                 },
                 "radarTop": "NOTES"
-              }
-            },
-            {
-              "data": {
-                "title": "3y3s(Long ver.)",
-                "type": "H",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 2744,
-                "typeInfo": "CHORD",
-                "radar": {
-                  "NOTES": 92.28,
-                  "PEAK": 115.78,
-                  "SCRATCH": 63.21,
-                  "SOFLAN": 0,
-                  "CHARGE": 146.99,
-                  "CHORD": 168.24
-                },
-                "radarTop": "CHORD"
               }
             },
             {
@@ -525,25 +506,6 @@
             },
             {
               "data": {
-                "title": "龍王の霊廟(Mausoleum Of The Primal Dragon)",
-                "type": "H",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1190,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 91.2,
-                  "PEAK": 70,
-                  "SCRATCH": 7.25,
-                  "SOFLAN": 0,
-                  "CHARGE": 45.37,
-                  "CHORD": 35.09
-                },
-                "radarTop": "NOTES"
-              }
-            },
-            {
-              "data": {
                 "title": "累乗のカルマ",
                 "type": "A",
                 "implicitType": false,
@@ -768,25 +730,6 @@
                   "CHORD": 102.46
                 },
                 "radarTop": "NOTES"
-              }
-            },
-            {
-              "data": {
-                "title": "水上の提督 (Short mix from ”幻想水滸伝V”)",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1073,
-                "typeInfo": "PEAK",
-                "radar": {
-                  "NOTES": 86.42,
-                  "PEAK": 105.26,
-                  "SCRATCH": 15.84,
-                  "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 68.16
-                },
-                "radarTop": "PEAK"
               }
             },
             {
@@ -1247,7 +1190,7 @@
             },
             {
               "data": {
-                "title": "取り残された美術(Arranged:HiZuMi)",
+                "title": "取り残された美術 (Arranged:HiZuMi)",
                 "type": "A",
                 "implicitType": false,
                 "bpm": "",
@@ -2235,25 +2178,6 @@
             },
             {
               "data": {
-                "title": "Bloody Tears(IIDX EDITION)",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1094,
-                "typeInfo": "CHORD",
-                "radar": {
-                  "NOTES": 96.16,
-                  "PEAK": 87.14,
-                  "SCRATCH": 51.23,
-                  "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 97.28
-                },
-                "radarTop": "CHORD"
-              }
-            },
-            {
-              "data": {
                 "title": "bluemoon",
                 "type": "A",
                 "implicitType": false,
@@ -2592,25 +2516,6 @@
                   "CHORD": 49.52
                 },
                 "radarTop": "CHARGE"
-              }
-            },
-            {
-              "data": {
-                "title": "Colors -Y&Co. Eurobeat Remix-",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1100,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 84.93,
-                  "PEAK": 75.71,
-                  "SCRATCH": 15.18,
-                  "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 55.89
-                },
-                "radarTop": "NOTES"
               }
             },
             {
@@ -4230,7 +4135,7 @@
             },
             {
               "data": {
-                "title": "Hollywood Galaxy(DJ NAGAI Remix)",
+                "title": "Hollywood Galaxy (DJ NAGAI Remix)",
                 "type": "H",
                 "implicitType": false,
                 "bpm": "",
@@ -4933,7 +4838,7 @@
             },
             {
               "data": {
-                "title": "Love♥km",
+                "title": "Love♡km",
                 "type": "A",
                 "implicitType": false,
                 "bpm": "",
@@ -4952,7 +4857,7 @@
             },
             {
               "data": {
-                "title": "LOVE♥SHINE",
+                "title": "LOVE♡SHINE",
                 "type": "A",
                 "implicitType": false,
                 "bpm": "",
@@ -7175,25 +7080,6 @@
             },
             {
               "data": {
-                "title": "Sweet Sweet ♥ Magic",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1032,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 109.6,
-                  "PEAK": 92.85,
-                  "SCRATCH": 29.4,
-                  "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 80.84
-                },
-                "radarTop": "NOTES"
-              }
-            },
-            {
-              "data": {
                 "title": "Sword of Vengeance",
                 "type": "H",
                 "implicitType": false,
@@ -7688,25 +7574,6 @@
             },
             {
               "data": {
-                "title": "tripping contact(teranoid&MC Natsack Remix)",
-                "type": "H",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1020,
-                "typeInfo": "PEAK",
-                "radar": {
-                  "NOTES": 83.78,
-                  "PEAK": 103.94,
-                  "SCRATCH": 49.66,
-                  "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 51.05
-                },
-                "radarTop": "PEAK"
-              }
-            },
-            {
-              "data": {
                 "title": "Tripping Jumping",
                 "type": "A",
                 "implicitType": false,
@@ -8144,7 +8011,7 @@
             },
             {
               "data": {
-                "title": "WaterCube Pf.(RX-Ver.S.P.L.)",
+                "title": "WaterCube Pf. (RX-Ver.S.P.L.)",
                 "type": "A",
                 "implicitType": false,
                 "bpm": "",
@@ -8556,25 +8423,6 @@
                   "SOFLAN": 40.32,
                   "CHARGE": 0,
                   "CHORD": 69.73
-                },
-                "radarTop": "NOTES"
-              }
-            },
-            {
-              "data": {
-                "title": "キャトられ♥恋はモ~モク",
-                "type": "H",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1359,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 97.36,
-                  "PEAK": 95.71,
-                  "SCRATCH": 27.14,
-                  "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 64.57
                 },
                 "radarTop": "NOTES"
               }
@@ -9110,25 +8958,6 @@
                 },
                 "radarTop": "CHORD"
               }
-            },
-            {
-              "data": {
-                "title": "ワルツ第17番 ト短調”大犬のワルツ”",
-                "type": "H",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1214,
-                "typeInfo": "SOFLAN",
-                "radar": {
-                  "NOTES": 95.52,
-                  "PEAK": 85.71,
-                  "SCRATCH": 0,
-                  "SOFLAN": 192.6,
-                  "CHARGE": 0,
-                  "CHORD": 50.11
-                },
-                "radarTop": "SOFLAN"
-              }
             }
           ]
         },
@@ -9477,6 +9306,25 @@
                 },
                 "radarTop": "NOTES"
               }
+            },
+            {
+              "data": {
+                "title": "キャトられ❤恋はモ～モク",
+                "type": "H",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 1359,
+                "typeInfo": "NOTES",
+                "radar": {
+                  "NOTES": 97.36,
+                  "PEAK": 95.71,
+                  "SCRATCH": 27.14,
+                  "SOFLAN": 0,
+                  "CHARGE": 0,
+                  "CHORD": 64.57
+                },
+                "radarTop": "NOTES"
+              }
             }
           ]
         },
@@ -9537,6 +9385,25 @@
                   "SOFLAN": 0,
                   "CHARGE": 0,
                   "CHORD": 77.23
+                },
+                "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
+                "title": "龍王の霊廟 (Mausoleum Of The Primal Dragon)",
+                "type": "H",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 1190,
+                "typeInfo": "NOTES",
+                "radar": {
+                  "NOTES": 91.2,
+                  "PEAK": 70,
+                  "SCRATCH": 7.25,
+                  "SOFLAN": 0,
+                  "CHARGE": 45.37,
+                  "CHORD": 35.09
                 },
                 "radarTop": "NOTES"
               }
@@ -10186,6 +10053,25 @@
                 },
                 "radarTop": "NOTES"
               }
+            },
+            {
+              "data": {
+                "title": "ワルツ第17番 ト短調\"大犬のワルツ\"",
+                "type": "H",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 1214,
+                "typeInfo": "SOFLAN",
+                "radar": {
+                  "NOTES": 95.52,
+                  "PEAK": 85.71,
+                  "SCRATCH": 0,
+                  "SOFLAN": 192.6,
+                  "CHARGE": 0,
+                  "CHORD": 50.11
+                },
+                "radarTop": "SOFLAN"
+              }
             }
           ]
         },
@@ -10400,6 +10286,25 @@
                   "CHORD": 69.36
                 },
                 "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
+                "title": "Bloody Tears (IIDX EDITION)",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 1094,
+                "typeInfo": "CHORD",
+                "radar": {
+                  "NOTES": 96.16,
+                  "PEAK": 87.14,
+                  "SCRATCH": 51.23,
+                  "SOFLAN": 0,
+                  "CHARGE": 0,
+                  "CHORD": 97.28
+                },
+                "radarTop": "CHORD"
               }
             },
             {
@@ -12810,6 +12715,25 @@
             },
             {
               "data": {
+                "title": "Colors -Y&Co.Eurobeat Remix-",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 1100,
+                "typeInfo": "NOTES",
+                "radar": {
+                  "NOTES": 84.93,
+                  "PEAK": 75.71,
+                  "SCRATCH": 15.18,
+                  "SOFLAN": 0,
+                  "CHARGE": 0,
+                  "CHORD": 55.89
+                },
+                "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
                 "title": "Devil's Gear",
                 "type": "H",
                 "implicitType": false,
@@ -13534,6 +13458,25 @@
                   "CHORD": 56.18
                 },
                 "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
+                "title": "水上の提督 (Short mix from \"幻想水滸伝V\")",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 1073,
+                "typeInfo": "PEAK",
+                "radar": {
+                  "NOTES": 86.42,
+                  "PEAK": 105.26,
+                  "SCRATCH": 15.84,
+                  "SOFLAN": 0,
+                  "CHARGE": 0,
+                  "CHORD": 68.16
+                },
+                "radarTop": "PEAK"
               }
             },
             {
@@ -14969,6 +14912,25 @@
             },
             {
               "data": {
+                "title": "Sweet Sweet ♡ Magic",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 1032,
+                "typeInfo": "NOTES",
+                "radar": {
+                  "NOTES": 109.6,
+                  "PEAK": 92.85,
+                  "SCRATCH": 29.4,
+                  "SOFLAN": 0,
+                  "CHARGE": 0,
+                  "CHORD": 80.84
+                },
+                "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
                 "title": "Take It Easy",
                 "type": "H",
                 "implicitType": false,
@@ -15066,6 +15028,25 @@
                   "CHORD": 104.82
                 },
                 "radarTop": "PEAK"
+              }
+            },
+            {
+              "data": {
+                "title": "3y3s (Long ver.)",
+                "type": "H",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 2744,
+                "typeInfo": "CHORD",
+                "radar": {
+                  "NOTES": 92.28,
+                  "PEAK": 115.78,
+                  "SCRATCH": 63.21,
+                  "SOFLAN": 0,
+                  "CHARGE": 146.99,
+                  "CHORD": 168.24
+                },
+                "radarTop": "CHORD"
               }
             },
             {
@@ -15902,6 +15883,25 @@
                   "CHORD": 54.57
                 },
                 "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
+                "title": "tripping contact (teranoid&MC Natsack Remix)",
+                "type": "H",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 1020,
+                "typeInfo": "PEAK",
+                "radar": {
+                  "NOTES": 83.78,
+                  "PEAK": 103.94,
+                  "SCRATCH": 49.66,
+                  "SOFLAN": 0,
+                  "CHARGE": 0,
+                  "CHORD": 51.05
+                },
+                "radarTop": "PEAK"
               }
             },
             {
@@ -23101,6 +23101,25 @@
                 },
                 "radarTop": "NOTES"
               }
+            },
+            {
+              "data": {
+                "title": "ピアノ協奏曲第１番”蠍火”",
+                "type": "H",
+                "implicitType": false,
+                "bpm": "165-188(185)",
+                "atwikiNotes": 1111,
+                "typeInfo": "SOF-LAN",
+                "radar": {
+                  "NOTES": 84.53,
+                  "PEAK": 109.21,
+                  "SCRATCH": 28.82,
+                  "SOFLAN": 150.45,
+                  "CHARGE": 0,
+                  "CHORD": 53.5
+                },
+                "radarTop": "SOFLAN"
+              }
             }
           ]
         },
@@ -26414,6 +26433,25 @@
             },
             {
               "data": {
+                "title": "炸裂！イェーガー電光チョップ!! (JAEGER FINAL ATTACK)",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 1312,
+                "typeInfo": "NOTES",
+                "radar": {
+                  "NOTES": 113.62,
+                  "PEAK": 109.21,
+                  "SCRATCH": 61.83,
+                  "SOFLAN": 0,
+                  "CHARGE": 0,
+                  "CHORD": 103.2
+                },
+                "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
                 "title": "全力 SPECIAL VACATION!! ～限りある休日～",
                 "type": "A",
                 "implicitType": false,
@@ -27269,6 +27307,25 @@
             },
             {
               "data": {
+                "title": "Smug Face -どうだ、オレの生き様は-(ONLY ONE EDITION)",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 1334,
+                "typeInfo": "NOTES",
+                "radar": {
+                  "NOTES": 102.65,
+                  "PEAK": 97.14,
+                  "SCRATCH": 25.22,
+                  "SOFLAN": 0,
+                  "CHARGE": 26.37,
+                  "CHORD": 81.37
+                },
+                "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
                 "title": "Stella Sinistra",
                 "type": "A",
                 "implicitType": false,
@@ -27341,6 +27398,25 @@
                   "CHORD": 103.5
                 },
                 "radarTop": "CHARGE"
+              }
+            },
+            {
+              "data": {
+                "title": "ToyCube Pf. (RX-Ver.S.P.L.)",
+                "type": "L",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 1453,
+                "typeInfo": "CHORD",
+                "radar": {
+                  "NOTES": 115.09,
+                  "PEAK": 101.31,
+                  "SCRATCH": 35.78,
+                  "SOFLAN": 47.73,
+                  "CHARGE": 0,
+                  "CHORD": 132.24
+                },
+                "radarTop": "CHORD"
               }
             },
             {
@@ -28421,25 +28497,6 @@
           "items": [
             {
               "data": {
-                "title": "炸裂!イェーガー電光チョップ!!(JAEGER FINAL ATTACK)",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1312,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 113.62,
-                  "PEAK": 109.21,
-                  "SCRATCH": 61.83,
-                  "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 103.2
-                },
-                "radarTop": "NOTES"
-              }
-            },
-            {
-              "data": {
                 "title": "CARNIVOROUS",
                 "type": "A",
                 "implicitType": false,
@@ -28535,25 +28592,6 @@
             },
             {
               "data": {
-                "title": "Smug Face -どうだ、オレの生き様は- (ONLY ONE EDITION)",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1334,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 102.65,
-                  "PEAK": 97.14,
-                  "SCRATCH": 25.22,
-                  "SOFLAN": 0,
-                  "CHARGE": 26.37,
-                  "CHORD": 81.37
-                },
-                "radarTop": "NOTES"
-              }
-            },
-            {
-              "data": {
                 "title": "Substance",
                 "type": "A",
                 "implicitType": false,
@@ -28567,44 +28605,6 @@
                   "SOFLAN": 162.2,
                   "CHARGE": 0,
                   "CHORD": 92.59
-                },
-                "radarTop": "SOFLAN"
-              }
-            },
-            {
-              "data": {
-                "title": "ToyCube Pf.(RX-Ver.S.P.L.)",
-                "type": "L",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1453,
-                "typeInfo": "CHORD",
-                "radar": {
-                  "NOTES": 115.09,
-                  "PEAK": 101.31,
-                  "SCRATCH": 35.78,
-                  "SOFLAN": 47.73,
-                  "CHARGE": 0,
-                  "CHORD": 132.24
-                },
-                "radarTop": "CHORD"
-              }
-            },
-            {
-              "data": {
-                "title": "ピアノ協奏曲第1番\"蠍火\"",
-                "type": "H",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1111,
-                "typeInfo": "SOFLAN",
-                "radar": {
-                  "NOTES": 84.53,
-                  "PEAK": 109.21,
-                  "SCRATCH": 28.82,
-                  "SOFLAN": 150.45,
-                  "CHARGE": 0,
-                  "CHORD": 53.5
                 },
                 "radarTop": "SOFLAN"
               }
@@ -28639,6 +28639,25 @@
                   "CHORD": 156.5
                 },
                 "radarTop": "PEAK"
+              }
+            },
+            {
+              "data": {
+                "title": "3y3s (Long ver.)",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 3910,
+                "typeInfo": "CHORD",
+                "radar": {
+                  "NOTES": 131.49,
+                  "PEAK": 198.21,
+                  "SCRATCH": 105.98,
+                  "SOFLAN": 0,
+                  "CHARGE": 188.81,
+                  "CHORD": 200
+                },
+                "radarTop": "CHORD"
               }
             },
             {
@@ -32232,6 +32251,44 @@
             },
             {
               "data": {
+                "title": "キャトられ恋はモ～モク",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "196",
+                "atwikiNotes": 1988,
+                "typeInfo": "NOTES",
+                "radar": {
+                  "NOTES": 142.43,
+                  "PEAK": 139.47,
+                  "SCRATCH": 86.12,
+                  "SOFLAN": 0,
+                  "CHARGE": 0,
+                  "CHORD": 135.58
+                },
+                "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
+                "title": "ピアノ協奏曲第１番”蠍火”",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "165-185(185)",
+                "atwikiNotes": 1414,
+                "typeInfo": "SOF-LAN",
+                "radar": {
+                  "NOTES": 107.58,
+                  "PEAK": 142.1,
+                  "SCRATCH": 49.89,
+                  "SOFLAN": 160.09,
+                  "CHARGE": 0,
+                  "CHORD": 106.72
+                },
+                "radarTop": "SOFLAN"
+              }
+            },
+            {
+              "data": {
                 "title": "ピアノ協奏曲第1番”蠍火” (BlackY Remix)",
                 "type": "A",
                 "implicitType": false,
@@ -32546,6 +32603,25 @@
           "category": "지력B+",
           "sortindex": 9,
           "items": [
+            {
+              "data": {
+                "title": "†渚の小悪魔ラヴリィ～レイディオ†(IIDX EDIT)",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "190",
+                "atwikiNotes": 1835,
+                "typeInfo": "NOTES",
+                "radar": {
+                  "NOTES": 163.43,
+                  "PEAK": 138.15,
+                  "SCRATCH": 96.19,
+                  "SOFLAN": 0,
+                  "CHARGE": 0,
+                  "CHORD": 148.03
+                },
+                "radarTop": "NOTES"
+              }
+            },
             {
               "data": {
                 "title": "1116",
@@ -33810,6 +33886,25 @@
                   "CHORD": 98.08
                 },
                 "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
+                "title": "A MINSTREL～ver.short-scape～",
+                "type": "L",
+                "implicitType": false,
+                "bpm": "114",
+                "atwikiNotes": 1954,
+                "typeInfo": "CHORD",
+                "radar": {
+                  "NOTES": 155.44,
+                  "PEAK": 140.78,
+                  "SCRATCH": 22.61,
+                  "SOFLAN": 0,
+                  "CHARGE": 48.39,
+                  "CHORD": 200
+                },
+                "radarTop": "CHORD"
               }
             },
             {
@@ -35302,6 +35397,25 @@
                   "SOFLAN": 0,
                   "CHARGE": 1.56,
                   "CHORD": 111.69
+                },
+                "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
+                "title": "表裏一体！？怪盗いいんちょの悩み",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "165",
+                "atwikiNotes": 1815,
+                "typeInfo": "NOTES",
+                "radar": {
+                  "NOTES": 142.24,
+                  "PEAK": 113.15,
+                  "SCRATCH": 65.09,
+                  "SOFLAN": 0,
+                  "CHARGE": 0,
+                  "CHORD": 141.04
                 },
                 "radarTop": "NOTES"
               }
@@ -38637,6 +38751,25 @@
             },
             {
               "data": {
+                "title": "Hollywood Galaxy (DJ NAGAI Remix)",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 1778,
+                "typeInfo": "NOTES",
+                "radar": {
+                  "NOTES": 145.35,
+                  "PEAK": 136.84,
+                  "SCRATCH": 36.33,
+                  "SOFLAN": 0,
+                  "CHARGE": 11.87,
+                  "CHORD": 137.56
+                },
+                "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
                 "title": "If",
                 "type": "L",
                 "implicitType": false,
@@ -39070,145 +39203,6 @@
                   "CHORD": 189.11
                 },
                 "radarTop": "CHORD"
-              }
-            }
-          ]
-        },
-        {
-          "category": "미분류",
-          "sortindex": 999,
-          "items": [
-            {
-              "data": {
-                "title": "†渚の小悪魔ラヴリィ~レイディオ† (IIDX EDIT)",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1835,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 163.43,
-                  "PEAK": 138.15,
-                  "SCRATCH": 96.19,
-                  "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 148.03
-                },
-                "radarTop": "NOTES"
-              }
-            },
-            {
-              "data": {
-                "title": "3y3s(Long ver.)",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 3910,
-                "typeInfo": "CHORD",
-                "radar": {
-                  "NOTES": 131.49,
-                  "PEAK": 198.21,
-                  "SCRATCH": 105.98,
-                  "SOFLAN": 0,
-                  "CHARGE": 188.81,
-                  "CHORD": 200
-                },
-                "radarTop": "CHORD"
-              }
-            },
-            {
-              "data": {
-                "title": "表裏一体!?怪盗いいんちょの悩み♥",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1815,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 142.24,
-                  "PEAK": 113.15,
-                  "SCRATCH": 65.09,
-                  "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 141.04
-                },
-                "radarTop": "NOTES"
-              }
-            },
-            {
-              "data": {
-                "title": "A MINSTREL ~ ver. short-scape ~",
-                "type": "L",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1954,
-                "typeInfo": "CHORD",
-                "radar": {
-                  "NOTES": 155.44,
-                  "PEAK": 140.78,
-                  "SCRATCH": 22.61,
-                  "SOFLAN": 0,
-                  "CHARGE": 48.39,
-                  "CHORD": 200
-                },
-                "radarTop": "CHORD"
-              }
-            },
-            {
-              "data": {
-                "title": "Hollywood Galaxy(DJ NAGAI Remix)",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1778,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 145.35,
-                  "PEAK": 136.84,
-                  "SCRATCH": 36.33,
-                  "SOFLAN": 0,
-                  "CHARGE": 11.87,
-                  "CHORD": 137.56
-                },
-                "radarTop": "NOTES"
-              }
-            },
-            {
-              "data": {
-                "title": "キャトられ♥恋はモ~モク",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1988,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 142.43,
-                  "PEAK": 139.47,
-                  "SCRATCH": 86.12,
-                  "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 135.58
-                },
-                "radarTop": "NOTES"
-              }
-            },
-            {
-              "data": {
-                "title": "ピアノ協奏曲第1番\"蠍火\"",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1414,
-                "typeInfo": "SOFLAN",
-                "radar": {
-                  "NOTES": 107.58,
-                  "PEAK": 142.1,
-                  "SCRATCH": 49.89,
-                  "SOFLAN": 160.09,
-                  "CHARGE": 0,
-                  "CHORD": 106.72
-                },
-                "radarTop": "SOFLAN"
               }
             }
           ]
@@ -40001,6 +39995,20 @@
           "CHORD": 62.12
         },
         "radarTop": "NOTES"
+      },
+      {
+        "title": "取り残された美術 (Arranged:HiZuMi)",
+        "type": "A",
+        "notes": 1111,
+        "radar": {
+          "NOTES": 102.27,
+          "PEAK": 87.14,
+          "SCRATCH": 47.61,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 104.98
+        },
+        "radarTop": "CHORD"
       },
       {
         "title": "抱きしめてモナムール",
@@ -41977,6 +41985,20 @@
         "radarTop": "CHORD"
       },
       {
+        "title": "Hollywood Galaxy (DJ NAGAI Remix)",
+        "type": "H",
+        "notes": 1234,
+        "radar": {
+          "NOTES": 100.88,
+          "PEAK": 98.57,
+          "SCRATCH": 27.99,
+          "SOFLAN": 0,
+          "CHARGE": 29.9,
+          "CHORD": 82.28
+        },
+        "radarTop": "NOTES"
+      },
+      {
         "title": "Horizons of Promise",
         "type": "A",
         "notes": 1322,
@@ -42435,6 +42457,34 @@
           "SOFLAN": 0,
           "CHARGE": 0,
           "CHORD": 97.37
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "Love♡km",
+        "type": "A",
+        "notes": 1142,
+        "radar": {
+          "NOTES": 108.65,
+          "PEAK": 88.57,
+          "SCRATCH": 17.32,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 70.53
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "LOVE♡SHINE",
+        "type": "A",
+        "notes": 1046,
+        "radar": {
+          "NOTES": 105.04,
+          "PEAK": 103.94,
+          "SCRATCH": 49.02,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 104.04
         },
         "radarTop": "NOTES"
       },
@@ -44581,6 +44631,20 @@
         "radarTop": "CHORD"
       },
       {
+        "title": "WaterCube Pf. (RX-Ver.S.P.L.)",
+        "type": "A",
+        "notes": 1120,
+        "radar": {
+          "NOTES": 92.43,
+          "PEAK": 87.14,
+          "SCRATCH": 70.35,
+          "SOFLAN": 63.65,
+          "CHARGE": 0,
+          "CHORD": 86.87
+        },
+        "radarTop": "NOTES"
+      },
+      {
         "title": "Welcome to the Mosh Pit",
         "type": "H",
         "notes": 1242,
@@ -45463,6 +45527,20 @@
         "radarTop": "NOTES"
       },
       {
+        "title": "キャトられ❤恋はモ～モク",
+        "type": "H",
+        "notes": 1359,
+        "radar": {
+          "NOTES": 97.36,
+          "PEAK": 95.71,
+          "SCRATCH": 27.14,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 64.57
+        },
+        "radarTop": "NOTES"
+      },
+      {
         "title": "¡Viva!",
         "type": "A",
         "notes": 1014,
@@ -45501,6 +45579,20 @@
           "SOFLAN": 0,
           "CHARGE": 0,
           "CHORD": 77.23
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "龍王の霊廟 (Mausoleum Of The Primal Dragon)",
+        "type": "H",
+        "notes": 1190,
+        "radar": {
+          "NOTES": 91.2,
+          "PEAK": 70,
+          "SCRATCH": 7.25,
+          "SOFLAN": 0,
+          "CHARGE": 45.37,
+          "CHORD": 35.09
         },
         "radarTop": "NOTES"
       },
@@ -45981,6 +46073,20 @@
         "radarTop": "NOTES"
       },
       {
+        "title": "ワルツ第17番 ト短調\"大犬のワルツ\"",
+        "type": "H",
+        "notes": 1214,
+        "radar": {
+          "NOTES": 95.52,
+          "PEAK": 85.71,
+          "SCRATCH": 0,
+          "SOFLAN": 192.6,
+          "CHARGE": 0,
+          "CHORD": 50.11
+        },
+        "radarTop": "SOFLAN"
+      },
+      {
         "title": "突撃！ガラスのニーソ姫！",
         "type": "A",
         "notes": 1066,
@@ -46133,6 +46239,20 @@
           "CHORD": 69.36
         },
         "radarTop": "NOTES"
+      },
+      {
+        "title": "Bloody Tears (IIDX EDITION)",
+        "type": "A",
+        "notes": 1094,
+        "radar": {
+          "NOTES": 96.16,
+          "PEAK": 87.14,
+          "SCRATCH": 51.23,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 97.28
+        },
+        "radarTop": "CHORD"
       },
       {
         "title": "Confiserie",
@@ -47899,6 +48019,20 @@
         "radarTop": "PEAK"
       },
       {
+        "title": "Colors -Y&Co.Eurobeat Remix-",
+        "type": "A",
+        "notes": 1100,
+        "radar": {
+          "NOTES": 84.93,
+          "PEAK": 75.71,
+          "SCRATCH": 15.18,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 55.89
+        },
+        "radarTop": "NOTES"
+      },
+      {
         "title": "Devil's Gear",
         "type": "H",
         "notes": 1152,
@@ -48429,6 +48563,20 @@
           "CHORD": 56.18
         },
         "radarTop": "NOTES"
+      },
+      {
+        "title": "水上の提督 (Short mix from \"幻想水滸伝V\")",
+        "type": "A",
+        "notes": 1073,
+        "radar": {
+          "NOTES": 86.42,
+          "PEAK": 105.26,
+          "SCRATCH": 15.84,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 68.16
+        },
+        "radarTop": "PEAK"
       },
       {
         "title": "月雪に舞う華のように",
@@ -49481,6 +49629,20 @@
         "radarTop": "NOTES"
       },
       {
+        "title": "Sweet Sweet ♡ Magic",
+        "type": "A",
+        "notes": 1032,
+        "radar": {
+          "NOTES": 109.6,
+          "PEAK": 92.85,
+          "SCRATCH": 29.4,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 80.84
+        },
+        "radarTop": "NOTES"
+      },
+      {
         "title": "Take It Easy",
         "type": "H",
         "notes": 1229,
@@ -49549,6 +49711,20 @@
           "CHORD": 104.82
         },
         "radarTop": "PEAK"
+      },
+      {
+        "title": "3y3s (Long ver.)",
+        "type": "H",
+        "notes": 2744,
+        "radar": {
+          "NOTES": 92.28,
+          "PEAK": 115.78,
+          "SCRATCH": 63.21,
+          "SOFLAN": 0,
+          "CHARGE": 146.99,
+          "CHORD": 168.24
+        },
+        "radarTop": "CHORD"
       },
       {
         "title": "少年A",
@@ -50165,6 +50341,20 @@
           "CHORD": 54.57
         },
         "radarTop": "NOTES"
+      },
+      {
+        "title": "tripping contact (teranoid&MC Natsack Remix)",
+        "type": "H",
+        "notes": 1020,
+        "radar": {
+          "NOTES": 83.78,
+          "PEAK": 103.94,
+          "SCRATCH": 49.66,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 51.05
+        },
+        "radarTop": "PEAK"
       },
       {
         "title": "TROOPERS",
@@ -51007,20 +51197,6 @@
         "radarTop": "NOTES"
       },
       {
-        "title": "3y3s(Long ver.)",
-        "type": "H",
-        "notes": 2744,
-        "radar": {
-          "NOTES": 92.28,
-          "PEAK": 115.78,
-          "SCRATCH": 63.21,
-          "SOFLAN": 0,
-          "CHARGE": 146.99,
-          "CHORD": 168.24
-        },
-        "radarTop": "CHORD"
-      },
-      {
         "title": "零 - ZERO -",
         "type": "L",
         "notes": 1380,
@@ -51035,20 +51211,6 @@
         "radarTop": "CHORD"
       },
       {
-        "title": "龍王の霊廟(Mausoleum Of The Primal Dragon)",
-        "type": "H",
-        "notes": 1190,
-        "radar": {
-          "NOTES": 91.2,
-          "PEAK": 70,
-          "SCRATCH": 7.25,
-          "SOFLAN": 0,
-          "CHARGE": 45.37,
-          "CHORD": 35.09
-        },
-        "radarTop": "NOTES"
-      },
-      {
         "title": "百恋ラブラスター",
         "type": "A",
         "notes": 1324,
@@ -51061,20 +51223,6 @@
           "CHORD": 108.23
         },
         "radarTop": "CHORD"
-      },
-      {
-        "title": "水上の提督 (Short mix from ”幻想水滸伝V”)",
-        "type": "A",
-        "notes": 1073,
-        "radar": {
-          "NOTES": 86.42,
-          "PEAK": 105.26,
-          "SCRATCH": 15.84,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 68.16
-        },
-        "radarTop": "PEAK"
       },
       {
         "title": "灼熱 Lost Summer Dayz",
@@ -51101,20 +51249,6 @@
           "SOFLAN": 0,
           "CHARGE": 0,
           "CHORD": 112.56
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "取り残された美術(Arranged:HiZuMi)",
-        "type": "A",
-        "notes": 1111,
-        "radar": {
-          "NOTES": 102.27,
-          "PEAK": 87.14,
-          "SCRATCH": 47.61,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 104.98
         },
         "radarTop": "CHORD"
       },
@@ -51161,20 +51295,6 @@
         "radarTop": "PEAK"
       },
       {
-        "title": "Bloody Tears(IIDX EDITION)",
-        "type": "A",
-        "notes": 1094,
-        "radar": {
-          "NOTES": 96.16,
-          "PEAK": 87.14,
-          "SCRATCH": 51.23,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 97.28
-        },
-        "radarTop": "CHORD"
-      },
-      {
         "title": "Chasing After YOU ~夢の欠片~ ft. 小林マナ",
         "type": "A",
         "notes": 1032,
@@ -51199,20 +51319,6 @@
           "SOFLAN": 0,
           "CHARGE": 28.31,
           "CHORD": 51.3
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "Colors -Y&Co. Eurobeat Remix-",
-        "type": "A",
-        "notes": 1100,
-        "radar": {
-          "NOTES": 84.93,
-          "PEAK": 75.71,
-          "SCRATCH": 15.18,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 55.89
         },
         "radarTop": "NOTES"
       },
@@ -51329,20 +51435,6 @@
         "radarTop": "NOTES"
       },
       {
-        "title": "Hollywood Galaxy(DJ NAGAI Remix)",
-        "type": "H",
-        "notes": 1234,
-        "radar": {
-          "NOTES": 100.88,
-          "PEAK": 98.57,
-          "SCRATCH": 27.99,
-          "SOFLAN": 0,
-          "CHARGE": 29.9,
-          "CHORD": 82.28
-        },
-        "radarTop": "NOTES"
-      },
-      {
         "title": "I Want To Do This Keep",
         "type": "A",
         "notes": 988,
@@ -51381,34 +51473,6 @@
           "SOFLAN": 0,
           "CHARGE": 0,
           "CHORD": 79.73
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "Love♥km",
-        "type": "A",
-        "notes": 1142,
-        "radar": {
-          "NOTES": 108.65,
-          "PEAK": 88.57,
-          "SCRATCH": 17.32,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 70.53
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "LOVE♥SHINE",
-        "type": "A",
-        "notes": 1046,
-        "radar": {
-          "NOTES": 105.04,
-          "PEAK": 103.94,
-          "SCRATCH": 49.02,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 104.04
         },
         "radarTop": "NOTES"
       },
@@ -51539,20 +51603,6 @@
         "radarTop": "NOTES"
       },
       {
-        "title": "Sweet Sweet ♥ Magic",
-        "type": "A",
-        "notes": 1032,
-        "radar": {
-          "NOTES": 109.6,
-          "PEAK": 92.85,
-          "SCRATCH": 29.4,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 80.84
-        },
-        "radarTop": "NOTES"
-      },
-      {
         "title": "SμG@R RU$#",
         "type": "H",
         "notes": 1275,
@@ -51565,20 +51615,6 @@
           "CHORD": 33.54
         },
         "radarTop": "NOTES"
-      },
-      {
-        "title": "tripping contact(teranoid&MC Natsack Remix)",
-        "type": "H",
-        "notes": 1020,
-        "radar": {
-          "NOTES": 83.78,
-          "PEAK": 103.94,
-          "SCRATCH": 49.66,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 51.05
-        },
-        "radarTop": "PEAK"
       },
       {
         "title": "u gotta beat",
@@ -51609,20 +51645,6 @@
         "radarTop": "SCRATCH"
       },
       {
-        "title": "WaterCube Pf.(RX-Ver.S.P.L.)",
-        "type": "A",
-        "notes": 1120,
-        "radar": {
-          "NOTES": 92.43,
-          "PEAK": 87.14,
-          "SCRATCH": 70.35,
-          "SOFLAN": 63.65,
-          "CHARGE": 0,
-          "CHORD": 86.87
-        },
-        "radarTop": "NOTES"
-      },
-      {
         "title": "がっつり陰キャ!? 怪盗いいんちょの億劫^^;",
         "type": "H",
         "notes": 1399,
@@ -51633,20 +51655,6 @@
           "SOFLAN": 0,
           "CHARGE": 0,
           "CHORD": 101.25
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "キャトられ♥恋はモ~モク",
-        "type": "H",
-        "notes": 1359,
-        "radar": {
-          "NOTES": 97.36,
-          "PEAK": 95.71,
-          "SCRATCH": 27.14,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 64.57
         },
         "radarTop": "NOTES"
       },
@@ -51691,20 +51699,6 @@
           "CHORD": 45.46
         },
         "radarTop": "NOTES"
-      },
-      {
-        "title": "ワルツ第17番 ト短調”大犬のワルツ”",
-        "type": "H",
-        "notes": 1214,
-        "radar": {
-          "NOTES": 95.52,
-          "PEAK": 85.71,
-          "SCRATCH": 0,
-          "SOFLAN": 192.6,
-          "CHARGE": 0,
-          "CHORD": 50.11
-        },
-        "radarTop": "SOFLAN"
       },
       {
         "title": "卑弥呼",
@@ -56145,6 +56139,20 @@
         "radarTop": "NOTES"
       },
       {
+        "title": "ピアノ協奏曲第１番”蠍火”",
+        "type": "H",
+        "notes": 1111,
+        "radar": {
+          "NOTES": 84.53,
+          "PEAK": 109.21,
+          "SCRATCH": 28.82,
+          "SOFLAN": 150.45,
+          "CHARGE": 0,
+          "CHORD": 53.5
+        },
+        "radarTop": "SOFLAN"
+      },
+      {
         "title": "開きたまえ！Next stAge！",
         "type": "A",
         "notes": 1463,
@@ -58553,6 +58561,20 @@
         "radarTop": "NOTES"
       },
       {
+        "title": "炸裂！イェーガー電光チョップ!! (JAEGER FINAL ATTACK)",
+        "type": "A",
+        "notes": 1312,
+        "radar": {
+          "NOTES": 113.62,
+          "PEAK": 109.21,
+          "SCRATCH": 61.83,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 103.2
+        },
+        "radarTop": "NOTES"
+      },
+      {
         "title": "全力 SPECIAL VACATION!! ～限りある休日～",
         "type": "A",
         "notes": 1142,
@@ -59183,6 +59205,20 @@
         "radarTop": "NOTES"
       },
       {
+        "title": "Smug Face -どうだ、オレの生き様は-(ONLY ONE EDITION)",
+        "type": "A",
+        "notes": 1334,
+        "radar": {
+          "NOTES": 102.65,
+          "PEAK": 97.14,
+          "SCRATCH": 25.22,
+          "SOFLAN": 0,
+          "CHARGE": 26.37,
+          "CHORD": 81.37
+        },
+        "radarTop": "NOTES"
+      },
+      {
         "title": "Stella Sinistra",
         "type": "A",
         "notes": 1279,
@@ -59237,6 +59273,20 @@
           "CHORD": 103.5
         },
         "radarTop": "CHARGE"
+      },
+      {
+        "title": "ToyCube Pf. (RX-Ver.S.P.L.)",
+        "type": "L",
+        "notes": 1453,
+        "radar": {
+          "NOTES": 115.09,
+          "PEAK": 101.31,
+          "SCRATCH": 35.78,
+          "SOFLAN": 47.73,
+          "CHARGE": 0,
+          "CHORD": 132.24
+        },
+        "radarTop": "CHORD"
       },
       {
         "title": "VIVID DEBUT!",
@@ -59405,20 +59455,6 @@
           "CHORD": 130.06
         },
         "radarTop": "CHORD"
-      },
-      {
-        "title": "炸裂!イェーガー電光チョップ!!(JAEGER FINAL ATTACK)",
-        "type": "A",
-        "notes": 1312,
-        "radar": {
-          "NOTES": 113.62,
-          "PEAK": 109.21,
-          "SCRATCH": 61.83,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 103.2
-        },
-        "radarTop": "NOTES"
       },
       {
         "title": "爆ぜりゃんせ",
@@ -59953,20 +59989,6 @@
         "radarTop": "CHORD"
       },
       {
-        "title": "Smug Face -どうだ、オレの生き様は- (ONLY ONE EDITION)",
-        "type": "A",
-        "notes": 1334,
-        "radar": {
-          "NOTES": 102.65,
-          "PEAK": 97.14,
-          "SCRATCH": 25.22,
-          "SOFLAN": 0,
-          "CHARGE": 26.37,
-          "CHORD": 81.37
-        },
-        "radarTop": "NOTES"
-      },
-      {
         "title": "Somnidiscotheque",
         "type": "H",
         "notes": 1053,
@@ -60079,20 +60101,6 @@
         "radarTop": "NOTES"
       },
       {
-        "title": "ToyCube Pf.(RX-Ver.S.P.L.)",
-        "type": "L",
-        "notes": 1453,
-        "radar": {
-          "NOTES": 115.09,
-          "PEAK": 101.31,
-          "SCRATCH": 35.78,
-          "SOFLAN": 47.73,
-          "CHARGE": 0,
-          "CHORD": 132.24
-        },
-        "radarTop": "CHORD"
-      },
-      {
         "title": "winkle 2 winkle",
         "type": "A",
         "notes": 1408,
@@ -60149,20 +60157,6 @@
         "radarTop": "NOTES"
       },
       {
-        "title": "ピアノ協奏曲第1番\"蠍火\"",
-        "type": "H",
-        "notes": 1111,
-        "radar": {
-          "NOTES": 84.53,
-          "PEAK": 109.21,
-          "SCRATCH": 28.82,
-          "SOFLAN": 150.45,
-          "CHARGE": 0,
-          "CHORD": 53.5
-        },
-        "radarTop": "SOFLAN"
-      },
-      {
         "title": "3y3s",
         "type": "A",
         "notes": 1871,
@@ -60175,6 +60169,20 @@
           "CHORD": 156.5
         },
         "radarTop": "PEAK"
+      },
+      {
+        "title": "3y3s (Long ver.)",
+        "type": "A",
+        "notes": 3910,
+        "radar": {
+          "NOTES": 131.49,
+          "PEAK": 198.21,
+          "SCRATCH": 105.98,
+          "SOFLAN": 0,
+          "CHARGE": 188.81,
+          "CHORD": 200
+        },
+        "radarTop": "CHORD"
       },
       {
         "title": "冥",
@@ -62795,6 +62803,34 @@
         "radarTop": "NOTES"
       },
       {
+        "title": "キャトられ恋はモ～モク",
+        "type": "A",
+        "notes": 1988,
+        "radar": {
+          "NOTES": 142.43,
+          "PEAK": 139.47,
+          "SCRATCH": 86.12,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 135.58
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "ピアノ協奏曲第１番”蠍火”",
+        "type": "A",
+        "notes": 1414,
+        "radar": {
+          "NOTES": 107.58,
+          "PEAK": 142.1,
+          "SCRATCH": 49.89,
+          "SOFLAN": 160.09,
+          "CHARGE": 0,
+          "CHORD": 106.72
+        },
+        "radarTop": "SOFLAN"
+      },
+      {
         "title": "ピアノ協奏曲第1番”蠍火” (BlackY Remix)",
         "type": "A",
         "notes": 1926,
@@ -63017,6 +63053,20 @@
           "CHORD": 126.58
         },
         "radarTop": "SCRATCH"
+      },
+      {
+        "title": "†渚の小悪魔ラヴリィ～レイディオ†(IIDX EDIT)",
+        "type": "A",
+        "notes": 1835,
+        "radar": {
+          "NOTES": 163.43,
+          "PEAK": 138.15,
+          "SCRATCH": 96.19,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 148.03
+        },
+        "radarTop": "NOTES"
       },
       {
         "title": "1116",
@@ -63941,6 +63991,20 @@
           "CHORD": 98.08
         },
         "radarTop": "NOTES"
+      },
+      {
+        "title": "A MINSTREL～ver.short-scape～",
+        "type": "L",
+        "notes": 1954,
+        "radar": {
+          "NOTES": 155.44,
+          "PEAK": 140.78,
+          "SCRATCH": 22.61,
+          "SOFLAN": 0,
+          "CHARGE": 48.39,
+          "CHORD": 200
+        },
+        "radarTop": "CHORD"
       },
       {
         "title": "AA -rebuild-",
@@ -65031,6 +65095,20 @@
           "SOFLAN": 0,
           "CHARGE": 1.56,
           "CHORD": 111.69
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "表裏一体！？怪盗いいんちょの悩み",
+        "type": "A",
+        "notes": 1815,
+        "radar": {
+          "NOTES": 142.24,
+          "PEAK": 113.15,
+          "SCRATCH": 65.09,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 141.04
         },
         "radarTop": "NOTES"
       },
@@ -67457,6 +67535,20 @@
         "radarTop": "NOTES"
       },
       {
+        "title": "Hollywood Galaxy (DJ NAGAI Remix)",
+        "type": "A",
+        "notes": 1778,
+        "radar": {
+          "NOTES": 145.35,
+          "PEAK": 136.84,
+          "SCRATCH": 36.33,
+          "SOFLAN": 0,
+          "CHARGE": 11.87,
+          "CHORD": 137.56
+        },
+        "radarTop": "NOTES"
+      },
+      {
         "title": "If",
         "type": "L",
         "notes": 1254,
@@ -67777,106 +67869,8 @@
           "CHORD": 189.11
         },
         "radarTop": "CHORD"
-      },
-      {
-        "title": "†渚の小悪魔ラヴリィ~レイディオ† (IIDX EDIT)",
-        "type": "A",
-        "notes": 1835,
-        "radar": {
-          "NOTES": 163.43,
-          "PEAK": 138.15,
-          "SCRATCH": 96.19,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 148.03
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "3y3s(Long ver.)",
-        "type": "A",
-        "notes": 3910,
-        "radar": {
-          "NOTES": 131.49,
-          "PEAK": 198.21,
-          "SCRATCH": 105.98,
-          "SOFLAN": 0,
-          "CHARGE": 188.81,
-          "CHORD": 200
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "表裏一体!?怪盗いいんちょの悩み♥",
-        "type": "A",
-        "notes": 1815,
-        "radar": {
-          "NOTES": 142.24,
-          "PEAK": 113.15,
-          "SCRATCH": 65.09,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 141.04
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "A MINSTREL ~ ver. short-scape ~",
-        "type": "L",
-        "notes": 1954,
-        "radar": {
-          "NOTES": 155.44,
-          "PEAK": 140.78,
-          "SCRATCH": 22.61,
-          "SOFLAN": 0,
-          "CHARGE": 48.39,
-          "CHORD": 200
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "Hollywood Galaxy(DJ NAGAI Remix)",
-        "type": "A",
-        "notes": 1778,
-        "radar": {
-          "NOTES": 145.35,
-          "PEAK": 136.84,
-          "SCRATCH": 36.33,
-          "SOFLAN": 0,
-          "CHARGE": 11.87,
-          "CHORD": 137.56
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "キャトられ♥恋はモ~モク",
-        "type": "A",
-        "notes": 1988,
-        "radar": {
-          "NOTES": 142.43,
-          "PEAK": 139.47,
-          "SCRATCH": 86.12,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 135.58
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "ピアノ協奏曲第1番\"蠍火\"",
-        "type": "A",
-        "notes": 1414,
-        "radar": {
-          "NOTES": 107.58,
-          "PEAK": 142.1,
-          "SCRATCH": 49.89,
-          "SOFLAN": 160.09,
-          "CHARGE": 0,
-          "CHORD": 106.72
-        },
-        "radarTop": "SOFLAN"
       }
     ]
   },
-  "version": "20260330082607-a9656bdfd7a6"
+  "version": "20260330093910-38faf729519b"
 }
