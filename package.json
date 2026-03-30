@@ -1,0 +1,16 @@
+{
+  "name": "infinitas-table-maker-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Standalone web project for INFINITAS Table Maker",
+  "scripts": {
+    "config:runtime": "node ./scripts/generate-runtime-config.mjs",
+    "snapshot:seed": "node ./scripts/build-chart-metadata-seed.mjs && node ./scripts/build-app-snapshot.mjs --source seed",
+    "seed:supabase": "node ./scripts/push-chart-metadata-seed.mjs",
+    "snapshot:supabase": "node ./scripts/build-app-snapshot.mjs --source supabase",
+    "build": "npm run snapshot:seed && npm run config:runtime",
+    "start": "npm run build && node server.js",
+    "dev": "npm run build && node server.js"
+  }
+}
