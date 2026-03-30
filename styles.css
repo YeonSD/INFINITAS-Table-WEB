@@ -77,6 +77,7 @@ select {
 }
 
 .brand-wrap {
+  flex: 1 1 auto;
   min-width: 0;
 }
 
@@ -168,7 +169,8 @@ select {
   align-items: center;
   justify-content: flex-end;
   min-width: 0;
-  flex: 1 1 auto;
+  flex: 0 1 auto;
+  margin-left: auto;
 }
 
 #accountSelect {
@@ -626,6 +628,7 @@ button.danger {
 }
 
 .account-hero-meta {
+  flex: 1 1 260px;
   min-width: 0;
 }
 
@@ -689,9 +692,11 @@ button.danger {
 
 .account-medals {
   margin-left: auto;
+  flex: 0 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 96px);
   gap: 10px;
+  justify-content: end;
 }
 
 .account-radar-empty {
@@ -5354,7 +5359,7 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
   .account-medals {
     grid-template-columns: repeat(3, 84px);
     gap: 8px;
-    margin-left: 0;
+    margin-left: auto;
   }
 
   .medal-slot {
@@ -5364,6 +5369,29 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
   .medal-image {
     width: 62px;
     height: 62px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+  .top-header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .header-actions {
+    width: auto;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+
+  .account-hero {
+    gap: 12px;
+  }
+
+  .account-medals {
+    margin-left: auto;
+    justify-content: end;
   }
 }
 
