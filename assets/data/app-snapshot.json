@@ -1,5 +1,5 @@
 {
-  "publishedAt": "2026-03-30T06:30:40.620Z",
+  "publishedAt": "2026-03-30T08:26:07.504Z",
   "rankTables": {
     "SP10H": {
       "tableinfo": {
@@ -711,25 +711,6 @@
                   "CHORD": 128.69
                 },
                 "radarTop": "CHORD"
-              }
-            },
-            {
-              "data": {
-                "title": "旋律のドグマ~Misérables~",
-                "type": "H",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1271,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 89.8,
-                  "PEAK": 75.71,
-                  "SCRATCH": 26.76,
-                  "SOFLAN": 0,
-                  "CHARGE": 1.87,
-                  "CHORD": 75.99
-                },
-                "radarTop": "NOTES"
               }
             },
             {
@@ -2406,25 +2387,6 @@
             },
             {
               "data": {
-                "title": "CaptivAte~裁き~(SUBLIME TECHNO MIX)",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1231,
-                "typeInfo": "CHORD",
-                "radar": {
-                  "NOTES": 90.51,
-                  "PEAK": 92.85,
-                  "SCRATCH": 49.28,
-                  "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 100.99
-                },
-                "radarTop": "CHORD"
-              }
-            },
-            {
-              "data": {
                 "title": "Carmina",
                 "type": "H",
                 "implicitType": false,
@@ -2881,7 +2843,7 @@
             },
             {
               "data": {
-                "title": "Dans la nuit de l'eternite",
+                "title": "Dans la nuit de l'éternité",
                 "type": "H",
                 "implicitType": false,
                 "bpm": "",
@@ -6149,25 +6111,6 @@
             },
             {
               "data": {
-                "title": "Raison d'être~交差する宿命~",
-                "type": "H",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1184,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 89.36,
-                  "PEAK": 82.85,
-                  "SCRATCH": 31.34,
-                  "SOFLAN": 5.55,
-                  "CHARGE": 0,
-                  "CHORD": 38.92
-                },
-                "radarTop": "NOTES"
-              }
-            },
-            {
-              "data": {
                 "title": "Rampage",
                 "type": "H",
                 "implicitType": false,
@@ -8676,25 +8619,6 @@
             },
             {
               "data": {
-                "title": "クルクル☆ラブ~Opioid Peptide MIX~",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1144,
-                "typeInfo": "PEAK",
-                "radar": {
-                  "NOTES": 90.05,
-                  "PEAK": 113.15,
-                  "SCRATCH": 18.92,
-                  "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 68
-                },
-                "radarTop": "PEAK"
-              }
-            },
-            {
-              "data": {
                 "title": "ここからよろしく大作戦143",
                 "type": "A",
                 "implicitType": false,
@@ -9227,6 +9151,25 @@
                   "SOFLAN": 0,
                   "CHARGE": 0,
                   "CHORD": 71.96
+                },
+                "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
+                "title": "旋律のドグマ ～Misérables～",
+                "type": "H",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 1271,
+                "typeInfo": "NOTES",
+                "radar": {
+                  "NOTES": 89.8,
+                  "PEAK": 75.71,
+                  "SCRATCH": 26.76,
+                  "SOFLAN": 0,
+                  "CHARGE": 1.87,
+                  "CHORD": 75.99
                 },
                 "radarTop": "NOTES"
               }
@@ -13728,6 +13671,25 @@
             },
             {
               "data": {
+                "title": "CaptivAte～裁き～ (SUBLIME TECHNO MIX)",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 1231,
+                "typeInfo": "CHORD",
+                "radar": {
+                  "NOTES": 90.51,
+                  "PEAK": 92.85,
+                  "SCRATCH": 49.28,
+                  "SOFLAN": 0,
+                  "CHARGE": 0,
+                  "CHORD": 100.99
+                },
+                "radarTop": "CHORD"
+              }
+            },
+            {
+              "data": {
                 "title": "concon",
                 "type": "A",
                 "implicitType": false,
@@ -14180,6 +14142,25 @@
                   "CHORD": 53.38
                 },
                 "radarTop": "PEAK"
+              }
+            },
+            {
+              "data": {
+                "title": "Raison d'être ～交差する宿命～",
+                "type": "H",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 1184,
+                "typeInfo": "NOTES",
+                "radar": {
+                  "NOTES": 89.36,
+                  "PEAK": 82.85,
+                  "SCRATCH": 31.34,
+                  "SOFLAN": 5.55,
+                  "CHARGE": 0,
+                  "CHORD": 38.92
+                },
+                "radarTop": "NOTES"
               }
             },
             {
@@ -16685,6 +16666,25 @@
                   "SOFLAN": 0,
                   "CHARGE": 0,
                   "CHORD": 42.12
+                },
+                "radarTop": "PEAK"
+              }
+            },
+            {
+              "data": {
+                "title": "クルクル☆ラブ ～Opioid Peptide MIX～",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 1144,
+                "typeInfo": "PEAK",
+                "radar": {
+                  "NOTES": 90.05,
+                  "PEAK": 113.15,
+                  "SCRATCH": 18.92,
+                  "SOFLAN": 0,
+                  "CHARGE": 0,
+                  "CHORD": 68
                 },
                 "radarTop": "PEAK"
               }
@@ -22895,6 +22895,25 @@
             },
             {
               "data": {
+                "title": "Ubertreffen",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "174",
+                "atwikiNotes": 1280,
+                "typeInfo": "NOTES",
+                "radar": {
+                  "NOTES": 124.63,
+                  "PEAK": 113.15,
+                  "SCRATCH": 40.43,
+                  "SOFLAN": 0,
+                  "CHARGE": 0,
+                  "CHORD": 78.45
+                },
+                "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
                 "title": "UNITE THE HEART",
                 "type": "A",
                 "implicitType": false,
@@ -25275,6 +25294,25 @@
             },
             {
               "data": {
+                "title": "Amor De Verao",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "138",
+                "atwikiNotes": 1193,
+                "typeInfo": "NOTES",
+                "radar": {
+                  "NOTES": 98.17,
+                  "PEAK": 94.28,
+                  "SCRATCH": 58.15,
+                  "SOFLAN": 0,
+                  "CHARGE": 0,
+                  "CHORD": 92.81
+                },
+                "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
                 "title": "AMRITA -不滅ノ花-",
                 "type": "A",
                 "implicitType": false,
@@ -25708,6 +25746,25 @@
                   "CHORD": 118.82
                 },
                 "radarTop": "CHORD"
+              }
+            },
+            {
+              "data": {
+                "title": "Raison d'etre～交差する宿命～",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "155-175(155)",
+                "atwikiNotes": 1389,
+                "typeInfo": "NOTES",
+                "radar": {
+                  "NOTES": 104.84,
+                  "PEAK": 82.85,
+                  "SCRATCH": 56.09,
+                  "SOFLAN": 15.93,
+                  "CHARGE": 0,
+                  "CHORD": 67.69
+                },
+                "radarTop": "NOTES"
               }
             },
             {
@@ -28383,25 +28440,6 @@
             },
             {
               "data": {
-                "title": "Amor De Verão",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1193,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 98.17,
-                  "PEAK": 94.28,
-                  "SCRATCH": 58.15,
-                  "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 92.81
-                },
-                "radarTop": "NOTES"
-              }
-            },
-            {
-              "data": {
                 "title": "CARNIVOROUS",
                 "type": "A",
                 "implicitType": false,
@@ -28478,25 +28516,6 @@
             },
             {
               "data": {
-                "title": "Raison d'être~交差する宿命~",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1389,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 104.84,
-                  "PEAK": 82.85,
-                  "SCRATCH": 56.09,
-                  "SOFLAN": 15.93,
-                  "CHARGE": 0,
-                  "CHORD": 67.69
-                },
-                "radarTop": "NOTES"
-              }
-            },
-            {
-              "data": {
                 "title": "Raspberry Potion (feat.あれたん? & ぎゃるのしん☆)",
                 "type": "A",
                 "implicitType": false,
@@ -28569,25 +28588,6 @@
                   "CHORD": 132.24
                 },
                 "radarTop": "CHORD"
-              }
-            },
-            {
-              "data": {
-                "title": "Übertreffen",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1280,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 124.63,
-                  "PEAK": 113.15,
-                  "SCRATCH": 40.43,
-                  "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 78.45
-                },
-                "radarTop": "NOTES"
               }
             },
             {
@@ -29665,7 +29665,7 @@
                 "title": "Ignis†Iræ",
                 "type": "A",
                 "implicitType": false,
-                "bpm": "",
+                "bpm": "188-191(191)",
                 "atwikiNotes": 1970,
                 "typeInfo": "CHARGE",
                 "radar": {
@@ -31852,6 +31852,25 @@
             },
             {
               "data": {
+                "title": "Macho Monky",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "150",
+                "atwikiNotes": 1588,
+                "typeInfo": "PEAK",
+                "radar": {
+                  "NOTES": 127.19,
+                  "PEAK": 136.84,
+                  "SCRATCH": 125.4,
+                  "SOFLAN": 0,
+                  "CHARGE": 2.34,
+                  "CHORD": 133.6
+                },
+                "radarTop": "PEAK"
+              }
+            },
+            {
+              "data": {
                 "title": "MENDES",
                 "type": "A",
                 "implicitType": false,
@@ -33285,6 +33304,25 @@
                   "CHORD": 135.52
                 },
                 "radarTop": "PEAK"
+              }
+            },
+            {
+              "data": {
+                "title": "Ubertreffen",
+                "type": "L",
+                "implicitType": false,
+                "bpm": "174",
+                "atwikiNotes": 1655,
+                "typeInfo": "NOTES",
+                "radar": {
+                  "NOTES": 164.24,
+                  "PEAK": 143.42,
+                  "SCRATCH": 41.28,
+                  "SOFLAN": 0,
+                  "CHARGE": 0,
+                  "CHORD": 133.32
+                },
+                "radarTop": "NOTES"
               }
             },
             {
@@ -35156,6 +35194,25 @@
             },
             {
               "data": {
+                "title": "旋律のドグマ～Miserables～",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "192",
+                "atwikiNotes": 2002,
+                "typeInfo": "NOTES",
+                "radar": {
+                  "NOTES": 141.45,
+                  "PEAK": 122.36,
+                  "SCRATCH": 35,
+                  "SOFLAN": 0,
+                  "CHARGE": 1.87,
+                  "CHORD": 130.13
+                },
+                "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
                 "title": "紫陽花 -AZISAI-",
                 "type": "A",
                 "implicitType": false,
@@ -35302,6 +35359,25 @@
                   "SOFLAN": 0,
                   "CHARGE": 0,
                   "CHORD": 109.71
+                },
+                "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
+                "title": "ACTØ",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 1534,
+                "typeInfo": "NOTES",
+                "radar": {
+                  "NOTES": 122.02,
+                  "PEAK": 115.78,
+                  "SCRATCH": 58.53,
+                  "SOFLAN": 0,
+                  "CHARGE": 3.12,
+                  "CHORD": 118.8
                 },
                 "radarTop": "NOTES"
               }
@@ -35929,6 +36005,25 @@
                   "SOFLAN": 0.13,
                   "CHARGE": 0.55,
                   "CHORD": 0.19
+                },
+                "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
+                "title": "Ou Legends",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "191",
+                "atwikiNotes": 1687,
+                "typeInfo": "NOTES",
+                "radar": {
+                  "NOTES": 137.1,
+                  "PEAK": 119.73,
+                  "SCRATCH": 48.55,
+                  "SOFLAN": 0,
+                  "CHARGE": 136.05,
+                  "CHORD": 120.22
                 },
                 "radarTop": "NOTES"
               }
@@ -36929,6 +37024,25 @@
                   "SOFLAN": 0,
                   "CHARGE": 0,
                   "CHORD": 112.42
+                },
+                "radarTop": "PEAK"
+              }
+            },
+            {
+              "data": {
+                "title": "Parvati",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "205",
+                "atwikiNotes": 1467,
+                "typeInfo": "PEAK",
+                "radar": {
+                  "NOTES": 119.27,
+                  "PEAK": 119.73,
+                  "SCRATCH": 52.12,
+                  "SOFLAN": 0,
+                  "CHARGE": 0,
+                  "CHORD": 100.73
                 },
                 "radarTop": "PEAK"
               }
@@ -38390,6 +38504,44 @@
             },
             {
               "data": {
+                "title": "CaptivAte2 ~覚醒~",
+                "type": "L",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 1543,
+                "typeInfo": "PEAK",
+                "radar": {
+                  "NOTES": 134.51,
+                  "PEAK": 139.47,
+                  "SCRATCH": 43.19,
+                  "SOFLAN": 0,
+                  "CHARGE": 0,
+                  "CHORD": 130.18
+                },
+                "radarTop": "PEAK"
+              }
+            },
+            {
+              "data": {
+                "title": "Chronoxia",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 1665,
+                "typeInfo": "NOTES",
+                "radar": {
+                  "NOTES": 140.72,
+                  "PEAK": 115.78,
+                  "SCRATCH": 26.47,
+                  "SOFLAN": 0,
+                  "CHARGE": 106.81,
+                  "CHORD": 127.83
+                },
+                "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
                 "title": "concon",
                 "type": "L",
                 "implicitType": false,
@@ -38481,6 +38633,25 @@
                   "CHORD": 125.29
                 },
                 "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
+                "title": "If",
+                "type": "L",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 1254,
+                "typeInfo": "PEAK",
+                "radar": {
+                  "NOTES": 113.09,
+                  "PEAK": 136.84,
+                  "SCRATCH": 44.02,
+                  "SOFLAN": 0,
+                  "CHARGE": 0,
+                  "CHORD": 115.4
+                },
+                "radarTop": "PEAK"
               }
             },
             {
@@ -38595,6 +38766,25 @@
                   "CHORD": 143.45
                 },
                 "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
+                "title": "Reflux",
+                "type": "L",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 1660,
+                "typeInfo": "SCRATCH",
+                "radar": {
+                  "NOTES": 133.83,
+                  "PEAK": 132.89,
+                  "SCRATCH": 171.95,
+                  "SOFLAN": 0,
+                  "CHARGE": 165.55,
+                  "CHORD": 126.02
+                },
+                "radarTop": "SCRATCH"
               }
             },
             {
@@ -38846,6 +39036,25 @@
             },
             {
               "data": {
+                "title": "ポチコの幸せな日常",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "",
+                "atwikiNotes": 1577,
+                "typeInfo": "NOTES",
+                "radar": {
+                  "NOTES": 128.83,
+                  "PEAK": 122.36,
+                  "SCRATCH": 31.54,
+                  "SOFLAN": 0,
+                  "CHARGE": 0,
+                  "CHORD": 121.7
+                },
+                "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
                 "title": "ユミル",
                 "type": "L",
                 "implicitType": false,
@@ -38909,25 +39118,6 @@
             },
             {
               "data": {
-                "title": "旋律のドグマ~Misérables~",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 2002,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 141.45,
-                  "PEAK": 122.36,
-                  "SCRATCH": 35,
-                  "SOFLAN": 0,
-                  "CHARGE": 1.87,
-                  "CHORD": 130.13
-                },
-                "radarTop": "NOTES"
-              }
-            },
-            {
-              "data": {
                 "title": "表裏一体!?怪盗いいんちょの悩み♥",
                 "type": "A",
                 "implicitType": false,
@@ -38966,63 +39156,6 @@
             },
             {
               "data": {
-                "title": "ACTØ",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1534,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 122.02,
-                  "PEAK": 115.78,
-                  "SCRATCH": 58.53,
-                  "SOFLAN": 0,
-                  "CHARGE": 3.12,
-                  "CHORD": 118.8
-                },
-                "radarTop": "NOTES"
-              }
-            },
-            {
-              "data": {
-                "title": "CaptivAte2~覚醒~",
-                "type": "L",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1543,
-                "typeInfo": "PEAK",
-                "radar": {
-                  "NOTES": 134.51,
-                  "PEAK": 139.47,
-                  "SCRATCH": 43.19,
-                  "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 130.18
-                },
-                "radarTop": "PEAK"
-              }
-            },
-            {
-              "data": {
-                "title": "Chronoxia",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1665,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 140.72,
-                  "PEAK": 115.78,
-                  "SCRATCH": 26.47,
-                  "SOFLAN": 0,
-                  "CHARGE": 106.81,
-                  "CHORD": 127.83
-                },
-                "radarTop": "NOTES"
-              }
-            },
-            {
-              "data": {
                 "title": "Hollywood Galaxy(DJ NAGAI Remix)",
                 "type": "A",
                 "implicitType": false,
@@ -39036,120 +39169,6 @@
                   "SOFLAN": 0,
                   "CHARGE": 11.87,
                   "CHORD": 137.56
-                },
-                "radarTop": "NOTES"
-              }
-            },
-            {
-              "data": {
-                "title": "If",
-                "type": "L",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1254,
-                "typeInfo": "PEAK",
-                "radar": {
-                  "NOTES": 113.09,
-                  "PEAK": 136.84,
-                  "SCRATCH": 44.02,
-                  "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 115.4
-                },
-                "radarTop": "PEAK"
-              }
-            },
-            {
-              "data": {
-                "title": "Mächö Mönky",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1588,
-                "typeInfo": "PEAK",
-                "radar": {
-                  "NOTES": 127.19,
-                  "PEAK": 136.84,
-                  "SCRATCH": 125.4,
-                  "SOFLAN": 0,
-                  "CHARGE": 2.34,
-                  "CHORD": 133.6
-                },
-                "radarTop": "PEAK"
-              }
-            },
-            {
-              "data": {
-                "title": "Ōu Legends",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1687,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 137.1,
-                  "PEAK": 119.73,
-                  "SCRATCH": 48.55,
-                  "SOFLAN": 0,
-                  "CHARGE": 136.05,
-                  "CHORD": 120.22
-                },
-                "radarTop": "NOTES"
-              }
-            },
-            {
-              "data": {
-                "title": "Pārvatī",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1467,
-                "typeInfo": "PEAK",
-                "radar": {
-                  "NOTES": 119.27,
-                  "PEAK": 119.73,
-                  "SCRATCH": 52.12,
-                  "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 100.73
-                },
-                "radarTop": "PEAK"
-              }
-            },
-            {
-              "data": {
-                "title": "Reflux",
-                "type": "L",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1660,
-                "typeInfo": "SCRATCH",
-                "radar": {
-                  "NOTES": 133.83,
-                  "PEAK": 132.89,
-                  "SCRATCH": 171.95,
-                  "SOFLAN": 0,
-                  "CHARGE": 165.55,
-                  "CHORD": 126.02
-                },
-                "radarTop": "SCRATCH"
-              }
-            },
-            {
-              "data": {
-                "title": "Übertreffen",
-                "type": "L",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1655,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 164.24,
-                  "PEAK": 143.42,
-                  "SCRATCH": 41.28,
-                  "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 133.32
                 },
                 "radarTop": "NOTES"
               }
@@ -39190,25 +39209,6 @@
                   "CHORD": 106.72
                 },
                 "radarTop": "SOFLAN"
-              }
-            },
-            {
-              "data": {
-                "title": "ポチコの幸せな日常",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1577,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 128.83,
-                  "PEAK": 122.36,
-                  "SCRATCH": 31.54,
-                  "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 121.7
-                },
-                "radarTop": "NOTES"
               }
             }
           ]
@@ -41051,6 +41051,20 @@
           "CHORD": 105.74
         },
         "radarTop": "CHORD"
+      },
+      {
+        "title": "Dans la nuit de l'éternité",
+        "type": "H",
+        "notes": 1153,
+        "radar": {
+          "NOTES": 89.78,
+          "PEAK": 92.85,
+          "SCRATCH": 51.06,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 85.38
+        },
+        "radarTop": "PEAK"
       },
       {
         "title": "dAuntl3ss",
@@ -45211,6 +45225,20 @@
         "radarTop": "NOTES"
       },
       {
+        "title": "旋律のドグマ ～Misérables～",
+        "type": "H",
+        "notes": 1271,
+        "radar": {
+          "NOTES": 89.8,
+          "PEAK": 75.71,
+          "SCRATCH": 26.76,
+          "SOFLAN": 0,
+          "CHARGE": 1.87,
+          "CHORD": 75.99
+        },
+        "radarTop": "NOTES"
+      },
+      {
         "title": "Answer",
         "type": "A",
         "notes": 1224,
@@ -48501,6 +48529,20 @@
         "radarTop": "NOTES"
       },
       {
+        "title": "CaptivAte～裁き～ (SUBLIME TECHNO MIX)",
+        "type": "A",
+        "notes": 1231,
+        "radar": {
+          "NOTES": 90.51,
+          "PEAK": 92.85,
+          "SCRATCH": 49.28,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 100.99
+        },
+        "radarTop": "CHORD"
+      },
+      {
         "title": "concon",
         "type": "A",
         "notes": 1230,
@@ -48835,6 +48877,20 @@
           "CHORD": 53.38
         },
         "radarTop": "PEAK"
+      },
+      {
+        "title": "Raison d'être ～交差する宿命～",
+        "type": "H",
+        "notes": 1184,
+        "radar": {
+          "NOTES": 89.36,
+          "PEAK": 82.85,
+          "SCRATCH": 31.34,
+          "SOFLAN": 5.55,
+          "CHARGE": 0,
+          "CHORD": 38.92
+        },
+        "radarTop": "NOTES"
       },
       {
         "title": "REMINISCENCE",
@@ -50671,6 +50727,20 @@
         "radarTop": "PEAK"
       },
       {
+        "title": "クルクル☆ラブ ～Opioid Peptide MIX～",
+        "type": "A",
+        "notes": 1144,
+        "radar": {
+          "NOTES": 90.05,
+          "PEAK": 113.15,
+          "SCRATCH": 18.92,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 68
+        },
+        "radarTop": "PEAK"
+      },
+      {
         "title": "ミラージュ･レジデンス",
         "type": "A",
         "notes": 1345,
@@ -50993,20 +51063,6 @@
         "radarTop": "CHORD"
       },
       {
-        "title": "旋律のドグマ~Misérables~",
-        "type": "H",
-        "notes": 1271,
-        "radar": {
-          "NOTES": 89.8,
-          "PEAK": 75.71,
-          "SCRATCH": 26.76,
-          "SOFLAN": 0,
-          "CHARGE": 1.87,
-          "CHORD": 75.99
-        },
-        "radarTop": "NOTES"
-      },
-      {
         "title": "水上の提督 (Short mix from ”幻想水滸伝V”)",
         "type": "A",
         "notes": 1073,
@@ -51119,20 +51175,6 @@
         "radarTop": "CHORD"
       },
       {
-        "title": "CaptivAte~裁き~(SUBLIME TECHNO MIX)",
-        "type": "A",
-        "notes": 1231,
-        "radar": {
-          "NOTES": 90.51,
-          "PEAK": 92.85,
-          "SCRATCH": 49.28,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 100.99
-        },
-        "radarTop": "CHORD"
-      },
-      {
         "title": "Chasing After YOU ~夢の欠片~ ft. 小林マナ",
         "type": "A",
         "notes": 1032,
@@ -51187,20 +51229,6 @@
           "CHORD": 104.57
         },
         "radarTop": "CHORD"
-      },
-      {
-        "title": "Dans la nuit de l'eternite",
-        "type": "H",
-        "notes": 1153,
-        "radar": {
-          "NOTES": 89.78,
-          "PEAK": 92.85,
-          "SCRATCH": 51.06,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 85.38
-        },
-        "radarTop": "PEAK"
       },
       {
         "title": "Dazzlin' Darlin-秋葉工房mix-",
@@ -51427,20 +51455,6 @@
         "radarTop": "SCRATCH"
       },
       {
-        "title": "Raison d'être~交差する宿命~",
-        "type": "H",
-        "notes": 1184,
-        "radar": {
-          "NOTES": 89.36,
-          "PEAK": 82.85,
-          "SCRATCH": 31.34,
-          "SOFLAN": 5.55,
-          "CHARGE": 0,
-          "CHORD": 38.92
-        },
-        "radarTop": "NOTES"
-      },
-      {
         "title": "Roar of Chronos",
         "type": "H",
         "notes": 1120,
@@ -51635,20 +51649,6 @@
           "CHORD": 64.57
         },
         "radarTop": "NOTES"
-      },
-      {
-        "title": "クルクル☆ラブ~Opioid Peptide MIX~",
-        "type": "A",
-        "notes": 1144,
-        "radar": {
-          "NOTES": 90.05,
-          "PEAK": 113.15,
-          "SCRATCH": 18.92,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 68
-        },
-        "radarTop": "PEAK"
       },
       {
         "title": "サヨナラ・ヘヴン-Celtic Chip Dance Mix-",
@@ -55991,6 +55991,20 @@
         "radarTop": "NOTES"
       },
       {
+        "title": "Ubertreffen",
+        "type": "A",
+        "notes": 1280,
+        "radar": {
+          "NOTES": 124.63,
+          "PEAK": 113.15,
+          "SCRATCH": 40.43,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 78.45
+        },
+        "radarTop": "NOTES"
+      },
+      {
         "title": "UNITE THE HEART",
         "type": "A",
         "notes": 1676,
@@ -57727,6 +57741,20 @@
         "radarTop": "PEAK"
       },
       {
+        "title": "Amor De Verao",
+        "type": "A",
+        "notes": 1193,
+        "radar": {
+          "NOTES": 98.17,
+          "PEAK": 94.28,
+          "SCRATCH": 58.15,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 92.81
+        },
+        "radarTop": "NOTES"
+      },
+      {
         "title": "AMRITA -不滅ノ花-",
         "type": "A",
         "notes": 1398,
@@ -58047,6 +58075,20 @@
           "CHORD": 118.82
         },
         "radarTop": "CHORD"
+      },
+      {
+        "title": "Raison d'etre～交差する宿命～",
+        "type": "A",
+        "notes": 1389,
+        "radar": {
+          "NOTES": 104.84,
+          "PEAK": 82.85,
+          "SCRATCH": 56.09,
+          "SOFLAN": 15.93,
+          "CHARGE": 0,
+          "CHORD": 67.69
+        },
+        "radarTop": "NOTES"
       },
       {
         "title": "refractive index",
@@ -59463,20 +59505,6 @@
         "radarTop": "PEAK"
       },
       {
-        "title": "Amor De Verão",
-        "type": "A",
-        "notes": 1193,
-        "radar": {
-          "NOTES": 98.17,
-          "PEAK": 94.28,
-          "SCRATCH": 58.15,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 92.81
-        },
-        "radarTop": "NOTES"
-      },
-      {
         "title": "Bang-Boo Bumble",
         "type": "A",
         "notes": 1479,
@@ -59855,20 +59883,6 @@
         "radarTop": "NOTES"
       },
       {
-        "title": "Raison d'être~交差する宿命~",
-        "type": "A",
-        "notes": 1389,
-        "radar": {
-          "NOTES": 104.84,
-          "PEAK": 82.85,
-          "SCRATCH": 56.09,
-          "SOFLAN": 15.93,
-          "CHARGE": 0,
-          "CHORD": 67.69
-        },
-        "radarTop": "NOTES"
-      },
-      {
         "title": "Raspberry Potion (feat.あれたん? & ぎゃるのしん☆)",
         "type": "A",
         "notes": 1267,
@@ -60077,20 +60091,6 @@
           "CHORD": 132.24
         },
         "radarTop": "CHORD"
-      },
-      {
-        "title": "Übertreffen",
-        "type": "A",
-        "notes": 1280,
-        "radar": {
-          "NOTES": 124.63,
-          "PEAK": 113.15,
-          "SCRATCH": 40.43,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 78.45
-        },
-        "radarTop": "NOTES"
       },
       {
         "title": "winkle 2 winkle",
@@ -62515,6 +62515,20 @@
         "radarTop": "PEAK"
       },
       {
+        "title": "Macho Monky",
+        "type": "A",
+        "notes": 1588,
+        "radar": {
+          "NOTES": 127.19,
+          "PEAK": 136.84,
+          "SCRATCH": 125.4,
+          "SOFLAN": 0,
+          "CHARGE": 2.34,
+          "CHORD": 133.6
+        },
+        "radarTop": "PEAK"
+      },
+      {
         "title": "MENDES",
         "type": "A",
         "notes": 1831,
@@ -63563,6 +63577,20 @@
           "CHORD": 135.52
         },
         "radarTop": "PEAK"
+      },
+      {
+        "title": "Ubertreffen",
+        "type": "L",
+        "notes": 1655,
+        "radar": {
+          "NOTES": 164.24,
+          "PEAK": 143.42,
+          "SCRATCH": 41.28,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 133.32
+        },
+        "radarTop": "NOTES"
       },
       {
         "title": "Vermilion Carol",
@@ -64923,6 +64951,20 @@
         "radarTop": "NOTES"
       },
       {
+        "title": "旋律のドグマ～Miserables～",
+        "type": "A",
+        "notes": 2002,
+        "radar": {
+          "NOTES": 141.45,
+          "PEAK": 122.36,
+          "SCRATCH": 35,
+          "SOFLAN": 0,
+          "CHARGE": 1.87,
+          "CHORD": 130.13
+        },
+        "radarTop": "NOTES"
+      },
+      {
         "title": "紫陽花 -AZISAI-",
         "type": "A",
         "notes": 1490,
@@ -65031,6 +65073,20 @@
           "SOFLAN": 0,
           "CHARGE": 0,
           "CHORD": 109.71
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "ACTØ",
+        "type": "A",
+        "notes": 1534,
+        "radar": {
+          "NOTES": 122.02,
+          "PEAK": 115.78,
+          "SCRATCH": 58.53,
+          "SOFLAN": 0,
+          "CHARGE": 3.12,
+          "CHORD": 118.8
         },
         "radarTop": "NOTES"
       },
@@ -65493,6 +65549,20 @@
           "SOFLAN": 0.13,
           "CHARGE": 0.55,
           "CHORD": 0.19
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "Ou Legends",
+        "type": "A",
+        "notes": 1687,
+        "radar": {
+          "NOTES": 137.1,
+          "PEAK": 119.73,
+          "SCRATCH": 48.55,
+          "SOFLAN": 0,
+          "CHARGE": 136.05,
+          "CHORD": 120.22
         },
         "radarTop": "NOTES"
       },
@@ -66221,6 +66291,20 @@
           "SOFLAN": 0,
           "CHARGE": 0,
           "CHORD": 112.42
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "Parvati",
+        "type": "A",
+        "notes": 1467,
+        "radar": {
+          "NOTES": 119.27,
+          "PEAK": 119.73,
+          "SCRATCH": 52.12,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 100.73
         },
         "radarTop": "PEAK"
       },
@@ -67275,6 +67359,34 @@
         "radarTop": "SCRATCH"
       },
       {
+        "title": "CaptivAte2 ~覚醒~",
+        "type": "L",
+        "notes": 1543,
+        "radar": {
+          "NOTES": 134.51,
+          "PEAK": 139.47,
+          "SCRATCH": 43.19,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 130.18
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "Chronoxia",
+        "type": "A",
+        "notes": 1665,
+        "radar": {
+          "NOTES": 140.72,
+          "PEAK": 115.78,
+          "SCRATCH": 26.47,
+          "SOFLAN": 0,
+          "CHARGE": 106.81,
+          "CHORD": 127.83
+        },
+        "radarTop": "NOTES"
+      },
+      {
         "title": "concon",
         "type": "L",
         "notes": 1835,
@@ -67343,6 +67455,20 @@
           "CHORD": 125.29
         },
         "radarTop": "NOTES"
+      },
+      {
+        "title": "If",
+        "type": "L",
+        "notes": 1254,
+        "radar": {
+          "NOTES": 113.09,
+          "PEAK": 136.84,
+          "SCRATCH": 44.02,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 115.4
+        },
+        "radarTop": "PEAK"
       },
       {
         "title": "INAZUMA",
@@ -67427,6 +67553,20 @@
           "CHORD": 143.45
         },
         "radarTop": "NOTES"
+      },
+      {
+        "title": "Reflux",
+        "type": "L",
+        "notes": 1660,
+        "radar": {
+          "NOTES": 133.83,
+          "PEAK": 132.89,
+          "SCRATCH": 171.95,
+          "SOFLAN": 0,
+          "CHARGE": 165.55,
+          "CHORD": 126.02
+        },
+        "radarTop": "SCRATCH"
       },
       {
         "title": "Remain",
@@ -67611,6 +67751,20 @@
         "radarTop": "NOTES"
       },
       {
+        "title": "ポチコの幸せな日常",
+        "type": "A",
+        "notes": 1577,
+        "radar": {
+          "NOTES": 128.83,
+          "PEAK": 122.36,
+          "SCRATCH": 31.54,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 121.7
+        },
+        "radarTop": "NOTES"
+      },
+      {
         "title": "ユミル",
         "type": "L",
         "notes": 2020,
@@ -67653,20 +67807,6 @@
         "radarTop": "CHORD"
       },
       {
-        "title": "旋律のドグマ~Misérables~",
-        "type": "A",
-        "notes": 2002,
-        "radar": {
-          "NOTES": 141.45,
-          "PEAK": 122.36,
-          "SCRATCH": 35,
-          "SOFLAN": 0,
-          "CHARGE": 1.87,
-          "CHORD": 130.13
-        },
-        "radarTop": "NOTES"
-      },
-      {
         "title": "表裏一体!?怪盗いいんちょの悩み♥",
         "type": "A",
         "notes": 1815,
@@ -67695,48 +67835,6 @@
         "radarTop": "CHORD"
       },
       {
-        "title": "ACTØ",
-        "type": "A",
-        "notes": 1534,
-        "radar": {
-          "NOTES": 122.02,
-          "PEAK": 115.78,
-          "SCRATCH": 58.53,
-          "SOFLAN": 0,
-          "CHARGE": 3.12,
-          "CHORD": 118.8
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "CaptivAte2~覚醒~",
-        "type": "L",
-        "notes": 1543,
-        "radar": {
-          "NOTES": 134.51,
-          "PEAK": 139.47,
-          "SCRATCH": 43.19,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 130.18
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "Chronoxia",
-        "type": "A",
-        "notes": 1665,
-        "radar": {
-          "NOTES": 140.72,
-          "PEAK": 115.78,
-          "SCRATCH": 26.47,
-          "SOFLAN": 0,
-          "CHARGE": 106.81,
-          "CHORD": 127.83
-        },
-        "radarTop": "NOTES"
-      },
-      {
         "title": "Hollywood Galaxy(DJ NAGAI Remix)",
         "type": "A",
         "notes": 1778,
@@ -67747,90 +67845,6 @@
           "SOFLAN": 0,
           "CHARGE": 11.87,
           "CHORD": 137.56
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "If",
-        "type": "L",
-        "notes": 1254,
-        "radar": {
-          "NOTES": 113.09,
-          "PEAK": 136.84,
-          "SCRATCH": 44.02,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 115.4
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "Mächö Mönky",
-        "type": "A",
-        "notes": 1588,
-        "radar": {
-          "NOTES": 127.19,
-          "PEAK": 136.84,
-          "SCRATCH": 125.4,
-          "SOFLAN": 0,
-          "CHARGE": 2.34,
-          "CHORD": 133.6
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "Ōu Legends",
-        "type": "A",
-        "notes": 1687,
-        "radar": {
-          "NOTES": 137.1,
-          "PEAK": 119.73,
-          "SCRATCH": 48.55,
-          "SOFLAN": 0,
-          "CHARGE": 136.05,
-          "CHORD": 120.22
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "Pārvatī",
-        "type": "A",
-        "notes": 1467,
-        "radar": {
-          "NOTES": 119.27,
-          "PEAK": 119.73,
-          "SCRATCH": 52.12,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 100.73
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "Reflux",
-        "type": "L",
-        "notes": 1660,
-        "radar": {
-          "NOTES": 133.83,
-          "PEAK": 132.89,
-          "SCRATCH": 171.95,
-          "SOFLAN": 0,
-          "CHARGE": 165.55,
-          "CHORD": 126.02
-        },
-        "radarTop": "SCRATCH"
-      },
-      {
-        "title": "Übertreffen",
-        "type": "L",
-        "notes": 1655,
-        "radar": {
-          "NOTES": 164.24,
-          "PEAK": 143.42,
-          "SCRATCH": 41.28,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 133.32
         },
         "radarTop": "NOTES"
       },
@@ -67861,22 +67875,8 @@
           "CHORD": 106.72
         },
         "radarTop": "SOFLAN"
-      },
-      {
-        "title": "ポチコの幸せな日常",
-        "type": "A",
-        "notes": 1577,
-        "radar": {
-          "NOTES": 128.83,
-          "PEAK": 122.36,
-          "SCRATCH": 31.54,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 121.7
-        },
-        "radarTop": "NOTES"
       }
     ]
   },
-  "version": "20260330063040-e5cb2a6169c3"
+  "version": "20260330082607-a9656bdfd7a6"
 }

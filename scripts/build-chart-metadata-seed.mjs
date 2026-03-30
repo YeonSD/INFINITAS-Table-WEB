@@ -12,15 +12,52 @@ const SOURCE_RADAR_PATH = path.join(SOURCE_DIR, 'song-radar-sp.source.csv');
 const OUTPUT_PATH = path.join(SEED_DIR, 'chart_metadata.seed.json');
 
 const RADAR_AXES = ['NOTES', 'PEAK', 'SCRATCH', 'SOFLAN', 'CHARGE', 'CHORD'];
+const TITLE_CHAR_FOLD_MAP = new Map([
+  ['ø', 'o'],
+  ['Ø', 'o'],
+  ['æ', 'ae'],
+  ['Æ', 'ae'],
+  ['œ', 'oe'],
+  ['Œ', 'oe'],
+  ['ß', 'ss'],
+  ['ð', 'd'],
+  ['Ð', 'd'],
+  ['đ', 'd'],
+  ['Đ', 'd'],
+  ['ł', 'l'],
+  ['Ł', 'l'],
+  ['þ', 'th'],
+  ['Þ', 'th']
+]);
 
 function titleKey(value) {
-  return String(value || '')
+  const normalized = String(value || '')
     .normalize('NFKC')
     .toLowerCase()
-    .replace(/[’`]/gu, "'")
+    .replace(/[\u2018\u2019\u0060\u00b4]/gu, "'")
+    .replace(/[\u301c\uff5e]/gu, '~')
+    .replace(/\s*~\s*/gu, '~')
+    .normalize('NFKD')
+    .replace(/\p{Diacritic}/gu, '')
+    .replace(/\u00a0/gu, ' ');
+  return [...normalized]
+    .map((ch) => TITLE_CHAR_FOLD_MAP.get(ch) || ch)
+    .join('')
     .replace(/\s+/gu, ' ')
     .trim();
 }
+
+function chartKey(tableKey, title, type) {
+  return `${tableKey}|${titleKey(title)}|${type}`;
+}
+
+const MANUAL_CATEGORY_OVERRIDES = new Map([
+  [chartKey('SP12H', 'Chronoxia', 'A'), { category: 'INFINITAS 전용곡', source_sort_index: 20, classification_status: 'classified' }],
+  [chartKey('SP12H', 'ポチコの幸せな日常', 'A'), { category: 'INFINITAS 전용곡', source_sort_index: 20, classification_status: 'classified' }],
+  [chartKey('SP12H', 'If', 'L'), { category: 'INFINITAS 전용곡', source_sort_index: 20, classification_status: 'classified' }],
+  [chartKey('SP12H', 'Reflux', 'L'), { category: 'INFINITAS 전용곡', source_sort_index: 20, classification_status: 'classified' }],
+  [chartKey('SP12H', 'ACTØ', 'A'), { category: '지력C', source_sort_index: 13, classification_status: 'classified' }]
+]);
 
 function parseCsvLine(line) {
   const out = [];
@@ -121,7 +158,7 @@ function buildRadarRowsFromCsv(csvText) {
       CHORD: toRadarScale100(raw.radar_chord)
     };
     rows.push({
-      chart_key: `${tableKey}|${titleKey(title)}|${type}`,
+      chart_key: chartKey(tableKey, title, type),
       table_key: tableKey,
       table_title: `IIDX INFINITAS SP ☆${level} Hard Gauge Rank`,
       level,
@@ -158,39 +195,50 @@ function overlayRankTables(rows, rankTablesPayload) {
         const title = String(data.title || '').trim();
         const type = String(data.type || '').trim().toUpperCase();
         if (!title || !['H', 'A', 'L'].includes(type)) return;
-        const chartKey = `${tableKey}|${titleKey(title)}|${type}`;
-        const existing = rowMap.get(chartKey);
+        const key = chartKey(tableKey, title, type);
+        const existing = rowMap.get(key);
         if (!existing) return;
         const radar = data.radar || {};
-        const next = {
-          chart_key: chartKey,
+        rowMap.set(key, {
+          chart_key: key,
           table_key: tableKey,
-          table_title: table?.tableinfo?.title || existing?.table_title || tableKey,
-          level: Number(/^SP(\d+)H$/i.exec(tableKey)?.[1] || existing?.level || 0),
+          table_title: table?.tableinfo?.title || existing.table_title || tableKey,
+          level: Number(/^SP(\d+)H$/i.exec(tableKey)?.[1] || existing.level || 0),
           song_title: title,
           normalized_title: titleKey(title),
           chart_type: type,
           category: String(category.category || '').trim() || '미분류',
-          source_sort_index: Number(category.sortindex || existing?.source_sort_index || 999),
+          source_sort_index: Number(category.sortindex || existing.source_sort_index || 999),
           classification_status: inferClassificationStatus(category.category),
-          bpm: String(data.bpm || existing?.bpm || ''),
-          note_count: Number(data.atwikiNotes || data.notes || existing?.note_count || 0),
-          type_info: String(data.typeInfo || existing?.type_info || dominantAxis(radar)),
-          radar_notes: Number(radar.NOTES || existing?.radar_notes || 0),
-          radar_peak: Number(radar.PEAK || existing?.radar_peak || 0),
-          radar_scratch: Number(radar.SCRATCH || existing?.radar_scratch || 0),
-          radar_soflan: Number(radar.SOFLAN || existing?.radar_soflan || 0),
-          radar_charge: Number(radar.CHARGE || existing?.radar_charge || 0),
-          radar_chord: Number(radar.CHORD || existing?.radar_chord || 0),
-          radar_top: String(data.radarTop || existing?.radar_top || dominantAxis(radar)),
+          bpm: String(data.bpm || existing.bpm || ''),
+          note_count: Number(data.atwikiNotes || data.notes || existing.note_count || 0),
+          type_info: String(data.typeInfo || existing.type_info || dominantAxis(radar)),
+          radar_notes: Number(radar.NOTES || existing.radar_notes || 0),
+          radar_peak: Number(radar.PEAK || existing.radar_peak || 0),
+          radar_scratch: Number(radar.SCRATCH || existing.radar_scratch || 0),
+          radar_soflan: Number(radar.SOFLAN || existing.radar_soflan || 0),
+          radar_charge: Number(radar.CHARGE || existing.radar_charge || 0),
+          radar_chord: Number(radar.CHORD || existing.radar_chord || 0),
+          radar_top: String(data.radarTop || existing.radar_top || dominantAxis(radar)),
           source: 'rankTablesCache.source.json',
           is_deleted: false
-        };
-        rowMap.set(chartKey, next);
+        });
       });
     });
   });
   return [...rowMap.values()];
+}
+
+function applyManualOverrides(rows) {
+  return rows.map((row) => {
+    const override = MANUAL_CATEGORY_OVERRIDES.get(row.chart_key);
+    if (!override) return row;
+    return {
+      ...row,
+      ...override,
+      source: 'manual_chart_metadata_override'
+    };
+  });
 }
 
 function sortRows(rows) {
@@ -211,7 +259,11 @@ if (!fs.existsSync(SOURCE_RANK_PATH) || !fs.existsSync(SOURCE_RADAR_PATH)) {
 
 const rankTablesPayload = JSON.parse(fs.readFileSync(SOURCE_RANK_PATH, 'utf8'));
 const csvText = fs.readFileSync(SOURCE_RADAR_PATH, 'utf8');
-const mergedRows = sortRows(overlayRankTables(buildRadarRowsFromCsv(csvText), rankTablesPayload));
+const mergedRows = sortRows(
+  applyManualOverrides(
+    overlayRankTables(buildRadarRowsFromCsv(csvText), rankTablesPayload)
+  )
+);
 fs.mkdirSync(SEED_DIR, { recursive: true });
 fs.writeFileSync(OUTPUT_PATH, JSON.stringify({
   generatedAt: new Date().toISOString(),
