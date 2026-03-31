@@ -761,9 +761,9 @@ async function validateIconFile(file) {
   return '';
 }
 
-async function fetchJsonOptional(path) {
+async function fetchJsonOptional(path, cacheMode = 'default') {
   try {
-    const response = await fetch(path, { cache: 'default' });
+    const response = await fetch(path, { cache: cacheMode });
     if (!response.ok) return null;
     return await response.json();
   } catch {
@@ -883,16 +883,29 @@ function render() {
 async function loadStaticData(forceRefresh = false) {
   const cachedMeta = !forceRefresh ? readJsonCache(SNAPSHOT_META_CACHE_KEY) : null;
   const cachedSnapshot = !forceRefresh ? readJsonCache(SNAPSHOT_DATA_CACHE_KEY) : null;
-  if (cachedMeta && cachedSnapshot?.rankTables) {
+  const versionMetaUrl = forceRefresh
+    ? `./assets/data/snapshot-version.json?ts=${Date.now()}`
+    : './assets/data/snapshot-version.json';
+  const versionMeta = await fetchJsonOptional(versionMetaUrl, forceRefresh ? 'reload' : 'no-store');
+  const snapshotPath = String(versionMeta?.snapshotPath || cachedMeta?.snapshotPath || './assets/data/app-snapshot.json');
+  const version = String(versionMeta?.version || cachedMeta?.version || 'dev');
+  const canUseCachedSnapshot = !forceRefresh
+    && cachedMeta
+    && cachedSnapshot?.rankTables
+    && String(cachedMeta.version || '') === version
+    && String(cachedMeta.snapshotPath || '') === snapshotPath;
+  if (canUseCachedSnapshot) {
     state.rankTables = cachedSnapshot.rankTables || {};
     state.songRadarCatalog = cachedSnapshot.songRadarCatalog || { charts: [] };
     return;
   }
-  const versionMeta = await fetchJsonOptional('./assets/data/snapshot-version.json');
-  const snapshotPath = String(versionMeta?.snapshotPath || './assets/data/app-snapshot.json');
-  const version = String(versionMeta?.version || 'dev');
-  const snapshotRes = await fetch(`${snapshotPath}?v=${encodeURIComponent(version)}`, { cache: 'default' });
+  const snapshotRes = await fetch(`${snapshotPath}?v=${encodeURIComponent(version)}`, { cache: forceRefresh ? 'reload' : 'default' });
   if (!snapshotRes.ok) {
+    if (cachedSnapshot?.rankTables) {
+      state.rankTables = cachedSnapshot.rankTables || {};
+      state.songRadarCatalog = cachedSnapshot.songRadarCatalog || { charts: [] };
+      return;
+    }
     throw new Error(`snapshot load failed: ${snapshotRes.status}`);
   }
   const snapshot = await snapshotRes.json();
