@@ -3,20 +3,12 @@ import {
   emptyProfile,
   buildViews,
   computeRadarProfileFromRows,
+  createEmptyBingoState,
   makeEvents,
   normalizeProfile,
   progressMap
 } from './lib/data.js';
 import { authClient, getInitialSession, loadProfileFromCloud, onAuthStateChange, purgeProfile, refreshSocialOverview, rpc, saveProfileToCloud, signInWithGoogle, signOut as authSignOut } from './lib/auth.js';
-import {
-  boardHasAssignments as hasBingoAssignments,
-  boardIsFull as isBingoBoardFull,
-  boardSignature as getBingoBoardSignature,
-  createEmptyBingoDraft as makeEmptyBingoDraft,
-  createEmptyBingoState as makeEmptyBingoState,
-  normalizeBingoSize as parseBingoSize,
-  normalizeBingoStateShape
-} from './lib/bingo-state.js';
 import { bindUi, renderApp, showPeerRadarDialog, showRadarDialog, showSongPopup } from './lib/ui.js';
 import { createGoalsController } from './lib/goals-controller.js';
 import { createSocialController } from './lib/social-controller.js';
@@ -162,19 +154,25 @@ function cloneJson(value) {
 }
 
 function normalizeBingoSize(sizeRaw) {
-  return parseBingoSize(sizeRaw);
+  const size = Number(sizeRaw || 3);
+  return [3, 4, 5].includes(size) ? size : 3;
 }
 
 function createEmptyBingoDraft(size = 3) {
-  return makeEmptyBingoDraft(size);
+  const normalizedSize = normalizeBingoSize(size);
+  return {
+    size: normalizedSize,
+    cells: Array.from({ length: normalizedSize * normalizedSize }, () => null),
+    updatedAt: ''
+  };
 }
 
 function boardHasAssignments(board) {
-  return hasBingoAssignments(board);
+  return Array.isArray(board?.cells) && board.cells.some(Boolean);
 }
 
 function boardIsFull(board) {
-  return isBingoBoardFull(board);
+  return Array.isArray(board?.cells) && board.cells.length > 0 && board.cells.every(Boolean);
 }
 
 function goalSignature(goal) {
@@ -212,11 +210,25 @@ function normalizeGoalSnapshotForBingo(goal) {
 }
 
 function ensureBingoState(profile = state.profile) {
-  if (!profile) return makeEmptyBingoState();
-  profile.bingoState = normalizeBingoStateShape(profile.bingoState, {
-    normalizeCell: normalizeGoalSnapshotForBingo
-  });
-  return profile.bingoState;
+  if (!profile) return createEmptyBingoState();
+  if (!profile.bingoState || typeof profile.bingoState !== 'object') profile.bingoState = createEmptyBingoState();
+  const bingo = profile.bingoState;
+  if (!bingo.draft || typeof bingo.draft !== 'object') bingo.draft = createEmptyBingoState().draft;
+  if (!Array.isArray(bingo.savedBoards)) bingo.savedBoards = [];
+  bingo.draft.size = normalizeBingoSize(bingo.draft.size);
+  if (!Array.isArray(bingo.draft.cells) || bingo.draft.cells.length !== bingo.draft.size * bingo.draft.size) {
+    bingo.draft = createEmptyBingoDraft(bingo.draft.size);
+  }
+  bingo.savedBoards = bingo.savedBoards.slice(0, 5);
+  bingo.activeBoardId = String(bingo.activeBoardId || '').trim();
+  const activeSavedBoard = bingo.activeBoardId
+    ? bingo.savedBoards.find((board) => String(board?.id || '') === bingo.activeBoardId) || null
+    : null;
+  if (bingo.activeBoardId && !activeSavedBoard) bingo.activeBoardId = '';
+  bingo.published = activeSavedBoard ? cloneJson(activeSavedBoard) : null;
+  if (!Number.isInteger(bingo.selectedCellIndex)) bingo.selectedCellIndex = -1;
+  bingo.selectedGoalId = String(bingo.selectedGoalId || '').trim();
+  return bingo;
 }
 
 function bingoDraftCacheKey(user = state.auth.user) {
@@ -331,7 +343,10 @@ function removeSavedBoard(boardId) {
 }
 
 function boardSignature(board) {
-  return getBingoBoardSignature(board);
+  return JSON.stringify({
+    size: normalizeBingoSize(board?.size),
+    cells: Array.isArray(board?.cells) ? board.cells : []
+  });
 }
 
 function isMirroredSavedBoardDraft(draft, savedBoards = currentSavedBoards()) {
@@ -378,7 +393,7 @@ function syncGoalStoreFromBingoDraft() {
 
 function resetBingoStateLocally(size = 3) {
   if (!state.profile) return;
-  state.profile.bingoState = makeEmptyBingoState(size);
+  state.profile.bingoState = createEmptyBingoState(size);
   clearBingoDraftCache();
   syncGoalStoreFromBingoDraft();
 }
@@ -1889,7 +1904,6 @@ const socialController = createSocialController({
   currentSavedBoards,
   ensureBingoState,
   syncPublishedFromSavedBoards,
-  persistBingoDraftCache,
   saveProfileToCloud,
   buildCompletionNoticeIfNeeded,
   flushCompletionNotice,
@@ -2059,7 +2073,6 @@ bindUi({
     clearAchievedGoals,
     dismissAllFeed,
     dismissFeed,
-    refreshSocial: syncSocial,
     respondFollow,
     respondGoal,
     respondBingo,
@@ -2097,5 +2110,4 @@ setSettingsTab('general');
 await loadStaticData();
 await initAuth();
 render();
-
 
