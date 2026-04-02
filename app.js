@@ -9,7 +9,7 @@ import {
   normalizeProfile,
   progressMap
 } from './lib/data.js';
-import { authClient, ensureAuthServerReady, getInitialSession, loadProfileFromCloud, onAuthStateChange, purgeProfile, refreshSocialOverview, rpc, saveProfileToCloud, signInWithGoogle, signOut as authSignOut } from './lib/auth.js';
+import { authClient, ensureAuthServerReady, getInitialSession, loadAppNotices, loadProfileFromCloud, onAuthStateChange, purgeProfile, refreshSocialOverview, rpc, saveAppNotice, saveProfileToCloud, signInWithGoogle, signOut as authSignOut } from './lib/auth.js';
 import { bindUi, renderApp, showPeerRadarDialog, showRadarDialog, showSongPopup } from './lib/ui.js';
 import { createGoalsController } from './lib/goals-controller.js';
 import { createSocialController } from './lib/social-controller.js';
@@ -20,6 +20,8 @@ import { buildRowIndex, findRowByTitle, rowStats, truncate2 } from './lib/utils.
 function createHistorySectionState() {
   return { clear: false, ramp: false, goal: false, radar: false };
 }
+
+const ADMIN_EMAILS = new Set(['qscse75359@gmail.com']);
 
 const state = {
   activeTable: 'SP11H',
@@ -50,7 +52,8 @@ const state = {
     session: null,
     signedIn: false,
     loading: true,
-    profileReady: false
+    profileReady: false,
+    isAdmin: false
   },
   selectedHistoryId: '',
   historySectionOpen: createHistorySectionState(),
@@ -68,6 +71,10 @@ const state = {
     djName: '',
     infinitasId: '',
     message: ''
+  },
+  noticeEditor: {
+    open: false,
+    id: ''
   },
   bingoPreview: null,
     socialHistoryPopup: {
@@ -129,12 +136,17 @@ function normalizeAppNoticeList(rawNotices) {
         version: String(notice.version || '').trim(),
         title: String(notice.title || '').trim(),
         summary: String(notice.summary || '').trim(),
-        publishedAt: String(notice.publishedAt || '').trim(),
+        publishedAt: String(notice.publishedAt || notice.published_at || '').trim(),
         items
       };
     })
     .filter((notice) => notice && (notice.title || notice.summary || notice.items.length))
     .sort((a, b) => String(b.publishedAt || '').localeCompare(String(a.publishedAt || '')));
+}
+
+function isAdminAccount(user = state.auth.user) {
+  const email = String(user?.email || '').trim().toLowerCase();
+  return !!email && ADMIN_EMAILS.has(email);
 }
 
 function setBusyOverlay(open, title = '불러오는 중...', message = '잠시만 기다려주세요.') {
@@ -204,6 +216,18 @@ function currentTrackerLabel() {
 
 function currentSocialSettings() {
   return isAuthorized() ? normalizeSocialSettings(state.profile.socialSettings) : normalizeSocialSettings({});
+}
+
+async function refreshAppNotices(options = {}) {
+  const renderAfter = options.renderAfter !== false;
+  const silent = options.silent === true;
+  try {
+    const cloudNotices = await loadAppNotices();
+    if (cloudNotices.length) state.appMeta.notices = normalizeAppNoticeList(cloudNotices);
+  } catch (error) {
+    if (!silent) showToast(`공지사항 불러오기 실패: ${describeRemoteError(error, '공지사항을 불러오지 못했습니다.')}`);
+  }
+  if (renderAfter) render();
 }
 
 function cloneJson(value) {
@@ -964,6 +988,69 @@ async function loadStaticData(forceRefresh = false) {
     rankTables: state.rankTables,
     songRadarCatalog: state.songRadarCatalog
   });
+}
+
+function toDateTimeLocalValue(iso) {
+  const date = iso ? new Date(iso) : new Date();
+  if (Number.isNaN(date.getTime())) return '';
+  const local = new Date(date.getTime() - (date.getTimezoneOffset() * 60000));
+  return local.toISOString().slice(0, 16);
+}
+
+function noticeEditorPayloadFromForm() {
+  const title = String($('noticeEditorTitle')?.value || '').trim();
+  const summary = String($('noticeEditorSummary')?.value || '').trim();
+  const publishedAtRaw = String($('noticeEditorPublishedAt')?.value || '').trim();
+  const items = String($('noticeEditorItems')?.value || '')
+    .split(/\r?\n/g)
+    .map((item) => item.trim())
+    .filter(Boolean);
+  const publishedAtDate = publishedAtRaw ? new Date(publishedAtRaw) : new Date();
+  return {
+    id: String(state.noticeEditor.id || '').trim(),
+    title,
+    summary,
+    items,
+    publishedAt: Number.isNaN(publishedAtDate.getTime()) ? new Date().toISOString() : publishedAtDate.toISOString()
+  };
+}
+
+function openNoticeEditor(noticeId = '') {
+  if (!state.auth.isAdmin) return showToast('관리자 계정만 공지사항을 편집할 수 있습니다.');
+  const notice = state.appMeta.notices.find((item) => String(item.id || '') === String(noticeId || '')) || null;
+  state.noticeEditor = {
+    open: true,
+    id: String(notice?.id || '').trim()
+  };
+  $('noticeEditorTitleText').textContent = notice ? '공지사항 수정' : '공지사항 추가';
+  $('noticeEditorTitle').value = notice?.title || '';
+  $('noticeEditorSummary').value = notice?.summary || '';
+  $('noticeEditorPublishedAt').value = toDateTimeLocalValue(notice?.publishedAt || new Date().toISOString());
+  $('noticeEditorItems').value = Array.isArray(notice?.items) ? notice.items.join('\n') : '';
+  if (!$('noticeEditorDialog')?.open) $('noticeEditorDialog')?.showModal();
+}
+
+function closeNoticeEditor(options = {}) {
+  state.noticeEditor = { open: false, id: '' };
+  if (!options.skipDialogClose) $('noticeEditorDialog')?.close(options.reason || 'cancel');
+}
+
+async function saveNoticeEditor() {
+  if (!state.auth.isAdmin || !state.auth.user) return showToast('관리자 계정만 공지사항을 저장할 수 있습니다.');
+  const payload = noticeEditorPayloadFromForm();
+  if (!payload.title) return showToast('공지사항 제목을 입력하세요.');
+  if (!payload.summary) return showToast('공지사항 요약을 입력하세요.');
+  await withBusyOverlay(
+    '공지사항 저장 중...',
+    '공지사항 내용을 서버에 반영하고 있습니다.',
+    async () => {
+      await saveAppNotice(state.auth.user, payload);
+      closeNoticeEditor();
+      await refreshAppNotices({ renderAfter: false, silent: false });
+      render();
+      showToast('공지사항을 저장했습니다.');
+    }
+  );
 }
 
 async function syncSocial() {
@@ -1822,7 +1909,7 @@ async function signIn() {
 async function signOut() {
   clearPendingSignupDraft();
   await authSignOut();
-  state.auth = { user: null, session: null, signedIn: false, loading: false, profileReady: false };
+  state.auth = { user: null, session: null, signedIn: false, loading: false, profileReady: false, isAdmin: false };
   state.profile = null;
   state.selectedHistoryId = '';
   state.social = { overviewRows: [], feedItems: [], followerRows: [] };
@@ -1873,6 +1960,7 @@ async function initAuth() {
   state.auth.user = session?.user || null;
   state.auth.session = session || null;
   state.auth.signedIn = !!session?.user;
+  state.auth.isAdmin = isAdminAccount(session?.user || null);
   state.auth.loading = false;
   if (session?.user) {
     try {
@@ -1883,6 +1971,7 @@ async function initAuth() {
       state.auth.session = null;
       state.auth.signedIn = false;
       state.auth.profileReady = false;
+      state.auth.isAdmin = false;
       state.profile = null;
       state.selectedHistoryId = '';
       state.social = { overviewRows: [], feedItems: [], followerRows: [] };
@@ -1900,9 +1989,11 @@ async function initAuth() {
     state.auth.user = nextSession?.user || null;
     state.auth.session = nextSession || null;
     state.auth.signedIn = !!nextSession?.user;
+    state.auth.isAdmin = isAdminAccount(nextSession?.user || null);
     if (!nextSession?.user) {
       clearPendingSignupDraft();
       state.auth.profileReady = false;
+      state.auth.isAdmin = false;
       state.profile = null;
       state.selectedHistoryId = '';
       state.social = { overviewRows: [], feedItems: [], followerRows: [] };
@@ -2183,6 +2274,9 @@ bindUi({
     unfollowPeer,
     saveSettings,
     setSettingsTab,
+    openNoticeEditor,
+    closeNoticeEditor,
+    saveNoticeEditor,
     formatProfileId,
     submitProfile
   }
@@ -2191,6 +2285,7 @@ bindUi({
 loadGuestProfileCache();
 setSettingsTab('general');
 await loadStaticData();
+await refreshAppNotices({ renderAfter: false, silent: true });
 render();
 initAuth().catch((error) => {
   console.error('initAuth failed', error);
@@ -2199,6 +2294,7 @@ initAuth().catch((error) => {
   state.auth.session = null;
   state.auth.signedIn = false;
   state.auth.profileReady = false;
+  state.auth.isAdmin = false;
   state.profile = null;
   render();
   showToast(describeRemoteError(error, '로그인 서버 연결이 원활하지 않아 게스트 모드로 계속합니다.'));

@@ -1719,3 +1719,47 @@ drop trigger if exists trg_chart_metadata_updated_at on public.chart_metadata;
 create trigger trg_chart_metadata_updated_at
 before update on public.chart_metadata
 for each row execute procedure public.set_updated_at();
+
+create table if not exists public.app_notices (
+  id uuid primary key default gen_random_uuid(),
+  title text not null,
+  summary text not null,
+  items jsonb not null default '[]'::jsonb,
+  published_at timestamptz not null default now(),
+  created_by_user_id uuid references auth.users(id) on delete set null,
+  created_by_email text not null default '',
+  updated_by_user_id uuid references auth.users(id) on delete set null,
+  updated_by_email text not null default '',
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  constraint app_notices_items_array_chk check (jsonb_typeof(items) = 'array')
+);
+
+create index if not exists app_notices_published_at_idx
+  on public.app_notices (published_at desc, created_at desc);
+
+alter table public.app_notices enable row level security;
+
+grant select on table public.app_notices to anon, authenticated;
+grant insert, update on table public.app_notices to authenticated;
+
+create policy app_notices_select_all on public.app_notices
+  for select
+  to anon, authenticated
+  using (true);
+
+create policy app_notices_insert_admin on public.app_notices
+  for insert
+  to authenticated
+  with check (lower(coalesce(auth.jwt() ->> 'email', '')) = 'qscse75359@gmail.com');
+
+create policy app_notices_update_admin on public.app_notices
+  for update
+  to authenticated
+  using (lower(coalesce(auth.jwt() ->> 'email', '')) = 'qscse75359@gmail.com')
+  with check (lower(coalesce(auth.jwt() ->> 'email', '')) = 'qscse75359@gmail.com');
+
+drop trigger if exists trg_app_notices_updated_at on public.app_notices;
+create trigger trg_app_notices_updated_at
+before update on public.app_notices
+for each row execute procedure public.set_updated_at();

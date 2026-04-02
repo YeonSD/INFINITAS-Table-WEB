@@ -531,10 +531,46 @@
         <button id="noticeHistoryCloseTop" type="submit" class="dialog-close-fab" aria-label="닫기">×</button>
         <div class="notice-history-shell">
           <div class="notice-history-head">
-            <div class="notice-history-title">공지사항 히스토리</div>
-            <div class="notice-history-subtitle">가장 최근 공지부터 순서대로 표시됩니다.</div>
+            <div class="notice-history-head-copy">
+              <div class="notice-history-title">공지사항 히스토리</div>
+              <div class="notice-history-subtitle">가장 최근 공지부터 순서대로 표시됩니다.</div>
+            </div>
+            <div id="noticeHistoryHeadActions" class="notice-history-head-actions"></div>
           </div>
           <div id="noticeHistoryBody" class="notice-history-body"></div>
+        </div>
+      </form>
+    </dialog>
+    <dialog id="noticeEditorDialog" class="account-dialog help-dialog notice-editor-dialog">
+      <form method="dialog" id="noticeEditorForm">
+        <button id="noticeEditorCloseTop" type="button" class="dialog-close-fab" aria-label="닫기">×</button>
+        <div class="notice-editor-shell">
+          <div class="notice-editor-head">
+            <div id="noticeEditorTitleText" class="notice-editor-title">공지사항 추가</div>
+            <div class="notice-editor-subtitle">작성일시를 기준으로 상단 공지와 히스토리에 반영됩니다.</div>
+          </div>
+          <label class="notice-editor-field">
+            <span>제목</span>
+            <input id="noticeEditorTitle" type="text" maxlength="120" placeholder="예: SP11 신규 수록곡 데이터 반영" required />
+          </label>
+          <label class="notice-editor-field">
+            <span>요약</span>
+            <textarea id="noticeEditorSummary" rows="3" maxlength="240" placeholder="상단 공지에 표시할 한 줄 요약을 입력하세요." required></textarea>
+          </label>
+          <div class="notice-editor-grid">
+            <label class="notice-editor-field">
+              <span>작성 일시</span>
+              <input id="noticeEditorPublishedAt" type="datetime-local" required />
+            </label>
+            <label class="notice-editor-field">
+              <span>세부 항목</span>
+              <textarea id="noticeEditorItems" rows="6" placeholder="한 줄에 한 항목씩 입력하세요."></textarea>
+            </label>
+          </div>
+          <div class="dialog-actions notice-editor-actions">
+            <button id="noticeEditorCancelBtn" type="button">취소</button>
+            <button id="noticeEditorSaveBtn" type="submit" class="primary-btn">저장</button>
+          </div>
         </div>
       </form>
     </dialog>
