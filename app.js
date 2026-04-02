@@ -14,10 +14,8 @@ import {
   boardSignature as getBingoBoardSignature,
   createEmptyBingoDraft as makeEmptyBingoDraft,
   createEmptyBingoState as makeEmptyBingoState,
-  removeSavedBoardFromState,
   normalizeBingoSize as parseBingoSize,
-  normalizeBingoStateShape,
-  selectBingoBoard
+  normalizeBingoStateShape
 } from './lib/bingo-state.js';
 import { bindUi, renderApp, showPeerRadarDialog, showRadarDialog, showSongPopup } from './lib/ui.js';
 import { createGoalsController } from './lib/goals-controller.js';
@@ -296,9 +294,7 @@ function currentSavedBoards() {
 
 function currentPublishedBingo() {
   const bingo = ensureBingoState();
-  const activeBoardId = String(bingo.activeBoardId || '').trim();
-  if (!activeBoardId) return null;
-  return currentSavedBoards().find((board) => String(board?.id || '') === activeBoardId) || null;
+  return currentSavedBoards().find((board) => String(board?.id || '') === String(bingo.activeBoardId || '')) || bingo.published || null;
 }
 
 function syncPublishedFromSavedBoards() {
@@ -308,8 +304,12 @@ function syncPublishedFromSavedBoards() {
 }
 
 function selectSavedBoardLocally(boardId, options = {}) {
-  if (!state.profile) return;
-  state.profile.bingoState = selectBingoBoard(state.profile.bingoState, boardId);
+  const bingo = ensureBingoState();
+  const board = currentSavedBoards().find((row) => String(row?.id || '') === String(boardId || '')) || null;
+  bingo.activeBoardId = board?.id || '';
+  syncPublishedFromSavedBoards();
+  bingo.selectedCellIndex = -1;
+  bingo.selectedGoalId = '';
   if (options.persistCache !== false) persistBingoDraftCache();
 }
 
@@ -323,9 +323,11 @@ function upsertSavedBoard(board) {
   syncPublishedFromSavedBoards();
 }
 
-function removeSavedBoard(boardId, options = {}) {
-  if (!state.profile) return;
-  state.profile.bingoState = removeSavedBoardFromState(state.profile.bingoState, boardId, options);
+function removeSavedBoard(boardId) {
+  const bingo = ensureBingoState();
+  bingo.savedBoards = currentSavedBoards().filter((board) => String(board?.id || '') !== String(boardId || ''));
+  bingo.activeBoardId = String(bingo.savedBoards[0]?.id || '');
+  syncPublishedFromSavedBoards();
 }
 
 function boardSignature(board) {
