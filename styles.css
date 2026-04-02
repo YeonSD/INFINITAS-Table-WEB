@@ -74,9 +74,9 @@ select {
 
 .top-header {
   display: grid;
-  grid-template-columns: minmax(240px, 1fr) minmax(280px, 410px) auto;
+  grid-template-columns: minmax(240px, 1fr) minmax(240px, 360px) auto;
   align-items: stretch;
-  gap: 12px;
+  gap: 10px;
 }
 
 .top-header h1 {
@@ -426,13 +426,15 @@ button.danger {
 }
 
 .app-notice-bar {
+  justify-self: start;
+  width: min(100%, 360px);
   min-width: 0;
-  min-height: 66px;
+  min-height: 54px;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 0;
   align-items: center;
-  padding: 10px 14px;
+  padding: 8px 12px;
   border: 1px solid #d2dce8;
   border-radius: 14px;
   background: #e7edf4;
@@ -452,28 +454,39 @@ button.danger {
 .app-notice-body {
   min-width: 0;
   display: grid;
-  gap: 3px;
+  gap: 0;
+}
+
+.app-notice-title-window {
+  min-width: 0;
+  overflow: hidden;
 }
 
 .app-notice-body strong {
-  min-width: 0;
+  display: inline-block;
+  min-width: max-content;
   font-size: 13px;
   font-weight: 800;
   color: #35506f;
   line-height: 1.25;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  white-space: nowrap;
+  will-change: transform;
 }
 
-.app-notice-summary {
-  min-width: 0;
-  font-size: 11px;
-  color: #71849a;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.app-notice-body strong.is-scrolling {
+  animation: noticeTicker 16s ease-in-out infinite;
+}
+
+@keyframes noticeTicker {
+  0%, 14% {
+    transform: translateX(0);
+  }
+  52%, 66% {
+    transform: translateX(var(--notice-shift, 0px));
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .legacy-tabs {
@@ -5411,10 +5424,6 @@ body.theme-dark .app-notice-body strong {
   color: #d6e3f4;
 }
 
-body.theme-dark .app-notice-summary {
-  color: #98aac0;
-}
-
 body.theme-dark .notice-history-shell {
   background:
     radial-gradient(circle at top left, rgba(84, 131, 192, 0.18), transparent 34%),
@@ -5739,7 +5748,6 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
     align-items: flex-start;
   }
 
-  .app-notice-summary,
   .app-notice-body strong {
     white-space: normal;
   }
