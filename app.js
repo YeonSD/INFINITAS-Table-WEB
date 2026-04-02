@@ -862,7 +862,7 @@ function render() {
     iconSrc
   });
   renderSignupDialog();
-  setActivePanel(state.activePanel || 'rank');
+  setActivePanel(state.activePanel || 'rank', { skipRefresh: true });
 }
 
 async function loadStaticData(forceRefresh = false) {
@@ -1056,8 +1056,9 @@ function ensureGoalImportInput() {
   return goalImportInput;
 }
 
-function setActivePanel(panel) {
+function setActivePanel(panel, options = {}) {
   let next = panel || 'rank';
+  const prev = state.activePanel || 'rank';
   if (next === 'settings') {
     if (!isAuthorized()) {
       showToast('설정은 로그인 후 사용할 수 있습니다.');
@@ -1074,7 +1075,7 @@ function setActivePanel(panel) {
   state.activePanel = next;
   document.querySelectorAll('.main-tab, .dock-tab').forEach((el) => el.classList.toggle('active', el.dataset.panel === next));
   document.querySelectorAll('.tab-panel').forEach((el) => el.classList.toggle('active', el.id === `panel-${next}`));
-  if (next === 'social' && isAuthorized()) {
+  if (!options.skipRefresh && next === 'social' && isAuthorized() && prev !== 'social') {
     queueMicrotask(() => {
       syncSocial().catch((error) => {
         console.error('Social refresh on panel switch failed', error);

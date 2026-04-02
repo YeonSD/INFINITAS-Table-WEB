@@ -2679,6 +2679,12 @@ button.danger {
   margin-bottom: 10px;
 }
 
+.social-feed-head-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .social-feed-clear-btn {
   border: 1px solid #b8c7dd;
   border-radius: 999px;
@@ -2688,6 +2694,12 @@ button.danger {
   font-weight: 700;
   padding: 4px 10px;
   min-height: 0;
+}
+
+.social-feed-refresh-btn {
+  border-color: #bed8ff;
+  background: #eef6ff;
+  color: #4678b9;
 }
 
 .social-feed-clear-btn:disabled {
@@ -5192,6 +5204,12 @@ body.theme-dark .social-feed-clear-btn {
   background: #253448;
   border-color: #4c6385;
   color: #cbe0fa;
+}
+
+body.theme-dark .social-feed-refresh-btn {
+  background: #20374f;
+  border-color: #5f86b8;
+  color: #d8ebff;
 }
 
 body.theme-dark .social-follow-user:hover {
