@@ -95,7 +95,6 @@ const SNAPSHOT_META_CACHE_KEY = 'itm.snapshot.version';
 const SNAPSHOT_DATA_CACHE_KEY = 'itm.snapshot.data';
 const BINGO_DRAFT_CACHE_KEY_PREFIX = 'itm.bingo.draft.';
 const GUEST_PROFILE_CACHE_KEY = 'itm.guest.profile';
-const PROFILE_CACHE_KEY_PREFIX = 'itm.profile.';
 const SIGNUP_PENDING_CACHE_KEY = 'itm.signup.pending';
 const IMAGE_ALLOWED_MIME = ['image/jpeg', 'image/png', 'image/webp'];
 const ICON_MAX_BYTES = 2 * 1024 * 1024;
@@ -785,49 +784,6 @@ function persistGuestProfileCache() {
   });
 }
 
-function profileCacheKey(user = state.auth.user) {
-  const userId = String(user?.id || '').trim();
-  return userId ? `${PROFILE_CACHE_KEY_PREFIX}${userId}` : '';
-}
-
-function readProfileCache(user = state.auth.user) {
-  const key = profileCacheKey(user);
-  if (!key) return null;
-  const cached = readJsonCache(key);
-  return cached && typeof cached === 'object' ? cloneJson(cached) : null;
-}
-
-function persistProfileCache(profile = state.profile, user = state.auth.user) {
-  const key = profileCacheKey(user);
-  if (!key || !profile) return;
-  writeJsonCache(key, cloneJson(profile));
-}
-
-function clearProfileCache(user = state.auth.user) {
-  const key = profileCacheKey(user);
-  if (!key) return;
-  try {
-    window.localStorage.removeItem(key);
-  } catch {
-    // Ignore storage errors and continue.
-  }
-}
-
-async function withTimeout(promise, timeoutMs, label = 'timeout') {
-  const safeTimeout = Math.max(1000, Number(timeoutMs || 0));
-  const timeoutTag = Symbol(label);
-  const result = await Promise.race([
-    promise,
-    new Promise((resolve) => setTimeout(() => resolve(timeoutTag), safeTimeout))
-  ]);
-  if (result === timeoutTag) {
-    const error = new Error(label);
-    error.code = label;
-    throw error;
-  }
-  return result;
-}
-
 function readPendingSignupDraft() {
   const cached = readJsonCache(SIGNUP_PENDING_CACHE_KEY);
   if (!cached || typeof cached !== 'object') return null;
@@ -1324,34 +1280,7 @@ async function refreshProfile(options = {}) {
   profileRefreshPromise = (async () => {
     const run = async () => {
       const pendingSignup = readPendingSignupDraft();
-      const cachedProfile = readProfileCache(state.auth.user);
-      let loaded = null;
-      try {
-        loaded = await withTimeout(
-          loadProfileFromCloud(state.auth.user),
-          Number(options.timeoutMs || 10000),
-          'profile_load_timeout'
-        );
-      } catch (error) {
-        if (cachedProfile) {
-          state.profile = cachedProfile;
-          ensureBingoState(state.profile);
-          restoreBingoDraftCache(state.profile);
-          syncGoalStoreFromBingoDraft();
-          state.auth.profileReady = true;
-          state.selectedHistoryId = latestHistoryId(state.profile.history);
-          state.historySectionOpen = createHistorySectionState();
-          render();
-          queueMicrotask(() => {
-            syncSocial().catch((socialError) => {
-              console.error('Deferred social sync failed', socialError);
-            });
-          });
-          showToast('프로필 동기화가 지연되어 저장된 데이터를 먼저 표시합니다.');
-          return state.profile;
-        }
-        throw error;
-      }
+      const loaded = await loadProfileFromCloud(state.auth.user);
       if (!loaded) {
         state.profile = null;
         state.auth.profileReady = false;
@@ -1369,15 +1298,10 @@ async function refreshProfile(options = {}) {
         ensureBingoState(state.profile);
         restoreBingoDraftCache(state.profile);
         syncGoalStoreFromBingoDraft();
-        persistProfileCache(state.profile, state.auth.user);
         state.auth.profileReady = true;
         state.selectedHistoryId = latestHistoryId(state.profile.history);
         state.historySectionOpen = createHistorySectionState();
-        queueMicrotask(() => {
-          syncSocial().catch((error) => {
-            console.error('Deferred social sync failed', error);
-          });
-        });
+        await syncSocial();
         if (pendingSignup) {
           clearPendingSignupDraft();
           closeSignupDialog({ keepMessage: false });
@@ -1869,18 +1793,8 @@ async function initAuth() {
   state.auth.session = session || null;
   state.auth.signedIn = !!session?.user;
   state.auth.loading = false;
-  if (session?.user) {
-    try {
-      await refreshProfile();
-    } catch (error) {
-      console.error('Initial profile refresh failed', error);
-      state.auth.profileReady = false;
-      render();
-      showToast(`DB 동기화 실패: ${error.message || error}`);
-    }
-  }
+  if (session?.user) await refreshProfile();
   onAuthStateChange((event, nextSession) => {
-    const prevUser = state.auth.user;
     const prevUserId = String(state.auth.user?.id || '');
     const prevToken = String(state.auth.session?.access_token || '');
     const nextUserId = String(nextSession?.user?.id || '');
@@ -1890,7 +1804,6 @@ async function initAuth() {
     state.auth.signedIn = !!nextSession?.user;
     if (!nextSession?.user) {
       clearPendingSignupDraft();
-      clearProfileCache(prevUser);
       state.auth.profileReady = false;
       state.profile = null;
       state.selectedHistoryId = '';
