@@ -8,7 +8,7 @@ import {
   normalizeProfile,
   progressMap
 } from './lib/data.js';
-import { authClient, getInitialSession, loadProfileFromCloud, onAuthStateChange, purgeProfile, refreshSocialOverview, rpc, saveProfileToCloud, signInWithGoogle, signOut as authSignOut } from './lib/auth.js';
+import { authClient, getInitialSession, loadProfileFromCloud, onAuthStateChange, purgeProfile, refreshSocialOverview, resetRemoteBingoState, rpc, saveProfileToCloud, signInWithGoogle, signOut as authSignOut } from './lib/auth.js';
 import { bindUi, renderApp, showPeerRadarDialog, showRadarDialog, showSongPopup } from './lib/ui.js';
 import { createGoalsController } from './lib/goals-controller.js';
 import { createSocialController } from './lib/social-controller.js';
@@ -125,6 +125,21 @@ async function withBusyOverlay(title, message, task) {
   } finally {
     setBusyOverlay(false);
   }
+}
+
+async function withTimeout(taskPromise, timeoutMs, code = 'timeout') {
+  const safeTimeout = Math.max(1000, Number(timeoutMs || 0));
+  const timeoutTag = Symbol(code);
+  const result = await Promise.race([
+    taskPromise,
+    new Promise((resolve) => setTimeout(() => resolve(timeoutTag), safeTimeout))
+  ]);
+  if (result === timeoutTag) {
+    const error = new Error(code);
+    error.code = code;
+    throw error;
+  }
+  return result;
 }
 
 function isAuthorized() {
@@ -1297,7 +1312,19 @@ async function refreshProfile(options = {}) {
   profileRefreshPromise = (async () => {
     const run = async () => {
       const pendingSignup = readPendingSignupDraft();
-      const loaded = await loadProfileFromCloud(state.auth.user);
+      let loaded = null;
+      try {
+        loaded = await withTimeout(loadProfileFromCloud(state.auth.user), Number(options.timeoutMs || 10000), 'profile_load_timeout');
+      } catch (error) {
+        if (error?.code === 'profile_load_timeout') {
+          clearBingoDraftCache(state.auth.user);
+          await resetRemoteBingoState(state.auth.user);
+          loaded = await withTimeout(loadProfileFromCloud(state.auth.user), Number(options.retryTimeoutMs || 10000), 'profile_load_retry_timeout');
+          showToast('빙고 테스트 데이터를 초기화하고 다시 불러왔습니다.');
+        } else {
+          throw error;
+        }
+      }
       if (!loaded) {
         state.profile = null;
         state.auth.profileReady = false;
@@ -2110,4 +2137,3 @@ setSettingsTab('general');
 await loadStaticData();
 await initAuth();
 render();
-
