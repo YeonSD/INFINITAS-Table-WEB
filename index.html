@@ -20,6 +20,13 @@
           </div>
           <p id="trackerPathLabel">TSV 미업로드 / 관리자 관리형 서열표 데이터 사용</p>
         </div>
+        <button id="appNoticeBar" class="app-notice-bar hidden" type="button" aria-live="polite">
+          <div class="app-notice-label">공지사항</div>
+          <div class="app-notice-body">
+            <strong id="appNoticeTitle">[날짜] 업데이트 : 공지사항을 불러오는 중입니다.</strong>
+            <div id="appNoticeSummary" class="app-notice-summary">클릭하면 지금까지의 업데이트 히스토리를 볼 수 있습니다.</div>
+          </div>
+        </button>
         <div class="header-actions">
           <button id="btnLoadTracker">데이터 불러오기(tsv)</button>
           <button id="btnGoogleLogin" class="google-auth-btn" type="button">
@@ -519,6 +526,18 @@
         </div>
       </form>
     </dialog>
+    <dialog id="noticeHistoryDialog" class="account-dialog help-dialog notice-history-dialog">
+      <form method="dialog">
+        <button id="noticeHistoryCloseTop" type="submit" class="dialog-close-fab" aria-label="닫기">×</button>
+        <div class="notice-history-shell">
+          <div class="notice-history-head">
+            <div class="notice-history-title">공지사항 히스토리</div>
+            <div class="notice-history-subtitle">가장 최근 공지부터 순서대로 표시됩니다.</div>
+          </div>
+          <div id="noticeHistoryBody" class="notice-history-body"></div>
+        </div>
+      </form>
+    </dialog>
     <dialog id="radarDialog" class="account-dialog help-dialog radar-dialog">
       <form method="dialog">
         <button id="radarDialogCloseTop" type="submit" class="dialog-close-fab" aria-label="닫기">×</button>
@@ -540,10 +559,6 @@
                 <div><strong>계정</strong></div>
                 <div class="settings-account-copy">탈퇴 시 저장된 웹 계정 데이터가 삭제되고 로그아웃됩니다.</div>
                 <button id="btnWithdrawAccount" type="button" class="danger settings-danger-btn">탈퇴</button>
-              </div>
-              <div class="settings-version-card settings-version-card-maker">
-                <div><strong>INFINITAS Table Maker</strong></div>
-                <div>Version: <span id="makerVersionText">-</span></div>
               </div>
             </div>
 

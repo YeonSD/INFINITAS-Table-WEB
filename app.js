@@ -5,6 +5,7 @@ import {
   computeRadarProfileFromRows,
   createEmptyBingoState,
   makeEvents,
+  normalizeBingoState,
   normalizeProfile,
   progressMap
 } from './lib/data.js';
@@ -30,6 +31,12 @@ const state = {
   goalSongQuery: '',
   rankTables: {},
   songRadarCatalog: null,
+  appMeta: {
+    version: '1.0.0',
+    publishedAt: '',
+    snapshotPath: './assets/data/app-snapshot.json',
+    notices: []
+  },
   tableViews: {},
   guest: {
     trackerRows: [],
@@ -107,6 +114,27 @@ let iconEditor = {
 
 function latestHistoryId(history = []) {
   return history.length ? history[history.length - 1].id || '' : '';
+}
+
+function normalizeAppNoticeList(rawNotices) {
+  if (!Array.isArray(rawNotices)) return [];
+  return rawNotices
+    .map((notice, index) => {
+      if (!notice || typeof notice !== 'object') return null;
+      const items = Array.isArray(notice.items)
+        ? notice.items.map((item) => String(item || '').trim()).filter(Boolean)
+        : [];
+      return {
+        id: String(notice.id || `notice-${index + 1}`).trim(),
+        version: String(notice.version || '').trim(),
+        title: String(notice.title || '').trim(),
+        summary: String(notice.summary || '').trim(),
+        publishedAt: String(notice.publishedAt || '').trim(),
+        items
+      };
+    })
+    .filter((notice) => notice && (notice.title || notice.summary || notice.items.length))
+    .sort((a, b) => String(b.publishedAt || '').localeCompare(String(a.publishedAt || '')));
 }
 
 function setBusyOverlay(open, title = '불러오는 중...', message = '잠시만 기다려주세요.') {
@@ -240,24 +268,8 @@ function normalizeGoalSnapshotForBingo(goal) {
 
 function ensureBingoState(profile = state.profile) {
   if (!profile) return createEmptyBingoState();
-  if (!profile.bingoState || typeof profile.bingoState !== 'object') profile.bingoState = createEmptyBingoState();
-  const bingo = profile.bingoState;
-  if (!bingo.draft || typeof bingo.draft !== 'object') bingo.draft = createEmptyBingoState().draft;
-  if (!Array.isArray(bingo.savedBoards)) bingo.savedBoards = [];
-  bingo.draft.size = normalizeBingoSize(bingo.draft.size);
-  if (!Array.isArray(bingo.draft.cells) || bingo.draft.cells.length !== bingo.draft.size * bingo.draft.size) {
-    bingo.draft = createEmptyBingoDraft(bingo.draft.size);
-  }
-  bingo.savedBoards = bingo.savedBoards.slice(0, 5);
-  bingo.activeBoardId = String(bingo.activeBoardId || '').trim();
-  const activeSavedBoard = bingo.activeBoardId
-    ? bingo.savedBoards.find((board) => String(board?.id || '') === bingo.activeBoardId) || null
-    : null;
-  if (bingo.activeBoardId && !activeSavedBoard) bingo.activeBoardId = '';
-  bingo.published = activeSavedBoard ? cloneJson(activeSavedBoard) : null;
-  if (!Number.isInteger(bingo.selectedCellIndex)) bingo.selectedCellIndex = -1;
-  bingo.selectedGoalId = String(bingo.selectedGoalId || '').trim();
-  return bingo;
+  profile.bingoState = normalizeBingoState(profile.bingoState);
+  return profile.bingoState;
 }
 
 function bingoDraftCacheKey(user = state.auth.user) {
@@ -334,8 +346,7 @@ function currentSavedBoards() {
 }
 
 function currentPublishedBingo() {
-  const bingo = ensureBingoState();
-  return currentSavedBoards().find((board) => String(board?.id || '') === String(bingo.activeBoardId || '')) || bingo.published || null;
+  return ensureBingoState().published || null;
 }
 
 function syncPublishedFromSavedBoards() {
@@ -918,6 +929,12 @@ async function loadStaticData(forceRefresh = false) {
   const versionMeta = await fetchJsonOptional(versionMetaUrl, forceRefresh ? 'reload' : 'no-store');
   const snapshotPath = String(versionMeta?.snapshotPath || cachedMeta?.snapshotPath || './assets/data/app-snapshot.json');
   const version = String(versionMeta?.version || cachedMeta?.version || 'dev');
+  state.appMeta = {
+    version,
+    publishedAt: String(versionMeta?.publishedAt || cachedMeta?.publishedAt || '').trim(),
+    snapshotPath,
+    notices: normalizeAppNoticeList(versionMeta?.notices || cachedMeta?.notices || [])
+  };
   const canUseCachedSnapshot = !forceRefresh
     && cachedMeta
     && cachedSnapshot?.rankTables
@@ -940,7 +957,7 @@ async function loadStaticData(forceRefresh = false) {
   const snapshot = await snapshotRes.json();
   state.rankTables = snapshot.rankTables || {};
   state.songRadarCatalog = snapshot.songRadarCatalog || { charts: [] };
-  writeJsonCache(SNAPSHOT_META_CACHE_KEY, versionMeta || { version, snapshotPath });
+  writeJsonCache(SNAPSHOT_META_CACHE_KEY, state.appMeta);
   writeJsonCache(SNAPSHOT_DATA_CACHE_KEY, {
     version,
     snapshotPath,

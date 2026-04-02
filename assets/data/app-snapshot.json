@@ -1,5 +1,5 @@
 {
-  "publishedAt": "2026-03-31T00:56:51.163Z",
+  "publishedAt": "2026-04-02T07:11:51.959Z",
   "rankTables": {
     "SP10H": {
       "tableinfo": {
@@ -19254,6 +19254,25 @@
             },
             {
               "data": {
+                "title": "ABSOLUTE (kors k Remix)",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "160",
+                "atwikiNotes": 1336,
+                "typeInfo": "CHARGE",
+                "radar": {
+                  "NOTES": 101.53,
+                  "PEAK": 105.26,
+                  "SCRATCH": 49.29,
+                  "SOFLAN": 0,
+                  "CHARGE": 156.91,
+                  "CHORD": 93.68
+                },
+                "radarTop": "CHARGE"
+              }
+            },
+            {
+              "data": {
                 "title": "Advent Infamous",
                 "type": "A",
                 "implicitType": false,
@@ -24250,6 +24269,25 @@
                   "SOFLAN": 39.59,
                   "CHARGE": 0,
                   "CHORD": 106.42
+                },
+                "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
+                "title": "MA・TSU・RI",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "160",
+                "atwikiNotes": 1302,
+                "typeInfo": "NOTES",
+                "radar": {
+                  "NOTES": 111.97,
+                  "PEAK": 91.42,
+                  "SCRATCH": 72.68,
+                  "SOFLAN": 0,
+                  "CHARGE": 10,
+                  "CHORD": 108.42
                 },
                 "radarTop": "NOTES"
               }
@@ -53311,6 +53349,20 @@
         "radarTop": "CHARGE"
       },
       {
+        "title": "ABSOLUTE (kors k Remix)",
+        "type": "A",
+        "notes": 1336,
+        "radar": {
+          "NOTES": 101.53,
+          "PEAK": 105.26,
+          "SCRATCH": 49.29,
+          "SOFLAN": 0,
+          "CHARGE": 156.91,
+          "CHORD": 93.68
+        },
+        "radarTop": "CHARGE"
+      },
+      {
         "title": "Advent Infamous",
         "type": "A",
         "notes": 1454,
@@ -56975,6 +57027,20 @@
           "SOFLAN": 39.59,
           "CHARGE": 0,
           "CHORD": 106.42
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "MA・TSU・RI",
+        "type": "A",
+        "notes": 1302,
+        "radar": {
+          "NOTES": 111.97,
+          "PEAK": 91.42,
+          "SCRATCH": 72.68,
+          "SOFLAN": 0,
+          "CHARGE": 10,
+          "CHORD": 108.42
         },
         "radarTop": "NOTES"
       },
@@ -67872,5 +67938,5 @@
       }
     ]
   },
-  "version": "20260331005651-ad46e3ea6e7f"
+  "version": "20260402071151-30c0abc3be95"
 }

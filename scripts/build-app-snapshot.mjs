@@ -15,6 +15,15 @@ const VERSION_PATH = path.join(OUTPUT_DIR, 'snapshot-version.json');
 const args = new Set(process.argv.slice(2));
 const sourceMode = args.has('--source') ? process.argv[process.argv.indexOf('--source') + 1] : 'seed';
 
+function readExistingVersionMeta() {
+  if (!fs.existsSync(VERSION_PATH)) return {};
+  try {
+    return JSON.parse(fs.readFileSync(VERSION_PATH, 'utf8'));
+  } catch {
+    return {};
+  }
+}
+
 function titleKey(value) {
   return String(value || '')
     .normalize('NFKC')
@@ -181,11 +190,13 @@ const snapshot = buildSnapshot(rows);
 const payload = JSON.stringify(snapshot, null, 2);
 const hash = crypto.createHash('sha1').update(payload).digest('hex').slice(0, 12);
 const version = `${snapshot.publishedAt.replace(/[-:.TZ]/g, '').slice(0, 14)}-${hash}`;
+const existingVersionMeta = readExistingVersionMeta();
 fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 fs.writeFileSync(SNAPSHOT_PATH, JSON.stringify({ ...snapshot, version }, null, 2));
 fs.writeFileSync(VERSION_PATH, JSON.stringify({
   version,
   publishedAt: snapshot.publishedAt,
-  snapshotPath: './assets/data/app-snapshot.json'
+  snapshotPath: './assets/data/app-snapshot.json',
+  notices: Array.isArray(existingVersionMeta?.notices) ? existingVersionMeta.notices : []
 }, null, 2));
 console.log(`Wrote snapshot ${version} to ${SNAPSHOT_PATH}`);

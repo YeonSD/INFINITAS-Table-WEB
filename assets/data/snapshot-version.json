@@ -1,5 +1,18 @@
 {
-  "version": "20260331005651-ad46e3ea6e7f",
-  "publishedAt": "2026-03-31T00:56:51.163Z",
-  "snapshotPath": "./assets/data/app-snapshot.json"
+  "version": "20260402071151-30c0abc3be95",
+  "publishedAt": "2026-04-02T07:11:51.959Z",
+  "snapshotPath": "./assets/data/app-snapshot.json",
+  "notices": [
+    {
+      "id": "2026-04-02-sp11-song-update",
+      "title": "SP11 신규 수록곡 데이터 반영",
+      "summary": "MA・TSU・RI와 ABSOLUTE (kors k Remix)를 서열표와 노트 레이더에 반영했습니다.",
+      "publishedAt": "2026-04-02T12:00:00.000Z",
+      "items": [
+        "2026년 04월 01일 추가곡인 MA・TSU・RI SPA 11 데이터를 정적 스냅샷에 반영했습니다.",
+        "2026년 04월 01일 추가곡인 ABSOLUTE (kors k Remix) SPA 11 데이터를 정적 스냅샷에 반영했습니다.",
+        "TSV 업로드 전에도 두 곡이 목록에 표시되고, 업로드 후에는 노트 레이더까지 정상 표시됩니다."
+      ]
+    }
+  ]
 }
