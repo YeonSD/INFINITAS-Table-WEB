@@ -8,7 +8,7 @@ import {
   normalizeProfile,
   progressMap
 } from './lib/data.js';
-import { authClient, getInitialSession, loadProfileFromCloud, onAuthStateChange, purgeProfile, refreshSocialOverview, resetRemoteBingoState, rpc, saveProfileToCloud, signInWithGoogle, signOut as authSignOut } from './lib/auth.js';
+import { authClient, getInitialSession, loadProfileFromCloud, onAuthStateChange, purgeProfile, refreshSocialOverview, rpc, saveProfileToCloud, signInWithGoogle, signOut as authSignOut } from './lib/auth.js';
 import { bindUi, renderApp, showPeerRadarDialog, showRadarDialog, showSongPopup } from './lib/ui.js';
 import { createGoalsController } from './lib/goals-controller.js';
 import { createSocialController } from './lib/social-controller.js';
@@ -140,6 +140,20 @@ async function withTimeout(taskPromise, timeoutMs, code = 'timeout') {
     throw error;
   }
   return result;
+}
+
+function describeRemoteError(error, fallback = '서버 연결이 원활하지 않습니다. 잠시 후 다시 시도하세요.') {
+  const raw = String(error?.message || error || '').replace(/\s+/g, ' ').trim();
+  if (!raw) return fallback;
+  if (
+    /<!doctype html>|<html/i.test(raw) ||
+    /error code 522/i.test(raw) ||
+    /connection timed out/i.test(raw) ||
+    /timed out|timeout|failed to fetch|load failed|network/i.test(raw)
+  ) {
+    return fallback;
+  }
+  return raw.length > 160 ? `${raw.slice(0, 157)}...` : raw;
 }
 
 function isAuthorized() {
@@ -1317,13 +1331,11 @@ async function refreshProfile(options = {}) {
         loaded = await withTimeout(loadProfileFromCloud(state.auth.user), Number(options.timeoutMs || 10000), 'profile_load_timeout');
       } catch (error) {
         if (error?.code === 'profile_load_timeout') {
-          clearBingoDraftCache(state.auth.user);
-          await resetRemoteBingoState(state.auth.user);
-          loaded = await withTimeout(loadProfileFromCloud(state.auth.user), Number(options.retryTimeoutMs || 10000), 'profile_load_retry_timeout');
-          showToast('빙고 테스트 데이터를 초기화하고 다시 불러왔습니다.');
-        } else {
-          throw error;
+          const timeoutError = new Error('profile_load_timeout');
+          timeoutError.code = 'profile_load_timeout';
+          throw timeoutError;
         }
+        throw error;
       }
       if (!loaded) {
         state.profile = null;
@@ -1568,9 +1580,9 @@ async function submitSignup() {
   }
   writePendingSignupDraft(validated);
   try {
-    await signInWithGoogle();
+    await withTimeout(signInWithGoogle(), 8000, 'google_signin_timeout');
   } catch (error) {
-    showToast(`Google 로그인 실패: ${error.message || error}`);
+    showToast(`Google 로그인 실패: ${describeRemoteError(error, 'Google 로그인 서버 연결이 지연되고 있습니다. 잠시 후 다시 시도하세요.')}`);
   }
 }
 
@@ -1782,9 +1794,9 @@ async function signIn() {
   clearPendingSignupDraft();
   closeSignupDialog({ keepMessage: false });
   try {
-    await signInWithGoogle();
+    await withTimeout(signInWithGoogle(), 8000, 'google_signin_timeout');
   } catch (error) {
-    showToast(`Google 로그인 실패: ${error.message || error}`);
+    showToast(`Google 로그인 실패: ${describeRemoteError(error, 'Google 로그인 서버 연결이 지연되고 있습니다. 잠시 후 다시 시도하세요.')}`);
   }
 }
 
@@ -1832,12 +1844,35 @@ function resetGuestState() {
 }
 
 async function initAuth() {
-  const session = await getInitialSession();
+  let session = null;
+  try {
+    session = await withTimeout(getInitialSession(), 6000, 'auth_bootstrap_timeout');
+  } catch (error) {
+    console.error('Initial auth bootstrap failed', error);
+    showToast(describeRemoteError(error, '로그인 서버 연결이 지연되고 있어 게스트 모드로 시작합니다.'));
+  }
   state.auth.user = session?.user || null;
   state.auth.session = session || null;
   state.auth.signedIn = !!session?.user;
   state.auth.loading = false;
-  if (session?.user) await refreshProfile();
+  if (session?.user) {
+    try {
+      await refreshProfile({ timeoutMs: 10000 });
+    } catch (error) {
+      console.error('Initial profile refresh failed', error);
+      state.auth.user = null;
+      state.auth.session = null;
+      state.auth.signedIn = false;
+      state.auth.profileReady = false;
+      state.profile = null;
+      state.selectedHistoryId = '';
+      state.social = { overviewRows: [], feedItems: [], followerRows: [] };
+      state.bingoPreview = null;
+      closeSocialHistoryPopup();
+      showToast(describeRemoteError(error, 'DB 동기화에 실패해 게스트 모드로 전환했습니다.'));
+    }
+  }
+  render();
   onAuthStateChange((event, nextSession) => {
     const prevUserId = String(state.auth.user?.id || '');
     const prevToken = String(state.auth.session?.access_token || '');
@@ -1860,14 +1895,16 @@ async function initAuth() {
       render();
       return;
     }
-    if (event === 'TOKEN_REFRESHED' || event === 'INITIAL_SESSION') return;
+    if (event === 'TOKEN_REFRESHED') return;
+    if (event === 'INITIAL_SESSION' && !nextSession?.user) return;
     const sameUser = prevUserId && prevUserId === nextUserId;
     const sameToken = prevToken && prevToken === nextToken;
     if (event === 'SIGNED_IN' && sameUser && sameToken && state.auth.profileReady) return;
+    if (event === 'INITIAL_SESSION' && sameUser && state.auth.profileReady) return;
     queueMicrotask(() => {
       refreshProfile({ showBusy: false }).catch((error) => {
         console.error('Auth-driven profile refresh failed', error);
-        showToast(`DB 동기화 실패: ${error.message || error}`);
+        showToast(`DB 동기화 실패: ${describeRemoteError(error, '서버 응답이 지연되고 있습니다. 잠시 후 다시 시도하세요.')}`);
       });
     });
   });
@@ -2135,5 +2172,15 @@ bindUi({
 loadGuestProfileCache();
 setSettingsTab('general');
 await loadStaticData();
-await initAuth();
 render();
+initAuth().catch((error) => {
+  console.error('initAuth failed', error);
+  state.auth.loading = false;
+  state.auth.user = null;
+  state.auth.session = null;
+  state.auth.signedIn = false;
+  state.auth.profileReady = false;
+  state.profile = null;
+  render();
+  showToast(describeRemoteError(error, '로그인 서버 연결이 원활하지 않아 게스트 모드로 계속합니다.'));
+});
