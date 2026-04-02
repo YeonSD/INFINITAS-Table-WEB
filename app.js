@@ -8,7 +8,7 @@ import {
   normalizeProfile,
   progressMap
 } from './lib/data.js';
-import { authClient, getInitialSession, loadProfileFromCloud, onAuthStateChange, purgeProfile, refreshSocialOverview, rpc, saveProfileToCloud, signInWithGoogle, signOut as authSignOut } from './lib/auth.js';
+import { authClient, ensureAuthServerReady, getInitialSession, loadProfileFromCloud, onAuthStateChange, purgeProfile, refreshSocialOverview, rpc, saveProfileToCloud, signInWithGoogle, signOut as authSignOut } from './lib/auth.js';
 import { bindUi, renderApp, showPeerRadarDialog, showRadarDialog, showSongPopup } from './lib/ui.js';
 import { createGoalsController } from './lib/goals-controller.js';
 import { createSocialController } from './lib/social-controller.js';
@@ -1580,6 +1580,7 @@ async function submitSignup() {
   }
   writePendingSignupDraft(validated);
   try {
+    await ensureAuthServerReady(4000);
     await withTimeout(signInWithGoogle(), 8000, 'google_signin_timeout');
   } catch (error) {
     showToast(`Google 로그인 실패: ${describeRemoteError(error, 'Google 로그인 서버 연결이 지연되고 있습니다. 잠시 후 다시 시도하세요.')}`);
@@ -1794,6 +1795,7 @@ async function signIn() {
   clearPendingSignupDraft();
   closeSignupDialog({ keepMessage: false });
   try {
+    await ensureAuthServerReady(4000);
     await withTimeout(signInWithGoogle(), 8000, 'google_signin_timeout');
   } catch (error) {
     showToast(`Google 로그인 실패: ${describeRemoteError(error, 'Google 로그인 서버 연결이 지연되고 있습니다. 잠시 후 다시 시도하세요.')}`);
