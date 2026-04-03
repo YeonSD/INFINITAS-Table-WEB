@@ -68,6 +68,8 @@ function chartKey(tableKey, title, type) {
 }
 
 const MANUAL_CATEGORY_OVERRIDES = new Map([
+  [chartKey('SP11H', 'ABSOLUTE (kors k Remix)', 'A'), { category: CATEGORY_UNCLASSIFIED, source_sort_index: 999, classification_status: 'uncategorized' }],
+  [chartKey('SP11H', 'MA・TSU・RI', 'A'), { category: CATEGORY_UNCLASSIFIED, source_sort_index: 999, classification_status: 'uncategorized' }],
   [chartKey('SP12H', 'Chronoxia', 'A'), { category: CATEGORY_INFINITAS_ONLY, source_sort_index: 20, classification_status: 'classified' }],
   [chartKey('SP12H', '\u30dd\u30c1\u30b3\u306e\u5e78\u305b\u306a\u65e5\u5e38', 'A'), { category: CATEGORY_INFINITAS_ONLY, source_sort_index: 20, classification_status: 'classified' }],
   [chartKey('SP12H', 'If', 'L'), { category: CATEGORY_INFINITAS_ONLY, source_sort_index: 20, classification_status: 'classified' }],

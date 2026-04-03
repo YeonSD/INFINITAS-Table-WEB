@@ -2585,6 +2585,57 @@ button.danger {
   display: grid;
 }
 
+.settings-admin-card {
+  gap: 10px;
+  display: grid;
+}
+
+.settings-admin-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.settings-admin-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 24px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: #fff2cc;
+  color: #7a5a00;
+  font-size: 11px;
+  font-weight: 800;
+  border: 1px solid #e3c26a;
+}
+
+.settings-admin-status {
+  font-size: 12px;
+  color: #536a86;
+  line-height: 1.5;
+}
+
+.settings-admin-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.settings-admin-actions a {
+  color: #2f6fd1;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.settings-admin-actions a:hover {
+  text-decoration: underline;
+}
+
 .settings-account-copy {
   color: #60758f;
 }
@@ -4665,7 +4716,21 @@ button.danger {
   margin-bottom: 6px;
 }
 
-.song-goal-open-btn {
+.song-popup-headline {
+  min-width: 0;
+  word-break: break-word;
+}
+
+.song-popup-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.song-goal-open-btn,
+.song-meta-open-btn {
   border: 1px solid #6a778a;
   border-radius: 999px;
   background: rgba(229, 234, 242, 0.84);
@@ -4673,6 +4738,12 @@ button.danger {
   font-size: 11px;
   padding: 4px 10px;
   min-height: 0;
+}
+
+.song-meta-open-btn {
+  border-color: #7b7ac7;
+  background: rgba(236, 236, 255, 0.9);
+  color: #474798;
 }
 
 .song-goal-meta {
@@ -4801,6 +4872,66 @@ button.danger {
 }
 
 #songGoalDialog .dialog-actions {
+  justify-content: flex-end;
+}
+
+.song-meta-editor-dialog {
+  width: min(760px, 94vw);
+}
+
+.song-meta-editor-dialog form {
+  position: relative;
+  display: grid;
+  gap: 14px;
+  overflow-x: hidden;
+}
+
+.song-meta-editor-head {
+  display: grid;
+  gap: 6px;
+  padding-right: 42px;
+}
+
+.song-meta-editor-meta {
+  font-size: 13px;
+  color: #60738c;
+}
+
+.song-meta-editor-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.song-meta-editor-radar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.song-meta-editor-field {
+  display: grid;
+  gap: 6px;
+}
+
+.song-meta-editor-field > span {
+  font-size: 12px;
+  font-weight: 700;
+  color: #465a75;
+}
+
+.song-meta-editor-field input,
+.song-meta-editor-field select {
+  width: 100%;
+  min-height: 38px;
+  border: 1px solid #c7d3e2;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 8px 10px;
+  color: #24364d;
+}
+
+.song-meta-editor-actions {
   justify-content: flex-end;
 }
 
@@ -5415,6 +5546,20 @@ body.theme-dark .settings-version-card {
   border-color: #445a7a;
 }
 
+body.theme-dark .settings-admin-badge {
+  background: #5f4d16;
+  border-color: #96792a;
+  color: #fff2b8;
+}
+
+body.theme-dark .settings-admin-status {
+  color: #a9bdd8;
+}
+
+body.theme-dark .settings-admin-actions a {
+  color: #95bcff;
+}
+
 body.theme-dark .app-notice-bar {
   border-color: #44566d;
   background: #273243;
@@ -5442,6 +5587,12 @@ body.theme-dark .notice-history-item-time {
 body.theme-dark .notice-history-item {
   background: rgba(24, 34, 49, 0.9);
   border-color: #415c80;
+}
+
+body.theme-dark .song-meta-open-btn {
+  border-color: #6668ad;
+  background: rgba(69, 72, 127, 0.88);
+  color: #eef1ff;
 }
 
 body.theme-dark .notice-history-admin-btn {
@@ -5490,6 +5641,18 @@ body.theme-dark .notice-editor-field > span {
 
 body.theme-dark .notice-editor-field input,
 body.theme-dark .notice-editor-field textarea {
+  border-color: #415c80;
+  background: rgba(24, 34, 49, 0.9);
+  color: #e6eef8;
+}
+
+body.theme-dark .song-meta-editor-meta,
+body.theme-dark .song-meta-editor-field > span {
+  color: #a9c2e1;
+}
+
+body.theme-dark .song-meta-editor-field input,
+body.theme-dark .song-meta-editor-field select {
   border-color: #415c80;
   background: rgba(24, 34, 49, 0.9);
   color: #e6eef8;
@@ -5763,7 +5926,9 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
   }
 
   .notice-history-head,
-  .notice-editor-grid {
+  .notice-editor-grid,
+  .song-meta-editor-grid,
+  .song-meta-editor-radar-grid {
     grid-template-columns: 1fr;
   }
 

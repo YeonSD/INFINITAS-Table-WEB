@@ -1,0 +1,53 @@
+name: Publish Snapshot
+
+on:
+  workflow_dispatch:
+    inputs:
+      triggered_by_email:
+        description: Triggered by admin email
+        required: false
+        type: string
+      triggered_by_user_id:
+        description: Triggered by admin user id
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-snapshot
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build snapshot from Supabase
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: node ./scripts/build-app-snapshot.mjs --source supabase
+
+      - name: Commit snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/data/app-snapshot.json assets/data/snapshot-version.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Publish snapshot from admin request"
+          git push origin main

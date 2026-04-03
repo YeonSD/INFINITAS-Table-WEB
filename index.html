@@ -498,6 +498,74 @@
           </div>
         </form>
       </dialog>
+      <dialog id="songMetaEditorDialog" class="account-dialog song-meta-editor-dialog">
+        <form method="dialog" id="songMetaEditorForm">
+          <button id="songMetaEditorCloseTop" type="button" class="dialog-close-fab" aria-label="닫기">×</button>
+          <div class="song-meta-editor-head">
+            <h3 id="songMetaEditorTitleText">곡 정보 수정</h3>
+            <div id="songMetaEditorMeta" class="song-meta-editor-meta"></div>
+          </div>
+          <div class="song-meta-editor-grid">
+            <label class="song-meta-editor-field">
+              <span>서열표 분류</span>
+              <select id="songMetaCategory"></select>
+            </label>
+            <label class="song-meta-editor-field">
+              <span>정렬값</span>
+              <input id="songMetaSortIndex" type="number" step="1" />
+            </label>
+            <label class="song-meta-editor-field">
+              <span>노트 수</span>
+              <input id="songMetaNotes" type="number" min="0" step="1" />
+            </label>
+            <label class="song-meta-editor-field">
+              <span>타입</span>
+              <select id="songMetaTypeInfo">
+                <option value="NOTES">NOTES</option>
+                <option value="CHORD">CHORD</option>
+                <option value="PEAK">PEAK</option>
+                <option value="CHARGE">CHARGE</option>
+                <option value="SCRATCH">SCRATCH</option>
+                <option value="SOFLAN">SOFLAN</option>
+              </select>
+            </label>
+            <label class="song-meta-editor-field">
+              <span>BPM</span>
+              <input id="songMetaBpm" type="text" maxlength="32" />
+            </label>
+          </div>
+          <div class="song-meta-editor-radar-grid">
+            <label class="song-meta-editor-field">
+              <span>NOTES</span>
+              <input id="songMetaRadarNotes" type="number" min="0" step="0.01" />
+            </label>
+            <label class="song-meta-editor-field">
+              <span>CHORD</span>
+              <input id="songMetaRadarChord" type="number" min="0" step="0.01" />
+            </label>
+            <label class="song-meta-editor-field">
+              <span>PEAK</span>
+              <input id="songMetaRadarPeak" type="number" min="0" step="0.01" />
+            </label>
+            <label class="song-meta-editor-field">
+              <span>CHARGE</span>
+              <input id="songMetaRadarCharge" type="number" min="0" step="0.01" />
+            </label>
+            <label class="song-meta-editor-field">
+              <span>SCRATCH</span>
+              <input id="songMetaRadarScratch" type="number" min="0" step="0.01" />
+            </label>
+            <label class="song-meta-editor-field">
+              <span>SOFLAN</span>
+              <input id="songMetaRadarSoflan" type="number" min="0" step="0.01" />
+            </label>
+          </div>
+          <div class="dialog-actions song-meta-editor-actions">
+            <button id="songMetaEditorCancelBtn" type="button">취소</button>
+            <button id="songMetaEditorSaveBtn" type="submit" class="primary-btn">저장</button>
+          </div>
+        </form>
+      </dialog>
       <dialog id="songGoalBingoDialog" class="account-dialog song-goal-bingo-dialog">
         <form method="dialog">
           <h3>빙고 칸 선택</h3>
@@ -595,6 +663,18 @@
                 <div><strong>계정</strong></div>
                 <div class="settings-account-copy">탈퇴 시 저장된 웹 계정 데이터가 삭제되고 로그아웃됩니다.</div>
                 <button id="btnWithdrawAccount" type="button" class="danger settings-danger-btn">탈퇴</button>
+              </div>
+              <div id="settingsAdminPublishCard" class="settings-version-card settings-admin-card hidden">
+                <div class="settings-admin-card-head">
+                  <strong>관리자 배포</strong>
+                  <span id="settingsAdminPublishBadge" class="settings-admin-badge hidden">미배포 변경</span>
+                </div>
+                <div class="settings-account-copy">DB에 저장된 곡 메타 변경사항을 정적 스냅샷으로 다시 생성하고 GitHub Actions를 통해 배포합니다.</div>
+                <div id="settingsAdminPublishStatus" class="settings-admin-status">관리자 전용 배포 카드입니다.</div>
+                <div class="settings-admin-actions">
+                  <a id="settingsAdminPublishLink" class="hidden" href="#" target="_blank" rel="noreferrer">진행 상황 보기</a>
+                  <button id="btnPublishSnapshot" type="button" class="primary-btn">변경사항 배포</button>
+                </div>
               </div>
             </div>
 
