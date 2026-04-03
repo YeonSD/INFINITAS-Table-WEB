@@ -1,5 +1,5 @@
 {
-  "publishedAt": "2026-04-03T13:02:06.953Z",
+  "publishedAt": "2026-04-03T13:03:19.438Z",
   "rankTables": {
     "SP10H": {
       "tableinfo": {
@@ -28789,25 +28789,6 @@
             },
             {
               "data": {
-                "title": "MA・TSU・RI",
-                "type": "A",
-                "implicitType": false,
-                "bpm": "160",
-                "atwikiNotes": 1302,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 111.97,
-                  "PEAK": 91.42,
-                  "SCRATCH": 72.68,
-                  "SOFLAN": 0,
-                  "CHARGE": 10,
-                  "CHORD": 108.42
-                },
-                "radarTop": "NOTES"
-              }
-            },
-            {
-              "data": {
                 "title": "MANA",
                 "type": "A",
                 "implicitType": false,
@@ -30923,6 +30904,25 @@
                   "SOFLAN": 0,
                   "CHARGE": 0,
                   "CHORD": 105.13
+                },
+                "radarTop": "NOTES"
+              }
+            },
+            {
+              "data": {
+                "title": "MA・TSU・RI",
+                "type": "A",
+                "implicitType": false,
+                "bpm": "160",
+                "atwikiNotes": 1302,
+                "typeInfo": "NOTES",
+                "radar": {
+                  "NOTES": 111.97,
+                  "PEAK": 91.42,
+                  "SCRATCH": 72.68,
+                  "SOFLAN": 0,
+                  "CHARGE": 10,
+                  "CHORD": 108.42
                 },
                 "radarTop": "NOTES"
               }
@@ -66358,20 +66358,6 @@
         "radarTop": "NOTES"
       },
       {
-        "title": "MA・TSU・RI",
-        "type": "A",
-        "notes": 1302,
-        "radar": {
-          "NOTES": 111.97,
-          "PEAK": 91.42,
-          "SCRATCH": 72.68,
-          "SOFLAN": 0,
-          "CHARGE": 10,
-          "CHORD": 108.42
-        },
-        "radarTop": "NOTES"
-      },
-      {
         "title": "20XX",
         "type": "A",
         "notes": 1370,
@@ -66832,6 +66818,20 @@
           "CHORD": 113.2
         },
         "radarTop": "CHORD"
+      },
+      {
+        "title": "MA・TSU・RI",
+        "type": "A",
+        "notes": 1302,
+        "radar": {
+          "NOTES": 111.97,
+          "PEAK": 91.42,
+          "SCRATCH": 72.68,
+          "SOFLAN": 0,
+          "CHARGE": 10,
+          "CHORD": 108.42
+        },
+        "radarTop": "NOTES"
       },
       {
         "title": "Monkey Business",
@@ -77671,5 +77671,5 @@
       }
     ]
   },
-  "version": "20260403130206-73931d3fcc4d"
+  "version": "20260403130319-4d2216b146ef"
 }
