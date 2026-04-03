@@ -7,6 +7,7 @@
   "scripts": {
     "config:runtime": "node ./scripts/generate-runtime-config.mjs",
     "snapshot:seed": "node ./scripts/build-chart-metadata-seed.mjs && node ./scripts/build-app-snapshot.mjs --source seed",
+    "audit:sp12h": "node ./scripts/audit-sp12h-cleanup.mjs",
     "seed:supabase": "node ./scripts/push-chart-metadata-seed.mjs",
     "snapshot:supabase": "node ./scripts/build-app-snapshot.mjs --source supabase",
     "build": "npm run config:runtime",

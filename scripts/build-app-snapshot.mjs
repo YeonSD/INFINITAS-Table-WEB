@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import { canonicalizeChartMetadataRows, readSeedCharts, titleKey } from './chart-metadata-utils.mjs';
 import { loadLocalEnv } from './env-utils.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -24,7 +25,7 @@ function readExistingVersionMeta() {
   }
 }
 
-function titleKey(value) {
+function legacyTitleKey(value) {
   return String(value || '')
     .normalize('NFKC')
     .toLowerCase()
@@ -142,6 +143,7 @@ async function loadRowsFromSupabase() {
     'radar_charge',
     'radar_chord',
     'radar_top',
+    'source',
     'is_deleted'
   ].join(',');
   const rows = [];
@@ -185,7 +187,11 @@ async function loadRows() {
   return Array.isArray(seed?.charts) ? seed.charts : [];
 }
 
-const rows = await loadRows();
+const rawRows = await loadRows();
+const rows = canonicalizeChartMetadataRows(rawRows, {
+  seedCharts: readSeedCharts(SEED_PATH),
+  restrictToSeed: sourceMode === 'supabase'
+});
 const snapshot = buildSnapshot(rows);
 const payload = JSON.stringify(snapshot, null, 2);
 const hash = crypto.createHash('sha1').update(payload).digest('hex').slice(0, 12);

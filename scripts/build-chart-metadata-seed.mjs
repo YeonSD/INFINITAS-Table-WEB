@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { chartKey, titleKey } from './chart-metadata-utils.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -19,54 +20,6 @@ const CATEGORY_GIRYOKU_B_PLUS = '\uC9C0\uB825B+';
 const CATEGORY_GIRYOKU_B = '\uC9C0\uB825B';
 const CATEGORY_GIRYOKU_C = '\uC9C0\uB825C';
 const CATEGORY_GIRYOKU_A = '\uC9C0\uB825A';
-const TITLE_CHAR_FOLD_MAP = new Map([
-  ['\u00f8', 'o'],
-  ['\u00d8', 'o'],
-  ['\u00e6', 'ae'],
-  ['\u00c6', 'ae'],
-  ['\u0153', 'oe'],
-  ['\u0152', 'oe'],
-  ['\u00df', 'ss'],
-  ['\u00f0', 'd'],
-  ['\u00d0', 'd'],
-  ['\u0111', 'd'],
-  ['\u0110', 'd'],
-  ['\u0142', 'l'],
-  ['\u0141', 'l'],
-  ['\u00fe', 'th'],
-  ['\u00de', 'th']
-]);
-
-function titleKey(value) {
-  const normalized = String(value || '')
-    .normalize('NFKC')
-    .toLowerCase()
-    .replace(/[\u2018\u2019\u0060\u00b4]/gu, "'")
-    .replace(/[\u201c\u201d\u301d\u301e\uff02]/gu, '"')
-    .replace(/\ufe0f/gu, '')
-    .replace(/[\u2661\u2665\u2764]/gu, '')
-    .replace(/[\u2020\u2021]/gu, '')
-    .replace(/\uff01/gu, '!')
-    .replace(/\uff1f/gu, '?')
-    .replace(/[\u301c\uff5e]/gu, '~')
-    .replace(/\s*~\s*/gu, '~')
-    .replace(/\s*\(\s*/gu, '(')
-    .replace(/\s*\)\s*/gu, ')')
-    .replace(/\.\s+/gu, '.')
-    .normalize('NFKD')
-    .replace(/[\u0300-\u036f]/gu, '')
-    .replace(/\u00a0/gu, ' ');
-  return [...normalized]
-    .map((ch) => TITLE_CHAR_FOLD_MAP.get(ch) || ch)
-    .join('')
-    .replace(/\s+/gu, ' ')
-    .trim();
-}
-
-function chartKey(tableKey, title, type) {
-  return `${tableKey}|${titleKey(title)}|${type}`;
-}
-
 const MANUAL_CATEGORY_OVERRIDES = new Map([
   [chartKey('SP11H', 'ABSOLUTE (kors k Remix)', 'A'), { category: CATEGORY_UNCLASSIFIED, source_sort_index: 999, classification_status: 'uncategorized' }],
   [chartKey('SP11H', 'MA・TSU・RI', 'A'), { category: CATEGORY_UNCLASSIFIED, source_sort_index: 999, classification_status: 'uncategorized' }],
@@ -225,8 +178,9 @@ function overlayRankTables(rows, rankTablesPayload) {
           table_key: tableKey,
           table_title: table?.tableinfo?.title || existing.table_title || tableKey,
           level: Number(/^SP(\d+)H$/i.exec(tableKey)?.[1] || existing.level || 0),
-          song_title: title,
-          normalized_title: titleKey(title),
+          // Keep the radar CSV title as the canonical display string.
+          song_title: existing.song_title || title,
+          normalized_title: existing.normalized_title || titleKey(existing.song_title || title),
           chart_type: type,
           category: String(category.category || '').trim() || CATEGORY_UNCLASSIFIED,
           source_sort_index: Number(category.sortindex || existing.source_sort_index || 999),

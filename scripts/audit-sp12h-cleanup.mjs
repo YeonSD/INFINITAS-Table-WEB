@@ -1,0 +1,126 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { chartKey, readSeedCharts, titleKey } from './chart-metadata-utils.mjs';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const ROOT = path.resolve(__dirname, '..');
+const SEED_PATH = path.join(ROOT, 'supabase', 'seeds', 'chart_metadata.seed.json');
+const AUDIT_DIR = path.join(ROOT, 'supabase', 'audits');
+const args = process.argv.slice(2);
+const snapshotPath = resolveArg('--snapshot-path', path.join(ROOT, 'assets', 'data', 'app-snapshot.json'));
+const versionPath = resolveArg('--version-path', path.join(ROOT, 'assets', 'data', 'snapshot-version.json'));
+const reportPath = resolveArg('--report-path', path.join(AUDIT_DIR, 'sp12h-cleanup-report.json'));
+const sqlPath = resolveArg('--sql-path', path.join(AUDIT_DIR, 'sp12h-cleanup-candidates.sql'));
+
+const snapshot = JSON.parse(stripBom(fs.readFileSync(snapshotPath, 'utf8')));
+const versionMeta = JSON.parse(stripBom(fs.readFileSync(versionPath, 'utf8')));
+const seedCharts = readSeedCharts(SEED_PATH).filter((row) => row.table_key === 'SP12H' && row.is_deleted !== true);
+const snapshotItems = (snapshot?.rankTables?.SP12H?.categories || []).flatMap((category) => (
+  (category?.items || []).map((item) => ({
+    song_title: String(item?.data?.title || '').trim(),
+    chart_type: String(item?.data?.type || '').trim().toUpperCase(),
+    category: String(category?.category || '').trim()
+  }))
+)).filter((item) => item.song_title && item.chart_type);
+
+const seedMap = new Map(seedCharts.map((row) => [chartKey('SP12H', row.song_title, row.chart_type), row]));
+const deleteCandidates = [];
+const titleVariantGroups = new Map();
+const snapshotExactTitleSet = new Set(snapshotItems.map((item) => `${item.song_title}|${item.chart_type}`));
+
+snapshotItems.forEach((item) => {
+  const key = chartKey('SP12H', item.song_title, item.chart_type);
+  const seedRow = seedMap.get(key);
+  const variants = titleVariantGroups.get(key) || [];
+  variants.push(`${item.song_title} [${item.chart_type}]`);
+  titleVariantGroups.set(key, variants);
+
+  if (!seedRow) {
+    deleteCandidates.push({
+      table_key: 'SP12H',
+      song_title: item.song_title,
+      chart_type: item.chart_type,
+      reason: 'missing_from_seed',
+      canonical_key: key
+    });
+    return;
+  }
+  if (item.song_title !== seedRow.song_title) {
+    const canonicalTitleExistsInSnapshot = snapshotExactTitleSet.has(`${seedRow.song_title}|${item.chart_type}`);
+    deleteCandidates.push({
+      table_key: 'SP12H',
+      song_title: item.song_title,
+      chart_type: item.chart_type,
+      reason: 'noncanonical_title_variant',
+      keep_song_title: seedRow.song_title,
+      canonical_key: key,
+      can_soft_delete_immediately: canonicalTitleExistsInSnapshot
+    });
+  }
+});
+
+const dedupedCandidates = [...new Map(deleteCandidates.map((row) => [`${row.song_title}|${row.chart_type}`, row])).values()]
+  .sort((a, b) => {
+    const titleDiff = a.song_title.localeCompare(b.song_title, 'ko');
+    if (titleDiff !== 0) return titleDiff;
+    return a.chart_type.localeCompare(b.chart_type, 'ko');
+  });
+
+const titleVariants = [...titleVariantGroups.entries()]
+  .map(([key, titles]) => ({ canonical_key: key, titles: [...new Set(titles)].sort((a, b) => a.localeCompare(b, 'ko')) }))
+  .filter((row) => row.titles.length > 1)
+  .sort((a, b) => a.canonical_key.localeCompare(b.canonical_key, 'ko'));
+const safeDeleteCandidates = dedupedCandidates.filter((row) => row.reason === 'missing_from_seed' || row.can_soft_delete_immediately !== false);
+const repairCandidates = dedupedCandidates.filter((row) => row.reason !== 'missing_from_seed' && row.can_soft_delete_immediately === false);
+
+const report = {
+  generatedAt: new Date().toISOString(),
+  snapshotVersion: String(versionMeta?.version || ''),
+  snapshotPublishedAt: String(versionMeta?.publishedAt || snapshot?.publishedAt || ''),
+  snapshotCount: snapshotItems.length,
+  seedCount: seedCharts.length,
+  deleteCandidateCount: dedupedCandidates.length,
+  deleteReasonCounts: {
+    missing_from_seed: dedupedCandidates.filter((row) => row.reason === 'missing_from_seed').length,
+    noncanonical_title_variant: dedupedCandidates.filter((row) => row.reason === 'noncanonical_title_variant').length
+  },
+  safeDeleteCandidateCount: safeDeleteCandidates.length,
+  repairCandidateCount: repairCandidates.length,
+  titleVariantGroupCount: titleVariants.length,
+  titleVariants,
+  deleteCandidates: dedupedCandidates,
+  safeDeleteCandidates,
+  repairCandidates
+};
+
+const sqlPayload = safeDeleteCandidates.map((row) => ({
+  chart_key: chartKey('SP12H', row.song_title, row.chart_type),
+  song_title: row.song_title,
+  chart_type: row.chart_type,
+  reason: row.reason,
+  keep_song_title: row.keep_song_title || ''
+}));
+const sqlPayloadBase64 = Buffer.from(JSON.stringify(sqlPayload), 'utf8').toString('base64');
+const sql = safeDeleteCandidates.length
+  ? `-- Generated by scripts/audit-sp12h-cleanup.mjs\n-- Snapshot ${report.snapshotVersion}\n-- Safe soft-delete targets only. Remaining repair candidates require canonical title insert/update first.\nwith targets as (\n  select chart_key, song_title, chart_type, reason, nullif(keep_song_title, '') as keep_song_title\n  from jsonb_to_recordset(convert_from(decode('${sqlPayloadBase64}', 'base64'), 'utf8')::jsonb) as x(\n    chart_key text,\n    song_title text,\n    chart_type text,\n    reason text,\n    keep_song_title text\n  )\n)\nupdate public.chart_metadata as cm\nset\n  is_deleted = true,\n  source = 'sp12h_cleanup_audit'\nfrom targets\nwhere cm.is_deleted = false\n  and cm.chart_key = targets.chart_key;\n`
+  : `-- Generated by scripts/audit-sp12h-cleanup.mjs\n-- Snapshot ${report.snapshotVersion}\n-- No cleanup candidates.\n`;
+
+fs.mkdirSync(path.dirname(reportPath), { recursive: true });
+fs.mkdirSync(path.dirname(sqlPath), { recursive: true });
+fs.writeFileSync(reportPath, JSON.stringify(report, null, 2));
+fs.writeFileSync(sqlPath, sql);
+
+console.log(`Wrote ${dedupedCandidates.length} cleanup candidates to ${reportPath}`);
+console.log(`Wrote SQL helper to ${sqlPath}`);
+
+function resolveArg(flag, fallbackValue) {
+  const index = args.indexOf(flag);
+  if (index < 0 || !args[index + 1]) return fallbackValue;
+  return path.resolve(ROOT, args[index + 1]);
+}
+
+function stripBom(text) {
+  return String(text || '').replace(/^\uFEFF/, '');
+}
