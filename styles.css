@@ -4932,7 +4932,13 @@ button.danger {
 }
 
 .song-meta-editor-actions {
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.song-meta-editor-actions-right {
+  display: flex;
+  gap: 6px;
 }
 
 .song-popup-meta {

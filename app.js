@@ -1267,6 +1267,38 @@ function applyChartMetadataRowToLocalState(row) {
   return state.selectedChart;
 }
 
+function removeChartMetadataRowFromLocalState(row) {
+  const tableKey = String(row?.table_key || row?.tableKey || '').trim();
+  const chartType = String(row?.chart_type || row?.chartType || '').trim().toUpperCase();
+  const songTitle = String(row?.song_title || row?.songTitle || '').trim();
+  if (!tableKey || !songTitle || !chartType) return;
+
+  const table = state.rankTables[tableKey];
+  if (table) {
+    table.categories = (table.categories || [])
+      .map((category) => ({
+        ...category,
+        items: (category.items || []).filter((item) => !(
+          titleKey(item?.data?.title) === titleKey(songTitle)
+          && String(item?.data?.type || '').trim().toUpperCase() === chartType
+        ))
+      }))
+      .filter((category) => (category.items || []).length > 0);
+  }
+
+  if (state.songRadarCatalog && Array.isArray(state.songRadarCatalog.charts)) {
+    const radarKey = `${titleKey(songTitle)}|${chartType}`;
+    state.songRadarCatalog.charts = state.songRadarCatalog.charts.filter((item) => (
+      `${titleKey(item?.title)}|${String(item?.type || '').trim().toUpperCase()}` !== radarKey
+    ));
+  }
+
+  rebuildViews();
+  if (state.selectedChart?.key === `${tableKey}|${titleKey(songTitle)}|${chartType}`) {
+    state.selectedChart = null;
+  }
+}
+
 function openSongMetaEditor(chartKey = '') {
   if (!state.auth.isAdmin) return showToast('관리자 계정만 곡 정보를 편집할 수 있습니다.');
   const chart = Object.values(state.tableViews || []).flatMap((view) => view.flatCharts || []).find((row) => row.key === chartKey) || state.selectedChart;
@@ -1333,6 +1365,31 @@ async function saveSongMetaEditor() {
       markSnapshotPublishNeeded('곡 메타 변경사항이 저장되었습니다. 정적 스냅샷 배포가 필요합니다.');
       render();
       showToast('곡 정보를 저장했습니다.');
+    }
+    );
+  }
+
+async function deleteSongMetaEditor() {
+  if (!state.auth.isAdmin || !state.auth.user) return showToast('관리자 계정만 곡 정보를 삭제할 수 있습니다.');
+  const payload = songMetaEditorPayloadFromForm();
+  if (!payload.chartKey) return showToast('삭제할 곡 정보를 찾지 못했습니다.');
+  const confirmed = window.confirm(`정말로 ${payload.songTitle} [${payload.chartType}] 메타를 삭제할까요?\n이 작업 후에는 정적 스냅샷 재배포가 필요합니다.`);
+  if (!confirmed) return;
+  await withBusyOverlay(
+    '곡 정보 삭제 중...',
+    '선택한 곡 메타데이터를 서버에서 숨기고 있습니다.',
+    async () => {
+      const row = await rpc('admin_delete_chart_metadata', {
+        p_chart_key: payload.chartKey,
+        p_table_key: payload.tableKey,
+        p_song_title: payload.songTitle,
+        p_chart_type: payload.chartType
+      });
+      removeChartMetadataRowFromLocalState(Array.isArray(row) ? row[0] : row || payload);
+      closeSongMetaEditor();
+      markSnapshotPublishNeeded('곡 메타 삭제사항이 저장되었습니다. 정적 스냅샷 배포가 필요합니다.');
+      render();
+      showToast('곡 정보를 삭제했습니다.');
     }
   );
 }
@@ -2595,9 +2652,10 @@ bindUi({
     saveNoticeEditor,
     openSongMetaEditor,
     closeSongMetaEditor,
-    saveSongMetaEditor,
-    syncSongMetaSortIndexFromCategory,
-    publishSnapshotChanges,
+      saveSongMetaEditor,
+      deleteSongMetaEditor,
+      syncSongMetaSortIndexFromCategory,
+      publishSnapshotChanges,
     formatProfileId,
     submitProfile
   }
