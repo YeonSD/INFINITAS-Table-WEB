@@ -37,11 +37,66 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Debug Supabase source
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          echo "SUPABASE_URL=$SUPABASE_URL"
+          node - <<'EOF'
+          const url = new URL(`${process.env.SUPABASE_URL}/rest/v1/chart_metadata`);
+          url.searchParams.set('select', 'table_key,song_title,chart_type,category,source_sort_index,classification_status,updated_at');
+          url.searchParams.set('table_key', 'eq.SP11H');
+          url.searchParams.set('chart_type', 'eq.A');
+          url.searchParams.set('song_title', 'eq.MA・TSU・RI');
+          fetch(url, {
+            headers: {
+              apikey: process.env.SUPABASE_SERVICE_ROLE_KEY,
+              Authorization: `Bearer ${process.env.SUPABASE_SERVICE_ROLE_KEY}`
+            }
+          })
+            .then(async (response) => {
+              const text = await response.text();
+              console.log('DB_STATUS=' + response.status);
+              console.log('DB_BODY=' + text);
+              if (!response.ok) process.exit(1);
+            })
+            .catch((error) => {
+              console.error(error);
+              process.exit(1);
+            });
+          EOF
+
       - name: Build snapshot from Supabase
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: node ./scripts/build-app-snapshot.mjs --source supabase
+
+      - name: Debug generated snapshot
+        run: |
+          node - <<'EOF'
+          const fs = require('node:fs');
+          const snapshot = JSON.parse(fs.readFileSync('./assets/data/app-snapshot.json', 'utf8'));
+          const table = snapshot.rankTables?.SP11H;
+          const hits = [];
+          for (const category of table?.categories || []) {
+            for (const item of category.items || []) {
+              const data = item?.data || {};
+              if (String(data.title || '').normalize('NFKC') === 'MA・TSU・RI'.normalize('NFKC') && String(data.type || '') === 'A') {
+                hits.push({
+                  category: category.category,
+                  sortindex: category.sortindex,
+                  title: data.title,
+                  type: data.type
+                });
+              }
+            }
+          }
+          console.log('SNAPSHOT_VERSION=' + String(snapshot.version || ''));
+          console.log('SNAPSHOT_PUBLISHED_AT=' + String(snapshot.publishedAt || ''));
+          console.log('SNAPSHOT_MA_TSU_RI=' + JSON.stringify(hits));
+          EOF
 
       - name: Commit snapshot
         run: |
