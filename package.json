@@ -9,8 +9,9 @@
     "snapshot:seed": "node ./scripts/build-chart-metadata-seed.mjs && node ./scripts/build-app-snapshot.mjs --source seed",
     "seed:supabase": "node ./scripts/push-chart-metadata-seed.mjs",
     "snapshot:supabase": "node ./scripts/build-app-snapshot.mjs --source supabase",
-    "build": "npm run snapshot:seed && npm run config:runtime",
-    "start": "npm run build && node server.js",
-    "dev": "npm run build && node server.js"
+    "build": "npm run config:runtime",
+    "build:local": "npm run snapshot:seed && npm run config:runtime",
+    "start": "npm run build:local && node server.js",
+    "dev": "npm run build:local && node server.js"
   }
 }
