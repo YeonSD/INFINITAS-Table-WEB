@@ -481,7 +481,7 @@ button.danger {
   0%, 12% {
     transform: translateX(0);
   }
-  74%, 92% {
+  74%, 99.9% {
     transform: translateX(var(--notice-shift, 0px));
   }
   100% {
