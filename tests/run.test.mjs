@@ -81,12 +81,19 @@ test('deferred panel render plan only includes the active dock panel group', () 
 test('app.js delegates account and render orchestration to dedicated controllers', () => {
   const appSource = fs.readFileSync(new URL('../app.js', import.meta.url), 'utf8');
   assert.match(appSource, /import \{ createAccountController \} from '\.\/lib\/app-account-controller\.js';/);
+  assert.match(appSource, /import \{ createAdminController \} from '\.\/lib\/app-admin-controller\.js';/);
   assert.match(appSource, /import \{ createRenderController \} from '\.\/lib\/app-render-controller\.js';/);
   assert.doesNotMatch(appSource, /function loadGuestProfileCache\(/);
   assert.doesNotMatch(appSource, /function persistGuestProfileCache\(/);
   assert.doesNotMatch(appSource, /function readPendingSignupDraft\(/);
   assert.doesNotMatch(appSource, /function writePendingSignupDraft\(/);
   assert.doesNotMatch(appSource, /function clearPendingSignupDraft\(/);
+  assert.doesNotMatch(appSource, /async function refreshAppNotices\(/);
+  assert.doesNotMatch(appSource, /async function loadStaticData\(/);
+  assert.doesNotMatch(appSource, /function openNoticeEditor\(/);
+  assert.doesNotMatch(appSource, /function openSongMetaEditor\(/);
+  assert.doesNotMatch(appSource, /async function saveSongMetaEditor\(/);
+  assert.doesNotMatch(appSource, /async function publishSnapshotChanges\(/);
   assert.doesNotMatch(appSource, /function setActivePanel\(/);
   assert.doesNotMatch(appSource, /function renderSignupDialog\(/);
   assert.doesNotMatch(appSource, /async function refreshProfile\(/);
