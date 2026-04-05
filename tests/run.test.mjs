@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
-import { normalizeBingoState } from '../lib/data.js';
+import { normalizeBingoState, progressMap } from '../lib/data.js';
 import { getDeferredPanelRenderers } from '../lib/render-plan.js';
 import { buildAccountStatePatchPayload, buildFullAccountStatePayload, buildUserProfilePayload } from '../lib/profile-storage.js';
 import { goalAchieved, goalLabel } from '../lib/utils.js';
@@ -144,6 +144,32 @@ test('goal helpers support RATE goals and main goal kind change updates enhanced
   assert.match(htmlSource, /id="goalRate"/);
   assert.match(htmlSource, /id="songGoalRate"/);
   assert.doesNotMatch(htmlSource, /<option value="MAX">MAX<\/option>/);
+});
+
+test('progressMap keeps chart rate for RATE goal evaluation', () => {
+  const map = progressMap({
+    SP12H: {
+      flatCharts: [{
+        key: 'SP12H|god mind|A',
+        tableName: 'SP12H',
+        title: 'God Mind',
+        type: 'A',
+        lamp: 'EXHARD',
+        clearStatus: 'EXHARD',
+        exScore: 3858,
+        rate: 89.51,
+        scoreTier: 'AAA'
+      }]
+    }
+  });
+  assert.equal(map['SP12H|god mind|A']?.rate, 89.51);
+  assert.equal(goalAchieved({
+    table: 'SP12H',
+    title: 'God Mind',
+    chartType: 'A',
+    kind: 'RATE',
+    targetRate: 89.3
+  }, map), true);
 });
 
 test('normalizeBingoState clamps saved boards and keeps a valid active board', () => {
