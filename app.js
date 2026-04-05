@@ -361,7 +361,15 @@ function normalizeGoalSnapshotForBingo(goal) {
 
 function ensureBingoState(profile = state.profile) {
   if (!profile) return createEmptyBingoState();
-  profile.bingoState = normalizeBingoState(profile.bingoState);
+  const normalized = normalizeBingoState(profile.bingoState);
+  if (profile.bingoState && typeof profile.bingoState === 'object') {
+    Object.keys(profile.bingoState).forEach((key) => {
+      delete profile.bingoState[key];
+    });
+    Object.assign(profile.bingoState, normalized);
+  } else {
+    profile.bingoState = normalized;
+  }
   return profile.bingoState;
 }
 
