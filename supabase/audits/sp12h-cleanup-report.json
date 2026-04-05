@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-04-03T14:00:50.679Z",
+  "snapshotVersion": "20260403133438-6a3350a79ac3",
+  "snapshotPublishedAt": "2026-04-03T13:34:38.442Z",
+  "snapshotCount": 551,
+  "seedCount": 551,
+  "deleteCandidateCount": 0,
+  "deleteReasonCounts": {
+    "missing_from_seed": 0,
+    "noncanonical_title_variant": 0
+  },
+  "safeDeleteCandidateCount": 0,
+  "repairCandidateCount": 0,
+  "titleVariantGroupCount": 0,
+  "titleVariants": [],
+  "deleteCandidates": [],
+  "safeDeleteCandidates": [],
+  "repairCandidates": []
+}

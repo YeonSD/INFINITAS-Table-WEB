@@ -1,0 +1,2810 @@
+{
+  "generatedAt": "2026-04-03T14:00:50.844Z",
+  "snapshotVersion": "20260403130319-4d2216b146ef",
+  "snapshotPublishedAt": "2026-04-03T13:03:19.438Z",
+  "snapshotCount": 718,
+  "seedCount": 551,
+  "deleteCandidateCount": 183,
+  "deleteReasonCounts": {
+    "missing_from_seed": 153,
+    "noncanonical_title_variant": 30
+  },
+  "safeDeleteCandidateCount": 167,
+  "repairCandidateCount": 16,
+  "titleVariantGroupCount": 15,
+  "titleVariants": [
+    {
+      "canonical_key": "SP12H|3y3s(long ver.)|A",
+      "titles": [
+        "3y3s (Long ver.) [A]",
+        "3y3s(Long ver.) [A]"
+      ]
+    },
+    {
+      "canonical_key": "SP12H|旋律のドグマ~miserables~|A",
+      "titles": [
+        "旋律のドグマ～Miserables～ [A]",
+        "旋律のドグマ~Misérables~ [A]"
+      ]
+    },
+    {
+      "canonical_key": "SP12H|渚の小悪魔ラヴリィ~レイディオ(iidx edit)|A",
+      "titles": [
+        "†渚の小悪魔ラヴリィ~レイディオ† (IIDX EDIT) [A]",
+        "†渚の小悪魔ラヴリィ～レイディオ†(IIDX EDIT) [A]"
+      ]
+    },
+    {
+      "canonical_key": "SP12H|表裏一体!?怪盗いいんちょの悩み|A",
+      "titles": [
+        "表裏一体！？怪盗いいんちょの悩み [A]",
+        "表裏一体!?怪盗いいんちょの悩み♥ [A]"
+      ]
+    },
+    {
+      "canonical_key": "SP12H|a minstrel~ver.short-scape~|L",
+      "titles": [
+        "A MINSTREL ~ ver. short-scape ~ [L]",
+        "A MINSTREL～ver.short-scape～ [L]"
+      ]
+    },
+    {
+      "canonical_key": "SP12H|captivate2~覚醒~|L",
+      "titles": [
+        "CaptivAte2 ~覚醒~ [L]",
+        "CaptivAte2~覚醒~ [L]"
+      ]
+    },
+    {
+      "canonical_key": "SP12H|hollywood galaxy(dj nagai remix)|A",
+      "titles": [
+        "Hollywood Galaxy (DJ NAGAI Remix) [A]",
+        "Hollywood Galaxy(DJ NAGAI Remix) [A]"
+      ]
+    },
+    {
+      "canonical_key": "SP12H|ignisirae|A",
+      "titles": [
+        "Ignis†Irae [A]",
+        "Ignis†Iræ [A]"
+      ]
+    },
+    {
+      "canonical_key": "SP12H|macho monky|A",
+      "titles": [
+        "Macho Monky [A]",
+        "Mächö Mönky [A]"
+      ]
+    },
+    {
+      "canonical_key": "SP12H|ou legends|A",
+      "titles": [
+        "Ou Legends [A]",
+        "Ōu Legends [A]"
+      ]
+    },
+    {
+      "canonical_key": "SP12H|parvati|A",
+      "titles": [
+        "Parvati [A]",
+        "Pārvatī [A]"
+      ]
+    },
+    {
+      "canonical_key": "SP12H|ubertreffen|L",
+      "titles": [
+        "Ubertreffen [L]",
+        "Übertreffen [L]"
+      ]
+    },
+    {
+      "canonical_key": "SP12H|xlo|A",
+      "titles": [
+        "Xlo [A]",
+        "Xlø [A]"
+      ]
+    },
+    {
+      "canonical_key": "SP12H|キャトられ恋はモ~モク|A",
+      "titles": [
+        "キャトられ♥恋はモ~モク [A]",
+        "キャトられ恋はモ～モク [A]"
+      ]
+    },
+    {
+      "canonical_key": "SP12H|ピアノ協奏曲第1番\"蠍火\"|A",
+      "titles": [
+        "ピアノ協奏曲第1番\"蠍火\" [A]",
+        "ピアノ協奏曲第１番”蠍火” [A]"
+      ]
+    }
+  ],
+  "deleteCandidates": [
+    {
+      "table_key": "SP12H",
+      "song_title": "-65℃",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "-65°C",
+      "canonical_key": "SP12H|-65°c|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "⁽⁽ଘ( ˙꒳˙ )ଓ⁾⁾ beyond reason",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|((ଘ(꒳ )ଓ))beyond reason|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "［ ］DENTITY",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|[ ]dentity|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "#The_Relentless",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|#the_relentless|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "†渚の小悪魔ラヴリィ～レイディオ†(IIDX EDIT)",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "†渚の小悪魔ラヴリィ~レイディオ† (IIDX EDIT)",
+      "canonical_key": "SP12H|渚の小悪魔ラヴリィ~レイディオ(iidx edit)|A",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "≡+≡",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|≡+≡|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "2 Be Continued",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|2 be continued|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "3!dolon Forc3",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|3!dolon forc3|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "3y3s (Long ver.)",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "3y3s(Long ver.)",
+      "canonical_key": "SP12H|3y3s(long ver.)|A",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "轟け！恋のビーンボール！！",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "轟け!恋のビーンボール!!",
+      "canonical_key": "SP12H|轟け!恋のビーンボール!!|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "君のハートにロックオン",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|君のハートにロックオン|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "今宵、ロマンス横丁。",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|今宵、ロマンス横丁。|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "龍王の霊廟(Mausoleum Of The Primal Dragon)",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|龍王の霊廟(mausoleum of the primal dragon)|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "伐折羅-vajra-",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|伐折羅-vajra-|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "烽火連天の刃",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|烽火連天の刃|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "卑弥呼 (A/B)",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|卑弥呼(a/b)|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "蛇神",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|蛇神|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "旋律のドグマ～Miserables～",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "旋律のドグマ~Misérables~",
+      "canonical_key": "SP12H|旋律のドグマ~miserables~|A",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "聖人の塔",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|聖人の塔|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "聖人の塔",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|聖人の塔|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "新宝島",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|新宝島|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "神っぽいな",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|神っぽいな|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "俺ら東京さ行ぐだ",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|俺ら東京さ行ぐだ|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "紫陽花 -AZISAI-",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|紫陽花 -azisai-|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "即席！脳直★ミュージックシステム",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|即席!脳直★ミュージックシステム|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "天使のカンタータ -Cantata of Angels-",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|天使のカンタータ -cantata of angels-|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "表裏一体！？怪盗いいんちょの悩み",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "表裏一体!?怪盗いいんちょの悩み♥",
+      "canonical_key": "SP12H|表裏一体!?怪盗いいんちょの悩み|A",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "表裏一体！？怪盗いいんちょの悩み",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|表裏一体!?怪盗いいんちょの悩み|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "海神",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|海神|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "火影",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|火影|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "恋歌疾風！かるたクイーンいろは",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "恋歌疾風!かるたクイーンいろは",
+      "canonical_key": "SP12H|恋歌疾風!かるたクイーンいろは|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "恋愛＝精度×認識力",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "恋愛=精度×認識力",
+      "canonical_key": "SP12H|恋愛=精度×認識力|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "恋する☆宇宙戦争っ！！",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "恋する☆宇宙戦争っ!!",
+      "canonical_key": "SP12H|恋する☆宇宙戦争っ!!|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "恋する☆宇宙戦争っ！！",
+      "chart_type": "L",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "恋する☆宇宙戦争っ!!",
+      "canonical_key": "SP12H|恋する☆宇宙戦争っ!!|L",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "残像ニ繋ガレタ追憶ノHIDEAWAY",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|残像ニ繋ガレタ追憶ノhideaway|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "A MINSTREL～ver.short-scape～",
+      "chart_type": "L",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "A MINSTREL ~ ver. short-scape ~",
+      "canonical_key": "SP12H|a minstrel~ver.short-scape~|L",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ACT0",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|act0|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ÆTHER",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|aether|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ALBA-黎明-",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|alba-黎明-|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ALL MY TURN -このターンに、オレの全てを賭ける- (B)",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|all my turn -このターンに、オレの全てを賭ける-(b)|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Ambivalent Vermilia",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|ambivalent vermilia|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "anthracene",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|anthracene|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Aqvion",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|aqvion|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ATHER",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|ather|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Begin",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|begin|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Biometrics Warrior",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|biometrics warrior|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "BLUE DRAGON(雷龍RemixIIDX)",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|blue dragon(雷龍remixiidx)|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Bow shock!!",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|bow shock!!|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Caldwell 99",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|caldwell 99|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "CaptivAte～浄化～",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|captivate~浄化~|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "CaptivAte2 ~覚醒~",
+      "chart_type": "L",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "CaptivAte2~覚醒~",
+      "canonical_key": "SP12H|captivate2~覚醒~|L",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "chaplet -IIDX re:build-",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|chaplet -iidx re:build-|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ChaserXX",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|chaserxx|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "CODE:0",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|code:0|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "CODE:1 ［revision1.0.1］",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "CODE:1 [revision1.0.1]",
+      "canonical_key": "SP12H|code:1 [revision1.0.1]|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "COSMIC V3LOCITY",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|cosmic v3locity|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "CUE CUE RESCUE",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|cue cue rescue|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Dances with Snow Fairies",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|dances with snow fairies|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "DEATH†ZIGOQ ～怒りの高速爆走野郎～",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "DEATH†ZIGOQ ~怒りの高速爆走野郎~",
+      "canonical_key": "SP12H|deathzigoq~怒りの高速爆走野郎~|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "DEATH†ZIGOQ ～怒りの高速爆走野郎～",
+      "chart_type": "L",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "DEATH†ZIGOQ ~怒りの高速爆走野郎~",
+      "canonical_key": "SP12H|deathzigoq~怒りの高速爆走野郎~|L",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Devilz Staircase",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|devilz staircase|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "dica dica",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|dica dica|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Disco Killer Music Lover",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|disco killer music lover|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "DORNWALD ～Junge～",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "DORNWALD ~Junge~",
+      "canonical_key": "SP12H|dornwald~junge~|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "DRUNK MONKY",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|drunk monky|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "DUE TOMORROW",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|due tomorrow|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Ember Lights",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|ember lights|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "EYE OF THE HEAVEN",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|eye of the heaven|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "FAKE TIME",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|fake time|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "fffff",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|fffff|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Flämingo",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|flamingo|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Flashes",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|flashes|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "FlyAway",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|flyaway|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Friction［!］Function",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "Friction[!]Function",
+      "canonical_key": "SP12H|friction[!]function|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "From Human Blood",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|from human blood|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "G2 (B)",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|g2(b)|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "GAMBOL",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|gambol|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "GAME ON",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|game on|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "garden",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|garden|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "gigadelic (H/A)",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|gigadelic(h/a)|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "glacia",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|glacia|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "GOLDEN CROSS",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|golden cross|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "GUILTY",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|guilty|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Hollywood Galaxy (DJ NAGAI Remix)",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "Hollywood Galaxy(DJ NAGAI Remix)",
+      "canonical_key": "SP12H|hollywood galaxy(dj nagai remix)|A",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "hora de verdad",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|hora de verdad|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "HYENA",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|hyena|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Idola",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|idola|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Ignis†Irae",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "Ignis†Iræ",
+      "canonical_key": "SP12H|ignisirae|A",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Innocent Walls",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|innocent walls|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Innocent Walls",
+      "chart_type": "H",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|innocent walls|H"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Innocent Walls (H/A)",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|innocent walls(h/a)|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "KING",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|king|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Konzert V",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|konzert v|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Lethal Weapon",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|lethal weapon|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Level 2",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|level 2|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Level 3",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|level 3|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Level 4",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|level 4|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Level 5",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|level 5|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Level One",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|level one|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "LIGHTNING STRIKES",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|lightning strikes|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Lightspeed",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|lightspeed|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Lisa-RICCIA",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|lisa-riccia|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Lisa-RICCIA",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|lisa-riccia|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Lost Souls",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|lost souls|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Macho Monky",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "Mächö Mönky",
+      "canonical_key": "SP12H|macho monky|A",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "MAD ATTACK",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|mad attack|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Makin' It",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|makin' it|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "MARLIN",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|marlin|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Matt Silver",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|matt silver|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "MAX 300",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|max 300|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "MAX 360",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|max 360|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Memoria Obscura",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|memoria obscura|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "MENDES (B)",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|mendes(b)|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "MENTAL MELTDOWN (B)",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|mental meltdown(b)|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Mid-Corner (Magic Maker)",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|mid-corner(magic maker)|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Miracle 5ympho X",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|miracle 5ympho x|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "New Castle Legions",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|new castle legions|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "NINJA IS DEAD IIDX ver.",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|ninja is dead iidx ver.|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Nothing but Theory",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|nothing but theory|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "O/D*20",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|o/d*20|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Ou Legends",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "Ōu Legends",
+      "canonical_key": "SP12H|ou legends|A",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Override",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|override|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "PARANOiA ～HADES～",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "PARANOiA ~HADES~",
+      "canonical_key": "SP12H|paranoia~hades~|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Parvati",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "Pārvatī",
+      "canonical_key": "SP12H|parvati|A",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Pinky Happy Crazy",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|pinky happy crazy|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Plazma",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|plazma|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Pluto",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|pluto|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "POLꞰAMAИIA",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|polʞamaиia|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Push on Beats!～音ゲの国のeX-ストリーマー～",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|push on beats!~音ゲの国のex-ストリーマー~|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "quell～the seventh slave～",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "quell~the seventh slave~",
+      "canonical_key": "SP12H|quell~the seventh slave~|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "RALLY '25",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|rally '25|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Regina vespaE",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|regina vespae|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "REVOLVER",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|revolver|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "RINNE",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|rinne|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Saturn",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|saturn|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Scripted Connection⇒ long mix",
+      "chart_type": "H",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|scripted connection⇒ long mix|H"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Secrets",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|secrets|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Sense 2007",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|sense 2007|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Session 12 -Esther-",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|session 12 -esther-|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Session 9 -Chronicles-",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|session 9 -chronicles-|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Seven Times Four",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|seven times four|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "SISYPHUS",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|sisyphus|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Skratch Education Lv-1",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|skratch education lv-1|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Smalt #28598F",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|smalt #28598f|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "SOLID WYVERN",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|solid wyvern|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Space Battleship S4TØ",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|space battleship s4to|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Stereo Beasts",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|stereo beasts|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Submerge Serenade",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|submerge serenade|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Summerlights(IIDX Edition)",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|summerlights(iidx edition)|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Super Duper Racers",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|super duper racers|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Sweet Clapper",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|sweet clapper|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "SµG@R RU$#",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "SμG@R RU$#",
+      "canonical_key": "SP12H|sμg@r ru$#|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "The Onlyonez",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|the onlyonez|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "TROOPERS (B)",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|troopers(b)|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Uaigh Gealaí",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|uaigh gealai|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Ubertreffen",
+      "chart_type": "L",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "Übertreffen",
+      "canonical_key": "SP12H|ubertreffen|L",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Umbral",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|umbral|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Violet Pulse",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|violet pulse|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Viridian",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|viridian|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "VOX RUSH",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|vox rush|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Without Heaven",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|without heaven|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Xb10r",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|xb10r|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "XHRONOXAPSULΞ",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|xhronoxapsulξ|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Xlo",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|xlo|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Xlø",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|xlo|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Y&Co. is dead or alive",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|y&co.is dead or alive|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "yellow head joe",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|yellow head joe|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ιgniЯRuina",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|ιgniяruina|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "アラビアン ハイパー ナイト",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|アラビアン ハイパー ナイト|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "お米の美味しい炊き方、そしてお米を食べることによるその効果。",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|お米の美味しい炊き方、そしてお米を食べることによるその効果。|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "カゴノトリ～弐式～",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "カゴノトリ~弐式~",
+      "canonical_key": "SP12H|カゴノトリ~弐式~|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "カジノファイヤーことみちゃん",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|カジノファイヤーことみちゃん|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "キャトられ恋はモ～モク",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "キャトられ♥恋はモ~モク",
+      "canonical_key": "SP12H|キャトられ恋はモ~モク|A",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "グッバイ宣言",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|グッバイ宣言|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "スキッテイエェエエェ!!!!",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|スキッテイエェエエェ!!!!|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "スパークリング☆彡ハイパーチューン！！",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "スパークリング☆彡ハイパーチューン!!",
+      "canonical_key": "SP12H|スパークリング☆彡ハイパーチューン!!|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ぞうしょく！？マイデンティティ",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|ぞうしょく!?マイデンティティ|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "デモーニッシュ",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|デモーニッシュ|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ピアノ協奏曲第１番”蠍火”",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "ピアノ協奏曲第1番\"蠍火\"",
+      "canonical_key": "SP12H|ピアノ協奏曲第1番\"蠍火\"|A",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ビビッド ☆＋＊。キラキライム",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|ビビッド ☆+*。キラキライム|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "フォニイ",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|フォニイ|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ミュージック・アワー",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|ミュージック・アワー|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ミラージュ・レジデンス",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|ミラージュ・レジデンス|L"
+    }
+  ],
+  "safeDeleteCandidates": [
+    {
+      "table_key": "SP12H",
+      "song_title": "⁽⁽ଘ( ˙꒳˙ )ଓ⁾⁾ beyond reason",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|((ଘ(꒳ )ଓ))beyond reason|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "［ ］DENTITY",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|[ ]dentity|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "#The_Relentless",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|#the_relentless|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "†渚の小悪魔ラヴリィ～レイディオ†(IIDX EDIT)",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "†渚の小悪魔ラヴリィ~レイディオ† (IIDX EDIT)",
+      "canonical_key": "SP12H|渚の小悪魔ラヴリィ~レイディオ(iidx edit)|A",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "≡+≡",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|≡+≡|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "2 Be Continued",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|2 be continued|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "3!dolon Forc3",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|3!dolon forc3|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "3y3s (Long ver.)",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "3y3s(Long ver.)",
+      "canonical_key": "SP12H|3y3s(long ver.)|A",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "君のハートにロックオン",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|君のハートにロックオン|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "今宵、ロマンス横丁。",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|今宵、ロマンス横丁。|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "龍王の霊廟(Mausoleum Of The Primal Dragon)",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|龍王の霊廟(mausoleum of the primal dragon)|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "伐折羅-vajra-",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|伐折羅-vajra-|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "烽火連天の刃",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|烽火連天の刃|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "卑弥呼 (A/B)",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|卑弥呼(a/b)|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "蛇神",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|蛇神|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "旋律のドグマ～Miserables～",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "旋律のドグマ~Misérables~",
+      "canonical_key": "SP12H|旋律のドグマ~miserables~|A",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "聖人の塔",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|聖人の塔|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "聖人の塔",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|聖人の塔|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "新宝島",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|新宝島|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "神っぽいな",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|神っぽいな|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "俺ら東京さ行ぐだ",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|俺ら東京さ行ぐだ|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "紫陽花 -AZISAI-",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|紫陽花 -azisai-|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "即席！脳直★ミュージックシステム",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|即席!脳直★ミュージックシステム|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "天使のカンタータ -Cantata of Angels-",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|天使のカンタータ -cantata of angels-|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "表裏一体！？怪盗いいんちょの悩み",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "表裏一体!?怪盗いいんちょの悩み♥",
+      "canonical_key": "SP12H|表裏一体!?怪盗いいんちょの悩み|A",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "表裏一体！？怪盗いいんちょの悩み",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|表裏一体!?怪盗いいんちょの悩み|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "海神",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|海神|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "火影",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|火影|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "残像ニ繋ガレタ追憶ノHIDEAWAY",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|残像ニ繋ガレタ追憶ノhideaway|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "A MINSTREL～ver.short-scape～",
+      "chart_type": "L",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "A MINSTREL ~ ver. short-scape ~",
+      "canonical_key": "SP12H|a minstrel~ver.short-scape~|L",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ACT0",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|act0|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ÆTHER",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|aether|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ALBA-黎明-",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|alba-黎明-|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ALL MY TURN -このターンに、オレの全てを賭ける- (B)",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|all my turn -このターンに、オレの全てを賭ける-(b)|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Ambivalent Vermilia",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|ambivalent vermilia|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "anthracene",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|anthracene|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Aqvion",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|aqvion|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ATHER",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|ather|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Begin",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|begin|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Biometrics Warrior",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|biometrics warrior|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "BLUE DRAGON(雷龍RemixIIDX)",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|blue dragon(雷龍remixiidx)|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Bow shock!!",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|bow shock!!|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Caldwell 99",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|caldwell 99|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "CaptivAte～浄化～",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|captivate~浄化~|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "CaptivAte2 ~覚醒~",
+      "chart_type": "L",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "CaptivAte2~覚醒~",
+      "canonical_key": "SP12H|captivate2~覚醒~|L",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "chaplet -IIDX re:build-",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|chaplet -iidx re:build-|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ChaserXX",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|chaserxx|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "CODE:0",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|code:0|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "COSMIC V3LOCITY",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|cosmic v3locity|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "CUE CUE RESCUE",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|cue cue rescue|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Dances with Snow Fairies",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|dances with snow fairies|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Devilz Staircase",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|devilz staircase|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "dica dica",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|dica dica|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Disco Killer Music Lover",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|disco killer music lover|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "DRUNK MONKY",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|drunk monky|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "DUE TOMORROW",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|due tomorrow|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Ember Lights",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|ember lights|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "EYE OF THE HEAVEN",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|eye of the heaven|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "FAKE TIME",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|fake time|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "fffff",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|fffff|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Flämingo",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|flamingo|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Flashes",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|flashes|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "FlyAway",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|flyaway|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "From Human Blood",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|from human blood|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "G2 (B)",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|g2(b)|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "GAMBOL",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|gambol|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "GAME ON",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|game on|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "garden",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|garden|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "gigadelic (H/A)",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|gigadelic(h/a)|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "glacia",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|glacia|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "GOLDEN CROSS",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|golden cross|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "GUILTY",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|guilty|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Hollywood Galaxy (DJ NAGAI Remix)",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "Hollywood Galaxy(DJ NAGAI Remix)",
+      "canonical_key": "SP12H|hollywood galaxy(dj nagai remix)|A",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "hora de verdad",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|hora de verdad|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "HYENA",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|hyena|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Idola",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|idola|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Ignis†Irae",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "Ignis†Iræ",
+      "canonical_key": "SP12H|ignisirae|A",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Innocent Walls",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|innocent walls|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Innocent Walls",
+      "chart_type": "H",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|innocent walls|H"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Innocent Walls (H/A)",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|innocent walls(h/a)|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "KING",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|king|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Konzert V",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|konzert v|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Lethal Weapon",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|lethal weapon|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Level 2",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|level 2|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Level 3",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|level 3|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Level 4",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|level 4|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Level 5",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|level 5|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Level One",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|level one|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "LIGHTNING STRIKES",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|lightning strikes|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Lightspeed",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|lightspeed|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Lisa-RICCIA",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|lisa-riccia|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Lisa-RICCIA",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|lisa-riccia|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Lost Souls",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|lost souls|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Macho Monky",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "Mächö Mönky",
+      "canonical_key": "SP12H|macho monky|A",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "MAD ATTACK",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|mad attack|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Makin' It",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|makin' it|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "MARLIN",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|marlin|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Matt Silver",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|matt silver|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "MAX 300",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|max 300|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "MAX 360",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|max 360|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Memoria Obscura",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|memoria obscura|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "MENDES (B)",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|mendes(b)|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "MENTAL MELTDOWN (B)",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|mental meltdown(b)|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Mid-Corner (Magic Maker)",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|mid-corner(magic maker)|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Miracle 5ympho X",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|miracle 5ympho x|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "New Castle Legions",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|new castle legions|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "NINJA IS DEAD IIDX ver.",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|ninja is dead iidx ver.|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Nothing but Theory",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|nothing but theory|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "O/D*20",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|o/d*20|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Ou Legends",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "Ōu Legends",
+      "canonical_key": "SP12H|ou legends|A",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Override",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|override|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Parvati",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "Pārvatī",
+      "canonical_key": "SP12H|parvati|A",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Pinky Happy Crazy",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|pinky happy crazy|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Plazma",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|plazma|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Pluto",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|pluto|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "POLꞰAMAИIA",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|polʞamaиia|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Push on Beats!～音ゲの国のeX-ストリーマー～",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|push on beats!~音ゲの国のex-ストリーマー~|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "RALLY '25",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|rally '25|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Regina vespaE",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|regina vespae|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "REVOLVER",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|revolver|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "RINNE",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|rinne|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Saturn",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|saturn|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Scripted Connection⇒ long mix",
+      "chart_type": "H",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|scripted connection⇒ long mix|H"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Secrets",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|secrets|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Sense 2007",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|sense 2007|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Session 12 -Esther-",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|session 12 -esther-|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Session 9 -Chronicles-",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|session 9 -chronicles-|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Seven Times Four",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|seven times four|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "SISYPHUS",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|sisyphus|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Skratch Education Lv-1",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|skratch education lv-1|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Smalt #28598F",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|smalt #28598f|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "SOLID WYVERN",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|solid wyvern|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Space Battleship S4TØ",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|space battleship s4to|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Stereo Beasts",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|stereo beasts|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Submerge Serenade",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|submerge serenade|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Summerlights(IIDX Edition)",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|summerlights(iidx edition)|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Super Duper Racers",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|super duper racers|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Sweet Clapper",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|sweet clapper|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "The Onlyonez",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|the onlyonez|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "TROOPERS (B)",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|troopers(b)|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Uaigh Gealaí",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|uaigh gealai|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Ubertreffen",
+      "chart_type": "L",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "Übertreffen",
+      "canonical_key": "SP12H|ubertreffen|L",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Umbral",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|umbral|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Violet Pulse",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|violet pulse|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Viridian",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|viridian|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "VOX RUSH",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|vox rush|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Without Heaven",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|without heaven|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Xb10r",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|xb10r|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "XHRONOXAPSULΞ",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|xhronoxapsulξ|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Xlo",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|xlo|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Xlø",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|xlo|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Y&Co. is dead or alive",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|y&co.is dead or alive|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "yellow head joe",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|yellow head joe|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ιgniЯRuina",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|ιgniяruina|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "アラビアン ハイパー ナイト",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|アラビアン ハイパー ナイト|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "お米の美味しい炊き方、そしてお米を食べることによるその効果。",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|お米の美味しい炊き方、そしてお米を食べることによるその効果。|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "カジノファイヤーことみちゃん",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|カジノファイヤーことみちゃん|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "キャトられ恋はモ～モク",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "キャトられ♥恋はモ~モク",
+      "canonical_key": "SP12H|キャトられ恋はモ~モク|A",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "グッバイ宣言",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|グッバイ宣言|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "スキッテイエェエエェ!!!!",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|スキッテイエェエエェ!!!!|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ぞうしょく！？マイデンティティ",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|ぞうしょく!?マイデンティティ|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "デモーニッシュ",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|デモーニッシュ|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ピアノ協奏曲第１番”蠍火”",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "ピアノ協奏曲第1番\"蠍火\"",
+      "canonical_key": "SP12H|ピアノ協奏曲第1番\"蠍火\"|A",
+      "can_soft_delete_immediately": true
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ビビッド ☆＋＊。キラキライム",
+      "chart_type": "A",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|ビビッド ☆+*。キラキライム|A"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "フォニイ",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|フォニイ|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ミュージック・アワー",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|ミュージック・アワー|L"
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "ミラージュ・レジデンス",
+      "chart_type": "L",
+      "reason": "missing_from_seed",
+      "canonical_key": "SP12H|ミラージュ・レジデンス|L"
+    }
+  ],
+  "repairCandidates": [
+    {
+      "table_key": "SP12H",
+      "song_title": "-65℃",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "-65°C",
+      "canonical_key": "SP12H|-65°c|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "轟け！恋のビーンボール！！",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "轟け!恋のビーンボール!!",
+      "canonical_key": "SP12H|轟け!恋のビーンボール!!|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "恋歌疾風！かるたクイーンいろは",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "恋歌疾風!かるたクイーンいろは",
+      "canonical_key": "SP12H|恋歌疾風!かるたクイーンいろは|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "恋愛＝精度×認識力",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "恋愛=精度×認識力",
+      "canonical_key": "SP12H|恋愛=精度×認識力|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "恋する☆宇宙戦争っ！！",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "恋する☆宇宙戦争っ!!",
+      "canonical_key": "SP12H|恋する☆宇宙戦争っ!!|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "恋する☆宇宙戦争っ！！",
+      "chart_type": "L",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "恋する☆宇宙戦争っ!!",
+      "canonical_key": "SP12H|恋する☆宇宙戦争っ!!|L",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "CODE:1 ［revision1.0.1］",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "CODE:1 [revision1.0.1]",
+      "canonical_key": "SP12H|code:1 [revision1.0.1]|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "DEATH†ZIGOQ ～怒りの高速爆走野郎～",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "DEATH†ZIGOQ ~怒りの高速爆走野郎~",
+      "canonical_key": "SP12H|deathzigoq~怒りの高速爆走野郎~|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "DEATH†ZIGOQ ～怒りの高速爆走野郎～",
+      "chart_type": "L",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "DEATH†ZIGOQ ~怒りの高速爆走野郎~",
+      "canonical_key": "SP12H|deathzigoq~怒りの高速爆走野郎~|L",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "DORNWALD ～Junge～",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "DORNWALD ~Junge~",
+      "canonical_key": "SP12H|dornwald~junge~|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "Friction［!］Function",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "Friction[!]Function",
+      "canonical_key": "SP12H|friction[!]function|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "PARANOiA ～HADES～",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "PARANOiA ~HADES~",
+      "canonical_key": "SP12H|paranoia~hades~|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "quell～the seventh slave～",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "quell~the seventh slave~",
+      "canonical_key": "SP12H|quell~the seventh slave~|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "SµG@R RU$#",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "SμG@R RU$#",
+      "canonical_key": "SP12H|sμg@r ru$#|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "カゴノトリ～弐式～",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "カゴノトリ~弐式~",
+      "canonical_key": "SP12H|カゴノトリ~弐式~|A",
+      "can_soft_delete_immediately": false
+    },
+    {
+      "table_key": "SP12H",
+      "song_title": "スパークリング☆彡ハイパーチューン！！",
+      "chart_type": "A",
+      "reason": "noncanonical_title_variant",
+      "keep_song_title": "スパークリング☆彡ハイパーチューン!!",
+      "canonical_key": "SP12H|スパークリング☆彡ハイパーチューン!!|A",
+      "can_soft_delete_immediately": false
+    }
+  ]
+}
