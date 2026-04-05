@@ -480,6 +480,7 @@ function removeSavedBoard(boardId) {
   const bingo = ensureBingoState();
   bingo.savedBoards = currentSavedBoards().filter((board) => String(board?.id || '') !== String(boardId || ''));
   bingo.activeBoardId = String(bingo.savedBoards[0]?.id || '');
+  bingo.published = null;
   syncPublishedFromSavedBoards();
 }
 
