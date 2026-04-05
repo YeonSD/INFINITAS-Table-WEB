@@ -237,8 +237,8 @@
             <option value="L">L (SPL)</option>
           </select>
           <select id="goalLamp" class="goal-target-input">
-            <option value="EX">EX-HARD</option>
             <option value="HC">HARD</option>
+            <option value="EX">EX-HARD</option>
             <option value="FC">FULL COMBO</option>
           </select>
           <input id="goalScore" class="goal-target-input hidden" type="number" min="0" step="1" placeholder="EX 점수 입력" />
@@ -517,8 +517,8 @@
             <option value="RATE">RATE</option>
           </select>
           <select id="songGoalLamp" class="song-goal-target">
-            <option value="EX">EX-HARD</option>
             <option value="HC">HARD</option>
+            <option value="EX">EX-HARD</option>
             <option value="FC">FULL COMBO</option>
           </select>
           <input id="songGoalScore" class="song-goal-target hidden" type="number" min="0" step="1" placeholder="EX 점수 입력" />
@@ -700,10 +700,22 @@
           </aside>
           <section class="settings-content">
             <div class="settings-panel-content active" data-settings-panel="general">
-              <div class="settings-version-card settings-account-card">
-                <div><strong>계정</strong></div>
-                <div class="settings-account-copy">탈퇴 시 저장된 웹 계정 데이터가 삭제되고 로그아웃됩니다.</div>
-                <button id="btnWithdrawAccount" type="button" class="danger settings-danger-btn">탈퇴</button>
+              <div class="settings-version-card">
+                <div class="settings-subtitle">서열표 표시</div>
+                <label class="settings-item">
+                  <span class="setting-check">
+                    <input id="settingRankTableDisplayRank" type="radio" name="settingRankTableDisplay" checked />
+                    <span class="setting-check-ui"></span>
+                  </span>
+                  <span>RANK 표시</span>
+                </label>
+                <label class="settings-item">
+                  <span class="setting-check">
+                    <input id="settingRankTableDisplayRate" type="radio" name="settingRankTableDisplay" />
+                    <span class="setting-check-ui"></span>
+                  </span>
+                  <span>RATE 표시</span>
+                </label>
               </div>
               <div id="settingsAdminPublishCard" class="settings-version-card settings-admin-card hidden">
                 <div class="settings-admin-card-head">
@@ -716,6 +728,11 @@
                   <a id="settingsAdminPublishLink" class="hidden" href="#" target="_blank" rel="noreferrer">진행 상황 보기</a>
                   <button id="btnPublishSnapshot" type="button" class="primary-btn">변경사항 배포</button>
                 </div>
+              </div>
+              <div class="settings-version-card settings-account-card">
+                <div><strong>계정</strong></div>
+                <div class="settings-account-copy">탈퇴 시 저장된 웹 계정 데이터가 삭제되고 로그아웃됩니다.</div>
+                <button id="btnWithdrawAccount" type="button" class="danger settings-danger-btn">탈퇴</button>
               </div>
             </div>
 

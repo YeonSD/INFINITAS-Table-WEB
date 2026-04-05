@@ -5,7 +5,7 @@ import fs from 'node:fs';
 import { normalizeBingoState, progressMap } from '../lib/data.js';
 import { getDeferredPanelRenderers } from '../lib/render-plan.js';
 import { buildAccountStatePatchPayload, buildFullAccountStatePayload, buildUserProfilePayload } from '../lib/profile-storage.js';
-import { goalAchieved, goalLabel } from '../lib/utils.js';
+import { goalAchieved, goalLabel, normalizeSocialSettings } from '../lib/utils.js';
 
 function headerMap(vercelConfig) {
   const rootRule = (vercelConfig.headers || []).find((rule) => rule.source === '/(.*)');
@@ -143,6 +143,8 @@ test('goal helpers support RATE goals and main goal kind change updates enhanced
   assert.match(htmlSource, /<option value="RATE">RATE<\/option>/);
   assert.match(htmlSource, /id="goalRate"/);
   assert.match(htmlSource, /id="songGoalRate"/);
+  assert.match(htmlSource, /<select id="goalLamp"[\s\S]*?<option value="HC">HARD<\/option>[\s\S]*?<option value="EX">EX-HARD<\/option>[\s\S]*?<option value="FC">FULL COMBO<\/option>/);
+  assert.match(htmlSource, /<select id="songGoalLamp"[\s\S]*?<option value="HC">HARD<\/option>[\s\S]*?<option value="EX">EX-HARD<\/option>[\s\S]*?<option value="FC">FULL COMBO<\/option>/);
   assert.doesNotMatch(htmlSource, /<option value="MAX">MAX<\/option>/);
 });
 
@@ -170,6 +172,21 @@ test('progressMap keeps chart rate for RATE goal evaluation', () => {
     kind: 'RATE',
     targetRate: 89.3
   }, map), true);
+});
+
+test('general settings support rank table display mode and rank table can render RATE badges', () => {
+  assert.equal(normalizeSocialSettings({}).rankTableDisplay, 'rank');
+  assert.equal(normalizeSocialSettings({ rankTableDisplay: 'rate' }).rankTableDisplay, 'rate');
+  assert.equal(normalizeSocialSettings({ rankTableDisplay: 'other' }).rankTableDisplay, 'rank');
+
+  const htmlSource = fs.readFileSync(new URL('../index.html', import.meta.url), 'utf8');
+  assert.match(htmlSource, /id="settingRankTableDisplayRank"/);
+  assert.match(htmlSource, /id="settingRankTableDisplayRate"/);
+  assert.match(htmlSource, /서열표 표시/);
+
+  const rankUiSource = fs.readFileSync(new URL('../lib/rank-ui.js', import.meta.url), 'utf8');
+  assert.match(rankUiSource, /rankTableDisplay === 'rate'/);
+  assert.match(rankUiSource, /Number\(chart\.rate \|\| 0\)\.toFixed\(2\)\}%/);
 });
 
 test('normalizeBingoState clamps saved boards and keeps a valid active board', () => {
