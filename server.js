@@ -43,6 +43,17 @@ function cacheHeadersFor(targetPath) {
   return {};
 }
 
+function securityHeaders() {
+  return {
+    'Referrer-Policy': 'strict-origin-when-cross-origin',
+    'X-Content-Type-Options': 'nosniff',
+    'X-Frame-Options': 'DENY',
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload',
+    'Permissions-Policy': 'accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()',
+    'Content-Security-Policy': "default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.supabase.co; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
+  };
+}
+
 const server = http.createServer((req, res) => {
   const filePath = safeResolve(req.url || '/');
   if (!filePath.startsWith(ROOT)) {
@@ -64,6 +75,7 @@ const server = http.createServer((req, res) => {
       const ext = path.extname(targetPath).toLowerCase();
       send(res, 200, {
         'Content-Type': MIME_TYPES[ext] || 'application/octet-stream',
+        ...securityHeaders(),
         ...cacheHeadersFor(targetPath)
       }, data);
     });

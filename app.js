@@ -9,7 +9,7 @@ import {
   normalizeProfile,
   progressMap
 } from './lib/data.js';
-import { authClient, ensureAuthServerReady, getInitialSession, loadAppNotices, loadProfileFromCloud, onAuthStateChange, purgeProfile, refreshSocialOverview, requestSnapshotPublish, rpc, saveAppNotice, saveProfileToCloud, signInWithGoogle, signOut as authSignOut } from './lib/auth.js';
+import { authClient, ensureAuthServerReady, getInitialSession, loadAppNotices, loadProfileFromCloud, onAuthStateChange, purgeProfile, refreshSocialOverview, requestSnapshotPublish, rpc, saveAppNotice, saveBingoStateToCloud, saveProfileToCloud, saveProgressStateToCloud, saveSocialSettingsToCloud, saveUserProfileToCloud, signInWithGoogle, signOut as authSignOut } from './lib/auth.js';
 import { bindUi, renderApp, showPeerRadarDialog, showRadarDialog, showSongPopup } from './lib/ui.js';
 import { createGoalsController } from './lib/goals-controller.js';
 import { createSocialController } from './lib/social-controller.js';
@@ -1478,7 +1478,7 @@ async function applyTrackerContent(content, trackerName, toastMessage = '데이�
       state.profile.lastProgress = curr;
       const completionNotice = buildCompletionNoticeIfNeeded();
       try {
-        await saveProfileToCloud(state.auth.user, state.profile, 'tsv-upload');
+        await saveProgressStateToCloud(state.auth.user, state.profile, 'tsv-upload');
       } catch (error) {
         console.error('TSV cloud save failed', error);
         render();
@@ -1561,7 +1561,7 @@ function ensureGoalImportInput() {
             upsertSavedBoard(importedBoard);
             ensureBingoState().selectedCellIndex = -1;
             ensureBingoState().selectedGoalId = '';
-          await saveProfileToCloud(state.auth.user, state.profile, 'bingo-import');
+          await saveBingoStateToCloud(state.auth.user, state.profile, 'bingo-import');
           render();
           showToast('빙고를 가져왔습니다.');
         }
@@ -1879,7 +1879,7 @@ async function rollbackHistory() {
   state.profile.trackerRows = JSON.parse(JSON.stringify(target.snapshotRows || []));
   state.profile.lastProgress = JSON.parse(JSON.stringify(target.snapshotProgress || {}));
   const completionNotice = buildCompletionNoticeIfNeeded();
-  await saveProfileToCloud(state.auth.user, state.profile, 'history-rollback');
+  await saveProgressStateToCloud(state.auth.user, state.profile, 'history-rollback');
   await flushCompletionNotice(completionNotice);
   state.selectedHistoryId = target.id;
   state.historySectionOpen = createHistorySectionState();
@@ -2085,7 +2085,7 @@ async function submitProfile() {
   state.profile.infinitasId = infinitasId;
   state.profile.googleEmail = state.auth.user.email || '';
   state.auth.profileReady = true;
-  await saveProfileToCloud(state.auth.user, state.profile, 'profile-save');
+  await saveUserProfileToCloud(state.auth.user, state.profile);
   $('accountDialog')?.close('done');
   await syncSocial();
   render();
@@ -2259,7 +2259,7 @@ async function saveIconEditor() {
       const icon = await normalizeIconImage(file, crop);
       if (!state.profile) state.profile = emptyProfile(state.auth.user, state.guest.trackerRows);
       state.profile.iconDataUrl = icon.dataUrl;
-      await saveProfileToCloud(state.auth.user, state.profile, 'profile-save');
+      await saveUserProfileToCloud(state.auth.user, state.profile);
       await syncSocial();
       render();
       showToast('아이콘을 저장했습니다.');
@@ -2432,7 +2432,7 @@ const goalsController = createGoalsController({
   findChartForGoal,
   buildCompletionNoticeIfNeeded,
   flushCompletionNotice,
-  saveProfileToCloud,
+  saveBingoStateToCloud,
   resetBingoStateLocally,
   boardSignature,
   goalPayloadFromForm,
@@ -2453,7 +2453,8 @@ const socialController = createSocialController({
   currentSavedBoards,
   ensureBingoState,
   syncPublishedFromSavedBoards,
-  saveProfileToCloud,
+  saveBingoStateToCloud,
+  saveSocialSettingsToCloud,
   buildCompletionNoticeIfNeeded,
   flushCompletionNotice,
   findFeedItemById,

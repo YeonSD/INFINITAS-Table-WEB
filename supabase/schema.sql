@@ -185,7 +185,6 @@ returns table (
   auth_user_id uuid,
   infinitas_id text,
   dj_name text,
-  google_email text,
   icon_data_url text,
   share_data_scope jsonb
 )
@@ -197,7 +196,6 @@ as $$
     u.auth_user_id,
     u.infinitas_id,
     u.dj_name,
-    u.google_email,
     u.icon_data_url,
     coalesce(a.social_settings->'shareDataScope', '["graphs","goals"]'::jsonb) as share_data_scope
   from public.users u

@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2022", "DOM"],
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "lib/auth.js",
+    "lib/data.js",
+    "lib/profile-storage.js",
+    "lib/runtime-config.js",
+    "lib/utils.js",
+    "types/**/*.d.ts"
+  ]
+}
