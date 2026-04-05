@@ -222,6 +222,7 @@
             <option value="CLEAR">CLEAR</option>
             <option value="SCORE">SCORE</option>
             <option value="RANK">RANK</option>
+            <option value="RATE">RATE</option>
           </select>
           <select id="goalTable">
             <option value="SP10H">SP10</option>
@@ -246,8 +247,8 @@
             <option value="AA">AA</option>
             <option value="AAA">AAA</option>
             <option value="MAX-">MAX-</option>
-            <option value="MAX">MAX</option>
           </select>
+          <input id="goalRate" class="goal-target-input hidden" type="number" min="0" max="100" step="0.01" placeholder="RATE % 입력" />
             <button id="btnAddGoal">추가</button>
         </div>
         <div id="goalPool" class="goal-pool"></div>
@@ -513,6 +514,7 @@
             <option value="CLEAR">CLEAR</option>
             <option value="SCORE">SCORE</option>
             <option value="RANK">RANK</option>
+            <option value="RATE">RATE</option>
           </select>
           <select id="songGoalLamp" class="song-goal-target">
             <option value="EX">EX-HARD</option>
@@ -525,8 +527,8 @@
               <option value="AA">AA</option>
               <option value="AAA">AAA</option>
               <option value="MAX-">MAX-</option>
-              <option value="MAX">MAX</option>
             </select>
+            <input id="songGoalRate" class="song-goal-target hidden" type="number" min="0" max="100" step="0.01" placeholder="RATE % 입력" />
             <button id="songGoalSaveBtn" type="submit" class="small-btn">빙고에 추가</button>
           </div>
           <div class="dialog-actions">

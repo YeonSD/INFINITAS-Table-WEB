@@ -5,6 +5,7 @@ import fs from 'node:fs';
 import { normalizeBingoState } from '../lib/data.js';
 import { getDeferredPanelRenderers } from '../lib/render-plan.js';
 import { buildAccountStatePatchPayload, buildFullAccountStatePayload, buildUserProfilePayload } from '../lib/profile-storage.js';
+import { goalAchieved, goalLabel } from '../lib/utils.js';
 
 function headerMap(vercelConfig) {
   const rootRule = (vercelConfig.headers || []).find((rule) => rule.source === '/(.*)');
@@ -112,6 +113,37 @@ test('app.js delegates account and render orchestration to dedicated controllers
   assert.doesNotMatch(appSource, /async function refreshProfile\(/);
   assert.doesNotMatch(appSource, /async function submitProfile\(/);
   assert.doesNotMatch(appSource, /async function initAuth\(/);
+});
+
+test('goal helpers support RATE goals and main goal kind change updates enhanced selects', () => {
+  assert.equal(goalLabel({ kind: 'RATE', targetRate: 99.5 }), '99.5%');
+  assert.equal(goalAchieved({
+    table: 'SP12H',
+    title: 'neu',
+    chartType: 'A',
+    kind: 'RATE',
+    targetRate: 99.5
+  }, {
+    'SP12H|neu|A': { rate: 99.5 }
+  }), true);
+  assert.equal(goalAchieved({
+    table: 'SP12H',
+    title: 'neu',
+    chartType: 'A',
+    kind: 'RANK',
+    targetRank: 'MAX-'
+  }, {
+    'SP12H|neu|A': { scoreTier: 'MAX' }
+  }), true);
+
+  const uiSource = fs.readFileSync(new URL('../lib/ui.js', import.meta.url), 'utf8');
+  assert.match(uiSource, /\$\('goalKind'\)\?\.addEventListener\('change', \(\) => syncGoalTargetInputVisibility\('goal', enhancedSelects\)\)/);
+
+  const htmlSource = fs.readFileSync(new URL('../index.html', import.meta.url), 'utf8');
+  assert.match(htmlSource, /<option value="RATE">RATE<\/option>/);
+  assert.match(htmlSource, /id="goalRate"/);
+  assert.match(htmlSource, /id="songGoalRate"/);
+  assert.doesNotMatch(htmlSource, /<option value="MAX">MAX<\/option>/);
 });
 
 test('normalizeBingoState clamps saved boards and keeps a valid active board', () => {
