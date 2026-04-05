@@ -661,7 +661,7 @@ function openBingoSizeDialog() {
   if (!isAuthorized()) return;
   const bingo = ensureBingoState();
   if (bingo.draft.updatedAt) {
-    showToast('현재 [빈 빙고]를 먼저 저장하거나 삭제하세요.');
+    showToast('현재 [빙고 작성]을 먼저 저장하거나 삭제하세요.');
     return;
   }
   const published = currentPublishedBingo();

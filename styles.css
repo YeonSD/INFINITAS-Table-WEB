@@ -474,14 +474,14 @@ button.danger {
 }
 
 .app-notice-body strong.is-scrolling {
-  animation: noticeTicker 16s ease-in-out infinite;
+  animation: noticeTicker var(--notice-duration, 16s) linear infinite;
 }
 
 @keyframes noticeTicker {
-  0%, 14% {
+  0%, 12% {
     transform: translateX(0);
   }
-  52%, 66% {
+  74%, 92% {
     transform: translateX(var(--notice-shift, 0px));
   }
   100% {
@@ -1957,7 +1957,7 @@ button.danger {
 }
 
 .bingo-cell-title-l {
-  color: #7a4fb0;
+  color: #8e46c7;
 }
 
 .bingo-cell-target,
