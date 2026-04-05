@@ -82,7 +82,14 @@ test('app.js delegates account and render orchestration to dedicated controllers
   const appSource = fs.readFileSync(new URL('../app.js', import.meta.url), 'utf8');
   assert.match(appSource, /import \{ createAccountController \} from '\.\/lib\/app-account-controller\.js';/);
   assert.match(appSource, /import \{ createAdminController \} from '\.\/lib\/app-admin-controller\.js';/);
+  assert.match(appSource, /import \{ createDataController \} from '\.\/lib\/app-data-controller\.js';/);
   assert.match(appSource, /import \{ createRenderController \} from '\.\/lib\/app-render-controller\.js';/);
+  assert.doesNotMatch(appSource, /function normalizeBingoSize\(/);
+  assert.doesNotMatch(appSource, /function ensureBingoState\(/);
+  assert.doesNotMatch(appSource, /function openBingoSizeDialog\(/);
+  assert.doesNotMatch(appSource, /async function applyTrackerContent\(/);
+  assert.doesNotMatch(appSource, /function ensureTsvInput\(/);
+  assert.doesNotMatch(appSource, /function ensureGoalImportInput\(/);
   assert.doesNotMatch(appSource, /function loadGuestProfileCache\(/);
   assert.doesNotMatch(appSource, /function persistGuestProfileCache\(/);
   assert.doesNotMatch(appSource, /function readPendingSignupDraft\(/);
