@@ -10,7 +10,7 @@ import {
   progressMap
 } from './lib/data.js';
 import { authClient, ensureAuthServerReady, getInitialSession, loadAppNotices, loadProfileFromCloud, onAuthStateChange, purgeProfile, refreshSocialOverview, requestSnapshotPublish, rpc, saveAppNotice, saveBingoStateToCloud, saveProfileToCloud, saveProgressStateToCloud, saveSocialSettingsToCloud, saveUserProfileToCloud, signInWithGoogle, signOut as authSignOut } from './lib/auth.js';
-import { bindUi, renderApp, showPeerRadarDialog, showRadarDialog, showSongPopup } from './lib/ui.js';
+import { bindUi, renderApp, renderDeferredPanel, showPeerRadarDialog, showRadarDialog, showSongPopup } from './lib/ui.js';
 import { createGoalsController } from './lib/goals-controller.js';
 import { createSocialController } from './lib/social-controller.js';
 import { normalizeBannerImage, normalizeIconImage, loadImageElementFromFile, readFileAsDataUrl, validateIconFile } from './lib/image-tools.js';
@@ -786,16 +786,20 @@ function rebuildViews() {
   state.tableViews = buildViews(state.rankTables, state.songRadarCatalog, currentRows());
 }
 
-function render() {
-  rebuildViews();
-  renderApp({
+function createRenderContext() {
+  return {
     state,
     isAuthorized,
     currentTrackerLabel,
     activeSocialSettings: currentSocialSettings,
     progressMap: () => progressMap(state.tableViews),
     iconSrc
-  });
+  };
+}
+
+function render() {
+  rebuildViews();
+  renderApp(createRenderContext());
   renderSignupDialog();
   setActivePanel(state.activePanel || 'rank', { skipRefresh: true });
 }
@@ -1373,6 +1377,9 @@ function setActivePanel(panel, options = {}) {
   state.activePanel = next;
   document.querySelectorAll('.main-tab, .dock-tab').forEach((el) => el.classList.toggle('active', el.dataset.panel === next));
   document.querySelectorAll('.tab-panel').forEach((el) => el.classList.toggle('active', el.id === `panel-${next}`));
+  if (!options.skipPanelRender) {
+    renderDeferredPanel(createRenderContext(), next);
+  }
   if (!options.skipRefresh && next === 'social' && isAuthorized() && prev !== 'social') {
     queueMicrotask(() => {
       syncSocial().catch((error) => {

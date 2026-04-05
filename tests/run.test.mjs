@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
 import { normalizeBingoState } from '../lib/data.js';
+import { getDeferredPanelRenderers } from '../lib/render-plan.js';
 import { buildAccountStatePatchPayload, buildFullAccountStatePayload, buildUserProfilePayload } from '../lib/profile-storage.js';
 
 function headerMap(vercelConfig) {
@@ -57,6 +58,24 @@ test('full profile payload still contains all persisted sections', () => {
   assert.deepEqual(statePayload.last_progress, { updated: true });
   assert.deepEqual(statePayload.bingo_state, { activeBoardId: 'b1' });
   assert.equal(statePayload.social_settings.discoverability, 'searchable');
+});
+
+test('saveProfileToCloud no longer uses full account state overwrite path', () => {
+  const authSource = fs.readFileSync(new URL('../lib/auth.js', import.meta.url), 'utf8');
+  const match = authSource.match(/export async function saveProfileToCloud[\s\S]*?\n}\n/);
+  assert.ok(match, 'saveProfileToCloud definition should exist');
+  assert.doesNotMatch(match[0], /saveFullAccountStateToCloud\(/);
+  assert.match(match[0], /saveProgressStateToCloud\(/);
+  assert.match(match[0], /saveBingoStateToCloud\(/);
+  assert.match(match[0], /saveSocialSettingsToCloud\(/);
+});
+
+test('deferred panel render plan only includes the active dock panel group', () => {
+  assert.deepEqual(getDeferredPanelRenderers('rank'), []);
+  assert.deepEqual(getDeferredPanelRenderers('history'), ['history']);
+  assert.deepEqual(getDeferredPanelRenderers('goals'), ['goalCandidates', 'goals', 'songGoalBingoPicker']);
+  assert.deepEqual(getDeferredPanelRenderers('social'), ['social']);
+  assert.deepEqual(getDeferredPanelRenderers('settings'), []);
 });
 
 test('normalizeBingoState clamps saved boards and keeps a valid active board', () => {
