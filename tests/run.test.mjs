@@ -83,6 +83,7 @@ test('app.js delegates account and render orchestration to dedicated controllers
   assert.match(appSource, /import \{ createAccountController \} from '\.\/lib\/app-account-controller\.js';/);
   assert.match(appSource, /import \{ createAdminController \} from '\.\/lib\/app-admin-controller\.js';/);
   assert.match(appSource, /import \{ createDataController \} from '\.\/lib\/app-data-controller\.js';/);
+  assert.match(appSource, /import \{ createInteractionController \} from '\.\/lib\/app-interaction-controller\.js';/);
   assert.match(appSource, /import \{ createRenderController \} from '\.\/lib\/app-render-controller\.js';/);
   assert.doesNotMatch(appSource, /function normalizeBingoSize\(/);
   assert.doesNotMatch(appSource, /function ensureBingoState\(/);
@@ -101,6 +102,11 @@ test('app.js delegates account and render orchestration to dedicated controllers
   assert.doesNotMatch(appSource, /function openSongMetaEditor\(/);
   assert.doesNotMatch(appSource, /async function saveSongMetaEditor\(/);
   assert.doesNotMatch(appSource, /async function publishSnapshotChanges\(/);
+  assert.doesNotMatch(appSource, /async function openChart\(/);
+  assert.doesNotMatch(appSource, /async function openPeerCompare\(/);
+  assert.doesNotMatch(appSource, /async function openPeerCard\(/);
+  assert.doesNotMatch(appSource, /async function rollbackHistory\(/);
+  assert.doesNotMatch(appSource, /async function exportImage\(/);
   assert.doesNotMatch(appSource, /function setActivePanel\(/);
   assert.doesNotMatch(appSource, /function renderSignupDialog\(/);
   assert.doesNotMatch(appSource, /async function refreshProfile\(/);
