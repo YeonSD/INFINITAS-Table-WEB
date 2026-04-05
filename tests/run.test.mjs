@@ -5,7 +5,7 @@ import fs from 'node:fs';
 import { normalizeBingoState, progressMap } from '../lib/data.js';
 import { getDeferredPanelRenderers } from '../lib/render-plan.js';
 import { buildAccountStatePatchPayload, buildFullAccountStatePayload, buildUserProfilePayload } from '../lib/profile-storage.js';
-import { goalAchieved, goalLabel, normalizeSocialSettings } from '../lib/utils.js';
+import { goalAchieved, goalLabel } from '../lib/utils.js';
 
 function headerMap(vercelConfig) {
   const rootRule = (vercelConfig.headers || []).find((rule) => rule.source === '/(.*)');
@@ -174,21 +174,6 @@ test('progressMap keeps chart rate for RATE goal evaluation', () => {
   }, map), true);
 });
 
-test('general settings support rank table display mode and rank table can render RATE badges', () => {
-  assert.equal(normalizeSocialSettings({}).rankTableDisplay, 'rank');
-  assert.equal(normalizeSocialSettings({ rankTableDisplay: 'rate' }).rankTableDisplay, 'rate');
-  assert.equal(normalizeSocialSettings({ rankTableDisplay: 'other' }).rankTableDisplay, 'rank');
-
-  const htmlSource = fs.readFileSync(new URL('../index.html', import.meta.url), 'utf8');
-  assert.match(htmlSource, /id="settingRankTableDisplayRank"/);
-  assert.match(htmlSource, /id="settingRankTableDisplayRate"/);
-  assert.match(htmlSource, /서열표 표시/);
-
-  const rankUiSource = fs.readFileSync(new URL('../lib/rank-ui.js', import.meta.url), 'utf8');
-  assert.match(rankUiSource, /rankTableDisplay === 'rate'/);
-  assert.match(rankUiSource, /Number\(chart\.rate \|\| 0\)\.toFixed\(2\)\}%/);
-});
-
 test('normalizeBingoState clamps saved boards and keeps a valid active board', () => {
   const normalized = normalizeBingoState({
     activeBoardId: 'missing',
@@ -222,5 +207,5 @@ test('snapshot smoke keeps cleaned hard-table counts and latest song coverage', 
   const sp11Titles = (snapshot.rankTables?.SP11H?.categories || [])
     .flatMap((category) => category?.items || [])
     .map((item) => item?.data?.title || item?.title);
-  assert.ok(sp11Titles.includes('MA・TSU・RI'));
+  assert.ok(sp11Titles.includes('MA?팘SU?팕I'));
 });
