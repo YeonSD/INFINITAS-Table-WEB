@@ -1543,7 +1543,6 @@ function ensureGoalImportInput() {
           const size = normalizeBingoSize(bingo.size);
             const cells = Array.isArray(bingo.cells) ? bingo.cells.slice(0, size * size).map(normalizeGoalSnapshotForBingo) : [];
             while (cells.length < size * size) cells.push(null);
-            const nextState = ensureBingoState();
             if (!currentSavedBoards().find((board) => String(board.id || '') === String(bingo.id || '')) && currentSavedBoards().length >= 5) {
               showToast('저장 가능한 빙고는 최대 5개입니다.');
               return;
@@ -1559,18 +1558,12 @@ function ensureGoalImportInput() {
               sharedFromInfinitasId: '',
               completionNotifiedAt: ''
             };
-            nextState.draft = {
-              size,
-              cells,
-              updatedAt: new Date().toISOString()
-            };
             upsertSavedBoard(importedBoard);
-            nextState.selectedCellIndex = -1;
-            nextState.selectedGoalId = '';
-            syncGoalStoreFromBingoDraft();
+            ensureBingoState().selectedCellIndex = -1;
+            ensureBingoState().selectedGoalId = '';
           await saveProfileToCloud(state.auth.user, state.profile, 'bingo-import');
           render();
-          showToast('빙고를 불러왔습니다.');
+          showToast('빙고를 가져왔습니다.');
         }
       );
     } catch (error) {

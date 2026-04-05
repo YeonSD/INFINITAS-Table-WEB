@@ -1679,6 +1679,8 @@ button.danger {
   border-radius: 8px;
   background: #f3f3f3;
   padding: 10px;
+  display: grid;
+  gap: 10px;
 }
 
 .bingo-add-board-btn {
@@ -1707,6 +1709,10 @@ button.danger {
   background: #fff7fa;
   color: #8c7180;
   text-align: center;
+}
+
+.bingo-sidebar-import-btn {
+  width: 100%;
 }
 
 .bingo-list-item {
