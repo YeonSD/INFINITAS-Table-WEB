@@ -9,6 +9,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet" />
+    <style>
+      .top-header {
+        display: grid;
+        grid-template-columns: minmax(240px, 1fr) minmax(240px, 360px) auto;
+        align-items: stretch;
+        gap: 10px;
+      }
+
+      .header-actions {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 6px;
+        min-width: 0;
+        align-self: center;
+      }
+
+      .header-actions > button,
+      .google-auth-btn {
+        white-space: nowrap;
+        word-break: keep-all;
+      }
+
+      .google-auth-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+
+      .google-auth-btn img {
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
+      }
+    </style>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
