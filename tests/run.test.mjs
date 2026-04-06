@@ -253,6 +253,8 @@ test('social follow flow shows request toasts and follower popup actions', () =>
   assert.match(socialControllerSource, /toastMode: 'reciprocal'/);
   assert.match(socialControllerSource, /function openFollowersPopup\(anchorRect = null\)/);
   assert.match(socialControllerSource, /function closeFollowersPopup\(\)/);
+  assert.match(socialControllerSource, /follow_request_received/);
+  assert.match(socialControllerSource, /dismiss_feed_event/);
 
   const socialUiSource = fs.readFileSync(new URL('../lib/social-ui.js', import.meta.url), 'utf8');
   assert.match(socialUiSource, /data-open-followers="1"/);
