@@ -83,11 +83,11 @@ test('purgeProfile deletes the auth account through an edge function', () => {
 });
 
 test('deferred panel render plan only includes the active dock panel group', () => {
-  assert.deepEqual(getDeferredPanelRenderers('rank'), []);
-  assert.deepEqual(getDeferredPanelRenderers('history'), ['history']);
+  assert.deepEqual(getDeferredPanelRenderers('rank'), ['songGoalBingoPicker']);
+  assert.deepEqual(getDeferredPanelRenderers('history'), ['history', 'songGoalBingoPicker']);
   assert.deepEqual(getDeferredPanelRenderers('goals'), ['goalCandidates', 'goals', 'songGoalBingoPicker']);
-  assert.deepEqual(getDeferredPanelRenderers('social'), ['social']);
-  assert.deepEqual(getDeferredPanelRenderers('settings'), []);
+  assert.deepEqual(getDeferredPanelRenderers('social'), ['social', 'songGoalBingoPicker']);
+  assert.deepEqual(getDeferredPanelRenderers('settings'), ['songGoalBingoPicker']);
 });
 
 test('app.js delegates account and render orchestration to dedicated controllers', () => {
