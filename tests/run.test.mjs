@@ -272,6 +272,19 @@ test('social follow flow shows request toasts and follower popup actions', () =>
   assert.match(appSource, /closeFollowersPopup,/);
 });
 
+test('bingo share function no longer depends on goal transfer settings', () => {
+  const schemaSource = fs.readFileSync(new URL('../supabase/schema.sql', import.meta.url), 'utf8');
+  const match = schemaSource.match(/create or replace function public\.send_bingo_to_user\([\s\S]*?\n\$\$;/);
+  assert.ok(match, 'send_bingo_to_user definition should exist in schema');
+  assert.doesNotMatch(match[0], /goalTransferEnabled/);
+  assert.doesNotMatch(match[0], /sender_goal_transfer_disabled/);
+  assert.doesNotMatch(match[0], /target_goal_share_disabled/);
+
+  const migrationSource = fs.readFileSync(new URL('../supabase/migrations/20260406123000_fix_bingo_share_policy.sql', import.meta.url), 'utf8');
+  assert.doesNotMatch(migrationSource, /goalTransferEnabled/);
+  assert.match(migrationSource, /create or replace function public\.send_bingo_to_user/);
+});
+
 test('normalizeBingoState clamps saved boards and keeps a valid active board', () => {
   const normalized = normalizeBingoState({
     activeBoardId: 'missing',

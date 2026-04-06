@@ -869,9 +869,6 @@ security definer
 set search_path = public
 as $$
 declare
-  v_share_scope jsonb;
-  v_sender_goal_transfer_enabled boolean := true;
-  v_target_goal_transfer_enabled boolean := true;
   v_size int := 3;
   v_count int := 0;
   v_norm_cells jsonb := '[]'::jsonb;
@@ -898,36 +895,6 @@ begin
       and f.following_user_id = auth.uid()
   ) then
     raise exception 'mutual_follow_required';
-  end if;
-
-  select coalesce((a.social_settings->>'goalTransferEnabled')::boolean, true)
-  into v_sender_goal_transfer_enabled
-  from public.account_states a
-  where a.auth_user_id = auth.uid();
-
-  if coalesce(v_sender_goal_transfer_enabled, true) is not true then
-    raise exception 'sender_goal_transfer_disabled';
-  end if;
-
-  select coalesce(a.social_settings->'shareDataScope', '[]'::jsonb)
-  into v_share_scope
-  from public.account_states a
-  where a.auth_user_id = p_target_user_id;
-
-  if not (
-    coalesce(v_share_scope, '[]'::jsonb) ? 'all'
-    or coalesce(v_share_scope, '[]'::jsonb) ? 'goals'
-  ) then
-    raise exception 'target_goal_share_disabled';
-  end if;
-
-  select coalesce((a.social_settings->>'goalTransferEnabled')::boolean, true)
-  into v_target_goal_transfer_enabled
-  from public.account_states a
-  where a.auth_user_id = p_target_user_id;
-
-  if coalesce(v_target_goal_transfer_enabled, true) is not true then
-    raise exception 'target_goal_transfer_disabled';
   end if;
 
   v_size := greatest(3, least(coalesce((p_bingo->>'size')::int, 3), 5));
