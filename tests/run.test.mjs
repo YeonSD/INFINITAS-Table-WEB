@@ -5,7 +5,7 @@ import fs from 'node:fs';
 import { graphSummary, normalizeBingoState, progressMap } from '../lib/data.js';
 import { getDeferredPanelRenderers } from '../lib/render-plan.js';
 import { buildAccountStatePatchPayload, buildFullAccountStatePayload, buildUserProfilePayload } from '../lib/profile-storage.js';
-import { goalAchieved, goalLabel, normalizeLamp } from '../lib/utils.js';
+import { goalAchieved, goalLabel, normalizeLamp, scoreTier } from '../lib/utils.js';
 
 function headerMap(vercelConfig) {
   const rootRule = (vercelConfig.headers || []).find((rule) => rule.source === '/(.*)');
@@ -186,6 +186,40 @@ test('clear summary includes ASSIST and maps AC/EC/NC lamps correctly', () => {
   assert.match(stylesSource, /\.song-button\.lamp-normal\s*\{/);
   assert.match(stylesSource, /\.song-button\.lamp-easy\s*\{/);
   assert.match(stylesSource, /\.song-button\.lamp-assist\s*\{/);
+});
+
+test('score tier and score graph support ranks down to F', () => {
+  assert.equal(scoreTier(80, 200, 'HC'), 'F');
+  assert.equal(scoreTier(90, 200, 'HC'), 'E');
+  assert.equal(scoreTier(220, 300, 'HC'), 'D');
+  assert.equal(scoreTier(200, 200, 'HC'), 'C');
+  assert.equal(scoreTier(450, 400, 'HC'), 'B');
+
+  const summary = graphSummary({
+    flatCharts: [
+      { clearStatus: 'FAILED', scoreTier: 'F' },
+      { clearStatus: 'FAILED', scoreTier: 'E' },
+      { clearStatus: 'FAILED', scoreTier: 'D' },
+      { clearStatus: 'FAILED', scoreTier: 'C' },
+      { clearStatus: 'FAILED', scoreTier: 'B' },
+      { clearStatus: 'FAILED', scoreTier: 'A' },
+      { clearStatus: 'FAILED', scoreTier: 'AA' },
+      { clearStatus: 'FAILED', scoreTier: 'AAA' },
+      { clearStatus: 'FAILED', scoreTier: 'MAX-' },
+      { clearStatus: 'FAILED', scoreTier: 'MAX' }
+    ]
+  });
+  assert.deepEqual(summary.scoreOrder, ['MAX', 'MAX-', 'AAA', 'AA', 'A', 'B', 'C', 'D', 'E', 'F', 'NOPLAY']);
+  assert.equal(summary.scoreCount.F, 1);
+  assert.equal(summary.scoreCount.E, 1);
+  assert.equal(summary.scoreCount.D, 1);
+  assert.equal(summary.scoreCount.C, 1);
+
+  const uiSource = fs.readFileSync(new URL('../lib/ui.js', import.meta.url), 'utf8');
+  assert.match(uiSource, /F: '#ad6a6a'/);
+  assert.match(uiSource, /E: '#c88b55'/);
+  assert.match(uiSource, /D: '#d9b34f'/);
+  assert.match(uiSource, /C: '#b7c95b'/);
 });
 
 test('progressMap keeps chart rate for RATE goal evaluation', () => {
