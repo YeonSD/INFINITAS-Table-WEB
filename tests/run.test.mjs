@@ -248,6 +248,28 @@ test('progressMap keeps chart rate for RATE goal evaluation', () => {
   }, map), true);
 });
 
+test('social follow flow shows request toasts and follower popup actions', () => {
+  const socialControllerSource = fs.readFileSync(new URL('../lib/social-controller.js', import.meta.url), 'utf8');
+  assert.match(socialControllerSource, /toastMode: 'reciprocal'/);
+  assert.match(socialControllerSource, /function openFollowersPopup\(anchorRect = null\)/);
+  assert.match(socialControllerSource, /function closeFollowersPopup\(\)/);
+
+  const socialUiSource = fs.readFileSync(new URL('../lib/social-ui.js', import.meta.url), 'utf8');
+  assert.match(socialUiSource, /data-open-followers="1"/);
+  assert.match(socialUiSource, /data-close-followers-popup="1"/);
+  assert.match(socialUiSource, /allowFollowBack: !followingPeerSet\.has/);
+
+  const uiSource = fs.readFileSync(new URL('../lib/ui.js', import.meta.url), 'utf8');
+  assert.match(uiSource, /data-open-followers/);
+  assert.match(uiSource, /socialFollowersPopup/);
+  assert.match(uiSource, /data-follow-target/);
+
+  const appSource = fs.readFileSync(new URL('../app.js', import.meta.url), 'utf8');
+  assert.match(appSource, /socialFollowersPopup:\s*\{/);
+  assert.match(appSource, /openFollowersPopup,/);
+  assert.match(appSource, /closeFollowersPopup,/);
+});
+
 test('normalizeBingoState clamps saved boards and keeps a valid active board', () => {
   const normalized = normalizeBingoState({
     activeBoardId: 'missing',

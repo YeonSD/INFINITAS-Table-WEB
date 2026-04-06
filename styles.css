@@ -4157,6 +4157,37 @@ button.danger {
   gap: 6px;
 }
 
+.social-followers-popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #d9e3f0;
+}
+
+.social-followers-popup-title {
+  font-size: 13px;
+  font-weight: 800;
+  color: #233955;
+}
+
+.social-followers-popup-close {
+  border: 1px solid #c6d4e7;
+  border-radius: 999px;
+  background: #fff;
+  color: #2e496b;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.social-followers-popup-body {
+  display: grid;
+  gap: 6px;
+}
+
 .social-history-popup {
   width: min(760px, calc(100vw - 28px));
   max-height: min(72vh, 660px);
@@ -5840,6 +5871,20 @@ body.theme-dark .social-feed-close {
 body.theme-dark .social-followers-popup {
   background: linear-gradient(180deg, #1f2a3a 0%, #1a2331 100%);
   border-color: #415778;
+}
+
+body.theme-dark .social-followers-popup-header {
+  border-bottom-color: #415778;
+}
+
+body.theme-dark .social-followers-popup-title {
+  color: #e7f0ff;
+}
+
+body.theme-dark .social-followers-popup-close {
+  background: #243346;
+  border-color: #4a6386;
+  color: #e7f0ff;
 }
 
 body.theme-dark .radar-dialog-body {

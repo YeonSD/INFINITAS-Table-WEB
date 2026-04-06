@@ -71,6 +71,11 @@ const state = {
     feedItems: [],
     followerRows: []
   },
+  socialFollowersPopup: {
+    open: false,
+    left: 24,
+    top: 120
+  },
   signup: {
     open: false,
     step: 1,
@@ -628,7 +633,9 @@ const {
   moveSocialBannerDrag,
   endSocialBannerDrag,
   zoomSocialBannerEditor,
-  setSettingsTab
+  setSettingsTab,
+  openFollowersPopup,
+  closeFollowersPopup
 } = socialController;
 
 bindUi({
@@ -753,6 +760,8 @@ bindUi({
     unfollowPeer,
     saveSettings,
     setSettingsTab,
+    openFollowersPopup,
+    closeFollowersPopup,
     openNoticeEditor,
     closeNoticeEditor,
     saveNoticeEditor,
