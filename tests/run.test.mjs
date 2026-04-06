@@ -181,6 +181,11 @@ test('clear summary includes ASSIST and maps AC/EC/NC lamps correctly', () => {
   assert.match(rankUiSource, /c\.lamp === 'NORMAL'.*lamp-normal/s);
   assert.match(rankUiSource, /c\.lamp === 'EASY'.*lamp-easy/s);
   assert.match(rankUiSource, /c\.lamp === 'ASSIST'.*lamp-assist/s);
+
+  const stylesSource = fs.readFileSync(new URL('../styles.css', import.meta.url), 'utf8');
+  assert.match(stylesSource, /\.song-button\.lamp-normal\s*\{/);
+  assert.match(stylesSource, /\.song-button\.lamp-easy\s*\{/);
+  assert.match(stylesSource, /\.song-button\.lamp-assist\s*\{/);
 });
 
 test('progressMap keeps chart rate for RATE goal evaluation', () => {

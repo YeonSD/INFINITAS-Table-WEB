@@ -7,6 +7,9 @@
   --lamp-fc: #63d7e8;
   --lamp-ex: #f0ce00;
   --lamp-hc: #f28a2f;
+  --lamp-normal: #88a0ce;
+  --lamp-easy: #98c56f;
+  --lamp-assist: #d6c4d1;
   --lamp-failed: #8a8a8a;
   --diff-h: #fff9d8;
   --diff-a: #ffffff;
@@ -1242,6 +1245,18 @@ button.danger {
 
 .song-button.lamp-hc {
   border-right: 5px solid var(--lamp-hc);
+}
+
+.song-button.lamp-normal {
+  border-right: 5px solid var(--lamp-normal);
+}
+
+.song-button.lamp-easy {
+  border-right: 5px solid var(--lamp-easy);
+}
+
+.song-button.lamp-assist {
+  border-right: 5px solid var(--lamp-assist);
 }
 
 .song-button.lamp-failed {
