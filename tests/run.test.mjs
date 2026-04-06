@@ -2,10 +2,10 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
-import { normalizeBingoState, progressMap } from '../lib/data.js';
+import { graphSummary, normalizeBingoState, progressMap } from '../lib/data.js';
 import { getDeferredPanelRenderers } from '../lib/render-plan.js';
 import { buildAccountStatePatchPayload, buildFullAccountStatePayload, buildUserProfilePayload } from '../lib/profile-storage.js';
-import { goalAchieved, goalLabel } from '../lib/utils.js';
+import { goalAchieved, goalLabel, normalizeLamp } from '../lib/utils.js';
 
 function headerMap(vercelConfig) {
   const rootRule = (vercelConfig.headers || []).find((rule) => rule.source === '/(.*)');
@@ -71,6 +71,17 @@ test('saveProfileToCloud no longer uses full account state overwrite path', () =
   assert.match(match[0], /saveSocialSettingsToCloud\(/);
 });
 
+test('purgeProfile deletes the auth account through an edge function', () => {
+  const authSource = fs.readFileSync(new URL('../lib/auth.js', import.meta.url), 'utf8');
+  const match = authSource.match(/export async function purgeProfile[\s\S]*?\n}\n/);
+  assert.ok(match, 'purgeProfile definition should exist');
+  assert.match(match[0], /functions\/v1\/delete-self-account/);
+  assert.doesNotMatch(match[0], /\.rpc\('purge_my_social_data'\)/);
+
+  const edgeSource = fs.readFileSync(new URL('../supabase/functions/delete-self-account/index.ts', import.meta.url), 'utf8');
+  assert.match(edgeSource, /auth\.admin\.deleteUser\(data\.user\.id\)/);
+});
+
 test('deferred panel render plan only includes the active dock panel group', () => {
   assert.deepEqual(getDeferredPanelRenderers('rank'), []);
   assert.deepEqual(getDeferredPanelRenderers('history'), ['history']);
@@ -116,6 +127,9 @@ test('app.js delegates account and render orchestration to dedicated controllers
 });
 
 test('goal helpers support RATE goals and main goal kind change updates enhanced selects', () => {
+  assert.equal(normalizeLamp('AC'), 'ASSIST');
+  assert.equal(normalizeLamp('NC'), 'NORMAL');
+  assert.equal(normalizeLamp('EC'), 'EASY');
   assert.equal(goalLabel({ kind: 'RATE', targetRate: 99.5 }), '99.5%');
   assert.equal(goalAchieved({
     table: 'SP12H',
@@ -146,6 +160,22 @@ test('goal helpers support RATE goals and main goal kind change updates enhanced
   assert.match(htmlSource, /<select id="goalLamp"[\s\S]*?<option value="HC">HARD<\/option>[\s\S]*?<option value="EX">EX-HARD<\/option>[\s\S]*?<option value="FC">FULL COMBO<\/option>/);
   assert.match(htmlSource, /<select id="songGoalLamp"[\s\S]*?<option value="HC">HARD<\/option>[\s\S]*?<option value="EX">EX-HARD<\/option>[\s\S]*?<option value="FC">FULL COMBO<\/option>/);
   assert.doesNotMatch(htmlSource, /<option value="MAX">MAX<\/option>/);
+});
+
+test('clear summary includes ASSIST and maps AC/EC/NC lamps correctly', () => {
+  const summary = graphSummary({
+    flatCharts: [
+      { clearStatus: 'ASSIST', scoreTier: 'A' },
+      { clearStatus: 'EASY', scoreTier: 'AA' },
+      { clearStatus: 'NORMAL', scoreTier: 'AAA' },
+      { clearStatus: 'FAILED', scoreTier: '' }
+    ]
+  });
+  assert.deepEqual(summary.clearOrder, ['FC', 'EXHARD', 'HARD', 'NORMAL', 'EASY', 'ASSIST', 'FAILED', 'NOPLAY']);
+  assert.equal(summary.clearCount.ASSIST, 1);
+  assert.equal(summary.clearCount.EASY, 1);
+  assert.equal(summary.clearCount.NORMAL, 1);
+  assert.equal(summary.clearCount.FAILED, 1);
 });
 
 test('progressMap keeps chart rate for RATE goal evaluation', () => {
