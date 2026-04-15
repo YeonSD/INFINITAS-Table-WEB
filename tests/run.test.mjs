@@ -314,15 +314,12 @@ test('song social context rpc exposes rate and score tier', () => {
   assert.match(migrationSource, /score_tier text/);
 });
 
-test('mobile responsive pass keeps adaptive rank and touch shell hooks', () => {
+test('mobile shell keeps bottom navigation and social section tabs without replacing rank table', () => {
   const rankUiSource = fs.readFileSync(new URL('../lib/rank-ui.js', import.meta.url), 'utf8');
-  assert.match(rankUiSource, /function isCompactRankViewport\(\)/);
-  assert.match(rankUiSource, /mobile-rank-card/);
-  assert.match(rankUiSource, /window\.matchMedia\?\.\('\(max-width: 600px\)'\)/);
+  assert.doesNotMatch(rankUiSource, /mobile-rank-card/);
+  assert.doesNotMatch(rankUiSource, /isCompactRankViewport/);
 
   const uiSource = fs.readFileSync(new URL('../lib/ui.js', import.meta.url), 'utf8');
-  assert.match(uiSource, /compactRankQuery\?\.addEventListener\?\.\('change'/);
-  assert.match(uiSource, /ctx\.actions\.refreshLayout\?\.\(\)/);
   assert.match(uiSource, /data-social-mobile-section/);
 
   const htmlSource = fs.readFileSync(new URL('../index.html', import.meta.url), 'utf8');
@@ -335,11 +332,9 @@ test('mobile responsive pass keeps adaptive rank and touch shell hooks', () => {
   const cssSource = fs.readFileSync(new URL('../styles.css', import.meta.url), 'utf8');
   assert.match(cssSource, /@media \(max-width: 600px\)/);
   assert.match(cssSource, /#dockWidget[\s\S]*bottom: calc\(10px \+ var\(--mobile-safe-bottom\)\) !important/);
-  assert.match(cssSource, /\.mobile-rank-category/);
-  assert.match(cssSource, /\.bingo-board-grid\.size-5[\s\S]*repeat\(5, minmax\(0, 1fr\)\)/);
   assert.match(cssSource, /\.social-mobile-tabs/);
   assert.match(cssSource, /\.social-layout\.social-mobile-feed \.social-col-left/);
-  assert.match(cssSource, /\.social-feed-close[\s\S]*opacity: 1/);
+  assert.doesNotMatch(cssSource, /\.mobile-rank-category/);
 });
 
 test('normalizeBingoState clamps saved boards and keeps a valid active board', () => {

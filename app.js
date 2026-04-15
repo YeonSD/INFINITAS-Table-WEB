@@ -661,7 +661,6 @@ bindUi({
       state.searchQuery = query;
       render();
     },
-    refreshLayout: () => render(),
     setSocialMobileSection: (section) => {
       state.socialMobileSection = ['feed', 'card', 'follows'].includes(section) ? section : 'feed';
       render();
