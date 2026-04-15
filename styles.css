@@ -6237,7 +6237,7 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
 
   .medal-slot {
     min-width: 0;
-    height: 50px;
+    height: 42px;
     padding: 4px 3px;
     border-radius: 8px;
   }
@@ -6253,17 +6253,16 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
   }
 
   .medal-progress {
-    gap: 2px;
+    gap: 0;
   }
 
   .medal-progress-count {
-    font-size: 9px;
+    font-size: 10px;
     line-height: 1;
   }
 
   .medal-progress-ring {
-    width: 30px;
-    height: 30px;
+    display: none;
   }
 
   .medal-progress-ring::after {
@@ -6312,7 +6311,7 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
   .slide-tabs {
     gap: 2px;
     padding: 2px;
-    border-radius: 4px;
+    border-radius: 999px;
     min-width: 0;
     max-width: 100%;
   }
@@ -6320,7 +6319,7 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
   .slide-tabs .slide-indicator {
     top: 2px;
     height: calc(100% - 4px);
-    border-radius: 3px;
+    border-radius: 999px;
   }
 
   .slide-tabs .tab,
@@ -6328,7 +6327,7 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
     min-width: 0;
     padding: 5px 7px;
     font-size: 10px;
-    border-radius: 3px;
+    border-radius: 999px;
     white-space: nowrap;
   }
 
@@ -6354,10 +6353,12 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
   }
 
   #exportArea {
-    width: 100%;
-    max-width: 100%;
+    --mobile-rank-scale: 0.66;
+    width: calc(100% / var(--mobile-rank-scale));
+    max-width: none;
     min-width: 0;
-    overflow: hidden;
+    overflow: visible;
+    zoom: var(--mobile-rank-scale);
   }
 
   .rank-summary {
@@ -6402,7 +6403,7 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
     width: 100%;
     max-width: 100%;
     min-width: 0;
-    overflow: hidden;
+    overflow: visible;
     gap: 5px;
   }
 
@@ -6445,6 +6446,63 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
     padding: 0 2px;
     font-size: 5px;
     line-height: 9px;
+  }
+
+  #songPopup.song-popup {
+    box-sizing: border-box;
+    left: 12px !important;
+    right: 12px;
+    top: auto !important;
+    bottom: calc(86px + var(--mobile-safe-bottom)) !important;
+    width: auto;
+    max-width: none;
+    max-height: min(56dvh, 430px);
+    padding: 8px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  #songPopup .song-popup-title {
+    align-items: flex-start;
+    gap: 6px;
+    font-size: 13px;
+    line-height: 1.25;
+    margin-bottom: 5px;
+  }
+
+  #songPopup .song-popup-actions {
+    flex: 0 0 auto;
+    gap: 4px;
+  }
+
+  #songPopup .song-goal-open-btn,
+  #songPopup .song-meta-open-btn {
+    padding: 3px 7px;
+    font-size: 10px;
+  }
+
+  #songPopup .song-popup-meta {
+    font-size: 11px;
+    line-height: 1.45;
+    padding-top: 5px;
+  }
+
+  #songPopup .radar-wrap {
+    margin-top: 0;
+  }
+
+  #songPopup .radar-chart {
+    max-width: 150px;
+  }
+
+  #songPopup hr {
+    margin: 5px 0;
+  }
+
+  #songPopup .song-follow-line {
+    margin-top: 3px;
+    font-size: 11px;
+    line-height: 1.35;
   }
 
   #dockWidget {
