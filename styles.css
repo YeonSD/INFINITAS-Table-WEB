@@ -6353,12 +6353,15 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
   }
 
   #exportArea {
-    --mobile-rank-scale: 0.38;
-    width: calc(100% / var(--mobile-rank-scale));
+    --mobile-rank-base-width: 1080px;
+    --mobile-rank-scale: 1;
+    width: var(--mobile-rank-base-width);
     max-width: none;
-    min-width: 0;
+    min-width: var(--mobile-rank-base-width);
     overflow: visible;
-    zoom: var(--mobile-rank-scale);
+    transform: scale(var(--mobile-rank-scale));
+    transform-origin: top left;
+    will-change: transform;
   }
 
   .rank-summary {
