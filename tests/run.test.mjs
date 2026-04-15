@@ -5,6 +5,7 @@ import fs from 'node:fs';
 import { graphSummary, normalizeBingoState, progressMap } from '../lib/data.js';
 import { getDeferredPanelRenderers } from '../lib/render-plan.js';
 import { buildAccountStatePatchPayload, buildFullAccountStatePayload, buildUserProfilePayload } from '../lib/profile-storage.js';
+import { songSocialSectionHtml } from '../lib/social-ui.js';
 import { goalAchieved, goalLabel, normalizeLamp, scoreTier } from '../lib/utils.js';
 
 function headerMap(vercelConfig) {
@@ -272,6 +273,19 @@ test('social follow flow shows request toasts and follower popup actions', () =>
   assert.match(appSource, /closeFollowersPopup,/);
 });
 
+test('song social section renders rank and rate and sorts by higher score first', () => {
+  const html = songSocialSectionHtml([
+    { dj_name: 'SIRO', lamp: 'EX', score_tier: 'A', ex_score: 1952, rate: 79.02 },
+    { dj_name: 'ERI', lamp: 'NP', score_tier: '', ex_score: 0, rate: 0 },
+    { dj_name: 'TEST', lamp: 'FC', score_tier: 'MAX-', ex_score: 2341, rate: 95.71 }
+  ]);
+  assert.match(html, /램프: FC \| 랭크: MAX- \| 점수: 2341 \| 달성률: 95\.71%/);
+  assert.match(html, /램프: EX \| 랭크: A \| 점수: 1952 \| 달성률: 79\.02%/);
+  assert.match(html, /램프: NP \| 랭크: - \| 점수: 0 \| 달성률: 0\.00%/);
+  assert.ok(html.indexOf('TEST') < html.indexOf('SIRO'));
+  assert.ok(html.indexOf('SIRO') < html.indexOf('ERI'));
+});
+
 test('bingo share function no longer depends on goal transfer settings', () => {
   const schemaSource = fs.readFileSync(new URL('../supabase/schema.sql', import.meta.url), 'utf8');
   const match = schemaSource.match(/create or replace function public\.send_bingo_to_user\([\s\S]*?\n\$\$;/);
@@ -283,6 +297,21 @@ test('bingo share function no longer depends on goal transfer settings', () => {
   const migrationSource = fs.readFileSync(new URL('../supabase/migrations/20260406123000_fix_bingo_share_policy.sql', import.meta.url), 'utf8');
   assert.doesNotMatch(migrationSource, /goalTransferEnabled/);
   assert.match(migrationSource, /create or replace function public\.send_bingo_to_user/);
+});
+
+test('song social context rpc exposes rate and score tier', () => {
+  const schemaSource = fs.readFileSync(new URL('../supabase/schema.sql', import.meta.url), 'utf8');
+  const match = schemaSource.match(/create or replace function public\.get_song_social_context\([\s\S]*?\n\$\$;/);
+  assert.ok(match, 'get_song_social_context definition should exist in schema');
+  assert.match(match[0], /rate numeric/);
+  assert.match(match[0], /score_tier text/);
+  assert.match(match[0], /when ps\.rate_value >= 94\.4444444444 then 'MAX-'/);
+
+  const migrationSource = fs.readFileSync(new URL('../supabase/migrations/20260406152000_enhance_song_social_context.sql', import.meta.url), 'utf8');
+  assert.match(migrationSource, /drop function if exists public\.get_song_social_context\(text, text\)/);
+  assert.match(migrationSource, /create function public\.get_song_social_context/);
+  assert.match(migrationSource, /rate numeric/);
+  assert.match(migrationSource, /score_tier text/);
 });
 
 test('normalizeBingoState clamps saved boards and keeps a valid active board', () => {

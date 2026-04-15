@@ -220,34 +220,15 @@ returns table (
   infinitas_id text,
   lamp text,
   ex_score int,
+  rate numeric,
+  score_tier text,
   can_challenge boolean
 )
 language sql
 security definer
 set search_path = public
 as $$
-  with my_row as (
-    select r
-    from public.account_states s
-    cross join lateral jsonb_array_elements(coalesce(s.tracker_rows, '[]'::jsonb)) r
-    where s.auth_user_id = auth.uid()
-      and lower(trim(coalesce(r->>'title', ''))) = lower(trim(coalesce(p_title, '')))
-    limit 1
-  ),
-  my_stats as (
-    select
-      case
-        when p_chart_type = 'H' then coalesce((select r->>'SPH Lamp' from my_row), 'NP')
-        when p_chart_type = 'L' then coalesce((select r->>'SPL Lamp' from my_row), 'NP')
-        else coalesce((select r->>'SPA Lamp' from my_row), 'NP')
-      end as lamp,
-      case
-        when p_chart_type = 'H' then coalesce((select (r->>'SPH EX Score')::int from my_row), 0)
-        when p_chart_type = 'L' then coalesce((select (r->>'SPL EX Score')::int from my_row), 0)
-        else coalesce((select (r->>'SPA EX Score')::int from my_row), 0)
-      end as ex_score
-  ),
-  peers as (
+  with peers as (
     select 'follow'::text as kind,
            case when f.follower_user_id = auth.uid() then f.following_user_id else f.follower_user_id end as peer_id
     from public.follows f
@@ -270,25 +251,63 @@ as $$
       where lower(trim(coalesce(r->>'title', ''))) = lower(trim(coalesce(p_title, '')))
       limit 1
     ) tr on true
+  ),
+  peer_stats as (
+    select
+      pr.kind,
+      pr.peer_id,
+      pr.dj_name,
+      pr.infinitas_id,
+      case
+        when p_chart_type = 'H' then coalesce(pr.row->>'SPH Lamp', 'NP')
+        when p_chart_type = 'L' then coalesce(pr.row->>'SPL Lamp', 'NP')
+        else coalesce(pr.row->>'SPA Lamp', 'NP')
+      end as lamp,
+      case
+        when p_chart_type = 'H' then coalesce((pr.row->>'SPH EX Score')::int, 0)
+        when p_chart_type = 'L' then coalesce((pr.row->>'SPL EX Score')::int, 0)
+        else coalesce((pr.row->>'SPA EX Score')::int, 0)
+      end as ex_score,
+      case
+        when p_chart_type = 'H' then coalesce((pr.row->>'SPH Note Count')::int, 0)
+        when p_chart_type = 'L' then coalesce((pr.row->>'SPL Note Count')::int, 0)
+        else coalesce((pr.row->>'SPA Note Count')::int, 0)
+      end as note_count
+    from peer_rows pr
+  ),
+  peer_scores as (
+    select
+      ps.*,
+      case
+        when ps.note_count > 0 then round((ps.ex_score::numeric / (ps.note_count * 2)::numeric) * 100, 2)
+        else 0::numeric
+      end as rate_value
+    from peer_stats ps
   )
   select
-    pr.kind,
-    pr.peer_id as peer_user_id,
-    pr.dj_name,
-    pr.infinitas_id,
+    ps.kind,
+    ps.peer_id as peer_user_id,
+    ps.dj_name,
+    ps.infinitas_id,
+    ps.lamp,
+    ps.ex_score,
+    ps.rate_value as rate,
     case
-      when p_chart_type = 'H' then coalesce(pr.row->>'SPH Lamp', 'NP')
-      when p_chart_type = 'L' then coalesce(pr.row->>'SPL Lamp', 'NP')
-      else coalesce(pr.row->>'SPA Lamp', 'NP')
-    end as lamp,
-    case
-      when p_chart_type = 'H' then coalesce((pr.row->>'SPH EX Score')::int, 0)
-      when p_chart_type = 'L' then coalesce((pr.row->>'SPL EX Score')::int, 0)
-      else coalesce((pr.row->>'SPA EX Score')::int, 0)
-    end as ex_score,
+      when ps.lamp = 'NP' or ps.note_count <= 0 then ''
+      when ps.rate_value >= 100 then 'MAX'
+      when ps.rate_value >= 94.4444444444 then 'MAX-'
+      when ps.rate_value >= 88.8888888888 then 'AAA'
+      when ps.rate_value >= 77.7777777777 then 'AA'
+      when ps.rate_value >= 66.6666666666 then 'A'
+      when ps.rate_value >= 55.5555555555 then 'B'
+      when ps.rate_value >= 44.4444444444 then 'C'
+      when ps.rate_value >= 33.3333333333 then 'D'
+      when ps.rate_value >= 22.2222222222 then 'E'
+      else 'F'
+    end as score_tier,
     false as can_challenge
-  from peer_rows pr
-  where pr.kind = 'follow';
+  from peer_scores ps
+  where ps.kind = 'follow';
 $$;
 
 revoke all on function public.get_song_social_context(text, text) from public;
