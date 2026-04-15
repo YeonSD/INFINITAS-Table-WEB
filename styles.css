@@ -3049,6 +3049,10 @@ button.danger {
   padding: 14px;
 }
 
+.social-mobile-tabs {
+  display: none;
+}
+
 .social-col {
   min-width: 0;
   display: grid;
@@ -6449,6 +6453,37 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
     min-height: 0;
   }
 
+  .social-mobile-tabs {
+    position: sticky;
+    top: 0;
+    z-index: 650;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+    margin: -2px -2px 8px;
+    padding: 8px;
+    border-radius: 16px;
+    background: rgba(240, 242, 245, 0.94);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 8px 18px rgba(20, 32, 48, 0.12);
+  }
+
+  .social-mobile-tabs button {
+    border: 1px solid #c8d5e6;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #36506e;
+    font-size: 12px;
+    font-weight: 900;
+  }
+
+  .social-mobile-tabs button.active {
+    border-color: #83addc;
+    background: linear-gradient(180deg, #e8f3ff 0%, #dbeaff 100%);
+    color: #245a98;
+    box-shadow: inset 0 0 0 1px rgba(52, 110, 178, 0.16);
+  }
+
   .social-col-center {
     order: 1;
   }
@@ -6459,6 +6494,15 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
 
   .social-col-right {
     order: 3;
+  }
+
+  .social-layout.social-mobile-feed .social-col-left,
+  .social-layout.social-mobile-feed .social-col-right,
+  .social-layout.social-mobile-card .social-col-center,
+  .social-layout.social-mobile-card .social-col-right,
+  .social-layout.social-mobile-follows .social-col-left,
+  .social-layout.social-mobile-follows .social-col-center {
+    display: none;
   }
 
   .social-feed {

@@ -76,6 +76,7 @@ const state = {
     left: 24,
     top: 120
   },
+  socialMobileSection: 'feed',
   signup: {
     open: false,
     step: 1,
@@ -661,6 +662,10 @@ bindUi({
       render();
     },
     refreshLayout: () => render(),
+    setSocialMobileSection: (section) => {
+      state.socialMobileSection = ['feed', 'card', 'follows'].includes(section) ? section : 'feed';
+      render();
+    },
     openChart,
     importTsv: () => ensureTsvInput().click(),
     exportImage,
