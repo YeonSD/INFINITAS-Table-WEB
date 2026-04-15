@@ -2059,30 +2059,40 @@ button.danger {
     justify-content: flex-start;
   }
 
+  .bingo-board-grid {
+    width: min(100%, 520px);
+  }
+
   .bingo-board-grid.size-3,
+  .bingo-preview-grid.size-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .bingo-board-grid.size-4,
+  .bingo-preview-grid.size-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .bingo-board-grid.size-5,
-  .bingo-preview-grid.size-3,
-  .bingo-preview-grid.size-4,
   .bingo-preview-grid.size-5 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .bingo-cell,
   .bingo-preview-cell {
     aspect-ratio: 1 / 1;
-    padding: 16px 10px 12px;
+    padding: 8px 6px 6px;
   }
 
   .bingo-cell-title,
   .bingo-preview-title {
-    font-size: 18px;
+    font-size: clamp(10px, 2.8vw, 15px);
   }
 
   .bingo-cell-target,
   .bingo-preview-target,
   .bingo-cell-status {
-    font-size: 14px;
+    font-size: clamp(9px, 2.4vw, 12px);
   }
 }
 
@@ -6058,7 +6068,22 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
 
   .history-layout {
     grid-template-columns: 1fr;
+    height: auto;
     min-height: 0;
+  }
+
+  .history-list-left {
+    height: auto;
+    max-height: 260px;
+  }
+
+  .history-list-scroll {
+    max-height: 220px;
+  }
+
+  .history-detail {
+    height: auto;
+    overflow: visible;
   }
 
   .account-hero-name {
@@ -6514,6 +6539,90 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
     margin-top: 3px;
     font-size: 11px;
     line-height: 1.35;
+  }
+
+  .history-layout {
+    gap: 10px;
+  }
+
+  .history-list-left {
+    max-height: 220px;
+  }
+
+  .history-list-scroll {
+    max-height: 180px;
+  }
+
+  .history-detail {
+    padding-bottom: calc(18px + var(--mobile-safe-bottom));
+  }
+
+  .history-accordion-panel.open {
+    max-height: none;
+  }
+
+  .bingo-layout {
+    gap: 10px;
+  }
+
+  .bingo-board-shell {
+    padding: 10px;
+    border-width: 2px;
+    border-radius: 14px;
+  }
+
+  .bingo-board-head {
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .bingo-board-headline {
+    font-size: 16px;
+  }
+
+  .bingo-board-head-actions {
+    gap: 4px;
+  }
+
+  .bingo-board-head-actions .small-btn {
+    padding: 5px 7px;
+    font-size: 10px;
+  }
+
+  .bingo-board-grid {
+    width: 100%;
+  }
+
+  .bingo-cell,
+  .bingo-preview-cell {
+    padding: 6px 3px 4px;
+    gap: 2px;
+  }
+
+  .bingo-cell-index,
+  .bingo-preview-index {
+    top: 3px;
+    right: 4px;
+    font-size: 8px;
+  }
+
+  .bingo-cell-title,
+  .bingo-preview-title {
+    margin-top: 4px;
+    font-size: clamp(8px, 2.35vw, 12px);
+    line-height: 1.12;
+  }
+
+  .bingo-cell-target,
+  .bingo-preview-target,
+  .bingo-cell-status {
+    margin-top: 1px;
+    font-size: clamp(7px, 2.05vw, 10px);
+    line-height: 1.12;
+  }
+
+  .bingo-cell-empty-label {
+    font-size: clamp(10px, 2.8vw, 13px);
   }
 
   #dockWidget {
