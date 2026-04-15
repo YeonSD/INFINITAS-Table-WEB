@@ -4530,8 +4530,8 @@ button.danger {
 
 .dialog-close-fab {
   position: absolute;
-  right: -12px;
-  top: -20px;
+  right: 10px;
+  top: 10px;
   width: 34px;
   height: 34px;
   border-radius: 50%;
@@ -6413,6 +6413,10 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
     gap: 4px;
   }
 
+  #panel-rank {
+    overflow: hidden;
+  }
+
   .rank-toolbar-main,
   .sort-actions {
     gap: 4px;
@@ -6763,7 +6767,8 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
   }
 
   .peer-rank-viewport {
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
   #peerRankExportArea {
