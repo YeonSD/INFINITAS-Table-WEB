@@ -6481,7 +6481,7 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
 
   #exportArea {
     --mobile-rank-base-width: 1080px;
-    --mobile-rank-scale: 1;
+    --mobile-rank-scale: 0.32;
     width: var(--mobile-rank-base-width);
     max-width: none;
     min-width: var(--mobile-rank-base-width);
@@ -6773,7 +6773,7 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
 
   #peerRankExportArea {
     --mobile-rank-base-width: 1080px;
-    --mobile-rank-scale: 1;
+    --mobile-rank-scale: 0.32;
     width: var(--mobile-rank-base-width);
     min-width: var(--mobile-rank-base-width);
     max-width: none;
