@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
-import { graphSummary, normalizeBingoState, progressMap } from '../lib/data.js';
+import { graphSummary, normalizeBingoState, progressMap, sortItems } from '../lib/data.js';
 import { getDeferredPanelRenderers } from '../lib/render-plan.js';
 import { buildAccountStatePatchPayload, buildFullAccountStatePayload, buildUserProfilePayload } from '../lib/profile-storage.js';
 import { songSocialSectionHtml } from '../lib/social-ui.js';
@@ -221,6 +221,17 @@ test('score tier and score graph support ranks down to F', () => {
   assert.match(uiSource, /E: '#c88b55'/);
   assert.match(uiSource, /D: '#d9b34f'/);
   assert.match(uiSource, /C: '#b7c95b'/);
+});
+
+test('peer rank popup sort modes order by lamp and score', () => {
+  const rows = [
+    { title: 'Alpha', clearStatus: 'FAILED', scoreTier: 'AAA', rate: 90, exScore: 1800 },
+    { title: 'Beta', clearStatus: 'HARD', scoreTier: 'A', rate: 70, exScore: 1400 },
+    { title: 'Gamma', clearStatus: 'FC', scoreTier: 'AA', rate: 80, exScore: 1600 }
+  ];
+
+  assert.deepEqual(sortItems(rows, 'lamp').map((row) => row.title), ['Gamma', 'Beta', 'Alpha']);
+  assert.deepEqual(sortItems(rows, 'score').map((row) => row.title), ['Alpha', 'Gamma', 'Beta']);
 });
 
 test('progressMap keeps chart rate for RATE goal evaluation', () => {
