@@ -4216,11 +4216,14 @@ button.danger {
 }
 
 .social-history-popup-card {
+  max-height: inherit;
   border: 1px solid #cbd7e8;
   border-radius: 14px;
   background: linear-gradient(180deg, #fbfdff 0%, #f1f6fd 100%);
   box-shadow: 0 18px 42px rgba(20, 38, 61, 0.28);
   padding: 10px;
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr);
 }
 
 .social-history-popup-head {
@@ -4262,6 +4265,13 @@ button.danger {
   border-radius: 10px;
   border: 1px solid #c5d3e8;
   background: rgba(255, 255, 255, 0.9);
+}
+
+.social-history-popup-body {
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-right: 2px;
 }
 
 .social-peer-menu {
@@ -6558,6 +6568,24 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
   }
 
   .history-accordion-panel.open {
+    max-height: none;
+  }
+
+  .social-history-popup {
+    width: calc(100vw - 20px);
+    max-height: calc(100dvh - 96px - var(--mobile-safe-bottom));
+  }
+
+  .social-history-popup-card {
+    max-height: calc(100dvh - 96px - var(--mobile-safe-bottom));
+    padding: 8px;
+  }
+
+  .social-history-popup-body {
+    padding-bottom: calc(12px + var(--mobile-safe-bottom));
+  }
+
+  .social-history-popup-body .history-accordion-panel.open {
     max-height: none;
   }
 
