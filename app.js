@@ -660,6 +660,7 @@ bindUi({
       state.searchQuery = query;
       render();
     },
+    refreshLayout: () => render(),
     openChart,
     importTsv: () => ensureTsvInput().click(),
     exportImage,

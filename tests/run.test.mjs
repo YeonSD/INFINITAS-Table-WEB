@@ -314,6 +314,24 @@ test('song social context rpc exposes rate and score tier', () => {
   assert.match(migrationSource, /score_tier text/);
 });
 
+test('mobile responsive pass keeps adaptive rank and touch shell hooks', () => {
+  const rankUiSource = fs.readFileSync(new URL('../lib/rank-ui.js', import.meta.url), 'utf8');
+  assert.match(rankUiSource, /function isCompactRankViewport\(\)/);
+  assert.match(rankUiSource, /mobile-rank-card/);
+  assert.match(rankUiSource, /window\.matchMedia\?\.\('\(max-width: 600px\)'\)/);
+
+  const uiSource = fs.readFileSync(new URL('../lib/ui.js', import.meta.url), 'utf8');
+  assert.match(uiSource, /compactRankQuery\?\.addEventListener\?\.\('change'/);
+  assert.match(uiSource, /ctx\.actions\.refreshLayout\?\.\(\)/);
+
+  const cssSource = fs.readFileSync(new URL('../styles.css', import.meta.url), 'utf8');
+  assert.match(cssSource, /@media \(max-width: 600px\)/);
+  assert.match(cssSource, /#dockWidget[\s\S]*bottom: calc\(10px \+ var\(--mobile-safe-bottom\)\) !important/);
+  assert.match(cssSource, /\.mobile-rank-category/);
+  assert.match(cssSource, /\.bingo-board-grid\.size-5[\s\S]*repeat\(5, minmax\(0, 1fr\)\)/);
+  assert.match(cssSource, /\.social-feed-close[\s\S]*opacity: 1/);
+});
+
 test('normalizeBingoState clamps saved boards and keeps a valid active board', () => {
   const normalized = normalizeBingoState({
     activeBoardId: 'missing',
