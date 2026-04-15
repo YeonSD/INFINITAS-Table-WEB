@@ -77,6 +77,18 @@ const state = {
     top: 120
   },
   socialMobileSection: 'feed',
+  peerRankViewer: {
+    open: false,
+    peerUserId: '',
+    peerLabel: '',
+    peerInfinitasId: '',
+    rows: [],
+    tableViews: {},
+    activeTable: 'SP11H',
+    viewMode: 'normal',
+    sortMode: 'lamp',
+    searchQuery: ''
+  },
   signup: {
     open: false,
     step: 1,
@@ -177,6 +189,12 @@ let openSelfRadar;
 let openPeerRadar;
 let openPeerCompare;
 let openPeerCard;
+let openPeerRankViewer;
+let closePeerRankViewer;
+let setPeerRankTable;
+let setPeerRankView;
+let setPeerRankSort;
+let setPeerRankSearch;
 let rollbackHistory;
 let exportImage;
 let resetGuestState;
@@ -458,6 +476,12 @@ const {
   openPeerRadar,
   openPeerCompare,
   openPeerCard,
+  openPeerRankViewer,
+  closePeerRankViewer,
+  setPeerRankTable,
+  setPeerRankView,
+  setPeerRankSort,
+  setPeerRankSearch,
   rollbackHistory,
   exportImage,
   resetGuestState,
@@ -471,6 +495,7 @@ const {
   withBusyOverlay,
   rpc,
   loadStaticData: (...args) => loadStaticData(...args),
+  buildViews,
   saveProgressStateToCloud,
   currentRows,
   buildCompletionNoticeIfNeeded,
@@ -762,6 +787,12 @@ bindUi({
     openPeerCard,
     openPeerRadar,
     openPeerCompare,
+    openPeerRankViewer,
+    closePeerRankViewer,
+    setPeerRankTable,
+    setPeerRankView,
+    setPeerRankSort,
+    setPeerRankSearch,
     unfollowPeer,
     saveSettings,
     setSettingsTab,

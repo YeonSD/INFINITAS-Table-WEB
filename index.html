@@ -340,6 +340,7 @@
       <button id="btnSocialPeerCard" type="button" class="small-btn">카드 보기</button>
       <button id="btnSocialPeerRadar" type="button" class="small-btn">레이더</button>
       <button id="btnSocialPeerCompare" type="button" class="small-btn">비교</button>
+      <button id="btnSocialPeerRank" type="button" class="small-btn hidden">서열표 보기</button>
       <button id="btnSocialPeerUnfollow" type="button" class="small-btn danger">팔로우 취소</button>
     </div>
 
@@ -359,6 +360,13 @@
         <button id="socialPeerRadarClose" type="submit" class="dialog-close-fab" aria-label="닫기">×</button>
         <div id="socialPeerRadarBody" class="help-body radar-dialog-body"></div>
         <div id="socialPeerRadarAxisPopup" class="radar-axis-popup hidden"></div>
+      </form>
+    </dialog>
+
+    <dialog id="peerRankDialog" class="account-dialog peer-rank-dialog">
+      <form method="dialog">
+        <button id="peerRankCloseTop" type="button" class="dialog-close-fab" aria-label="닫기">×</button>
+        <div id="peerRankBody"></div>
       </form>
     </dialog>
 
@@ -780,6 +788,13 @@
                   <span class="setting-check-ui"></span>
                 </span>
                 <span>비공개</span>
+              </label>
+              <label class="settings-item">
+                <span class="setting-check">
+                  <input id="settingShareRankTableWithMutuals" type="checkbox" checked />
+                  <span class="setting-check-ui"></span>
+                </span>
+                <span>맞팔에게 서열표 공유</span>
               </label>
             </div>
           </section>
