@@ -178,10 +178,10 @@ test('clear summary includes ASSIST and maps AC/EC/NC lamps correctly', () => {
   assert.equal(summary.clearCount.NORMAL, 1);
   assert.equal(summary.clearCount.FAILED, 1);
 
-  const rankUiSource = fs.readFileSync(new URL('../lib/rank-ui.js', import.meta.url), 'utf8');
-  assert.match(rankUiSource, /c\.lamp === 'NORMAL'.*lamp-normal/s);
-  assert.match(rankUiSource, /c\.lamp === 'EASY'.*lamp-easy/s);
-  assert.match(rankUiSource, /c\.lamp === 'ASSIST'.*lamp-assist/s);
+  const rankTableUiSource = fs.readFileSync(new URL('../lib/rank-table-ui.js', import.meta.url), 'utf8');
+  assert.match(rankTableUiSource, /c\.lamp === 'NORMAL'.*lamp-normal/s);
+  assert.match(rankTableUiSource, /c\.lamp === 'EASY'.*lamp-easy/s);
+  assert.match(rankTableUiSource, /c\.lamp === 'ASSIST'.*lamp-assist/s);
 
   const stylesSource = fs.readFileSync(new URL('../styles.css', import.meta.url), 'utf8');
   assert.match(stylesSource, /\.song-button\.lamp-normal\s*\{/);
