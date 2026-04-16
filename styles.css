@@ -2841,11 +2841,14 @@ button.danger {
 
 .notice-history-shell {
   display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
   gap: 18px;
+  max-height: inherit;
   padding: 28px;
   background:
     radial-gradient(circle at top left, rgba(122, 173, 235, 0.22), transparent 34%),
     linear-gradient(180deg, #fbfdff 0%, #eef4fb 100%);
+  overflow: hidden;
 }
 
 .notice-history-head {
@@ -2880,6 +2883,7 @@ button.danger {
 .notice-history-body {
   display: grid;
   gap: 14px;
+  min-height: 0;
   max-height: calc(min(82vh, 900px) - 150px);
   overflow-y: auto;
   overflow-x: hidden;
@@ -2892,7 +2896,12 @@ button.danger {
   padding: 16px 18px;
   background: rgba(255, 255, 255, 0.92);
   box-shadow: 0 12px 28px rgba(28, 49, 78, 0.08);
-  overflow: hidden;
+  max-height: min(48vh, 430px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
 }
 
 .notice-history-item-top {
@@ -2926,11 +2935,7 @@ button.danger {
 }
 
 .notice-history-item-content {
-  max-height: min(42vh, 360px);
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding-right: 8px;
-  scrollbar-gutter: stable;
+  min-height: 0;
 }
 
 .notice-history-item-summary {
@@ -6151,7 +6156,11 @@ body.theme-dark .export-capture-wrap.theme-dark .export-graph-block {
   }
 
   .notice-history-item-content {
-    max-height: min(46vh, 320px);
+    min-height: 0;
+  }
+
+  .notice-history-item {
+    max-height: min(50vh, 360px);
   }
 
   .rank-toolbar {
