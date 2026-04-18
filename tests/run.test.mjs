@@ -5,6 +5,7 @@ import fs from 'node:fs';
 import { graphSummary, normalizeBingoState, progressMap, sortItems } from '../lib/data.js';
 import { getDeferredPanelRenderers } from '../lib/render-plan.js';
 import { buildAccountStatePatchPayload, buildFullAccountStatePayload, buildUserProfilePayload } from '../lib/profile-storage.js';
+import { canonicalizeChartMetadataRows } from '../scripts/chart-metadata-utils.mjs';
 import { songSocialSectionHtml } from '../lib/social-ui.js';
 import { goalAchieved, goalLabel, normalizeLamp, scoreTier } from '../lib/utils.js';
 
@@ -373,6 +374,40 @@ test('vercel security headers include CSP, HSTS, and permissions policy', () => 
   assert.match(headers.get('Permissions-Policy') || '', /camera=\(\)/);
 });
 
+test('supabase snapshot canonicalization restores classified seed categories over stale unclassified rows', () => {
+  const seedRow = {
+    chart_key: 'SP12H|3y3s(long ver.)|A',
+    table_key: 'SP12H',
+    table_title: 'SP12H',
+    level: 12,
+    song_title: '3y3s(Long ver.)',
+    normalized_title: '3y3s(long ver.)',
+    chart_type: 'A',
+    category: '지력S+',
+    source_sort_index: 1,
+    classification_status: 'classified',
+    source: 'manual_chart_metadata_override',
+    is_deleted: false
+  };
+  const staleSupabaseRow = {
+    ...seedRow,
+    category: '미분류',
+    source_sort_index: 999,
+    classification_status: 'uncategorized',
+    source: 'song-radar-sp.source.csv'
+  };
+
+  const [row] = canonicalizeChartMetadataRows([staleSupabaseRow], {
+    seedCharts: [seedRow],
+    restrictToSeed: true
+  });
+
+  assert.equal(row.category, '지력S+');
+  assert.equal(row.source_sort_index, 1);
+  assert.equal(row.classification_status, 'classified');
+  assert.equal(row.song_title, '3y3s(Long ver.)');
+});
+
 test('snapshot smoke keeps cleaned hard-table counts and latest song coverage', () => {
   const snapshot = JSON.parse(fs.readFileSync(new URL('../assets/data/app-snapshot.json', import.meta.url), 'utf8'));
   assert.equal(tableCount(snapshot, 'SP10H'), 892);
@@ -381,5 +416,5 @@ test('snapshot smoke keeps cleaned hard-table counts and latest song coverage', 
   const sp11Titles = (snapshot.rankTables?.SP11H?.categories || [])
     .flatMap((category) => category?.items || [])
     .map((item) => item?.data?.title || item?.title);
-  assert.ok(sp11Titles.includes('MA?팘SU?팕I'));
+  assert.ok(sp11Titles.includes('MA・TSU・RI'));
 });

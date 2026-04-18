@@ -71,6 +71,20 @@ function sourceScore(source) {
   return 0;
 }
 
+function isUncategorizedCategory(category) {
+  return /\uBBF8\uC815|\uBBF8\uBD84\uB958/i.test(String(category || '').trim());
+}
+
+function shouldApplySeedClassification(row, seedRow) {
+  const seedCategory = String(seedRow?.category || '').trim();
+  const seedStatus = String(seedRow?.classification_status || '').trim().toLowerCase();
+  if (!seedCategory || seedStatus !== 'classified' || isUncategorizedCategory(seedCategory)) return false;
+
+  const rowCategory = String(row?.category || '').trim();
+  const rowStatus = String(row?.classification_status || '').trim().toLowerCase();
+  return !rowCategory || isUncategorizedCategory(rowCategory) || rowStatus !== 'classified';
+}
+
 function rowScore(row, seedRow) {
   const radarScore = Number(row?.radar_notes || 0)
     + Number(row?.radar_peak || 0)
@@ -107,8 +121,17 @@ export function canonicalizeChartMetadataRows(rows, options = {}) {
   return [...deduped.entries()].map(([key, row]) => {
     const seedRow = seedMap.get(key);
     if (!seedRow) return row;
+    const classificationPatch = shouldApplySeedClassification(row, seedRow)
+      ? {
+          category: seedRow.category,
+          source_sort_index: seedRow.source_sort_index,
+          classification_status: seedRow.classification_status,
+          source: seedRow.source || row.source
+        }
+      : {};
     return {
       ...row,
+      ...classificationPatch,
       song_title: seedRow.song_title,
       normalized_title: seedRow.normalized_title || titleKey(seedRow.song_title)
     };
