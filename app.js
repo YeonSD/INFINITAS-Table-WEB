@@ -199,6 +199,7 @@ let rollbackHistory;
 let exportImage;
 let resetGuestState;
 let refreshRankData;
+let refreshProfile = async () => null;
 
 function latestHistoryId(history = []) {
   return history.length ? history[history.length - 1].id || '' : '';
@@ -297,6 +298,7 @@ const dataController = createDataController({
   state,
   isAuthorized,
   render: (...args) => render(...args),
+  refreshProfile: (...args) => refreshProfile(...args),
   syncSocial: (...args) => syncSocial(...args),
   showToast,
   withBusyOverlay,
@@ -429,9 +431,11 @@ const {
   signIn,
   signOut,
   withdrawAccount,
-  refreshProfile,
+  refreshProfile: accountRefreshProfile,
   initAuth
 } = accountController;
+
+refreshProfile = accountRefreshProfile;
 
 const adminController = createAdminController({
   state,

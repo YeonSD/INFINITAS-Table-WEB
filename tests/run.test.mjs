@@ -4,7 +4,7 @@ import fs from 'node:fs';
 
 import { graphSummary, normalizeBingoState, progressMap, sortItems } from '../lib/data.js';
 import { getDeferredPanelRenderers } from '../lib/render-plan.js';
-import { buildAccountStatePatchPayload, buildFullAccountStatePayload, buildUserProfilePayload } from '../lib/profile-storage.js';
+import { buildAccountStatePatchPayload, buildFullAccountStatePayload, buildUserProfilePayload, compactPersistedHistory } from '../lib/profile-storage.js';
 import { canonicalizeChartMetadataRows } from '../scripts/chart-metadata-utils.mjs';
 import { songSocialSectionHtml } from '../lib/social-ui.js';
 import { goalAchieved, goalLabel, normalizeLamp, scoreTier } from '../lib/utils.js';
@@ -61,6 +61,25 @@ test('full profile payload still contains all persisted sections', () => {
   assert.deepEqual(statePayload.last_progress, { updated: true });
   assert.deepEqual(statePayload.bingo_state, { activeBoardId: 'b1' });
   assert.equal(statePayload.social_settings.discoverability, 'searchable');
+});
+
+test('persisted history compacts old snapshots while keeping recent rollback points', () => {
+  const history = Array.from({ length: 6 }, (_, index) => ({
+    id: `h${index + 1}`,
+    summary: `${index + 1}건 변경`,
+    snapshotRows: [{ title: `Song ${index + 1}` }],
+    snapshotProgress: { [`k${index + 1}`]: { exScore: index + 1 } }
+  }));
+
+  const compacted = compactPersistedHistory(history, { maxEntries: 5, maxSnapshots: 2 });
+
+  assert.equal(compacted.length, 5);
+  assert.equal(compacted[0].id, 'h2');
+  assert.ok(!('snapshotRows' in compacted[0]));
+  assert.ok(!('snapshotProgress' in compacted[0]));
+  assert.ok(!('snapshotRows' in compacted[2]));
+  assert.ok('snapshotRows' in compacted[3]);
+  assert.ok('snapshotProgress' in compacted[4]);
 });
 
 test('saveProfileToCloud no longer uses full account state overwrite path', () => {
@@ -126,6 +145,23 @@ test('app.js delegates account and render orchestration to dedicated controllers
   assert.doesNotMatch(appSource, /async function refreshProfile\(/);
   assert.doesNotMatch(appSource, /async function submitProfile\(/);
   assert.doesNotMatch(appSource, /async function initAuth\(/);
+});
+
+test('tracker upload confirms cloud save by refreshing profile and rolls back local state on save failure', () => {
+  const appSource = fs.readFileSync(new URL('../app.js', import.meta.url), 'utf8');
+  const dataControllerSource = fs.readFileSync(new URL('../lib/app-data-controller.js', import.meta.url), 'utf8');
+
+  assert.match(appSource, /let refreshProfile = async \(\) => null;/);
+  assert.match(appSource, /refreshProfile: \(\.\.\.args\) => refreshProfile\(\.\.\.args\)/);
+  assert.match(appSource, /refreshProfile: accountRefreshProfile/);
+  assert.match(appSource, /refreshProfile = accountRefreshProfile;/);
+
+  assert.match(dataControllerSource, /refreshProfile,/);
+  assert.match(dataControllerSource, /const prevProfile = cloneJson\(state\.profile\);/);
+  assert.match(dataControllerSource, /state\.profile = prevProfile;/);
+  assert.match(dataControllerSource, /await saveProgressStateToCloud\(state\.auth\.user, state\.profile, 'tsv-upload'\);/);
+  assert.match(dataControllerSource, /await refreshProfile\(\{ showBusy: false, timeoutMs: 10000 \}\);/);
+  assert.match(dataControllerSource, /DB 저장은 완료됐지만 재조회에 실패했습니다/);
 });
 
 test('goal helpers support RATE goals and main goal kind change updates enhanced selects', () => {
