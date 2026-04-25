@@ -305,6 +305,40 @@ test('pending release charts stay hidden for normal users and visible for admins
   assert.equal(adminView.SP11H.flatCharts[0].isPendingRelease, true);
 });
 
+test('admin pending release charts stay visible even when tracker rows do not include them yet', () => {
+  const rankTables = {
+    SP11H: {
+      categories: [{
+        category: '誘몄젙',
+        sortindex: 0,
+        items: [{
+          data: {
+            title: 'BLUST OF WIND',
+            type: 'L',
+            releaseStatus: 'pending_release',
+            atwikiNotes: 1335
+          }
+        }]
+      }]
+    }
+  };
+  const rows = [{
+    title: 'Some Other Song',
+    'SPA Rating': '11',
+    'SPA Lamp': 'NP',
+    'SPA EX Score': '0',
+    'SPA Note Count': '1000'
+  }];
+
+  const userView = buildViews(rankTables, null, rows, { isAdmin: false });
+  const adminView = buildViews(rankTables, null, rows, { isAdmin: true });
+
+  assert.equal(userView.SP11H.flatCharts.length, 1);
+  assert.equal(userView.SP11H.flatCharts[0].title, 'Some Other Song');
+  assert.equal(adminView.SP11H.flatCharts.length, 2);
+  assert.equal(adminView.SP11H.flatCharts.some((chart) => chart.title === 'BLUST OF WIND' && chart.isPendingRelease), true);
+});
+
 test('progressMap keeps chart rate for RATE goal evaluation', () => {
   const map = progressMap({
     SP12H: {
