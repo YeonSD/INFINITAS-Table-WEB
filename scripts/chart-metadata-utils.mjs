@@ -132,6 +132,9 @@ export function canonicalizeChartMetadataRows(rows, options = {}) {
     return {
       ...row,
       ...classificationPatch,
+      release_status: String(row?.release_status || seedRow.release_status || 'live').trim().toLowerCase() === 'pending_release'
+        ? 'pending_release'
+        : 'live',
       song_title: seedRow.song_title,
       normalized_title: seedRow.normalized_title || titleKey(seedRow.song_title)
     };

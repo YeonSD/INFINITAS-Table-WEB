@@ -470,7 +470,8 @@ const {
   saveSongMetaEditor,
   deleteSongMetaEditor,
   syncSongMetaSortIndexFromCategory,
-  publishSnapshotChanges
+  publishSnapshotChanges,
+  applyPendingChartRelease
 } = adminController;
 
 ({
@@ -811,6 +812,7 @@ bindUi({
       deleteSongMetaEditor,
       syncSongMetaSortIndexFromCategory,
       publishSnapshotChanges,
+      applyPendingChartRelease,
     formatProfileId,
     submitProfile
   }

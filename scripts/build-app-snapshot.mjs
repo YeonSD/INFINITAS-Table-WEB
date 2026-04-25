@@ -38,6 +38,7 @@ function chartDataFromRow(row) {
   return {
     title: row.song_title,
     type: row.chart_type,
+    releaseStatus: row.release_status || 'live',
     implicitType: false,
     bpm: row.bpm || '',
     atwikiNotes: Number(row.note_count || 0),
@@ -133,6 +134,7 @@ async function loadRowsFromSupabase() {
     'category',
     'source_sort_index',
     'classification_status',
+    'release_status',
     'bpm',
     'note_count',
     'type_info',

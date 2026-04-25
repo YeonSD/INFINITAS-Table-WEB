@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
-import { graphSummary, normalizeBingoState, progressMap, sortItems } from '../lib/data.js';
+import { buildViews, graphSummary, normalizeBingoState, progressMap, sortItems } from '../lib/data.js';
 import { getDeferredPanelRenderers } from '../lib/render-plan.js';
 import { buildAccountStatePatchPayload, buildFullAccountStatePayload, buildUserProfilePayload, compactPersistedHistory } from '../lib/profile-storage.js';
 import { canonicalizeChartMetadataRows } from '../scripts/chart-metadata-utils.mjs';
@@ -271,6 +271,40 @@ test('peer rank popup sort modes order by lamp and score', () => {
   assert.deepEqual(sortItems(rows, 'score').map((row) => row.title), ['Alpha', 'Gamma', 'Beta']);
 });
 
+test('pending release charts stay hidden for normal users and visible for admins', () => {
+  const rankTables = {
+    SP11H: {
+      categories: [{
+        category: '미정',
+        sortindex: 0,
+        items: [{
+          data: {
+            title: 'BLUST OF WIND',
+            type: 'L',
+            releaseStatus: 'pending_release',
+            atwikiNotes: 1335
+          }
+        }]
+      }]
+    }
+  };
+  const rows = [{
+    title: 'BLUST OF WIND',
+    'SPL Rating': '11',
+    'SPL Lamp': 'NP',
+    'SPL EX Score': '0',
+    'SPL Note Count': '1335'
+  }];
+
+  const userView = buildViews(rankTables, null, rows, { isAdmin: false });
+  const adminView = buildViews(rankTables, null, rows, { isAdmin: true });
+
+  assert.equal(userView.SP11H.flatCharts.length, 0);
+  assert.equal(adminView.SP11H.flatCharts.length, 1);
+  assert.equal(adminView.SP11H.flatCharts[0].releaseStatus, 'pending_release');
+  assert.equal(adminView.SP11H.flatCharts[0].isPendingRelease, true);
+});
+
 test('progressMap keeps chart rate for RATE goal evaluation', () => {
   const map = progressMap({
     SP12H: {
@@ -447,10 +481,27 @@ test('supabase snapshot canonicalization restores classified seed categories ove
 test('snapshot smoke keeps cleaned hard-table counts and latest song coverage', () => {
   const snapshot = JSON.parse(fs.readFileSync(new URL('../assets/data/app-snapshot.json', import.meta.url), 'utf8'));
   assert.equal(tableCount(snapshot, 'SP10H'), 892);
-  assert.equal(tableCount(snapshot, 'SP11H'), 606);
-  assert.equal(tableCount(snapshot, 'SP12H'), 551);
+  assert.equal(tableCount(snapshot, 'SP11H'), 608);
+  assert.equal(tableCount(snapshot, 'SP12H'), 553);
   const sp11Titles = (snapshot.rankTables?.SP11H?.categories || [])
     .flatMap((category) => category?.items || [])
     .map((item) => item?.data?.title || item?.title);
   assert.ok(sp11Titles.includes('MA・TSU・RI'));
+  const userViews = buildViews(snapshot.rankTables || {}, snapshot.songRadarCatalog || null, [], { isAdmin: false });
+  const adminViews = buildViews(snapshot.rankTables || {}, snapshot.songRadarCatalog || null, [], { isAdmin: true });
+  assert.equal((userViews.SP11H?.flatCharts || []).length, 606);
+  assert.equal((userViews.SP12H?.flatCharts || []).length, 551);
+  assert.equal((adminViews.SP11H?.flatCharts || []).length, 608);
+  assert.equal((adminViews.SP12H?.flatCharts || []).length, 553);
+});
+test('pending release admin flow is wired through snapshot, popup, and schema', () => {
+  const snapshotBuilderSource = fs.readFileSync(new URL('../scripts/build-app-snapshot.mjs', import.meta.url), 'utf8');
+  const uiSource = fs.readFileSync(new URL('../lib/ui.js', import.meta.url), 'utf8');
+  const schemaSource = fs.readFileSync(new URL('../supabase/schema.sql', import.meta.url), 'utf8');
+
+  assert.match(snapshotBuilderSource, /releaseStatus: row\.release_status \|\| 'live'/);
+  assert.match(uiSource, /data-song-pending-apply=/);
+  assert.match(uiSource, /미출시 후보/);
+  assert.match(schemaSource, /release_status text not null default 'live'/);
+  assert.match(schemaSource, /admin_set_chart_release_status/);
 });

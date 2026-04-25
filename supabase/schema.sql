@@ -1717,6 +1717,7 @@ create table if not exists public.chart_metadata (
   radar_chord numeric(6,2) not null default 0,
   radar_top text not null default '',
   source text not null default 'manual',
+  release_status text not null default 'live',
   is_deleted boolean not null default false,
   updated_by uuid references auth.users(id) on delete set null,
   created_at timestamptz not null default now(),
@@ -1724,7 +1725,8 @@ create table if not exists public.chart_metadata (
   constraint chart_metadata_table_key_chk check (table_key in ('SP10H', 'SP11H', 'SP12H')),
   constraint chart_metadata_level_chk check (level between 10 and 12),
   constraint chart_metadata_chart_type_chk check (chart_type in ('H', 'A', 'L')),
-  constraint chart_metadata_classification_status_chk check (classification_status in ('classified', 'provisional', 'uncategorized'))
+  constraint chart_metadata_classification_status_chk check (classification_status in ('classified', 'provisional', 'uncategorized')),
+  constraint chart_metadata_release_status_chk check (release_status in ('live', 'pending_release'))
 );
 
 create index if not exists chart_metadata_table_category_idx
@@ -1834,6 +1836,54 @@ $$;
 
 revoke all on function public.admin_update_chart_metadata(text, text, text, text, text, integer, integer, text, text, numeric, numeric, numeric, numeric, numeric, numeric) from public;
 grant execute on function public.admin_update_chart_metadata(text, text, text, text, text, integer, integer, text, text, numeric, numeric, numeric, numeric, numeric, numeric) to authenticated;
+
+create or replace function public.admin_set_chart_release_status(
+  p_chart_key text,
+  p_table_key text,
+  p_song_title text,
+  p_chart_type text,
+  p_release_status text
+)
+returns public.chart_metadata
+language plpgsql
+security definer
+set search_path = public
+as $$
+declare
+  v_email text := lower(coalesce(auth.jwt() ->> 'email', ''));
+  v_release_status text := case
+    when lower(coalesce(trim(p_release_status), '')) = 'pending_release' then 'pending_release'
+    else 'live'
+  end;
+  v_row public.chart_metadata%rowtype;
+begin
+  if v_email <> 'qscse75359@gmail.com' then
+    raise exception 'admin_only';
+  end if;
+
+  update public.chart_metadata
+  set
+    release_status = v_release_status,
+    source = 'admin_chart_metadata_rpc',
+    updated_by = auth.uid()
+  where chart_key = p_chart_key
+    or (
+      table_key = p_table_key
+      and song_title = p_song_title
+      and chart_type = upper(coalesce(p_chart_type, ''))
+    )
+  returning * into v_row;
+
+  if not found then
+    raise exception 'chart_not_found';
+  end if;
+
+  return v_row;
+end;
+$$;
+
+revoke all on function public.admin_set_chart_release_status(text, text, text, text, text) from public;
+grant execute on function public.admin_set_chart_release_status(text, text, text, text, text) to authenticated;
 
 create or replace function public.admin_delete_chart_metadata(
   p_chart_key text,
