@@ -2699,6 +2699,38 @@ button.danger {
   text-decoration: underline;
 }
 
+.settings-discovery-list {
+  display: grid;
+  gap: 8px;
+}
+
+.settings-discovery-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid #e0b4b4;
+  border-radius: 8px;
+  background: #fff6f6;
+  padding: 8px;
+}
+
+.settings-discovery-main {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.settings-discovery-main strong,
+.settings-discovery-main span {
+  overflow-wrap: anywhere;
+}
+
+.settings-discovery-main span {
+  color: #60758f;
+  font-size: 12px;
+}
+
 .settings-account-copy {
   color: #60758f;
 }
@@ -5803,6 +5835,15 @@ body.theme-dark .settings-admin-status {
 
 body.theme-dark .settings-admin-actions a {
   color: #95bcff;
+}
+
+body.theme-dark .settings-discovery-item {
+  border-color: #7e4e55;
+  background: #352127;
+}
+
+body.theme-dark .settings-discovery-main span {
+  color: #b9c5d6;
 }
 
 body.theme-dark .app-notice-bar {

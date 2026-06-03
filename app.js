@@ -2,6 +2,7 @@
 import {
   emptyProfile,
   buildViews,
+  collectChartDiscoveryCandidates,
   computeRadarProfileFromRows,
   createEmptyBingoState,
   makeEvents,
@@ -113,6 +114,7 @@ const state = {
     message: '',
     workflowUrl: ''
   },
+  chartDiscoveryCandidates: [],
   bingoPreview: null,
     socialHistoryPopup: {
       open: false,
@@ -200,6 +202,7 @@ let exportImage;
 let resetGuestState;
 let refreshRankData;
 let refreshProfile = async () => null;
+let refreshChartDiscoveryCandidates = async () => {};
 
 function latestHistoryId(history = []) {
   return history.length ? history[history.length - 1].id || '' : '';
@@ -288,6 +291,7 @@ async function syncSocial() {
   }
   try {
     state.social = await refreshSocialOverview();
+    if (state.auth.isAdmin) await refreshChartDiscoveryCandidates({ renderAfter: false, silent: true });
   } catch (error) {
     showToast(`소셜 갱신 실패: ${error.message || error}`);
   }
@@ -312,6 +316,7 @@ const dataController = createDataController({
   latestHistoryId,
   parseTsv,
   buildViews,
+  collectChartDiscoveryCandidates,
   makeEvents,
   progressMap,
   createEmptyBingoState,
@@ -462,6 +467,7 @@ const adminController = createAdminController({
 const {
   refreshAppNotices,
   loadStaticData,
+  refreshChartDiscoveryCandidates: adminRefreshChartDiscoveryCandidates,
   openNoticeEditor,
   closeNoticeEditor,
   saveNoticeEditor,
@@ -471,8 +477,11 @@ const {
   deleteSongMetaEditor,
   syncSongMetaSortIndexFromCategory,
   publishSnapshotChanges,
-  applyPendingChartRelease
+  applyPendingChartRelease,
+  promoteDiscoveryCandidate
 } = adminController;
+
+refreshChartDiscoveryCandidates = adminRefreshChartDiscoveryCandidates;
 
 ({
   goalPayloadFromForm,
@@ -804,6 +813,8 @@ bindUi({
     openFollowersPopup,
     closeFollowersPopup,
     openNoticeEditor,
+    refreshChartDiscoveryCandidates,
+    promoteDiscoveryCandidate,
     closeNoticeEditor,
     saveNoticeEditor,
     openSongMetaEditor,

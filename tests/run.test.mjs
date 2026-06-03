@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
-import { buildViews, graphSummary, normalizeBingoState, progressMap, sortItems } from '../lib/data.js';
+import { buildViews, collectChartDiscoveryCandidates, graphSummary, normalizeBingoState, progressMap, sortItems } from '../lib/data.js';
 import { getDeferredPanelRenderers } from '../lib/render-plan.js';
 import { buildAccountStatePatchPayload, buildFullAccountStatePayload, buildUserProfilePayload, compactPersistedHistory } from '../lib/profile-storage.js';
 import { canonicalizeChartMetadataRows } from '../scripts/chart-metadata-utils.mjs';
@@ -339,6 +339,41 @@ test('admin pending release charts stay visible even when tracker rows do not in
   assert.equal(adminView.SP11H.flatCharts.some((chart) => chart.title === 'BLUST OF WIND' && chart.isPendingRelease), true);
 });
 
+test('chart discovery candidates report tracker charts missing from official metadata', () => {
+  const rankTables = {
+    SP11H: {
+      categories: [{
+        category: 'known',
+        items: [{ data: { title: 'Known Song', type: 'A' } }]
+      }]
+    }
+  };
+  const rows = [
+    {
+      title: 'Known Song',
+      'SPA Rating': '11',
+      'SPA Note Count': '1200',
+      'SPL Rating': '11',
+      'SPL Note Count': '0'
+    },
+    {
+      title: 'Hidden Future Song',
+      'SPL Rating': '11',
+      'SPL Note Count': '1335',
+      'SPA Rating': '11',
+      'SPA Note Count': '0'
+    }
+  ];
+
+  const candidates = collectChartDiscoveryCandidates(rankTables, rows);
+
+  assert.equal(candidates.length, 1);
+  assert.equal(candidates[0].songTitle, 'Hidden Future Song');
+  assert.equal(candidates[0].tableKey, 'SP11H');
+  assert.equal(candidates[0].chartType, 'L');
+  assert.equal(candidates[0].noteCount, 1335);
+});
+
 test('progressMap keeps chart rate for RATE goal evaluation', () => {
   const map = progressMap({
     SP12H: {
@@ -538,4 +573,18 @@ test('pending release admin flow is wired through snapshot, popup, and schema', 
   assert.match(uiSource, /미출시 후보/);
   assert.match(schemaSource, /release_status text not null default 'live'/);
   assert.match(schemaSource, /admin_set_chart_release_status/);
+});
+
+test('chart discovery candidate flow is wired through upload, admin UI, and schema', () => {
+  const dataControllerSource = fs.readFileSync(new URL('../lib/app-data-controller.js', import.meta.url), 'utf8');
+  const settingsSource = fs.readFileSync(new URL('../lib/settings-ui.js', import.meta.url), 'utf8');
+  const uiSource = fs.readFileSync(new URL('../lib/ui.js', import.meta.url), 'utf8');
+  const schemaSource = fs.readFileSync(new URL('../supabase/schema.sql', import.meta.url), 'utf8');
+
+  assert.match(dataControllerSource, /collectChartDiscoveryCandidates/);
+  assert.match(dataControllerSource, /report_chart_discovery_candidates/);
+  assert.match(settingsSource, /chartDiscoveryCandidates/);
+  assert.match(uiSource, /data-discovery-promote/);
+  assert.match(schemaSource, /create table if not exists public\.chart_discovery_candidates/);
+  assert.match(schemaSource, /admin_promote_chart_discovery_candidate/);
 });
