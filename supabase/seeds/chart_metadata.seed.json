@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T11:43:43.214Z",
+  "generatedAt": "2026-06-04T11:57:41.757Z",
   "rowCount": 2053,
   "charts": [
     {
@@ -25449,8 +25449,8 @@
       "radar_charge": 0,
       "radar_chord": 0,
       "radar_top": "NOTES",
-      "source": "manual_pending_release_override",
-      "is_deleted": false
+      "source": "admin_removed_unavailable_spl_20260604",
+      "is_deleted": true
     },
     {
       "chart_key": "SP11H|captivate2~覚醒~|A",
@@ -36399,8 +36399,8 @@
       "radar_charge": 0,
       "radar_chord": 0,
       "radar_top": "CHORD",
-      "source": "manual_pending_release_override",
-      "is_deleted": false
+      "source": "admin_removed_unavailable_spl_20260604",
+      "is_deleted": true
     },
     {
       "chart_key": "SP11H|caldwell 99|A",

@@ -57,8 +57,8 @@ const MANUAL_PENDING_RELEASE_ROWS = [
     radar_charge: 0,
     radar_chord: 0,
     radar_top: 'CHORD',
-    source: 'manual_pending_release_override',
-    is_deleted: false
+    source: 'admin_removed_unavailable_spl_20260604',
+    is_deleted: true
   },
   {
     chart_key: chartKey('SP11H', 'Buffalo', 'L'),
@@ -82,8 +82,8 @@ const MANUAL_PENDING_RELEASE_ROWS = [
     radar_charge: 0,
     radar_chord: 0,
     radar_top: 'NOTES',
-    source: 'manual_pending_release_override',
-    is_deleted: false
+    source: 'admin_removed_unavailable_spl_20260604',
+    is_deleted: true
   },
   {
     chart_key: chartKey('SP12H', 'Override', 'L'),
@@ -138,6 +138,8 @@ const MANUAL_PENDING_RELEASE_ROWS = [
 ];
 
 const UNAVAILABLE_TRACKER_ONLY_CHART_KEYS = new Set([
+  chartKey('SP11H', 'BLUST OF WIND', 'L'),
+  chartKey('SP11H', 'Buffalo', 'L'),
   chartKey('SP12H', 'REVOLVER', 'L'),
   chartKey('SP12H', 'GUILTY', 'L'),
   chartKey('SP12H', 'MAD ATTACK', 'L'),

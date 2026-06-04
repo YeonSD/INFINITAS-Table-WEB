@@ -378,7 +378,7 @@ test('chart discovery candidates report tracker charts missing from official met
   assert.equal(candidates[0].noteCount, 1335);
 });
 
-test('locked tracker-only charts are not auto-added or reported as discovery candidates', () => {
+test('locked tracker-only charts still appear unless explicitly suppressed', () => {
   const rankTables = {
     SP12H: {
       categories: []
@@ -396,8 +396,10 @@ test('locked tracker-only charts are not auto-added or reported as discovery can
   const view = buildViews(rankTables, null, rows, { isAdmin: true });
   const candidates = collectChartDiscoveryCandidates(rankTables, rows);
 
-  assert.equal(view.SP12H.flatCharts.length, 0);
-  assert.equal(candidates.length, 0);
+  assert.equal(view.SP12H.flatCharts.length, 1);
+  assert.equal(view.SP12H.flatCharts[0].isUnlocked, false);
+  assert.equal(candidates.length, 1);
+  assert.equal(candidates[0].songTitle, 'Unavailable Memory Song');
 });
 
 test('suppressed unavailable tracker-only charts do not reappear from tracker rows', () => {
@@ -419,6 +421,38 @@ test('suppressed unavailable tracker-only charts do not reappear from tracker ro
   const candidates = collectChartDiscoveryCandidates(rankTables, rows);
 
   assert.equal(view.SP12H.flatCharts.length, 0);
+  assert.equal(candidates.length, 0);
+});
+
+test('suppressed SP11 unavailable SPL charts do not reappear from tracker rows', () => {
+  const rankTables = {
+    SP11H: {
+      categories: []
+    }
+  };
+  const rows = [
+    {
+      title: 'BLUST OF WIND',
+      'SPL Unlocked': 'TRUE',
+      'SPL Rating': '11',
+      'SPL Lamp': 'NP',
+      'SPL EX Score': '0',
+      'SPL Note Count': '1335'
+    },
+    {
+      title: 'Buffalo',
+      'SPL Unlocked': 'FALSE',
+      'SPL Rating': '11',
+      'SPL Lamp': 'NP',
+      'SPL EX Score': '0',
+      'SPL Note Count': '1287'
+    }
+  ];
+
+  const view = buildViews(rankTables, null, rows, { isAdmin: true });
+  const candidates = collectChartDiscoveryCandidates(rankTables, rows);
+
+  assert.equal(view.SP11H.flatCharts.length, 0);
   assert.equal(candidates.length, 0);
 });
 
