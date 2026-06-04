@@ -351,15 +351,19 @@ test('chart discovery candidates report tracker charts missing from official met
   const rows = [
     {
       title: 'Known Song',
+      'SPA Unlocked': 'TRUE',
       'SPA Rating': '11',
       'SPA Note Count': '1200',
+      'SPL Unlocked': 'FALSE',
       'SPL Rating': '11',
       'SPL Note Count': '0'
     },
     {
       title: 'Hidden Future Song',
+      'SPL Unlocked': 'TRUE',
       'SPL Rating': '11',
       'SPL Note Count': '1335',
+      'SPA Unlocked': 'FALSE',
       'SPA Rating': '11',
       'SPA Note Count': '0'
     }
@@ -372,6 +376,50 @@ test('chart discovery candidates report tracker charts missing from official met
   assert.equal(candidates[0].tableKey, 'SP11H');
   assert.equal(candidates[0].chartType, 'L');
   assert.equal(candidates[0].noteCount, 1335);
+});
+
+test('locked tracker-only charts are not auto-added or reported as discovery candidates', () => {
+  const rankTables = {
+    SP12H: {
+      categories: []
+    }
+  };
+  const rows = [{
+    title: 'Unavailable Memory Song',
+    'SPL Unlocked': 'FALSE',
+    'SPL Rating': '12',
+    'SPL Lamp': 'NP',
+    'SPL EX Score': '0',
+    'SPL Note Count': '1907'
+  }];
+
+  const view = buildViews(rankTables, null, rows, { isAdmin: true });
+  const candidates = collectChartDiscoveryCandidates(rankTables, rows);
+
+  assert.equal(view.SP12H.flatCharts.length, 0);
+  assert.equal(candidates.length, 0);
+});
+
+test('suppressed unavailable tracker-only charts do not reappear from tracker rows', () => {
+  const rankTables = {
+    SP12H: {
+      categories: []
+    }
+  };
+  const rows = [{
+    title: 'REVOLVER',
+    'SPL Unlocked': 'TRUE',
+    'SPL Rating': '12',
+    'SPL Lamp': 'NP',
+    'SPL EX Score': '0',
+    'SPL Note Count': '1731'
+  }];
+
+  const view = buildViews(rankTables, null, rows, { isAdmin: true });
+  const candidates = collectChartDiscoveryCandidates(rankTables, rows);
+
+  assert.equal(view.SP12H.flatCharts.length, 0);
+  assert.equal(candidates.length, 0);
 });
 
 test('progressMap keeps chart rate for RATE goal evaluation', () => {
@@ -550,8 +598,8 @@ test('supabase snapshot canonicalization restores classified seed categories ove
 test('snapshot smoke keeps cleaned hard-table counts and latest song coverage', () => {
   const snapshot = JSON.parse(fs.readFileSync(new URL('../assets/data/app-snapshot.json', import.meta.url), 'utf8'));
   assert.equal(tableCount(snapshot, 'SP10H'), 892);
-  assert.equal(tableCount(snapshot, 'SP11H'), 608);
-  assert.equal(tableCount(snapshot, 'SP12H'), 553);
+  assert.equal(tableCount(snapshot, 'SP11H'), 606);
+  assert.equal(tableCount(snapshot, 'SP12H'), 551);
   const sp11Titles = (snapshot.rankTables?.SP11H?.categories || [])
     .flatMap((category) => category?.items || [])
     .map((item) => item?.data?.title || item?.title);
@@ -560,8 +608,8 @@ test('snapshot smoke keeps cleaned hard-table counts and latest song coverage', 
   const adminViews = buildViews(snapshot.rankTables || {}, snapshot.songRadarCatalog || null, [], { isAdmin: true });
   assert.equal((userViews.SP11H?.flatCharts || []).length, 606);
   assert.equal((userViews.SP12H?.flatCharts || []).length, 551);
-  assert.equal((adminViews.SP11H?.flatCharts || []).length, 608);
-  assert.equal((adminViews.SP12H?.flatCharts || []).length, 553);
+  assert.equal((adminViews.SP11H?.flatCharts || []).length, 606);
+  assert.equal((adminViews.SP12H?.flatCharts || []).length, 551);
 });
 test('pending release admin flow is wired through snapshot, popup, and schema', () => {
   const snapshotBuilderSource = fs.readFileSync(new URL('../scripts/build-app-snapshot.mjs', import.meta.url), 'utf8');

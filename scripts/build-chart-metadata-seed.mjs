@@ -107,8 +107,8 @@ const MANUAL_PENDING_RELEASE_ROWS = [
     radar_charge: 0,
     radar_chord: 0,
     radar_top: 'CHORD',
-    source: 'manual_pending_release_override',
-    is_deleted: false
+    source: 'admin_removed_unavailable_spl_20260604',
+    is_deleted: true
   },
   {
     chart_key: chartKey('SP12H', '\u304a\u7c73\u306e\u7f8e\u5473\u3057\u3044\u708a\u304d\u65b9\u3001\u305d\u3057\u3066\u304a\u7c73\u3092\u98df\u3079\u308b\u3053\u3068\u306b\u3088\u308b\u305d\u306e\u52b9\u679c\u3002', 'L'),
@@ -132,10 +132,18 @@ const MANUAL_PENDING_RELEASE_ROWS = [
     radar_charge: 0,
     radar_chord: 0,
     radar_top: 'NOTES',
-    source: 'manual_pending_release_override',
-    is_deleted: false
+    source: 'admin_removed_unavailable_spl_20260604',
+    is_deleted: true
   }
 ];
+
+const UNAVAILABLE_TRACKER_ONLY_CHART_KEYS = new Set([
+  chartKey('SP12H', 'REVOLVER', 'L'),
+  chartKey('SP12H', 'GUILTY', 'L'),
+  chartKey('SP12H', 'MAD ATTACK', 'L'),
+  chartKey('SP12H', 'Override', 'L'),
+  chartKey('SP12H', '\u304a\u7c73\u306e\u7f8e\u5473\u3057\u3044\u708a\u304d\u65b9\u3001\u305d\u3057\u3066\u304a\u7c73\u3092\u98df\u3079\u308b\u3053\u3068\u306b\u3088\u308b\u305d\u306e\u52b9\u679c\u3002', 'L')
+]);
 
 function parseCsvLine(line) {
   const out = [];
@@ -333,6 +341,17 @@ function applyManualOverrides(rows) {
   return [...rowMap.values()];
 }
 
+function markUnavailableTrackerOnlyChartsDeleted(rows) {
+  return rows.map((row) => {
+    if (!UNAVAILABLE_TRACKER_ONLY_CHART_KEYS.has(row.chart_key)) return row;
+    return {
+      ...row,
+      source: 'admin_removed_unavailable_spl_20260604',
+      is_deleted: true
+    };
+  });
+}
+
 function sortRows(rows) {
   return [...rows].sort((a, b) => {
     if (a.table_key !== b.table_key) return a.table_key.localeCompare(b.table_key);
@@ -352,8 +371,10 @@ if (!fs.existsSync(SOURCE_RANK_PATH) || !fs.existsSync(SOURCE_RADAR_PATH)) {
 const rankTablesPayload = JSON.parse(fs.readFileSync(SOURCE_RANK_PATH, 'utf8'));
 const csvText = fs.readFileSync(SOURCE_RADAR_PATH, 'utf8');
 const mergedRows = sortRows(
-  applyManualOverrides(
-    overlayRankTables(buildRadarRowsFromCsv(csvText), rankTablesPayload)
+  markUnavailableTrackerOnlyChartsDeleted(
+    applyManualOverrides(
+      overlayRankTables(buildRadarRowsFromCsv(csvText), rankTablesPayload)
+    )
   )
 );
 fs.mkdirSync(SEED_DIR, { recursive: true });

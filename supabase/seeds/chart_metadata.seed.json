@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-25T12:24:42.589Z",
+  "generatedAt": "2026-06-04T11:43:43.214Z",
   "rowCount": 2053,
   "charts": [
     {
@@ -38974,8 +38974,8 @@
       "radar_charge": 0,
       "radar_chord": 0,
       "radar_top": "CHORD",
-      "source": "manual_pending_release_override",
-      "is_deleted": false
+      "source": "admin_removed_unavailable_spl_20260604",
+      "is_deleted": true
     },
     {
       "chart_key": "SP12H|perditusparadisus|A",
@@ -51324,8 +51324,8 @@
       "radar_charge": 0,
       "radar_chord": 0,
       "radar_top": "NOTES",
-      "source": "manual_pending_release_override",
-      "is_deleted": false
+      "source": "admin_removed_unavailable_spl_20260604",
+      "is_deleted": true
     }
   ]
 }
