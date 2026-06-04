@@ -1,5 +1,5 @@
 {
-  "publishedAt": "2026-04-25T12:30:43.946Z",
+  "publishedAt": "2026-06-04T11:33:15.258Z",
   "rankTables": {
     "SP10H": {
       "tableinfo": {
@@ -20461,26 +20461,6 @@
             },
             {
               "data": {
-                "title": "Buffalo",
-                "type": "L",
-                "releaseStatus": "pending_release",
-                "implicitType": false,
-                "bpm": "108",
-                "atwikiNotes": 1287,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 0,
-                  "PEAK": 0,
-                  "SCRATCH": 0,
-                  "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 0
-                },
-                "radarTop": "NOTES"
-              }
-            },
-            {
-              "data": {
                 "title": "CaptivAte2~覚醒~",
                 "type": "A",
                 "releaseStatus": "live",
@@ -24117,7 +24097,7 @@
                 "type": "A",
                 "releaseStatus": "live",
                 "implicitType": false,
-                "bpm": "174",
+                "bpm": "",
                 "atwikiNotes": 1280,
                 "typeInfo": "NOTES",
                 "radar": {
@@ -24337,9 +24317,9 @@
                 "type": "H",
                 "releaseStatus": "live",
                 "implicitType": false,
-                "bpm": "165-188(185)",
+                "bpm": "",
                 "atwikiNotes": 1111,
-                "typeInfo": "SOF-LAN",
+                "typeInfo": "SOFLAN",
                 "radar": {
                   "NOTES": 84.53,
                   "PEAK": 109.21,
@@ -26661,7 +26641,7 @@
                 "type": "A",
                 "releaseStatus": "live",
                 "implicitType": false,
-                "bpm": "138",
+                "bpm": "",
                 "atwikiNotes": 1193,
                 "typeInfo": "NOTES",
                 "radar": {
@@ -27141,7 +27121,7 @@
                 "type": "A",
                 "releaseStatus": "live",
                 "implicitType": false,
-                "bpm": "155-175(155)",
+                "bpm": "",
                 "atwikiNotes": 1389,
                 "typeInfo": "NOTES",
                 "radar": {
@@ -29261,26 +29241,6 @@
             },
             {
               "data": {
-                "title": "BLUST OF WIND",
-                "type": "L",
-                "releaseStatus": "pending_release",
-                "implicitType": false,
-                "bpm": "145",
-                "atwikiNotes": 1335,
-                "typeInfo": "CHORD",
-                "radar": {
-                  "NOTES": 0,
-                  "PEAK": 0,
-                  "SCRATCH": 0,
-                  "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 0
-                },
-                "radarTop": "CHORD"
-              }
-            },
-            {
-              "data": {
                 "title": "Caldwell 99",
                 "type": "A",
                 "releaseStatus": "live",
@@ -30035,14 +29995,14 @@
                 "atwikiNotes": 1336,
                 "typeInfo": "CHARGE",
                 "radar": {
-                  "NOTES": 101.53,
-                  "PEAK": 105.26,
-                  "SCRATCH": 49.29,
+                  "NOTES": 0,
+                  "PEAK": 0,
+                  "SCRATCH": 0,
                   "SOFLAN": 0,
-                  "CHARGE": 156.91,
-                  "CHORD": 93.68
+                  "CHARGE": 0,
+                  "CHORD": 0
                 },
-                "radarTop": "CHARGE"
+                "radarTop": "NOTES"
               }
             },
             {
@@ -31316,7 +31276,7 @@
                 "type": "A",
                 "releaseStatus": "live",
                 "implicitType": false,
-                "bpm": "188-191(191)",
+                "bpm": "",
                 "atwikiNotes": 1970,
                 "typeInfo": "CHARGE",
                 "radar": {
@@ -31368,26 +31328,6 @@
                   "CHORD": 145.21
                 },
                 "radarTop": "PEAK"
-              }
-            },
-            {
-              "data": {
-                "title": "Override",
-                "type": "L",
-                "releaseStatus": "pending_release",
-                "implicitType": false,
-                "bpm": "175",
-                "atwikiNotes": 2204,
-                "typeInfo": "CHORD",
-                "radar": {
-                  "NOTES": 0,
-                  "PEAK": 0,
-                  "SCRATCH": 0,
-                  "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 0
-                },
-                "radarTop": "CHORD"
               }
             },
             {
@@ -33640,7 +33580,7 @@
                 "type": "A",
                 "releaseStatus": "live",
                 "implicitType": false,
-                "bpm": "150",
+                "bpm": "",
                 "atwikiNotes": 1588,
                 "typeInfo": "PEAK",
                 "radar": {
@@ -34040,7 +33980,7 @@
                 "type": "A",
                 "releaseStatus": "live",
                 "implicitType": false,
-                "bpm": "196",
+                "bpm": "",
                 "atwikiNotes": 1988,
                 "typeInfo": "NOTES",
                 "radar": {
@@ -34060,9 +34000,9 @@
                 "type": "A",
                 "releaseStatus": "live",
                 "implicitType": false,
-                "bpm": "165-185(185)",
+                "bpm": "",
                 "atwikiNotes": 1414,
-                "typeInfo": "SOF-LAN",
+                "typeInfo": "SOFLAN",
                 "radar": {
                   "NOTES": 107.58,
                   "PEAK": 142.1,
@@ -34412,7 +34352,7 @@
                 "type": "A",
                 "releaseStatus": "live",
                 "implicitType": false,
-                "bpm": "190",
+                "bpm": "",
                 "atwikiNotes": 1835,
                 "typeInfo": "NOTES",
                 "radar": {
@@ -35232,7 +35172,7 @@
                 "type": "L",
                 "releaseStatus": "live",
                 "implicitType": false,
-                "bpm": "174",
+                "bpm": "",
                 "atwikiNotes": 1655,
                 "typeInfo": "NOTES",
                 "radar": {
@@ -35764,7 +35704,7 @@
                 "type": "L",
                 "releaseStatus": "live",
                 "implicitType": false,
-                "bpm": "114",
+                "bpm": "",
                 "atwikiNotes": 1954,
                 "typeInfo": "CHORD",
                 "radar": {
@@ -37236,7 +37176,7 @@
                 "type": "A",
                 "releaseStatus": "live",
                 "implicitType": false,
-                "bpm": "192",
+                "bpm": "",
                 "atwikiNotes": 2002,
                 "typeInfo": "NOTES",
                 "radar": {
@@ -37356,7 +37296,7 @@
                 "type": "A",
                 "releaseStatus": "live",
                 "implicitType": false,
-                "bpm": "165",
+                "bpm": "",
                 "atwikiNotes": 1815,
                 "typeInfo": "NOTES",
                 "radar": {
@@ -38116,7 +38056,7 @@
                 "type": "A",
                 "releaseStatus": "live",
                 "implicitType": false,
-                "bpm": "191",
+                "bpm": "",
                 "atwikiNotes": 1687,
                 "typeInfo": "NOTES",
                 "radar": {
@@ -39188,7 +39128,7 @@
                 "type": "A",
                 "releaseStatus": "live",
                 "implicitType": false,
-                "bpm": "205",
+                "bpm": "",
                 "atwikiNotes": 1467,
                 "typeInfo": "PEAK",
                 "radar": {
@@ -41353,32 +41293,6 @@
               }
             }
           ]
-        },
-        {
-          "category": "미정",
-          "sortindex": 999,
-          "items": [
-            {
-              "data": {
-                "title": "お米の美味しい炊き方、そしてお米を食べることによるその効果。",
-                "type": "L",
-                "releaseStatus": "pending_release",
-                "implicitType": false,
-                "bpm": "",
-                "atwikiNotes": 1907,
-                "typeInfo": "NOTES",
-                "radar": {
-                  "NOTES": 0,
-                  "PEAK": 0,
-                  "SCRATCH": 0,
-                  "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 0
-                },
-                "radarTop": "NOTES"
-              }
-            }
-          ]
         }
       ]
     }
@@ -41498,20 +41412,6 @@
         "radarTop": "NOTES"
       },
       {
-        "title": "50th Memorial Songs -二人の時 ~under the cherry blossoms~-",
-        "type": "A",
-        "notes": 1311,
-        "radar": {
-          "NOTES": 104.49,
-          "PEAK": 100,
-          "SCRATCH": 29.61,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 114.48
-        },
-        "radarTop": "CHORD"
-      },
-      {
         "title": "50th Memorial Songs -Beginning Story-",
         "type": "A",
         "notes": 1378,
@@ -41536,6 +41436,20 @@
           "SOFLAN": 56.02,
           "CHARGE": 0,
           "CHORD": 111.62
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "50th Memorial Songs -二人の時 ~under the cherry blossoms~-",
+        "type": "A",
+        "notes": 1311,
+        "radar": {
+          "NOTES": 104.49,
+          "PEAK": 100,
+          "SCRATCH": 29.61,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 114.48
         },
         "radarTop": "CHORD"
       },
@@ -41566,790 +41480,6 @@
           "CHORD": 108.42
         },
         "radarTop": "CHORD"
-      },
-      {
-        "title": "見習い天使と星降りの丘",
-        "type": "H",
-        "notes": 1017,
-        "radar": {
-          "NOTES": 89.24,
-          "PEAK": 75.71,
-          "SCRATCH": 44.11,
-          "SOFLAN": 0,
-          "CHARGE": 47.23,
-          "CHORD": 56.16
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "禊",
-        "type": "H",
-        "notes": 1169,
-        "radar": {
-          "NOTES": 94.32,
-          "PEAK": 90,
-          "SCRATCH": 42.91,
-          "SOFLAN": 0,
-          "CHARGE": 74.84,
-          "CHORD": 59.47
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "共犯ヘヴンズコード",
-        "type": "A",
-        "notes": 1149,
-        "radar": {
-          "NOTES": 97.89,
-          "PEAK": 92.85,
-          "SCRATCH": 46.55,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 105.79
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "光風霽月",
-        "type": "H",
-        "notes": 1182,
-        "radar": {
-          "NOTES": 91.97,
-          "PEAK": 80,
-          "SCRATCH": 63.49,
-          "SOFLAN": 0,
-          "CHARGE": 13.12,
-          "CHORD": 68.61
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "鬼言集",
-        "type": "A",
-        "notes": 1037,
-        "radar": {
-          "NOTES": 82.1,
-          "PEAK": 77.14,
-          "SCRATCH": 16.15,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 43.1
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "鬼華-修羅の舞-",
-        "type": "H",
-        "notes": 1270,
-        "radar": {
-          "NOTES": 98.72,
-          "PEAK": 85.71,
-          "SCRATCH": 60.03,
-          "SOFLAN": 0,
-          "CHARGE": 26.31,
-          "CHORD": 89.17
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "金野火織の金色提言",
-        "type": "H",
-        "notes": 1171,
-        "radar": {
-          "NOTES": 95.52,
-          "PEAK": 88.57,
-          "SCRATCH": 70.72,
-          "SOFLAN": 0,
-          "CHARGE": 13.43,
-          "CHORD": 83.67
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "多極性ニューロンの崩壊による人間の末路",
-        "type": "H",
-        "notes": 1171,
-        "radar": {
-          "NOTES": 99.9,
-          "PEAK": 87.14,
-          "SCRATCH": 33.56,
-          "SOFLAN": 0,
-          "CHARGE": 24.84,
-          "CHORD": 68.92
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "大見解",
-        "type": "A",
-        "notes": 1268,
-        "radar": {
-          "NOTES": 104.49,
-          "PEAK": 111.84,
-          "SCRATCH": 7.2,
-          "SOFLAN": 27.44,
-          "CHARGE": 0,
-          "CHORD": 123.57
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "黎明の情",
-        "type": "A",
-        "notes": 1119,
-        "radar": {
-          "NOTES": 92.3,
-          "PEAK": 92.85,
-          "SCRATCH": 36.05,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 91.6
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "累乗のカルマ",
-        "type": "A",
-        "notes": 1281,
-        "radar": {
-          "NOTES": 104.65,
-          "PEAK": 88.57,
-          "SCRATCH": 49.4,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 116.29
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "流桜ノ門",
-        "type": "A",
-        "notes": 1075,
-        "radar": {
-          "NOTES": 88.87,
-          "PEAK": 91.42,
-          "SCRATCH": 45.77,
-          "SOFLAN": 0,
-          "CHARGE": 130.78,
-          "CHORD": 92.32
-        },
-        "radarTop": "CHARGE"
-      },
-      {
-        "title": "儚キ戀ノ幻想譚",
-        "type": "H",
-        "notes": 1169,
-        "radar": {
-          "NOTES": 97.17,
-          "PEAK": 81.42,
-          "SCRATCH": 69.04,
-          "SOFLAN": 0,
-          "CHARGE": 1.87,
-          "CHORD": 70.7
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "夢縁",
-        "type": "H",
-        "notes": 1073,
-        "radar": {
-          "NOTES": 85.55,
-          "PEAK": 74.28,
-          "SCRATCH": 44.72,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 55.69
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "霧幻メモリア",
-        "type": "A",
-        "notes": 1026,
-        "radar": {
-          "NOTES": 87.31,
-          "PEAK": 82.85,
-          "SCRATCH": 26.04,
-          "SOFLAN": 0,
-          "CHARGE": 59.9,
-          "CHORD": 91.74
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "未完成ノ蒸氣驅動乙女",
-        "type": "H",
-        "notes": 1079,
-        "radar": {
-          "NOTES": 91.44,
-          "PEAK": 74.28,
-          "SCRATCH": 19.75,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 34.22
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "烽火連天の刃",
-        "type": "H",
-        "notes": 1195,
-        "radar": {
-          "NOTES": 94.64,
-          "PEAK": 80,
-          "SCRATCH": 38.66,
-          "SOFLAN": 0,
-          "CHARGE": 152.03,
-          "CHORD": 74.97
-        },
-        "radarTop": "CHARGE"
-      },
-      {
-        "title": "湘南ロンリーMIDNIGHT RAIN",
-        "type": "A",
-        "notes": 1438,
-        "radar": {
-          "NOTES": 111.4,
-          "PEAK": 97.14,
-          "SCRATCH": 31.6,
-          "SOFLAN": 0,
-          "CHARGE": 58.46,
-          "CHORD": 128.69
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "雪上断火",
-        "type": "H",
-        "notes": 940,
-        "radar": {
-          "NOTES": 71.67,
-          "PEAK": 71.42,
-          "SCRATCH": 120.74,
-          "SOFLAN": 54.55,
-          "CHARGE": 0,
-          "CHORD": 64.43
-        },
-        "radarTop": "SCRATCH"
-      },
-      {
-        "title": "星屑ディスタンシア",
-        "type": "A",
-        "notes": 1073,
-        "radar": {
-          "NOTES": 87.66,
-          "PEAK": 84.28,
-          "SCRATCH": 41.66,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 83.05
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "水無月の雫 ft. 小林まな",
-        "type": "A",
-        "notes": 1313,
-        "radar": {
-          "NOTES": 105.37,
-          "PEAK": 92.85,
-          "SCRATCH": 35.66,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 102.46
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "純真可憐デザイア",
-        "type": "A",
-        "notes": 1172,
-        "radar": {
-          "NOTES": 91.71,
-          "PEAK": 84.28,
-          "SCRATCH": 49.6,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 90.32
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "神謳 -RESONANCE-",
-        "type": "H",
-        "notes": 1285,
-        "radar": {
-          "NOTES": 96.9,
-          "PEAK": 82.85,
-          "SCRATCH": 10.98,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 70.6
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "神様、つれない。",
-        "type": "A",
-        "notes": 1083,
-        "radar": {
-          "NOTES": 91.08,
-          "PEAK": 72.85,
-          "SCRATCH": 20.83,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 90.82
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "愛しくてラヴィンユー ft. マナ",
-        "type": "A",
-        "notes": 1209,
-        "radar": {
-          "NOTES": 93.83,
-          "PEAK": 81.42,
-          "SCRATCH": 31.66,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 79.35
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "野球の遊び方 そしてその歴史 ~決定版~",
-        "type": "A",
-        "notes": 1159,
-        "radar": {
-          "NOTES": 91.44,
-          "PEAK": 88.57,
-          "SCRATCH": 51.16,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 71.29
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "逆月",
-        "type": "H",
-        "notes": 1194,
-        "radar": {
-          "NOTES": 97.54,
-          "PEAK": 98.57,
-          "SCRATCH": 18.45,
-          "SOFLAN": 0,
-          "CHARGE": 61.09,
-          "CHORD": 104.51
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "妖隠し -あやかしかくし-",
-        "type": "A",
-        "notes": 1103,
-        "radar": {
-          "NOTES": 85.1,
-          "PEAK": 82.85,
-          "SCRATCH": 23.04,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 60.21
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "隅田川夏恋歌",
-        "type": "A",
-        "notes": 1070,
-        "radar": {
-          "NOTES": 92.83,
-          "PEAK": 88.57,
-          "SCRATCH": 30.97,
-          "SOFLAN": 0,
-          "CHARGE": 39.03,
-          "CHORD": 95.64
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "月と夢の跡 ft. マナ",
-        "type": "A",
-        "notes": 1269,
-        "radar": {
-          "NOTES": 99.92,
-          "PEAK": 91.42,
-          "SCRATCH": 36.14,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 105.27
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "二人ノ廃城幽踊宴",
-        "type": "H",
-        "notes": 1216,
-        "radar": {
-          "NOTES": 96.69,
-          "PEAK": 81.42,
-          "SCRATCH": 45.76,
-          "SOFLAN": 122.8,
-          "CHARGE": 0,
-          "CHORD": 73.88
-        },
-        "radarTop": "SOFLAN"
-      },
-      {
-        "title": "翼",
-        "type": "L",
-        "notes": 1258,
-        "radar": {
-          "NOTES": 95.81,
-          "PEAK": 82.85,
-          "SCRATCH": 18.86,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 107.58
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "刃図羅",
-        "type": "H",
-        "notes": 1082,
-        "radar": {
-          "NOTES": 81.03,
-          "PEAK": 84.28,
-          "SCRATCH": 32.73,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 53.44
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "灼熱Beach Side Bunny (Masayoshi Iimori Remix)",
-        "type": "A",
-        "notes": 933,
-        "radar": {
-          "NOTES": 78.58,
-          "PEAK": 98.57,
-          "SCRATCH": 163.77,
-          "SOFLAN": 0,
-          "CHARGE": 6.56,
-          "CHORD": 68.66
-        },
-        "radarTop": "SCRATCH"
-      },
-      {
-        "title": "電光",
-        "type": "H",
-        "notes": 976,
-        "radar": {
-          "NOTES": 77.39,
-          "PEAK": 72.85,
-          "SCRATCH": 108.73,
-          "SOFLAN": 0,
-          "CHARGE": 64.6,
-          "CHORD": 38.07
-        },
-        "radarTop": "SCRATCH"
-      },
-      {
-        "title": "電腦都市",
-        "type": "H",
-        "notes": 1181,
-        "radar": {
-          "NOTES": 102.46,
-          "PEAK": 92.85,
-          "SCRATCH": 65.1,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 100.57
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "電子になりたい",
-        "type": "A",
-        "notes": 1017,
-        "radar": {
-          "NOTES": 93.77,
-          "PEAK": 72.85,
-          "SCRATCH": 53.74,
-          "SOFLAN": 0,
-          "CHARGE": 8.43,
-          "CHORD": 63.97
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "情熱タンデムRUNAWAY",
-        "type": "H",
-        "notes": 1225,
-        "radar": {
-          "NOTES": 95.23,
-          "PEAK": 72.85,
-          "SCRATCH": 58.34,
-          "SOFLAN": 0,
-          "CHARGE": 30.89,
-          "CHORD": 82.24
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "終末を追う者",
-        "type": "H",
-        "notes": 1132,
-        "radar": {
-          "NOTES": 100.64,
-          "PEAK": 88.57,
-          "SCRATCH": 63.48,
-          "SOFLAN": 0,
-          "CHARGE": 53.46,
-          "CHORD": 70.26
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "終焔のClaudia",
-        "type": "H",
-        "notes": 1014,
-        "radar": {
-          "NOTES": 88.64,
-          "PEAK": 84.28,
-          "SCRATCH": 40.12,
-          "SOFLAN": 81.12,
-          "CHARGE": 0,
-          "CHORD": 56.96
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "罪過の聖堂",
-        "type": "A",
-        "notes": 1080,
-        "radar": {
-          "NOTES": 142.63,
-          "PEAK": 115.78,
-          "SCRATCH": 58.39,
-          "SOFLAN": 0,
-          "CHARGE": 2.34,
-          "CHORD": 129.49
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "朱と碧のランページ",
-        "type": "A",
-        "notes": 1266,
-        "radar": {
-          "NOTES": 99.51,
-          "PEAK": 84.28,
-          "SCRATCH": 52.11,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 104.23
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "天泣",
-        "type": "H",
-        "notes": 1219,
-        "radar": {
-          "NOTES": 94.69,
-          "PEAK": 70,
-          "SCRATCH": 27.16,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 62.12
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "取り残された美術(Arranged:HiZuMi)",
-        "type": "A",
-        "notes": 1111,
-        "radar": {
-          "NOTES": 102.27,
-          "PEAK": 87.14,
-          "SCRATCH": 47.61,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 104.98
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "抱きしめてモナムール",
-        "type": "H",
-        "notes": 1189,
-        "radar": {
-          "NOTES": 87.05,
-          "PEAK": 85.71,
-          "SCRATCH": 35.2,
-          "SOFLAN": 0,
-          "CHARGE": 9.21,
-          "CHORD": 52.91
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "夏風邪デスコ",
-        "type": "A",
-        "notes": 1339,
-        "radar": {
-          "NOTES": 112.81,
-          "PEAK": 97.14,
-          "SCRATCH": 52.79,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 108.36
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "夏の匂い。キミの残像。 ft. Kanae Asaba",
-        "type": "A",
-        "notes": 1281,
-        "radar": {
-          "NOTES": 97.37,
-          "PEAK": 91.42,
-          "SCRATCH": 28.24,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 108.04
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "昏き甲鉄のヴェルガ",
-        "type": "A",
-        "notes": 1177,
-        "radar": {
-          "NOTES": 91.93,
-          "PEAK": 84.28,
-          "SCRATCH": 29.59,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 106.34
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "虹色の花",
-        "type": "A",
-        "notes": 1142,
-        "radar": {
-          "NOTES": 101.02,
-          "PEAK": 100,
-          "SCRATCH": 25.13,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 81.32
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "華麗なる大犬円舞曲",
-        "type": "H",
-        "notes": 1105,
-        "radar": {
-          "NOTES": 84.74,
-          "PEAK": 84.28,
-          "SCRATCH": 31.85,
-          "SOFLAN": 98.45,
-          "CHARGE": 0,
-          "CHORD": 38.57
-        },
-        "radarTop": "SOFLAN"
-      },
-      {
-        "title": "恋歌疾風!かるたクイーンいろは",
-        "type": "H",
-        "notes": 1132,
-        "radar": {
-          "NOTES": 87.09,
-          "PEAK": 87.14,
-          "SCRATCH": 55.49,
-          "SOFLAN": 20.47,
-          "CHARGE": 0,
-          "CHORD": 67.28
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "恋愛=精度×認識力",
-        "type": "H",
-        "notes": 1220,
-        "radar": {
-          "NOTES": 95.9,
-          "PEAK": 95.71,
-          "SCRATCH": 49.25,
-          "SOFLAN": 171.46,
-          "CHARGE": 28.43,
-          "CHORD": 102.75
-        },
-        "radarTop": "SOFLAN"
-      },
-      {
-        "title": "恋はどう?モロ◎波動OK☆方程式!!",
-        "type": "A",
-        "notes": 1247,
-        "radar": {
-          "NOTES": 106.88,
-          "PEAK": 110.52,
-          "SCRATCH": 51.2,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 110.43
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "栄冠のカンパネラ",
-        "type": "H",
-        "notes": 1101,
-        "radar": {
-          "NOTES": 91.43,
-          "PEAK": 82.85,
-          "SCRATCH": 35.69,
-          "SOFLAN": 0,
-          "CHARGE": 170.23,
-          "CHORD": 78.57
-        },
-        "radarTop": "CHARGE"
-      },
-      {
-        "title": "楽園追放",
-        "type": "A",
-        "notes": 1228,
-        "radar": {
-          "NOTES": 106.09,
-          "PEAK": 85.71,
-          "SCRATCH": 32.73,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 86.23
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "閠槞彁の願い",
-        "type": "H",
-        "notes": 1109,
-        "radar": {
-          "NOTES": 87.68,
-          "PEAK": 87.14,
-          "SCRATCH": 45.5,
-          "SOFLAN": 0,
-          "CHARGE": 20.4,
-          "CHORD": 44.33
-        },
-        "radarTop": "NOTES"
       },
       {
         "title": "A-JAX (3-WAY MIX)",
@@ -47042,20 +46172,6 @@
         "radarTop": "CHORD"
       },
       {
-        "title": "お菓子の王国",
-        "type": "H",
-        "notes": 1191,
-        "radar": {
-          "NOTES": 90.62,
-          "PEAK": 90,
-          "SCRATCH": 29.93,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 41.67
-        },
-        "radarTop": "NOTES"
-      },
-      {
         "title": "おおきなこえで",
         "type": "L",
         "notes": 1095,
@@ -47068,6 +46184,20 @@
           "CHORD": 90.59
         },
         "radarTop": "CHORD"
+      },
+      {
+        "title": "お菓子の王国",
+        "type": "H",
+        "notes": 1191,
+        "radar": {
+          "NOTES": 90.62,
+          "PEAK": 90,
+          "SCRATCH": 29.93,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 41.67
+        },
+        "radarTop": "NOTES"
       },
       {
         "title": "カミロ・ウナ・メンデス",
@@ -47448,32 +46578,816 @@
         "radarTop": "CHORD"
       },
       {
-        "title": "轟け!恋のビーンボール!!",
+        "title": "二人ノ廃城幽踊宴",
         "type": "H",
-        "notes": 1012,
+        "notes": 1216,
         "radar": {
-          "NOTES": 89.11,
-          "PEAK": 74.28,
-          "SCRATCH": 50.68,
-          "SOFLAN": 0,
+          "NOTES": 96.69,
+          "PEAK": 81.42,
+          "SCRATCH": 45.76,
+          "SOFLAN": 122.8,
           "CHARGE": 0,
-          "CHORD": 71.96
+          "CHORD": 73.88
+        },
+        "radarTop": "SOFLAN"
+      },
+      {
+        "title": "儚キ戀ノ幻想譚",
+        "type": "H",
+        "notes": 1169,
+        "radar": {
+          "NOTES": 97.17,
+          "PEAK": 81.42,
+          "SCRATCH": 69.04,
+          "SOFLAN": 0,
+          "CHARGE": 1.87,
+          "CHORD": 70.7
         },
         "radarTop": "NOTES"
       },
       {
-        "title": "旋律のドグマ~Misérables~",
+        "title": "光風霽月",
         "type": "H",
-        "notes": 1271,
+        "notes": 1182,
         "radar": {
-          "NOTES": 89.8,
-          "PEAK": 75.71,
-          "SCRATCH": 26.76,
+          "NOTES": 91.97,
+          "PEAK": 80,
+          "SCRATCH": 63.49,
           "SOFLAN": 0,
-          "CHARGE": 1.87,
-          "CHORD": 75.99
+          "CHARGE": 13.12,
+          "CHORD": 68.61
         },
         "radarTop": "NOTES"
+      },
+      {
+        "title": "共犯ヘヴンズコード",
+        "type": "A",
+        "notes": 1149,
+        "radar": {
+          "NOTES": 97.89,
+          "PEAK": 92.85,
+          "SCRATCH": 46.55,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 105.79
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "刃図羅",
+        "type": "H",
+        "notes": 1082,
+        "radar": {
+          "NOTES": 81.03,
+          "PEAK": 84.28,
+          "SCRATCH": 32.73,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 53.44
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "取り残された美術(Arranged:HiZuMi)",
+        "type": "A",
+        "notes": 1111,
+        "radar": {
+          "NOTES": 102.27,
+          "PEAK": 87.14,
+          "SCRATCH": 47.61,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 104.98
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "夏の匂い。キミの残像。 ft. Kanae Asaba",
+        "type": "A",
+        "notes": 1281,
+        "radar": {
+          "NOTES": 97.37,
+          "PEAK": 91.42,
+          "SCRATCH": 28.24,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 108.04
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "夏風邪デスコ",
+        "type": "A",
+        "notes": 1339,
+        "radar": {
+          "NOTES": 112.81,
+          "PEAK": 97.14,
+          "SCRATCH": 52.79,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 108.36
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "多極性ニューロンの崩壊による人間の末路",
+        "type": "H",
+        "notes": 1171,
+        "radar": {
+          "NOTES": 99.9,
+          "PEAK": 87.14,
+          "SCRATCH": 33.56,
+          "SOFLAN": 0,
+          "CHARGE": 24.84,
+          "CHORD": 68.92
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "夢縁",
+        "type": "H",
+        "notes": 1073,
+        "radar": {
+          "NOTES": 85.55,
+          "PEAK": 74.28,
+          "SCRATCH": 44.72,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 55.69
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "大見解",
+        "type": "A",
+        "notes": 1268,
+        "radar": {
+          "NOTES": 104.49,
+          "PEAK": 111.84,
+          "SCRATCH": 7.2,
+          "SOFLAN": 27.44,
+          "CHARGE": 0,
+          "CHORD": 123.57
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "天泣",
+        "type": "H",
+        "notes": 1219,
+        "radar": {
+          "NOTES": 94.69,
+          "PEAK": 70,
+          "SCRATCH": 27.16,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 62.12
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "妖隠し -あやかしかくし-",
+        "type": "A",
+        "notes": 1103,
+        "radar": {
+          "NOTES": 85.1,
+          "PEAK": 82.85,
+          "SCRATCH": 23.04,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 60.21
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "恋はどう?モロ◎波動OK☆方程式!!",
+        "type": "A",
+        "notes": 1247,
+        "radar": {
+          "NOTES": 106.88,
+          "PEAK": 110.52,
+          "SCRATCH": 51.2,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 110.43
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "恋愛=精度×認識力",
+        "type": "H",
+        "notes": 1220,
+        "radar": {
+          "NOTES": 95.9,
+          "PEAK": 95.71,
+          "SCRATCH": 49.25,
+          "SOFLAN": 171.46,
+          "CHARGE": 28.43,
+          "CHORD": 102.75
+        },
+        "radarTop": "SOFLAN"
+      },
+      {
+        "title": "恋歌疾風!かるたクイーンいろは",
+        "type": "H",
+        "notes": 1132,
+        "radar": {
+          "NOTES": 87.09,
+          "PEAK": 87.14,
+          "SCRATCH": 55.49,
+          "SOFLAN": 20.47,
+          "CHARGE": 0,
+          "CHORD": 67.28
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "情熱タンデムRUNAWAY",
+        "type": "H",
+        "notes": 1225,
+        "radar": {
+          "NOTES": 95.23,
+          "PEAK": 72.85,
+          "SCRATCH": 58.34,
+          "SOFLAN": 0,
+          "CHARGE": 30.89,
+          "CHORD": 82.24
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "愛しくてラヴィンユー ft. マナ",
+        "type": "A",
+        "notes": 1209,
+        "radar": {
+          "NOTES": 93.83,
+          "PEAK": 81.42,
+          "SCRATCH": 31.66,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 79.35
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "抱きしめてモナムール",
+        "type": "H",
+        "notes": 1189,
+        "radar": {
+          "NOTES": 87.05,
+          "PEAK": 85.71,
+          "SCRATCH": 35.2,
+          "SOFLAN": 0,
+          "CHARGE": 9.21,
+          "CHORD": 52.91
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "昏き甲鉄のヴェルガ",
+        "type": "A",
+        "notes": 1177,
+        "radar": {
+          "NOTES": 91.93,
+          "PEAK": 84.28,
+          "SCRATCH": 29.59,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 106.34
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "星屑ディスタンシア",
+        "type": "A",
+        "notes": 1073,
+        "radar": {
+          "NOTES": 87.66,
+          "PEAK": 84.28,
+          "SCRATCH": 41.66,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 83.05
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "月と夢の跡 ft. マナ",
+        "type": "A",
+        "notes": 1269,
+        "radar": {
+          "NOTES": 99.92,
+          "PEAK": 91.42,
+          "SCRATCH": 36.14,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 105.27
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "未完成ノ蒸氣驅動乙女",
+        "type": "H",
+        "notes": 1079,
+        "radar": {
+          "NOTES": 91.44,
+          "PEAK": 74.28,
+          "SCRATCH": 19.75,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 34.22
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "朱と碧のランページ",
+        "type": "A",
+        "notes": 1266,
+        "radar": {
+          "NOTES": 99.51,
+          "PEAK": 84.28,
+          "SCRATCH": 52.11,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 104.23
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "栄冠のカンパネラ",
+        "type": "H",
+        "notes": 1101,
+        "radar": {
+          "NOTES": 91.43,
+          "PEAK": 82.85,
+          "SCRATCH": 35.69,
+          "SOFLAN": 0,
+          "CHARGE": 170.23,
+          "CHORD": 78.57
+        },
+        "radarTop": "CHARGE"
+      },
+      {
+        "title": "楽園追放",
+        "type": "A",
+        "notes": 1228,
+        "radar": {
+          "NOTES": 106.09,
+          "PEAK": 85.71,
+          "SCRATCH": 32.73,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 86.23
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "水無月の雫 ft. 小林まな",
+        "type": "A",
+        "notes": 1313,
+        "radar": {
+          "NOTES": 105.37,
+          "PEAK": 92.85,
+          "SCRATCH": 35.66,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 102.46
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "流桜ノ門",
+        "type": "A",
+        "notes": 1075,
+        "radar": {
+          "NOTES": 88.87,
+          "PEAK": 91.42,
+          "SCRATCH": 45.77,
+          "SOFLAN": 0,
+          "CHARGE": 130.78,
+          "CHORD": 92.32
+        },
+        "radarTop": "CHARGE"
+      },
+      {
+        "title": "湘南ロンリーMIDNIGHT RAIN",
+        "type": "A",
+        "notes": 1438,
+        "radar": {
+          "NOTES": 111.4,
+          "PEAK": 97.14,
+          "SCRATCH": 31.6,
+          "SOFLAN": 0,
+          "CHARGE": 58.46,
+          "CHORD": 128.69
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "灼熱Beach Side Bunny (Masayoshi Iimori Remix)",
+        "type": "A",
+        "notes": 933,
+        "radar": {
+          "NOTES": 78.58,
+          "PEAK": 98.57,
+          "SCRATCH": 163.77,
+          "SOFLAN": 0,
+          "CHARGE": 6.56,
+          "CHORD": 68.66
+        },
+        "radarTop": "SCRATCH"
+      },
+      {
+        "title": "烽火連天の刃",
+        "type": "H",
+        "notes": 1195,
+        "radar": {
+          "NOTES": 94.64,
+          "PEAK": 80,
+          "SCRATCH": 38.66,
+          "SOFLAN": 0,
+          "CHARGE": 152.03,
+          "CHORD": 74.97
+        },
+        "radarTop": "CHARGE"
+      },
+      {
+        "title": "神様、つれない。",
+        "type": "A",
+        "notes": 1083,
+        "radar": {
+          "NOTES": 91.08,
+          "PEAK": 72.85,
+          "SCRATCH": 20.83,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 90.82
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "神謳 -RESONANCE-",
+        "type": "H",
+        "notes": 1285,
+        "radar": {
+          "NOTES": 96.9,
+          "PEAK": 82.85,
+          "SCRATCH": 10.98,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 70.6
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "禊",
+        "type": "H",
+        "notes": 1169,
+        "radar": {
+          "NOTES": 94.32,
+          "PEAK": 90,
+          "SCRATCH": 42.91,
+          "SOFLAN": 0,
+          "CHARGE": 74.84,
+          "CHORD": 59.47
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "純真可憐デザイア",
+        "type": "A",
+        "notes": 1172,
+        "radar": {
+          "NOTES": 91.71,
+          "PEAK": 84.28,
+          "SCRATCH": 49.6,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 90.32
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "累乗のカルマ",
+        "type": "A",
+        "notes": 1281,
+        "radar": {
+          "NOTES": 104.65,
+          "PEAK": 88.57,
+          "SCRATCH": 49.4,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 116.29
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "終末を追う者",
+        "type": "H",
+        "notes": 1132,
+        "radar": {
+          "NOTES": 100.64,
+          "PEAK": 88.57,
+          "SCRATCH": 63.48,
+          "SOFLAN": 0,
+          "CHARGE": 53.46,
+          "CHORD": 70.26
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "終焔のClaudia",
+        "type": "H",
+        "notes": 1014,
+        "radar": {
+          "NOTES": 88.64,
+          "PEAK": 84.28,
+          "SCRATCH": 40.12,
+          "SOFLAN": 81.12,
+          "CHARGE": 0,
+          "CHORD": 56.96
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "罪過の聖堂",
+        "type": "A",
+        "notes": 1080,
+        "radar": {
+          "NOTES": 142.63,
+          "PEAK": 115.78,
+          "SCRATCH": 58.39,
+          "SOFLAN": 0,
+          "CHARGE": 2.34,
+          "CHORD": 129.49
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "翼",
+        "type": "L",
+        "notes": 1258,
+        "radar": {
+          "NOTES": 95.81,
+          "PEAK": 82.85,
+          "SCRATCH": 18.86,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 107.58
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "華麗なる大犬円舞曲",
+        "type": "H",
+        "notes": 1105,
+        "radar": {
+          "NOTES": 84.74,
+          "PEAK": 84.28,
+          "SCRATCH": 31.85,
+          "SOFLAN": 98.45,
+          "CHARGE": 0,
+          "CHORD": 38.57
+        },
+        "radarTop": "SOFLAN"
+      },
+      {
+        "title": "虹色の花",
+        "type": "A",
+        "notes": 1142,
+        "radar": {
+          "NOTES": 101.02,
+          "PEAK": 100,
+          "SCRATCH": 25.13,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 81.32
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "見習い天使と星降りの丘",
+        "type": "H",
+        "notes": 1017,
+        "radar": {
+          "NOTES": 89.24,
+          "PEAK": 75.71,
+          "SCRATCH": 44.11,
+          "SOFLAN": 0,
+          "CHARGE": 47.23,
+          "CHORD": 56.16
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "逆月",
+        "type": "H",
+        "notes": 1194,
+        "radar": {
+          "NOTES": 97.54,
+          "PEAK": 98.57,
+          "SCRATCH": 18.45,
+          "SOFLAN": 0,
+          "CHARGE": 61.09,
+          "CHORD": 104.51
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "野球の遊び方 そしてその歴史 ~決定版~",
+        "type": "A",
+        "notes": 1159,
+        "radar": {
+          "NOTES": 91.44,
+          "PEAK": 88.57,
+          "SCRATCH": 51.16,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 71.29
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "金野火織の金色提言",
+        "type": "H",
+        "notes": 1171,
+        "radar": {
+          "NOTES": 95.52,
+          "PEAK": 88.57,
+          "SCRATCH": 70.72,
+          "SOFLAN": 0,
+          "CHARGE": 13.43,
+          "CHORD": 83.67
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "閠槞彁の願い",
+        "type": "H",
+        "notes": 1109,
+        "radar": {
+          "NOTES": 87.68,
+          "PEAK": 87.14,
+          "SCRATCH": 45.5,
+          "SOFLAN": 0,
+          "CHARGE": 20.4,
+          "CHORD": 44.33
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "隅田川夏恋歌",
+        "type": "A",
+        "notes": 1070,
+        "radar": {
+          "NOTES": 92.83,
+          "PEAK": 88.57,
+          "SCRATCH": 30.97,
+          "SOFLAN": 0,
+          "CHARGE": 39.03,
+          "CHORD": 95.64
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "雪上断火",
+        "type": "H",
+        "notes": 940,
+        "radar": {
+          "NOTES": 71.67,
+          "PEAK": 71.42,
+          "SCRATCH": 120.74,
+          "SOFLAN": 54.55,
+          "CHARGE": 0,
+          "CHORD": 64.43
+        },
+        "radarTop": "SCRATCH"
+      },
+      {
+        "title": "電光",
+        "type": "H",
+        "notes": 976,
+        "radar": {
+          "NOTES": 77.39,
+          "PEAK": 72.85,
+          "SCRATCH": 108.73,
+          "SOFLAN": 0,
+          "CHARGE": 64.6,
+          "CHORD": 38.07
+        },
+        "radarTop": "SCRATCH"
+      },
+      {
+        "title": "電子になりたい",
+        "type": "A",
+        "notes": 1017,
+        "radar": {
+          "NOTES": 93.77,
+          "PEAK": 72.85,
+          "SCRATCH": 53.74,
+          "SOFLAN": 0,
+          "CHARGE": 8.43,
+          "CHORD": 63.97
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "電腦都市",
+        "type": "H",
+        "notes": 1181,
+        "radar": {
+          "NOTES": 102.46,
+          "PEAK": 92.85,
+          "SCRATCH": 65.1,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 100.57
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "霧幻メモリア",
+        "type": "A",
+        "notes": 1026,
+        "radar": {
+          "NOTES": 87.31,
+          "PEAK": 82.85,
+          "SCRATCH": 26.04,
+          "SOFLAN": 0,
+          "CHARGE": 59.9,
+          "CHORD": 91.74
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "鬼華-修羅の舞-",
+        "type": "H",
+        "notes": 1270,
+        "radar": {
+          "NOTES": 98.72,
+          "PEAK": 85.71,
+          "SCRATCH": 60.03,
+          "SOFLAN": 0,
+          "CHARGE": 26.31,
+          "CHORD": 89.17
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "鬼言集",
+        "type": "A",
+        "notes": 1037,
+        "radar": {
+          "NOTES": 82.1,
+          "PEAK": 77.14,
+          "SCRATCH": 16.15,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 43.1
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "黎明の情",
+        "type": "A",
+        "notes": 1119,
+        "radar": {
+          "NOTES": 92.3,
+          "PEAK": 92.85,
+          "SCRATCH": 36.05,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 91.6
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "DM STAR ~関西 energy style~",
+        "type": "A",
+        "notes": 1206,
+        "radar": {
+          "NOTES": 96.71,
+          "PEAK": 78.57,
+          "SCRATCH": 17.52,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 88.35
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "水上の提督 (Short mix from ”幻想水滸伝V”)",
+        "type": "A",
+        "notes": 1073,
+        "radar": {
+          "NOTES": 86.42,
+          "PEAK": 105.26,
+          "SCRATCH": 15.84,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 68.16
+        },
+        "radarTop": "PEAK"
       },
       {
         "title": "Answer",
@@ -47714,6 +47628,34 @@
         "radarTop": "NOTES"
       },
       {
+        "title": "旋律のドグマ~Misérables~",
+        "type": "H",
+        "notes": 1271,
+        "radar": {
+          "NOTES": 89.8,
+          "PEAK": 75.71,
+          "SCRATCH": 26.76,
+          "SOFLAN": 0,
+          "CHARGE": 1.87,
+          "CHORD": 75.99
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "轟け!恋のビーンボール!!",
+        "type": "H",
+        "notes": 1012,
+        "radar": {
+          "NOTES": 89.11,
+          "PEAK": 74.28,
+          "SCRATCH": 50.68,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 71.96
+        },
+        "radarTop": "NOTES"
+      },
+      {
         "title": "¡Viva!",
         "type": "A",
         "notes": 1014,
@@ -47726,146 +47668,6 @@
           "CHORD": 87.99
         },
         "radarTop": "NOTES"
-      },
-      {
-        "title": "狂イ咲ケ焔ノ華",
-        "type": "H",
-        "notes": 1269,
-        "radar": {
-          "NOTES": 94.92,
-          "PEAK": 82.85,
-          "SCRATCH": 28.88,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 59.51
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "朧",
-        "type": "A",
-        "notes": 1060,
-        "radar": {
-          "NOTES": 86.16,
-          "PEAK": 80,
-          "SCRATCH": 26.05,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 77.23
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "龍王の霊廟(Mausoleum Of The Primal Dragon)",
-        "type": "H",
-        "notes": 1190,
-        "radar": {
-          "NOTES": 91.2,
-          "PEAK": 70,
-          "SCRATCH": 7.25,
-          "SOFLAN": 0,
-          "CHARGE": 45.37,
-          "CHORD": 35.09
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "梅雪夜",
-        "type": "A",
-        "notes": 1081,
-        "radar": {
-          "NOTES": 98.49,
-          "PEAK": 98.57,
-          "SCRATCH": 37.83,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 105.69
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "天空の夜明け",
-        "type": "H",
-        "notes": 1125,
-        "radar": {
-          "NOTES": 85.1,
-          "PEAK": 91.42,
-          "SCRATCH": 19.29,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 46.49
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "追想快晴テーマパーク",
-        "type": "H",
-        "notes": 1077,
-        "radar": {
-          "NOTES": 86.71,
-          "PEAK": 77.14,
-          "SCRATCH": 27.57,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 69.22
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "表裏一体!?怪盗いいんちょの悩み♥",
-        "type": "H",
-        "notes": 1127,
-        "radar": {
-          "NOTES": 88.32,
-          "PEAK": 71.42,
-          "SCRATCH": 66.8,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 62.83
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "海神",
-        "type": "H",
-        "notes": 1084,
-        "radar": {
-          "NOTES": 82.83,
-          "PEAK": 77.14,
-          "SCRATCH": 31.73,
-          "SOFLAN": 0,
-          "CHARGE": 78.09,
-          "CHORD": 57.71
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "華爛漫 -Flowers-",
-        "type": "A",
-        "notes": 1029,
-        "radar": {
-          "NOTES": 94.72,
-          "PEAK": 84.28,
-          "SCRATCH": 35.54,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 91.34
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "華蝶風雪",
-        "type": "H",
-        "notes": 1064,
-        "radar": {
-          "NOTES": 83.97,
-          "PEAK": 84.28,
-          "SCRATCH": 24.72,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 62.66
-        },
-        "radarTop": "PEAK"
       },
       {
         "title": "ALBIDA",
@@ -48260,74 +48062,144 @@
         "radarTop": "SOFLAN"
       },
       {
-        "title": "突撃!ガラスのニーソ姫!",
-        "type": "A",
-        "notes": 1066,
+        "title": "天空の夜明け",
+        "type": "H",
+        "notes": 1125,
         "radar": {
-          "NOTES": 93.67,
-          "PEAK": 90,
-          "SCRATCH": 50.57,
-          "SOFLAN": 0,
-          "CHARGE": 33.6,
-          "CHORD": 99.67
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "凛として咲く花の如く",
-        "type": "A",
-        "notes": 1398,
-        "radar": {
-          "NOTES": 109.51,
-          "PEAK": 95.71,
-          "SCRATCH": 18.26,
+          "NOTES": 85.1,
+          "PEAK": 91.42,
+          "SCRATCH": 19.29,
           "SOFLAN": 0,
           "CHARGE": 0,
-          "CHORD": 114.07
+          "CHORD": 46.49
         },
-        "radarTop": "CHORD"
+        "radarTop": "PEAK"
       },
       {
-        "title": "星をこの手に",
+        "title": "朧",
         "type": "A",
-        "notes": 1099,
+        "notes": 1060,
         "radar": {
-          "NOTES": 95.04,
+          "NOTES": 86.16,
           "PEAK": 80,
-          "SCRATCH": 60.48,
+          "SCRATCH": 26.05,
           "SOFLAN": 0,
           "CHARGE": 0,
-          "CHORD": 79.91
+          "CHORD": 77.23
         },
         "radarTop": "NOTES"
       },
       {
-        "title": "中華急行",
+        "title": "梅雪夜",
         "type": "A",
-        "notes": 1167,
+        "notes": 1081,
         "radar": {
-          "NOTES": 114.01,
-          "PEAK": 92.85,
-          "SCRATCH": 34.16,
+          "NOTES": 98.49,
+          "PEAK": 98.57,
+          "SCRATCH": 37.83,
           "SOFLAN": 0,
           "CHARGE": 0,
-          "CHORD": 96.61
+          "CHORD": 105.69
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "海神",
+        "type": "H",
+        "notes": 1084,
+        "radar": {
+          "NOTES": 82.83,
+          "PEAK": 77.14,
+          "SCRATCH": 31.73,
+          "SOFLAN": 0,
+          "CHARGE": 78.09,
+          "CHORD": 57.71
         },
         "radarTop": "NOTES"
       },
       {
-        "title": "鉄甲乙女 -under the steel-",
+        "title": "狂イ咲ケ焔ノ華",
+        "type": "H",
+        "notes": 1269,
+        "radar": {
+          "NOTES": 94.92,
+          "PEAK": 82.85,
+          "SCRATCH": 28.88,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 59.51
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "華爛漫 -Flowers-",
         "type": "A",
-        "notes": 1098,
+        "notes": 1029,
+        "radar": {
+          "NOTES": 94.72,
+          "PEAK": 84.28,
+          "SCRATCH": 35.54,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 91.34
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "華蝶風雪",
+        "type": "H",
+        "notes": 1064,
+        "radar": {
+          "NOTES": 83.97,
+          "PEAK": 84.28,
+          "SCRATCH": 24.72,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 62.66
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "表裏一体!?怪盗いいんちょの悩み♥",
+        "type": "H",
+        "notes": 1127,
         "radar": {
           "NOTES": 88.32,
-          "PEAK": 82.85,
-          "SCRATCH": 19.34,
+          "PEAK": 71.42,
+          "SCRATCH": 66.8,
           "SOFLAN": 0,
           "CHARGE": 0,
-          "CHORD": 100.86
+          "CHORD": 62.83
         },
-        "radarTop": "CHORD"
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "追想快晴テーマパーク",
+        "type": "H",
+        "notes": 1077,
+        "radar": {
+          "NOTES": 86.71,
+          "PEAK": 77.14,
+          "SCRATCH": 27.57,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 69.22
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "龍王の霊廟(Mausoleum Of The Primal Dragon)",
+        "type": "H",
+        "notes": 1190,
+        "radar": {
+          "NOTES": 91.2,
+          "PEAK": 70,
+          "SCRATCH": 7.25,
+          "SOFLAN": 0,
+          "CHARGE": 45.37,
+          "CHORD": 35.09
+        },
+        "radarTop": "NOTES"
       },
       {
         "title": "AA",
@@ -48482,20 +48354,6 @@
           "CHORD": 65.6
         },
         "radarTop": "CHARGE"
-      },
-      {
-        "title": "DM STAR ~関西 energy style~",
-        "type": "A",
-        "notes": 1206,
-        "radar": {
-          "NOTES": 96.71,
-          "PEAK": 78.57,
-          "SCRATCH": 17.52,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 88.35
-        },
-        "radarTop": "NOTES"
       },
       {
         "title": "EDEN",
@@ -49002,6 +48860,76 @@
         "radarTop": "PEAK"
       },
       {
+        "title": "中華急行",
+        "type": "A",
+        "notes": 1167,
+        "radar": {
+          "NOTES": 114.01,
+          "PEAK": 92.85,
+          "SCRATCH": 34.16,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 96.61
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "凛として咲く花の如く",
+        "type": "A",
+        "notes": 1398,
+        "radar": {
+          "NOTES": 109.51,
+          "PEAK": 95.71,
+          "SCRATCH": 18.26,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 114.07
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "星をこの手に",
+        "type": "A",
+        "notes": 1099,
+        "radar": {
+          "NOTES": 95.04,
+          "PEAK": 80,
+          "SCRATCH": 60.48,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 79.91
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "突撃!ガラスのニーソ姫!",
+        "type": "A",
+        "notes": 1066,
+        "radar": {
+          "NOTES": 93.67,
+          "PEAK": 90,
+          "SCRATCH": 50.57,
+          "SOFLAN": 0,
+          "CHARGE": 33.6,
+          "CHORD": 99.67
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "鉄甲乙女 -under the steel-",
+        "type": "A",
+        "notes": 1098,
+        "radar": {
+          "NOTES": 88.32,
+          "PEAK": 82.85,
+          "SCRATCH": 19.34,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 100.86
+        },
+        "radarTop": "CHORD"
+      },
+      {
         "title": "1116",
         "type": "H",
         "notes": 1041,
@@ -49014,202 +48942,6 @@
           "CHORD": 72.93
         },
         "radarTop": "NOTES"
-      },
-      {
-        "title": "冬椿 ft. Kanae Asaba",
-        "type": "A",
-        "notes": 1146,
-        "radar": {
-          "NOTES": 91.85,
-          "PEAK": 78.57,
-          "SCRATCH": 51.97,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 82.87
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "煉獄のエルフェリア",
-        "type": "H",
-        "notes": 1222,
-        "radar": {
-          "NOTES": 95.15,
-          "PEAK": 92.85,
-          "SCRATCH": 34.04,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 96.44
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "雪月花",
-        "type": "H",
-        "notes": 979,
-        "radar": {
-          "NOTES": 0.39,
-          "PEAK": 0.28,
-          "SCRATCH": 0.12,
-          "SOFLAN": 0.13,
-          "CHARGE": 0.15,
-          "CHORD": 0.19
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "少年は空を辿る",
-        "type": "H",
-        "notes": 1081,
-        "radar": {
-          "NOTES": 83.96,
-          "PEAK": 84.28,
-          "SCRATCH": 34.52,
-          "SOFLAN": 0,
-          "CHARGE": 11.56,
-          "CHORD": 51.82
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "衰色小町メランコリア",
-        "type": "A",
-        "notes": 1192,
-        "radar": {
-          "NOTES": 103.33,
-          "PEAK": 87.14,
-          "SCRATCH": 43.57,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 108.26
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "十六夜セツナ",
-        "type": "A",
-        "notes": 1132,
-        "radar": {
-          "NOTES": 90.29,
-          "PEAK": 98.57,
-          "SCRATCH": 46.49,
-          "SOFLAN": 0,
-          "CHARGE": 92.09,
-          "CHORD": 97
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "鴉",
-        "type": "H",
-        "notes": 1136,
-        "radar": {
-          "NOTES": 94.8,
-          "PEAK": 91.42,
-          "SCRATCH": 44.99,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 100.81
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "音楽",
-        "type": "H",
-        "notes": 1038,
-        "radar": {
-          "NOTES": 71.51,
-          "PEAK": 87.14,
-          "SCRATCH": 6.02,
-          "SOFLAN": 161.36,
-          "CHARGE": 0,
-          "CHORD": 84.11
-        },
-        "radarTop": "SOFLAN"
-      },
-      {
-        "title": "罪と罰",
-        "type": "A",
-        "notes": 1096,
-        "radar": {
-          "NOTES": 86.53,
-          "PEAK": 105.26,
-          "SCRATCH": 22.43,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 69.5
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "津軽雪",
-        "type": "H",
-        "notes": 1137,
-        "radar": {
-          "NOTES": 86.03,
-          "PEAK": 80,
-          "SCRATCH": 24.8,
-          "SOFLAN": 0,
-          "CHARGE": 9.06,
-          "CHORD": 48.58
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "疾風迅雷",
-        "type": "H",
-        "notes": 1078,
-        "radar": {
-          "NOTES": 91.24,
-          "PEAK": 87.14,
-          "SCRATCH": 19.11,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 25.46
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "次葉 -turn the page-",
-        "type": "A",
-        "notes": 1003,
-        "radar": {
-          "NOTES": 90.49,
-          "PEAK": 74.28,
-          "SCRATCH": 30.89,
-          "SOFLAN": 0,
-          "CHARGE": 15.15,
-          "CHORD": 76.11
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "夏色DIARY - L.E.D.-G STYLE MIX -",
-        "type": "H",
-        "notes": 1031,
-        "radar": {
-          "NOTES": 87.93,
-          "PEAK": 80,
-          "SCRATCH": 50.95,
-          "SOFLAN": 0,
-          "CHARGE": 40.71,
-          "CHORD": 34.82
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "革命",
-        "type": "H",
-        "notes": 1004,
-        "radar": {
-          "NOTES": 91.02,
-          "PEAK": 67.14,
-          "SCRATCH": 29.72,
-          "SOFLAN": 104.39,
-          "CHARGE": 0,
-          "CHORD": 10.43
-        },
-        "radarTop": "SOFLAN"
       },
       {
         "title": "Affection",
@@ -49842,6 +49574,20 @@
         "radarTop": "NOTES"
       },
       {
+        "title": "オルタネイトβ",
+        "type": "A",
+        "notes": 1137,
+        "radar": {
+          "NOTES": 89.84,
+          "PEAK": 82.85,
+          "SCRATCH": 23.02,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 81.06
+        },
+        "radarTop": "NOTES"
+      },
+      {
         "title": "お命ちょうDAI!901娘",
         "type": "A",
         "notes": 1177,
@@ -49868,20 +49614,6 @@
           "CHORD": 104.96
         },
         "radarTop": "CHORD"
-      },
-      {
-        "title": "オルタネイトβ",
-        "type": "A",
-        "notes": 1137,
-        "radar": {
-          "NOTES": 89.84,
-          "PEAK": 82.85,
-          "SCRATCH": 23.02,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 81.06
-        },
-        "radarTop": "NOTES"
       },
       {
         "title": "それは花火のような恋",
@@ -49926,88 +49658,200 @@
         "radarTop": "CHORD"
       },
       {
-        "title": "共鳴遊戯の華",
-        "type": "H",
-        "notes": 1296,
+        "title": "冬椿 ft. Kanae Asaba",
+        "type": "A",
+        "notes": 1146,
         "radar": {
-          "NOTES": 100.58,
-          "PEAK": 85.71,
-          "SCRATCH": 24.88,
+          "NOTES": 91.85,
+          "PEAK": 78.57,
+          "SCRATCH": 51.97,
           "SOFLAN": 0,
-          "CHARGE": 15,
-          "CHORD": 25.75
+          "CHARGE": 0,
+          "CHORD": 82.87
         },
         "radarTop": "NOTES"
       },
       {
-        "title": "冥",
-        "type": "H",
-        "notes": 1111,
+        "title": "十六夜セツナ",
+        "type": "A",
+        "notes": 1132,
         "radar": {
-          "NOTES": 83.59,
-          "PEAK": 82.85,
-          "SCRATCH": 34.53,
-          "SOFLAN": 158.44,
+          "NOTES": 90.29,
+          "PEAK": 98.57,
+          "SCRATCH": 46.49,
+          "SOFLAN": 0,
+          "CHARGE": 92.09,
+          "CHORD": 97
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "夏色DIARY - L.E.D.-G STYLE MIX -",
+        "type": "H",
+        "notes": 1031,
+        "radar": {
+          "NOTES": 87.93,
+          "PEAK": 80,
+          "SCRATCH": 50.95,
+          "SOFLAN": 0,
+          "CHARGE": 40.71,
+          "CHORD": 34.82
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "少年は空を辿る",
+        "type": "H",
+        "notes": 1081,
+        "radar": {
+          "NOTES": 83.96,
+          "PEAK": 84.28,
+          "SCRATCH": 34.52,
+          "SOFLAN": 0,
+          "CHARGE": 11.56,
+          "CHORD": 51.82
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "次葉 -turn the page-",
+        "type": "A",
+        "notes": 1003,
+        "radar": {
+          "NOTES": 90.49,
+          "PEAK": 74.28,
+          "SCRATCH": 30.89,
+          "SOFLAN": 0,
+          "CHARGE": 15.15,
+          "CHORD": 76.11
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "津軽雪",
+        "type": "H",
+        "notes": 1137,
+        "radar": {
+          "NOTES": 86.03,
+          "PEAK": 80,
+          "SCRATCH": 24.8,
+          "SOFLAN": 0,
+          "CHARGE": 9.06,
+          "CHORD": 48.58
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "煉獄のエルフェリア",
+        "type": "H",
+        "notes": 1222,
+        "radar": {
+          "NOTES": 95.15,
+          "PEAK": 92.85,
+          "SCRATCH": 34.04,
+          "SOFLAN": 0,
           "CHARGE": 0,
-          "CHORD": 25.73
+          "CHORD": 96.44
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "疾風迅雷",
+        "type": "H",
+        "notes": 1078,
+        "radar": {
+          "NOTES": 91.24,
+          "PEAK": 87.14,
+          "SCRATCH": 19.11,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 25.46
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "罪と罰",
+        "type": "A",
+        "notes": 1096,
+        "radar": {
+          "NOTES": 86.53,
+          "PEAK": 105.26,
+          "SCRATCH": 22.43,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 69.5
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "衰色小町メランコリア",
+        "type": "A",
+        "notes": 1192,
+        "radar": {
+          "NOTES": 103.33,
+          "PEAK": 87.14,
+          "SCRATCH": 43.57,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 108.26
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "雪月花",
+        "type": "H",
+        "notes": 979,
+        "radar": {
+          "NOTES": 0.39,
+          "PEAK": 0.28,
+          "SCRATCH": 0.12,
+          "SOFLAN": 0.13,
+          "CHARGE": 0.15,
+          "CHORD": 0.19
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "革命",
+        "type": "H",
+        "notes": 1004,
+        "radar": {
+          "NOTES": 91.02,
+          "PEAK": 67.14,
+          "SCRATCH": 29.72,
+          "SOFLAN": 104.39,
+          "CHARGE": 0,
+          "CHORD": 10.43
         },
         "radarTop": "SOFLAN"
       },
       {
-        "title": "少女アリスと箱庭幻想コンチェルト",
-        "type": "A",
-        "notes": 1095,
-        "radar": {
-          "NOTES": 90.13,
-          "PEAK": 90,
-          "SCRATCH": 7.79,
-          "SOFLAN": 0,
-          "CHARGE": 157.34,
-          "CHORD": 38.64
-        },
-        "radarTop": "CHARGE"
-      },
-      {
-        "title": "紫陽花 -AZISAI-",
+        "title": "音楽",
         "type": "H",
-        "notes": 1094,
+        "notes": 1038,
         "radar": {
-          "NOTES": 83.96,
-          "PEAK": 80,
-          "SCRATCH": 43.61,
-          "SOFLAN": 0,
-          "CHARGE": 9.53,
-          "CHORD": 53.36
+          "NOTES": 71.51,
+          "PEAK": 87.14,
+          "SCRATCH": 6.02,
+          "SOFLAN": 161.36,
+          "CHARGE": 0,
+          "CHORD": 84.11
         },
-        "radarTop": "NOTES"
+        "radarTop": "SOFLAN"
       },
       {
-        "title": "超!!遠距離らぶ♡メ~ル",
-        "type": "A",
-        "notes": 1352,
+        "title": "鴉",
+        "type": "H",
+        "notes": 1136,
         "radar": {
-          "NOTES": 102.56,
-          "PEAK": 90,
-          "SCRATCH": 34.82,
+          "NOTES": 94.8,
+          "PEAK": 91.42,
+          "SCRATCH": 44.99,
           "SOFLAN": 0,
           "CHARGE": 0,
-          "CHORD": 99.66
+          "CHORD": 100.81
         },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "真 地獄超特急 -HELL or HELL-",
-        "type": "H",
-        "notes": 1123,
-        "radar": {
-          "NOTES": 86.01,
-          "PEAK": 81.42,
-          "SCRATCH": 61.38,
-          "SOFLAN": 0,
-          "CHARGE": 118.83,
-          "CHORD": 70.39
-        },
-        "radarTop": "CHARGE"
+        "radarTop": "CHORD"
       },
       {
         "title": "A",
@@ -50696,6 +50540,90 @@
         "radarTop": "NOTES"
       },
       {
+        "title": "共鳴遊戯の華",
+        "type": "H",
+        "notes": 1296,
+        "radar": {
+          "NOTES": 100.58,
+          "PEAK": 85.71,
+          "SCRATCH": 24.88,
+          "SOFLAN": 0,
+          "CHARGE": 15,
+          "CHORD": 25.75
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "冥",
+        "type": "H",
+        "notes": 1111,
+        "radar": {
+          "NOTES": 83.59,
+          "PEAK": 82.85,
+          "SCRATCH": 34.53,
+          "SOFLAN": 158.44,
+          "CHARGE": 0,
+          "CHORD": 25.73
+        },
+        "radarTop": "SOFLAN"
+      },
+      {
+        "title": "少女アリスと箱庭幻想コンチェルト",
+        "type": "A",
+        "notes": 1095,
+        "radar": {
+          "NOTES": 90.13,
+          "PEAK": 90,
+          "SCRATCH": 7.79,
+          "SOFLAN": 0,
+          "CHARGE": 157.34,
+          "CHORD": 38.64
+        },
+        "radarTop": "CHARGE"
+      },
+      {
+        "title": "真 地獄超特急 -HELL or HELL-",
+        "type": "H",
+        "notes": 1123,
+        "radar": {
+          "NOTES": 86.01,
+          "PEAK": 81.42,
+          "SCRATCH": 61.38,
+          "SOFLAN": 0,
+          "CHARGE": 118.83,
+          "CHORD": 70.39
+        },
+        "radarTop": "CHARGE"
+      },
+      {
+        "title": "紫陽花 -AZISAI-",
+        "type": "H",
+        "notes": 1094,
+        "radar": {
+          "NOTES": 83.96,
+          "PEAK": 80,
+          "SCRATCH": 43.61,
+          "SOFLAN": 0,
+          "CHARGE": 9.53,
+          "CHORD": 53.36
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "超!!遠距離らぶ♡メ~ル",
+        "type": "A",
+        "notes": 1352,
+        "radar": {
+          "NOTES": 102.56,
+          "PEAK": 90,
+          "SCRATCH": 34.82,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 99.66
+        },
+        "radarTop": "NOTES"
+      },
+      {
         "title": "100% minimoo-G",
         "type": "H",
         "notes": 871,
@@ -50722,76 +50650,6 @@
           "CHORD": 66.95
         },
         "radarTop": "SCRATCH"
-      },
-      {
-        "title": "山岡晃の「クイズ!家事都合!」",
-        "type": "A",
-        "notes": 1035,
-        "radar": {
-          "NOTES": 99.32,
-          "PEAK": 82.85,
-          "SCRATCH": 14.68,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 56.18
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "水上の提督 (Short mix from ”幻想水滸伝V”)",
-        "type": "A",
-        "notes": 1073,
-        "radar": {
-          "NOTES": 86.42,
-          "PEAK": 105.26,
-          "SCRATCH": 15.84,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 68.16
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "月雪に舞う華のように",
-        "type": "A",
-        "notes": 1083,
-        "radar": {
-          "NOTES": 76.47,
-          "PEAK": 77.14,
-          "SCRATCH": 26.23,
-          "SOFLAN": 6.25,
-          "CHARGE": 32.48,
-          "CHORD": 84.75
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "天空脳番長危機十六連打",
-        "type": "H",
-        "notes": 1115,
-        "radar": {
-          "NOTES": 93.61,
-          "PEAK": 90,
-          "SCRATCH": 37.92,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 47.24
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "焔極OVERKILL",
-        "type": "H",
-        "notes": 1118,
-        "radar": {
-          "NOTES": 89.02,
-          "PEAK": 88.57,
-          "SCRATCH": 76.57,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 57.19
-        },
-        "radarTop": "NOTES"
       },
       {
         "title": "Abyss -The Heavens Remix-",
@@ -51382,6 +51240,62 @@
         "radarTop": "CHORD"
       },
       {
+        "title": "天空脳番長危機十六連打",
+        "type": "H",
+        "notes": 1115,
+        "radar": {
+          "NOTES": 93.61,
+          "PEAK": 90,
+          "SCRATCH": 37.92,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 47.24
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "山岡晃の「クイズ!家事都合!」",
+        "type": "A",
+        "notes": 1035,
+        "radar": {
+          "NOTES": 99.32,
+          "PEAK": 82.85,
+          "SCRATCH": 14.68,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 56.18
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "月雪に舞う華のように",
+        "type": "A",
+        "notes": 1083,
+        "radar": {
+          "NOTES": 76.47,
+          "PEAK": 77.14,
+          "SCRATCH": 26.23,
+          "SOFLAN": 6.25,
+          "CHARGE": 32.48,
+          "CHORD": 84.75
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "焔極OVERKILL",
+        "type": "H",
+        "notes": 1118,
+        "radar": {
+          "NOTES": 89.02,
+          "PEAK": 88.57,
+          "SCRATCH": 76.57,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 57.19
+        },
+        "radarTop": "NOTES"
+      },
+      {
         "title": "1st Samurai",
         "type": "H",
         "notes": 1016,
@@ -51394,34 +51308,6 @@
           "CHORD": 0.22
         },
         "radarTop": "CHARGE"
-      },
-      {
-        "title": "廿",
-        "type": "A",
-        "notes": 1215,
-        "radar": {
-          "NOTES": 94.91,
-          "PEAK": 97.14,
-          "SCRATCH": 100.76,
-          "SOFLAN": 39.95,
-          "CHARGE": 0,
-          "CHORD": 80.88
-        },
-        "radarTop": "SCRATCH"
-      },
-      {
-        "title": "灼熱Beach Side Bunny",
-        "type": "H",
-        "notes": 1025,
-        "radar": {
-          "NOTES": 80.58,
-          "PEAK": 80,
-          "SCRATCH": 172.01,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 74.95
-        },
-        "radarTop": "SCRATCH"
       },
       {
         "title": "Agnus Dei",
@@ -51872,6 +51758,34 @@
         "radarTop": "NOTES"
       },
       {
+        "title": "廿",
+        "type": "A",
+        "notes": 1215,
+        "radar": {
+          "NOTES": 94.91,
+          "PEAK": 97.14,
+          "SCRATCH": 100.76,
+          "SOFLAN": 39.95,
+          "CHARGE": 0,
+          "CHORD": 80.88
+        },
+        "radarTop": "SCRATCH"
+      },
+      {
+        "title": "灼熱Beach Side Bunny",
+        "type": "H",
+        "notes": 1025,
+        "radar": {
+          "NOTES": 80.58,
+          "PEAK": 80,
+          "SCRATCH": 172.01,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 74.95
+        },
+        "radarTop": "SCRATCH"
+      },
+      {
         "title": "3y3s",
         "type": "H",
         "notes": 1306,
@@ -51898,62 +51812,6 @@
           "CHORD": 168.24
         },
         "radarTop": "CHORD"
-      },
-      {
-        "title": "少年A",
-        "type": "H",
-        "notes": 1144,
-        "radar": {
-          "NOTES": 79.39,
-          "PEAK": 80,
-          "SCRATCH": 18.2,
-          "SOFLAN": 45.3,
-          "CHARGE": 0,
-          "CHORD": 34.36
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "電人、暁に斃れる。",
-        "type": "H",
-        "notes": 1255,
-        "radar": {
-          "NOTES": 98.35,
-          "PEAK": 88.57,
-          "SCRATCH": 43.39,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 37.7
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "革命",
-        "type": "A",
-        "notes": 1183,
-        "radar": {
-          "NOTES": 107.25,
-          "PEAK": 84.28,
-          "SCRATCH": 29.72,
-          "SOFLAN": 104.83,
-          "CHARGE": 0,
-          "CHORD": 47.66
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "桜",
-        "type": "H",
-        "notes": 819,
-        "radar": {
-          "NOTES": 79.67,
-          "PEAK": 82.85,
-          "SCRATCH": 56.7,
-          "SOFLAN": 147.03,
-          "CHARGE": 0,
-          "CHORD": 54.79
-        },
-        "radarTop": "SOFLAN"
       },
       {
         "title": "alla turca con passione",
@@ -52572,6 +52430,62 @@
         "radarTop": "PEAK"
       },
       {
+        "title": "少年A",
+        "type": "H",
+        "notes": 1144,
+        "radar": {
+          "NOTES": 79.39,
+          "PEAK": 80,
+          "SCRATCH": 18.2,
+          "SOFLAN": 45.3,
+          "CHARGE": 0,
+          "CHORD": 34.36
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "桜",
+        "type": "H",
+        "notes": 819,
+        "radar": {
+          "NOTES": 79.67,
+          "PEAK": 82.85,
+          "SCRATCH": 56.7,
+          "SOFLAN": 147.03,
+          "CHARGE": 0,
+          "CHORD": 54.79
+        },
+        "radarTop": "SOFLAN"
+      },
+      {
+        "title": "電人、暁に斃れる。",
+        "type": "H",
+        "notes": 1255,
+        "radar": {
+          "NOTES": 98.35,
+          "PEAK": 88.57,
+          "SCRATCH": 43.39,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 37.7
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "革命",
+        "type": "A",
+        "notes": 1183,
+        "radar": {
+          "NOTES": 107.25,
+          "PEAK": 84.28,
+          "SCRATCH": 29.72,
+          "SOFLAN": 104.83,
+          "CHARGE": 0,
+          "CHORD": 47.66
+        },
+        "radarTop": "NOTES"
+      },
+      {
         "title": "250bpm",
         "type": "A",
         "notes": 726,
@@ -52584,34 +52498,6 @@
           "CHORD": 60.73
         },
         "radarTop": "SCRATCH"
-      },
-      {
-        "title": "月光",
-        "type": "A",
-        "notes": 1246,
-        "radar": {
-          "NOTES": 105.18,
-          "PEAK": 95.71,
-          "SCRATCH": 53.51,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 108.9
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "子供の落書き帳",
-        "type": "H",
-        "notes": 1018,
-        "radar": {
-          "NOTES": 104.42,
-          "PEAK": 91.42,
-          "SCRATCH": 26.9,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 82.64
-        },
-        "radarTop": "NOTES"
       },
       {
         "title": "bass 2 bass",
@@ -53118,6 +53004,34 @@
         "radarTop": "CHORD"
       },
       {
+        "title": "子供の落書き帳",
+        "type": "H",
+        "notes": 1018,
+        "radar": {
+          "NOTES": 104.42,
+          "PEAK": 91.42,
+          "SCRATCH": 26.9,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 82.64
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "月光",
+        "type": "A",
+        "notes": 1246,
+        "radar": {
+          "NOTES": 105.18,
+          "PEAK": 95.71,
+          "SCRATCH": 53.51,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 108.9
+        },
+        "radarTop": "CHORD"
+      },
+      {
         "title": "199024club -Re:BounceKiller-",
         "type": "H",
         "notes": 873,
@@ -53130,20 +53044,6 @@
           "CHORD": 38.03
         },
         "radarTop": "SCRATCH"
-      },
-      {
-        "title": "駅猫のワルツ",
-        "type": "H",
-        "notes": 1174,
-        "radar": {
-          "NOTES": 103.63,
-          "PEAK": 103.94,
-          "SCRATCH": 66.88,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 41.85
-        },
-        "radarTop": "PEAK"
       },
       {
         "title": "double thrash",
@@ -53342,6 +53242,20 @@
         "radarTop": "PEAK"
       },
       {
+        "title": "駅猫のワルツ",
+        "type": "H",
+        "notes": 1174,
+        "radar": {
+          "NOTES": 103.63,
+          "PEAK": 103.94,
+          "SCRATCH": 66.88,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 41.85
+        },
+        "radarTop": "PEAK"
+      },
+      {
         "title": "#CMFLG",
         "type": "H",
         "notes": 1186,
@@ -53368,62 +53282,6 @@
           "CHORD": 76.49
         },
         "radarTop": "NOTES"
-      },
-      {
-        "title": "零 - ZERO -",
-        "type": "L",
-        "notes": 1380,
-        "radar": {
-          "NOTES": 110.29,
-          "PEAK": 101.31,
-          "SCRATCH": 48.91,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 117.86
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "百恋ラブラスター",
-        "type": "A",
-        "notes": 1324,
-        "radar": {
-          "NOTES": 108.16,
-          "PEAK": 90,
-          "SCRATCH": 65.47,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 108.23
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "灼熱 Lost Summer Dayz",
-        "type": "H",
-        "notes": 979,
-        "radar": {
-          "NOTES": 76.34,
-          "PEAK": 65.71,
-          "SCRATCH": 156.9,
-          "SOFLAN": 0,
-          "CHARGE": 10,
-          "CHORD": 50.22
-        },
-        "radarTop": "SCRATCH"
-      },
-      {
-        "title": "草原の王女-軌跡を辿って-",
-        "type": "A",
-        "notes": 1172,
-        "radar": {
-          "NOTES": 103.79,
-          "PEAK": 88.57,
-          "SCRATCH": 25.8,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 112.56
-        },
-        "radarTop": "CHORD"
       },
       {
         "title": "Anisakis -somatic mutation type\"Forza\"-",
@@ -53874,6 +53732,76 @@
         "radarTop": "NOTES"
       },
       {
+        "title": "灼熱 Lost Summer Dayz",
+        "type": "H",
+        "notes": 979,
+        "radar": {
+          "NOTES": 76.34,
+          "PEAK": 65.71,
+          "SCRATCH": 156.9,
+          "SOFLAN": 0,
+          "CHARGE": 10,
+          "CHORD": 50.22
+        },
+        "radarTop": "SCRATCH"
+      },
+      {
+        "title": "百恋ラブラスター",
+        "type": "A",
+        "notes": 1324,
+        "radar": {
+          "NOTES": 108.16,
+          "PEAK": 90,
+          "SCRATCH": 65.47,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 108.23
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "草原の王女-軌跡を辿って-",
+        "type": "A",
+        "notes": 1172,
+        "radar": {
+          "NOTES": 103.79,
+          "PEAK": 88.57,
+          "SCRATCH": 25.8,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 112.56
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "零 - ZERO -",
+        "type": "L",
+        "notes": 1380,
+        "radar": {
+          "NOTES": 110.29,
+          "PEAK": 101.31,
+          "SCRATCH": 48.91,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 117.86
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "V2",
+        "type": "A",
+        "notes": 1810,
+        "radar": {
+          "NOTES": 135.25,
+          "PEAK": 132.89,
+          "SCRATCH": 34.84,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 136.23
+        },
+        "radarTop": "CHORD"
+      },
+      {
         "title": "卑弥呼",
         "type": "H",
         "notes": 1442,
@@ -53900,20 +53828,6 @@
           "CHORD": 104.88
         },
         "radarTop": "SCRATCH"
-      },
-      {
-        "title": "V2",
-        "type": "A",
-        "notes": 1810,
-        "radar": {
-          "NOTES": 135.25,
-          "PEAK": 132.89,
-          "SCRATCH": 34.84,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 136.23
-        },
-        "radarTop": "CHORD"
       },
       {
         "title": "naughty girl@Queen's Palace",
@@ -54306,62 +54220,6 @@
           "CHORD": 107.73
         },
         "radarTop": "NOTES"
-      },
-      {
-        "title": "錬成人間トリコロイダー",
-        "type": "A",
-        "notes": 1613,
-        "radar": {
-          "NOTES": 133.18,
-          "PEAK": 114.47,
-          "SCRATCH": 72.18,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 146.81
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "旅人リラン",
-        "type": "A",
-        "notes": 1345,
-        "radar": {
-          "NOTES": 108.48,
-          "PEAK": 115.78,
-          "SCRATCH": 23.5,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 107.95
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "乱膳の舞姫",
-        "type": "A",
-        "notes": 1382,
-        "radar": {
-          "NOTES": 115.61,
-          "PEAK": 110.52,
-          "SCRATCH": 31.69,
-          "SOFLAN": 0,
-          "CHARGE": 138.29,
-          "CHORD": 91.76
-        },
-        "radarTop": "CHARGE"
-      },
-      {
-        "title": "青の洞窟",
-        "type": "A",
-        "notes": 1600,
-        "radar": {
-          "NOTES": 119.14,
-          "PEAK": 134.21,
-          "SCRATCH": 28.75,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 97.58
-        },
-        "radarTop": "PEAK"
       },
       {
         "title": "ALBA -黎明-",
@@ -54896,6 +54754,62 @@
         "radarTop": "CHORD"
       },
       {
+        "title": "乱膳の舞姫",
+        "type": "A",
+        "notes": 1382,
+        "radar": {
+          "NOTES": 115.61,
+          "PEAK": 110.52,
+          "SCRATCH": 31.69,
+          "SOFLAN": 0,
+          "CHARGE": 138.29,
+          "CHORD": 91.76
+        },
+        "radarTop": "CHARGE"
+      },
+      {
+        "title": "旅人リラン",
+        "type": "A",
+        "notes": 1345,
+        "radar": {
+          "NOTES": 108.48,
+          "PEAK": 115.78,
+          "SCRATCH": 23.5,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 107.95
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "錬成人間トリコロイダー",
+        "type": "A",
+        "notes": 1613,
+        "radar": {
+          "NOTES": 133.18,
+          "PEAK": 114.47,
+          "SCRATCH": 72.18,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 146.81
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "青の洞窟",
+        "type": "A",
+        "notes": 1600,
+        "radar": {
+          "NOTES": 119.14,
+          "PEAK": 134.21,
+          "SCRATCH": 28.75,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 97.58
+        },
+        "radarTop": "PEAK"
+      },
+      {
         "title": "10000 MILES AWAY",
         "type": "A",
         "notes": 1494,
@@ -54908,34 +54822,6 @@
           "CHORD": 118.9
         },
         "radarTop": "CHARGE"
-      },
-      {
-        "title": "蛇神",
-        "type": "A",
-        "notes": 1438,
-        "radar": {
-          "NOTES": 113.47,
-          "PEAK": 122.36,
-          "SCRATCH": 27.59,
-          "SOFLAN": 0,
-          "CHARGE": 119.1,
-          "CHORD": 100.36
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "灼熱 Pt.2 Long Train Running",
-        "type": "H",
-        "notes": 1093,
-        "radar": {
-          "NOTES": 87.18,
-          "PEAK": 78.57,
-          "SCRATCH": 182.84,
-          "SOFLAN": 0,
-          "CHARGE": 2.34,
-          "CHORD": 72.78
-        },
-        "radarTop": "SCRATCH"
       },
       {
         "title": "Acid Pumper",
@@ -55330,6 +55216,34 @@
         "radarTop": "NOTES"
       },
       {
+        "title": "灼熱 Pt.2 Long Train Running",
+        "type": "H",
+        "notes": 1093,
+        "radar": {
+          "NOTES": 87.18,
+          "PEAK": 78.57,
+          "SCRATCH": 182.84,
+          "SOFLAN": 0,
+          "CHARGE": 2.34,
+          "CHORD": 72.78
+        },
+        "radarTop": "SCRATCH"
+      },
+      {
+        "title": "蛇神",
+        "type": "A",
+        "notes": 1438,
+        "radar": {
+          "NOTES": 113.47,
+          "PEAK": 122.36,
+          "SCRATCH": 27.59,
+          "SOFLAN": 0,
+          "CHARGE": 119.1,
+          "CHORD": 100.36
+        },
+        "radarTop": "PEAK"
+      },
+      {
         "title": "≡+≡",
         "type": "A",
         "notes": 1520,
@@ -55356,118 +55270,6 @@
           "CHORD": 112.99
         },
         "radarTop": "PEAK"
-      },
-      {
-        "title": "量子の海のリントヴルム",
-        "type": "A",
-        "notes": 1508,
-        "radar": {
-          "NOTES": 136.21,
-          "PEAK": 110.52,
-          "SCRATCH": 30.27,
-          "SOFLAN": 0,
-          "CHARGE": 63.39,
-          "CHORD": 109.8
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "儚き恋の華",
-        "type": "A",
-        "notes": 1515,
-        "radar": {
-          "NOTES": 125.32,
-          "PEAK": 98.57,
-          "SCRATCH": 87.38,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 121.12
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "月とミルク",
-        "type": "A",
-        "notes": 1400,
-        "radar": {
-          "NOTES": 113.18,
-          "PEAK": 107.89,
-          "SCRATCH": 13.54,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 106.44
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "朝焼けから始まるボクらの小さな旅",
-        "type": "A",
-        "notes": 1298,
-        "radar": {
-          "NOTES": 107.93,
-          "PEAK": 140.78,
-          "SCRATCH": 37.56,
-          "SOFLAN": 69.07,
-          "CHARGE": 1.4,
-          "CHORD": 103.98
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "創世ノート",
-        "type": "A",
-        "notes": 1512,
-        "radar": {
-          "NOTES": 121.1,
-          "PEAK": 109.21,
-          "SCRATCH": 51.35,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 112.71
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "追想快晴テーマパーク",
-        "type": "A",
-        "notes": 1589,
-        "radar": {
-          "NOTES": 127.93,
-          "PEAK": 107.89,
-          "SCRATCH": 34.02,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 122.96
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "爆ゼニ☆がってんワーカー",
-        "type": "A",
-        "notes": 1391,
-        "radar": {
-          "NOTES": 110.8,
-          "PEAK": 105.26,
-          "SCRATCH": 34.82,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 109.64
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "禍根",
-        "type": "A",
-        "notes": 1336,
-        "radar": {
-          "NOTES": 111.94,
-          "PEAK": 109.21,
-          "SCRATCH": 20.14,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 79.15
-        },
-        "radarTop": "NOTES"
       },
       {
         "title": "ABSOLUTE",
@@ -55622,20 +55424,6 @@
           "CHORD": 130.9
         },
         "radarTop": "CHORD"
-      },
-      {
-        "title": "Buffalo",
-        "type": "L",
-        "notes": 1287,
-        "radar": {
-          "NOTES": 0,
-          "PEAK": 0,
-          "SCRATCH": 0,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 0
-        },
-        "radarTop": "NOTES"
       },
       {
         "title": "CaptivAte2~覚醒~",
@@ -56660,6 +56448,118 @@
         "radarTop": "CHORD"
       },
       {
+        "title": "儚き恋の華",
+        "type": "A",
+        "notes": 1515,
+        "radar": {
+          "NOTES": 125.32,
+          "PEAK": 98.57,
+          "SCRATCH": 87.38,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 121.12
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "創世ノート",
+        "type": "A",
+        "notes": 1512,
+        "radar": {
+          "NOTES": 121.1,
+          "PEAK": 109.21,
+          "SCRATCH": 51.35,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 112.71
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "月とミルク",
+        "type": "A",
+        "notes": 1400,
+        "radar": {
+          "NOTES": 113.18,
+          "PEAK": 107.89,
+          "SCRATCH": 13.54,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 106.44
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "朝焼けから始まるボクらの小さな旅",
+        "type": "A",
+        "notes": 1298,
+        "radar": {
+          "NOTES": 107.93,
+          "PEAK": 140.78,
+          "SCRATCH": 37.56,
+          "SOFLAN": 69.07,
+          "CHARGE": 1.4,
+          "CHORD": 103.98
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "爆ゼニ☆がってんワーカー",
+        "type": "A",
+        "notes": 1391,
+        "radar": {
+          "NOTES": 110.8,
+          "PEAK": 105.26,
+          "SCRATCH": 34.82,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 109.64
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "禍根",
+        "type": "A",
+        "notes": 1336,
+        "radar": {
+          "NOTES": 111.94,
+          "PEAK": 109.21,
+          "SCRATCH": 20.14,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 79.15
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "追想快晴テーマパーク",
+        "type": "A",
+        "notes": 1589,
+        "radar": {
+          "NOTES": 127.93,
+          "PEAK": 107.89,
+          "SCRATCH": 34.02,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 122.96
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "量子の海のリントヴルム",
+        "type": "A",
+        "notes": 1508,
+        "radar": {
+          "NOTES": 136.21,
+          "PEAK": 110.52,
+          "SCRATCH": 30.27,
+          "SOFLAN": 0,
+          "CHARGE": 63.39,
+          "CHORD": 109.8
+        },
+        "radarTop": "NOTES"
+      },
+      {
         "title": "《ORDERBREAKER》",
         "type": "A",
         "notes": 1257,
@@ -56686,48 +56586,6 @@
           "CHORD": 99.51
         },
         "radarTop": "SCRATCH"
-      },
-      {
-        "title": "鬼天",
-        "type": "A",
-        "notes": 1265,
-        "radar": {
-          "NOTES": 108.04,
-          "PEAK": 111.84,
-          "SCRATCH": 24.26,
-          "SOFLAN": 0,
-          "CHARGE": 127.3,
-          "CHORD": 84.19
-        },
-        "radarTop": "CHARGE"
-      },
-      {
-        "title": "響花水月",
-        "type": "A",
-        "notes": 1487,
-        "radar": {
-          "NOTES": 118.84,
-          "PEAK": 114.47,
-          "SCRATCH": 37.26,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 104.01
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "惑星鉄道",
-        "type": "H",
-        "notes": 1119,
-        "radar": {
-          "NOTES": 86.48,
-          "PEAK": 100,
-          "SCRATCH": 27.02,
-          "SOFLAN": 162.64,
-          "CHARGE": 63.82,
-          "CHORD": 41.53
-        },
-        "radarTop": "SOFLAN"
       },
       {
         "title": "Abraxas",
@@ -56954,6 +56812,48 @@
         "radarTop": "SCRATCH"
       },
       {
+        "title": "惑星鉄道",
+        "type": "H",
+        "notes": 1119,
+        "radar": {
+          "NOTES": 86.48,
+          "PEAK": 100,
+          "SCRATCH": 27.02,
+          "SOFLAN": 162.64,
+          "CHARGE": 63.82,
+          "CHORD": 41.53
+        },
+        "radarTop": "SOFLAN"
+      },
+      {
+        "title": "響花水月",
+        "type": "A",
+        "notes": 1487,
+        "radar": {
+          "NOTES": 118.84,
+          "PEAK": 114.47,
+          "SCRATCH": 37.26,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 104.01
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "鬼天",
+        "type": "A",
+        "notes": 1265,
+        "radar": {
+          "NOTES": 108.04,
+          "PEAK": 111.84,
+          "SCRATCH": 24.26,
+          "SOFLAN": 0,
+          "CHARGE": 127.3,
+          "CHORD": 84.19
+        },
+        "radarTop": "CHARGE"
+      },
+      {
         "title": "50th Memorial Songs -The BEMANI History-",
         "type": "A",
         "notes": 1348,
@@ -56966,160 +56866,6 @@
           "CHORD": 110.38
         },
         "radarTop": "PEAK"
-      },
-      {
-        "title": "冬椿 ft. Kanae Asaba",
-        "type": "L",
-        "notes": 1535,
-        "radar": {
-          "NOTES": 123.02,
-          "PEAK": 106.57,
-          "SCRATCH": 46.71,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 113.71
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "朧",
-        "type": "L",
-        "notes": 1280,
-        "radar": {
-          "NOTES": 104.05,
-          "PEAK": 98.57,
-          "SCRATCH": 40.86,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 110.27
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "龍と少女とデコヒーレンス",
-        "type": "A",
-        "notes": 1515,
-        "radar": {
-          "NOTES": 118.73,
-          "PEAK": 106.57,
-          "SCRATCH": 24.55,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 95.37
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "明鏡止水",
-        "type": "A",
-        "notes": 1443,
-        "radar": {
-          "NOTES": 112.21,
-          "PEAK": 107.89,
-          "SCRATCH": 23.79,
-          "SOFLAN": 75.16,
-          "CHARGE": 0,
-          "CHORD": 112.48
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "無意識のフィロソフィア",
-        "type": "A",
-        "notes": 1682,
-        "radar": {
-          "NOTES": 124.92,
-          "PEAK": 97.14,
-          "SCRATCH": 27.59,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 111.08
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "夕焼け ~Fading Day~",
-        "type": "A",
-        "notes": 1420,
-        "radar": {
-          "NOTES": 120.15,
-          "PEAK": 102.63,
-          "SCRATCH": 46.23,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 100.96
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "鴉",
-        "type": "A",
-        "notes": 1356,
-        "radar": {
-          "NOTES": 113.16,
-          "PEAK": 110.52,
-          "SCRATCH": 52.89,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 120.4
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "天空脳番長危機十六連打",
-        "type": "A",
-        "notes": 1323,
-        "radar": {
-          "NOTES": 111.07,
-          "PEAK": 105.26,
-          "SCRATCH": 45.26,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 67.62
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "超青少年ノ為ノ超多幸ナ超古典的超舞曲",
-        "type": "A",
-        "notes": 1350,
-        "radar": {
-          "NOTES": 107.77,
-          "PEAK": 113.15,
-          "SCRATCH": 5.81,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 86.37
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "華蝶風雪",
-        "type": "A",
-        "notes": 1500,
-        "radar": {
-          "NOTES": 118.39,
-          "PEAK": 95.71,
-          "SCRATCH": 25.87,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 115.69
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "涙のテ・エストラーニョ・ムーチョ",
-        "type": "A",
-        "notes": 1422,
-        "radar": {
-          "NOTES": 113.15,
-          "PEAK": 95.71,
-          "SCRATCH": 41.16,
-          "SOFLAN": 0,
-          "CHARGE": 105.45,
-          "CHORD": 103.11
-        },
-        "radarTop": "NOTES"
       },
       {
         "title": "ÆTHER",
@@ -58340,44 +58086,156 @@
         "radarTop": "SOFLAN"
       },
       {
-        "title": "開きたまえ!Next stAge!",
-        "type": "A",
-        "notes": 1463,
+        "title": "冬椿 ft. Kanae Asaba",
+        "type": "L",
+        "notes": 1535,
         "radar": {
-          "NOTES": 114.92,
-          "PEAK": 92.85,
-          "SCRATCH": 99.58,
+          "NOTES": 123.02,
+          "PEAK": 106.57,
+          "SCRATCH": 46.71,
           "SOFLAN": 0,
           "CHARGE": 0,
-          "CHORD": 104.13
+          "CHORD": 113.71
         },
         "radarTop": "NOTES"
       },
       {
-        "title": "時空トラベローグ",
+        "title": "夕焼け ~Fading Day~",
         "type": "A",
-        "notes": 1395,
+        "notes": 1420,
         "radar": {
-          "NOTES": 106.65,
-          "PEAK": 103.94,
-          "SCRATCH": 30.63,
+          "NOTES": 120.15,
+          "PEAK": 102.63,
+          "SCRATCH": 46.23,
           "SOFLAN": 0,
           "CHARGE": 0,
-          "CHORD": 69.33
+          "CHORD": 100.96
         },
         "radarTop": "NOTES"
       },
       {
-        "title": "忍恋花",
+        "title": "天空脳番長危機十六連打",
         "type": "A",
-        "notes": 1141,
+        "notes": 1323,
         "radar": {
-          "NOTES": 106.13,
-          "PEAK": 101.31,
-          "SCRATCH": 32.53,
+          "NOTES": 111.07,
+          "PEAK": 105.26,
+          "SCRATCH": 45.26,
           "SOFLAN": 0,
           "CHARGE": 0,
-          "CHORD": 90.98
+          "CHORD": 67.62
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "明鏡止水",
+        "type": "A",
+        "notes": 1443,
+        "radar": {
+          "NOTES": 112.21,
+          "PEAK": 107.89,
+          "SCRATCH": 23.79,
+          "SOFLAN": 75.16,
+          "CHARGE": 0,
+          "CHORD": 112.48
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "朧",
+        "type": "L",
+        "notes": 1280,
+        "radar": {
+          "NOTES": 104.05,
+          "PEAK": 98.57,
+          "SCRATCH": 40.86,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 110.27
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "涙のテ・エストラーニョ・ムーチョ",
+        "type": "A",
+        "notes": 1422,
+        "radar": {
+          "NOTES": 113.15,
+          "PEAK": 95.71,
+          "SCRATCH": 41.16,
+          "SOFLAN": 0,
+          "CHARGE": 105.45,
+          "CHORD": 103.11
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "無意識のフィロソフィア",
+        "type": "A",
+        "notes": 1682,
+        "radar": {
+          "NOTES": 124.92,
+          "PEAK": 97.14,
+          "SCRATCH": 27.59,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 111.08
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "華蝶風雪",
+        "type": "A",
+        "notes": 1500,
+        "radar": {
+          "NOTES": 118.39,
+          "PEAK": 95.71,
+          "SCRATCH": 25.87,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 115.69
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "超青少年ノ為ノ超多幸ナ超古典的超舞曲",
+        "type": "A",
+        "notes": 1350,
+        "radar": {
+          "NOTES": 107.77,
+          "PEAK": 113.15,
+          "SCRATCH": 5.81,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 86.37
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "鴉",
+        "type": "A",
+        "notes": 1356,
+        "radar": {
+          "NOTES": 113.16,
+          "PEAK": 110.52,
+          "SCRATCH": 52.89,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 120.4
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "龍と少女とデコヒーレンス",
+        "type": "A",
+        "notes": 1515,
+        "radar": {
+          "NOTES": 118.73,
+          "PEAK": 106.57,
+          "SCRATCH": 24.55,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 95.37
         },
         "radarTop": "NOTES"
       },
@@ -58522,6 +58380,48 @@
         "radarTop": "CHORD"
       },
       {
+        "title": "忍恋花",
+        "type": "A",
+        "notes": 1141,
+        "radar": {
+          "NOTES": 106.13,
+          "PEAK": 101.31,
+          "SCRATCH": 32.53,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 90.98
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "時空トラベローグ",
+        "type": "A",
+        "notes": 1395,
+        "radar": {
+          "NOTES": 106.65,
+          "PEAK": 103.94,
+          "SCRATCH": 30.63,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 69.33
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "開きたまえ!Next stAge!",
+        "type": "A",
+        "notes": 1463,
+        "radar": {
+          "NOTES": 114.92,
+          "PEAK": 92.85,
+          "SCRATCH": 99.58,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 104.13
+        },
+        "radarTop": "NOTES"
+      },
+      {
         "title": "(This Is Not) The Angels",
         "type": "A",
         "notes": 1364,
@@ -58562,132 +58462,6 @@
           "CHORD": 92.79
         },
         "radarTop": "NOTES"
-      },
-      {
-        "title": "狂水一華",
-        "type": "A",
-        "notes": 1370,
-        "radar": {
-          "NOTES": 111.23,
-          "PEAK": 95.71,
-          "SCRATCH": 65.66,
-          "SOFLAN": 0,
-          "CHARGE": 15,
-          "CHORD": 92.33
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "君のハートにロックオン",
-        "type": "A",
-        "notes": 1363,
-        "radar": {
-          "NOTES": 107.23,
-          "PEAK": 97.14,
-          "SCRATCH": 37.83,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 67.88
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "麗 ~うらら~",
-        "type": "A",
-        "notes": 1329,
-        "radar": {
-          "NOTES": 106.52,
-          "PEAK": 101.31,
-          "SCRATCH": 39.71,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 77.75
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "龍王の霊廟(Mausoleum Of The Primal Dragon)",
-        "type": "A",
-        "notes": 1614,
-        "radar": {
-          "NOTES": 123.7,
-          "PEAK": 100,
-          "SCRATCH": 12.84,
-          "SOFLAN": 0,
-          "CHARGE": 49.12,
-          "CHORD": 107.37
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "凛として咲く花の如く",
-        "type": "L",
-        "notes": 1595,
-        "radar": {
-          "NOTES": 124.94,
-          "PEAK": 103.94,
-          "SCRATCH": 19.97,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 132.36
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "曼荼羅恋々",
-        "type": "A",
-        "notes": 1392,
-        "radar": {
-          "NOTES": 110.38,
-          "PEAK": 98.57,
-          "SCRATCH": 53.15,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 104.43
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "命の標本",
-        "type": "A",
-        "notes": 1358,
-        "radar": {
-          "NOTES": 109.15,
-          "PEAK": 115.78,
-          "SCRATCH": 41.58,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 108.47
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "嘆きの樹",
-        "type": "H",
-        "notes": 1281,
-        "radar": {
-          "NOTES": 99.67,
-          "PEAK": 101.31,
-          "SCRATCH": 32.31,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 77.63
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "合体せよ!ストロングイェーガー!! (Ryu☆ remix)",
-        "type": "A",
-        "notes": 972,
-        "radar": {
-          "NOTES": 80.97,
-          "PEAK": 110.52,
-          "SCRATCH": 39.45,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 83.54
-        },
-        "radarTop": "PEAK"
       },
       {
         "title": "Angelic Jelly",
@@ -59796,30 +59570,128 @@
         "radarTop": "NOTES"
       },
       {
-        "title": "輪廻の鴉",
-        "type": "A",
-        "notes": 1398,
+        "title": "凛として咲く花の如く",
+        "type": "L",
+        "notes": 1595,
         "radar": {
-          "NOTES": 111.95,
-          "PEAK": 102.63,
-          "SCRATCH": 28.58,
+          "NOTES": 124.94,
+          "PEAK": 103.94,
+          "SCRATCH": 19.97,
           "SOFLAN": 0,
           "CHARGE": 0,
-          "CHORD": 107.86
+          "CHORD": 132.36
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "合体せよ!ストロングイェーガー!! (Ryu☆ remix)",
+        "type": "A",
+        "notes": 972,
+        "radar": {
+          "NOTES": 80.97,
+          "PEAK": 110.52,
+          "SCRATCH": 39.45,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 83.54
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "君のハートにロックオン",
+        "type": "A",
+        "notes": 1363,
+        "radar": {
+          "NOTES": 107.23,
+          "PEAK": 97.14,
+          "SCRATCH": 37.83,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 67.88
         },
         "radarTop": "NOTES"
       },
       {
-        "title": "打打打打打打打打打打",
+        "title": "命の標本",
         "type": "A",
-        "notes": 1342,
+        "notes": 1358,
         "radar": {
-          "NOTES": 124.39,
-          "PEAK": 122.36,
-          "SCRATCH": 34.44,
+          "NOTES": 109.15,
+          "PEAK": 115.78,
+          "SCRATCH": 41.58,
           "SOFLAN": 0,
-          "CHARGE": 11.56,
-          "CHORD": 123.82
+          "CHARGE": 0,
+          "CHORD": 108.47
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "嘆きの樹",
+        "type": "H",
+        "notes": 1281,
+        "radar": {
+          "NOTES": 99.67,
+          "PEAK": 101.31,
+          "SCRATCH": 32.31,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 77.63
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "曼荼羅恋々",
+        "type": "A",
+        "notes": 1392,
+        "radar": {
+          "NOTES": 110.38,
+          "PEAK": 98.57,
+          "SCRATCH": 53.15,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 104.43
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "狂水一華",
+        "type": "A",
+        "notes": 1370,
+        "radar": {
+          "NOTES": 111.23,
+          "PEAK": 95.71,
+          "SCRATCH": 65.66,
+          "SOFLAN": 0,
+          "CHARGE": 15,
+          "CHORD": 92.33
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "麗 ~うらら~",
+        "type": "A",
+        "notes": 1329,
+        "radar": {
+          "NOTES": 106.52,
+          "PEAK": 101.31,
+          "SCRATCH": 39.71,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 77.75
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "龍王の霊廟(Mausoleum Of The Primal Dragon)",
+        "type": "A",
+        "notes": 1614,
+        "radar": {
+          "NOTES": 123.7,
+          "PEAK": 100,
+          "SCRATCH": 12.84,
+          "SOFLAN": 0,
+          "CHARGE": 49.12,
+          "CHORD": 107.37
         },
         "radarTop": "NOTES"
       },
@@ -59880,46 +59752,32 @@
         "radarTop": "SCRATCH"
       },
       {
-        "title": "仮想空間の旅人たち",
+        "title": "打打打打打打打打打打",
         "type": "A",
-        "notes": 1450,
+        "notes": 1342,
         "radar": {
-          "NOTES": 106.47,
-          "PEAK": 94.28,
-          "SCRATCH": 14.44,
+          "NOTES": 124.39,
+          "PEAK": 122.36,
+          "SCRATCH": 34.44,
+          "SOFLAN": 0,
+          "CHARGE": 11.56,
+          "CHORD": 123.82
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "輪廻の鴉",
+        "type": "A",
+        "notes": 1398,
+        "radar": {
+          "NOTES": 111.95,
+          "PEAK": 102.63,
+          "SCRATCH": 28.58,
           "SOFLAN": 0,
           "CHARGE": 0,
-          "CHORD": 92.5
+          "CHORD": 107.86
         },
         "radarTop": "NOTES"
-      },
-      {
-        "title": "眠りの国のステラ",
-        "type": "A",
-        "notes": 1393,
-        "radar": {
-          "NOTES": 110.93,
-          "PEAK": 91.42,
-          "SCRATCH": 45.25,
-          "SOFLAN": 0,
-          "CHARGE": 99.21,
-          "CHORD": 95.46
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "恋は白帯、サンシロー",
-        "type": "L",
-        "notes": 1395,
-        "radar": {
-          "NOTES": 112.04,
-          "PEAK": 91.42,
-          "SCRATCH": 42.72,
-          "SOFLAN": 0,
-          "CHARGE": 7.18,
-          "CHORD": 127.55
-        },
-        "radarTop": "CHORD"
       },
       {
         "title": "AFRO KNUCKLE",
@@ -60440,32 +60298,46 @@
         "radarTop": "NOTES"
       },
       {
-        "title": "牧神笛吹きて",
+        "title": "仮想空間の旅人たち",
         "type": "A",
-        "notes": 1044,
+        "notes": 1450,
         "radar": {
-          "NOTES": 85.29,
-          "PEAK": 101.31,
-          "SCRATCH": 25.59,
+          "NOTES": 106.47,
+          "PEAK": 94.28,
+          "SCRATCH": 14.44,
           "SOFLAN": 0,
           "CHARGE": 0,
-          "CHORD": 72
+          "CHORD": 92.5
         },
-        "radarTop": "PEAK"
+        "radarTop": "NOTES"
       },
       {
-        "title": "少年リップルズ",
-        "type": "A",
-        "notes": 1242,
+        "title": "恋は白帯、サンシロー",
+        "type": "L",
+        "notes": 1395,
         "radar": {
-          "NOTES": 104.71,
-          "PEAK": 95.71,
-          "SCRATCH": 31.94,
+          "NOTES": 112.04,
+          "PEAK": 91.42,
+          "SCRATCH": 42.72,
           "SOFLAN": 0,
-          "CHARGE": 74.34,
-          "CHORD": 105.04
+          "CHARGE": 7.18,
+          "CHORD": 127.55
         },
         "radarTop": "CHORD"
+      },
+      {
+        "title": "眠りの国のステラ",
+        "type": "A",
+        "notes": 1393,
+        "radar": {
+          "NOTES": 110.93,
+          "PEAK": 91.42,
+          "SCRATCH": 45.25,
+          "SOFLAN": 0,
+          "CHARGE": 99.21,
+          "CHORD": 95.46
+        },
+        "radarTop": "NOTES"
       },
       {
         "title": "Blind Justice ~Torn souls, Hurt Faiths ~",
@@ -60636,6 +60508,34 @@
         "radarTop": "NOTES"
       },
       {
+        "title": "少年リップルズ",
+        "type": "A",
+        "notes": 1242,
+        "radar": {
+          "NOTES": 104.71,
+          "PEAK": 95.71,
+          "SCRATCH": 31.94,
+          "SOFLAN": 0,
+          "CHARGE": 74.34,
+          "CHORD": 105.04
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "牧神笛吹きて",
+        "type": "A",
+        "notes": 1044,
+        "radar": {
+          "NOTES": 85.29,
+          "PEAK": 101.31,
+          "SCRATCH": 25.59,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 72
+        },
+        "radarTop": "PEAK"
+      },
+      {
         "title": "100% minimoo-G",
         "type": "A",
         "notes": 903,
@@ -60676,118 +60576,6 @@
           "CHORD": 130.91
         },
         "radarTop": "CHORD"
-      },
-      {
-        "title": "雷君",
-        "type": "A",
-        "notes": 1375,
-        "radar": {
-          "NOTES": 128.68,
-          "PEAK": 107.89,
-          "SCRATCH": 31.36,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 119.98
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "繚乱ヒットチャート",
-        "type": "A",
-        "notes": 1492,
-        "radar": {
-          "NOTES": 121.89,
-          "PEAK": 127.63,
-          "SCRATCH": 36.9,
-          "SOFLAN": 0,
-          "CHARGE": 4.68,
-          "CHORD": 126.8
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "死神自爆中二妹アイドルももかりん(1歳)",
-        "type": "A",
-        "notes": 1472,
-        "radar": {
-          "NOTES": 116.92,
-          "PEAK": 100,
-          "SCRATCH": 49.76,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 116.45
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "御千手メディテーション",
-        "type": "A",
-        "notes": 1170,
-        "radar": {
-          "NOTES": 94.52,
-          "PEAK": 92.85,
-          "SCRATCH": 113.08,
-          "SOFLAN": 22.4,
-          "CHARGE": 0,
-          "CHORD": 51.21
-        },
-        "radarTop": "SCRATCH"
-      },
-      {
-        "title": "月光蝶",
-        "type": "A",
-        "notes": 1144,
-        "radar": {
-          "NOTES": 115.76,
-          "PEAK": 111.84,
-          "SCRATCH": 44.23,
-          "SOFLAN": 65.62,
-          "CHARGE": 0,
-          "CHORD": 113.95
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "炸裂!イェーガー電光チョップ!!(JAEGER FINAL ATTACK)",
-        "type": "A",
-        "notes": 1312,
-        "radar": {
-          "NOTES": 113.62,
-          "PEAK": 109.21,
-          "SCRATCH": 61.83,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 103.2
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "全力 SPECIAL VACATION!! ~限りある休日~",
-        "type": "A",
-        "notes": 1142,
-        "radar": {
-          "NOTES": 95.54,
-          "PEAK": 87.14,
-          "SCRATCH": 39.62,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 70.59
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "太陽SUNSUNボンジュールアバンチュール",
-        "type": "A",
-        "notes": 1402,
-        "radar": {
-          "NOTES": 112.92,
-          "PEAK": 118.42,
-          "SCRATCH": 41.07,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 118.38
-        },
-        "radarTop": "PEAK"
       },
       {
         "title": "A Tale Hidden In The Abyss",
@@ -61588,6 +61376,118 @@
         "radarTop": "CHARGE"
       },
       {
+        "title": "全力 SPECIAL VACATION!! ~限りある休日~",
+        "type": "A",
+        "notes": 1142,
+        "radar": {
+          "NOTES": 95.54,
+          "PEAK": 87.14,
+          "SCRATCH": 39.62,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 70.59
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "太陽SUNSUNボンジュールアバンチュール",
+        "type": "A",
+        "notes": 1402,
+        "radar": {
+          "NOTES": 112.92,
+          "PEAK": 118.42,
+          "SCRATCH": 41.07,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 118.38
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "御千手メディテーション",
+        "type": "A",
+        "notes": 1170,
+        "radar": {
+          "NOTES": 94.52,
+          "PEAK": 92.85,
+          "SCRATCH": 113.08,
+          "SOFLAN": 22.4,
+          "CHARGE": 0,
+          "CHORD": 51.21
+        },
+        "radarTop": "SCRATCH"
+      },
+      {
+        "title": "月光蝶",
+        "type": "A",
+        "notes": 1144,
+        "radar": {
+          "NOTES": 115.76,
+          "PEAK": 111.84,
+          "SCRATCH": 44.23,
+          "SOFLAN": 65.62,
+          "CHARGE": 0,
+          "CHORD": 113.95
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "死神自爆中二妹アイドルももかりん(1歳)",
+        "type": "A",
+        "notes": 1472,
+        "radar": {
+          "NOTES": 116.92,
+          "PEAK": 100,
+          "SCRATCH": 49.76,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 116.45
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "炸裂!イェーガー電光チョップ!!(JAEGER FINAL ATTACK)",
+        "type": "A",
+        "notes": 1312,
+        "radar": {
+          "NOTES": 113.62,
+          "PEAK": 109.21,
+          "SCRATCH": 61.83,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 103.2
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "繚乱ヒットチャート",
+        "type": "A",
+        "notes": 1492,
+        "radar": {
+          "NOTES": 121.89,
+          "PEAK": 127.63,
+          "SCRATCH": 36.9,
+          "SOFLAN": 0,
+          "CHARGE": 4.68,
+          "CHORD": 126.8
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "雷君",
+        "type": "A",
+        "notes": 1375,
+        "radar": {
+          "NOTES": 128.68,
+          "PEAK": 107.89,
+          "SCRATCH": 31.36,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 119.98
+        },
+        "radarTop": "NOTES"
+      },
+      {
         "title": "20XX",
         "type": "A",
         "notes": 1370,
@@ -61602,102 +61502,18 @@
         "radarTop": "NOTES"
       },
       {
-        "title": "果たせぬ約束 ft. 小林マナ",
-        "type": "A",
-        "notes": 1515,
-        "radar": {
-          "NOTES": 116.66,
-          "PEAK": 102.63,
-          "SCRATCH": 43.19,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 122.45
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "夢縁",
-        "type": "A",
-        "notes": 1515,
-        "radar": {
-          "NOTES": 120.79,
-          "PEAK": 100,
-          "SCRATCH": 49.95,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 115.12
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "無双",
-        "type": "A",
-        "notes": 1677,
-        "radar": {
-          "NOTES": 120.89,
-          "PEAK": 101.31,
-          "SCRATCH": 44.11,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 130.06
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "爆ぜりゃんせ",
-        "type": "A",
-        "notes": 1521,
-        "radar": {
-          "NOTES": 121.44,
-          "PEAK": 102.63,
-          "SCRATCH": 83.76,
-          "SOFLAN": 0,
-          "CHARGE": 12.96,
-          "CHORD": 110.73
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "断罪の一花",
-        "type": "A",
-        "notes": 1296,
-        "radar": {
-          "NOTES": 104.19,
-          "PEAK": 121.05,
-          "SCRATCH": 34.55,
-          "SOFLAN": 0,
-          "CHARGE": 33.59,
-          "CHORD": 110.97
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "雫",
-        "type": "A",
-        "notes": 1361,
-        "radar": {
-          "NOTES": 107.63,
-          "PEAK": 106.57,
-          "SCRATCH": 24.2,
-          "SOFLAN": 69.84,
-          "CHARGE": 0,
-          "CHORD": 105.12
-        },
-        "radarTop": "NOTES"
-      },
-      {
         "title": "ABSOLUTE (kors k Remix)",
         "type": "A",
         "notes": 1336,
         "radar": {
-          "NOTES": 101.53,
-          "PEAK": 105.26,
-          "SCRATCH": 49.29,
+          "NOTES": 0,
+          "PEAK": 0,
+          "SCRATCH": 0,
           "SOFLAN": 0,
-          "CHARGE": 156.91,
-          "CHORD": 93.68
+          "CHARGE": 0,
+          "CHORD": 0
         },
-        "radarTop": "CHARGE"
+        "radarTop": "NOTES"
       },
       {
         "title": "ADAMANT",
@@ -61752,20 +61568,6 @@
           "SOFLAN": 0,
           "CHARGE": 51.87,
           "CHORD": 116.78
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "BLUST OF WIND",
-        "type": "L",
-        "notes": 1335,
-        "radar": {
-          "NOTES": 0,
-          "PEAK": 0,
-          "SCRATCH": 0,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 0
         },
         "radarTop": "CHORD"
       },
@@ -62386,6 +62188,104 @@
         "radarTop": "NOTES"
       },
       {
+        "title": "夢縁",
+        "type": "A",
+        "notes": 1515,
+        "radar": {
+          "NOTES": 120.79,
+          "PEAK": 100,
+          "SCRATCH": 49.95,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 115.12
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "断罪の一花",
+        "type": "A",
+        "notes": 1296,
+        "radar": {
+          "NOTES": 104.19,
+          "PEAK": 121.05,
+          "SCRATCH": 34.55,
+          "SOFLAN": 0,
+          "CHARGE": 33.59,
+          "CHORD": 110.97
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "果たせぬ約束 ft. 小林マナ",
+        "type": "A",
+        "notes": 1515,
+        "radar": {
+          "NOTES": 116.66,
+          "PEAK": 102.63,
+          "SCRATCH": 43.19,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 122.45
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "無双",
+        "type": "A",
+        "notes": 1677,
+        "radar": {
+          "NOTES": 120.89,
+          "PEAK": 101.31,
+          "SCRATCH": 44.11,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 130.06
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "爆ぜりゃんせ",
+        "type": "A",
+        "notes": 1521,
+        "radar": {
+          "NOTES": 121.44,
+          "PEAK": 102.63,
+          "SCRATCH": 83.76,
+          "SOFLAN": 0,
+          "CHARGE": 12.96,
+          "CHORD": 110.73
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "雫",
+        "type": "A",
+        "notes": 1361,
+        "radar": {
+          "NOTES": 107.63,
+          "PEAK": 106.57,
+          "SCRATCH": 24.2,
+          "SOFLAN": 69.84,
+          "CHARGE": 0,
+          "CHORD": 105.12
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "†渚の小悪魔ラヴリィ~レイディオ† (IIDX EDIT)",
+        "type": "A",
+        "notes": 1835,
+        "radar": {
+          "NOTES": 163.43,
+          "PEAK": 138.15,
+          "SCRATCH": 96.19,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 148.03
+        },
+        "radarTop": "NOTES"
+      },
+      {
         "title": "3y3s",
         "type": "A",
         "notes": 1871,
@@ -62398,76 +62298,6 @@
           "CHORD": 156.5
         },
         "radarTop": "PEAK"
-      },
-      {
-        "title": "3y3s(Long ver.)",
-        "type": "A",
-        "notes": 3910,
-        "radar": {
-          "NOTES": 131.49,
-          "PEAK": 198.21,
-          "SCRATCH": 105.98,
-          "SOFLAN": 0,
-          "CHARGE": 188.81,
-          "CHORD": 200
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "冥",
-        "type": "A",
-        "notes": 2000,
-        "radar": {
-          "NOTES": 150.46,
-          "PEAK": 180.35,
-          "SCRATCH": 26.86,
-          "SOFLAN": 183.46,
-          "CHARGE": 0,
-          "CHORD": 140.96
-        },
-        "radarTop": "SOFLAN"
-      },
-      {
-        "title": "卑弥呼",
-        "type": "A",
-        "notes": 2119,
-        "radar": {
-          "NOTES": 158.61,
-          "PEAK": 187.5,
-          "SCRATCH": 33.84,
-          "SOFLAN": 151.52,
-          "CHARGE": 0,
-          "CHORD": 147.55
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "疾風迅雷",
-        "type": "L",
-        "notes": 1824,
-        "radar": {
-          "NOTES": 154.29,
-          "PEAK": 182.14,
-          "SCRATCH": 135.19,
-          "SOFLAN": 0,
-          "CHARGE": 42.07,
-          "CHORD": 133.11
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "惑星鉄道",
-        "type": "A",
-        "notes": 1633,
-        "radar": {
-          "NOTES": 126.2,
-          "PEAK": 162.5,
-          "SCRATCH": 43.91,
-          "SOFLAN": 182.75,
-          "CHARGE": 81.57,
-          "CHORD": 95.77
-        },
-        "radarTop": "SOFLAN"
       },
       {
         "title": "Beyond Evolution",
@@ -62778,32 +62608,60 @@
         "radarTop": "CHARGE"
       },
       {
-        "title": "灼熱 Pt.2 Long Train Running",
+        "title": "冥",
         "type": "A",
-        "notes": 1804,
+        "notes": 2000,
         "radar": {
-          "NOTES": 143.89,
-          "PEAK": 125,
-          "SCRATCH": 200,
-          "SOFLAN": 0,
-          "CHARGE": 9.21,
-          "CHORD": 145.33
+          "NOTES": 150.46,
+          "PEAK": 180.35,
+          "SCRATCH": 26.86,
+          "SOFLAN": 183.46,
+          "CHARGE": 0,
+          "CHORD": 140.96
         },
-        "radarTop": "SCRATCH"
+        "radarTop": "SOFLAN"
       },
       {
-        "title": "灼熱Beach Side Bunny",
+        "title": "卑弥呼",
         "type": "A",
-        "notes": 1719,
+        "notes": 2119,
         "radar": {
-          "NOTES": 135.14,
-          "PEAK": 119.73,
-          "SCRATCH": 198.85,
-          "SOFLAN": 0,
+          "NOTES": 158.61,
+          "PEAK": 187.5,
+          "SCRATCH": 33.84,
+          "SOFLAN": 151.52,
           "CHARGE": 0,
-          "CHORD": 138.2
+          "CHORD": 147.55
         },
-        "radarTop": "SCRATCH"
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "惑星鉄道",
+        "type": "A",
+        "notes": 1633,
+        "radar": {
+          "NOTES": 126.2,
+          "PEAK": 162.5,
+          "SCRATCH": 43.91,
+          "SOFLAN": 182.75,
+          "CHARGE": 81.57,
+          "CHORD": 95.77
+        },
+        "radarTop": "SOFLAN"
+      },
+      {
+        "title": "疾風迅雷",
+        "type": "L",
+        "notes": 1824,
+        "radar": {
+          "NOTES": 154.29,
+          "PEAK": 182.14,
+          "SCRATCH": 135.19,
+          "SOFLAN": 0,
+          "CHARGE": 42.07,
+          "CHORD": 133.11
+        },
+        "radarTop": "PEAK"
       },
       {
         "title": "DIAVOLO",
@@ -62890,88 +62748,32 @@
         "radarTop": "CHARGE"
       },
       {
-        "title": "共鳴遊戯の華",
+        "title": "灼熱 Pt.2 Long Train Running",
         "type": "A",
-        "notes": 2000,
+        "notes": 1804,
         "radar": {
-          "NOTES": 155.12,
-          "PEAK": 144.73,
-          "SCRATCH": 34.49,
+          "NOTES": 143.89,
+          "PEAK": 125,
+          "SCRATCH": 200,
           "SOFLAN": 0,
-          "CHARGE": 157.99,
-          "CHORD": 125.94
+          "CHARGE": 9.21,
+          "CHORD": 145.33
         },
-        "radarTop": "CHARGE"
+        "radarTop": "SCRATCH"
       },
       {
-        "title": "煉獄のエルフェリア",
+        "title": "灼熱Beach Side Bunny",
         "type": "A",
-        "notes": 2000,
+        "notes": 1719,
         "radar": {
-          "NOTES": 155.62,
-          "PEAK": 166.07,
-          "SCRATCH": 53.32,
+          "NOTES": 135.14,
+          "PEAK": 119.73,
+          "SCRATCH": 198.85,
           "SOFLAN": 0,
           "CHARGE": 0,
-          "CHORD": 163.94
+          "CHORD": 138.2
         },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "嘆きの樹",
-        "type": "A",
-        "notes": 2000,
-        "radar": {
-          "NOTES": 155.5,
-          "PEAK": 167.85,
-          "SCRATCH": 48.18,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 160.21
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "栄冠のカンパネラ",
-        "type": "A",
-        "notes": 2000,
-        "radar": {
-          "NOTES": 165.78,
-          "PEAK": 185.71,
-          "SCRATCH": 24.2,
-          "SOFLAN": 0,
-          "CHARGE": 196.98,
-          "CHORD": 152.75
-        },
-        "radarTop": "CHARGE"
-      },
-      {
-        "title": "焔極OVERKILL",
-        "type": "A",
-        "notes": 1901,
-        "radar": {
-          "NOTES": 151.34,
-          "PEAK": 147.36,
-          "SCRATCH": 122.88,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 136.41
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "駅猫のワルツ",
-        "type": "A",
-        "notes": 1558,
-        "radar": {
-          "NOTES": 137.52,
-          "PEAK": 128.94,
-          "SCRATCH": 84.89,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 96.65
-        },
-        "radarTop": "NOTES"
+        "radarTop": "SCRATCH"
       },
       {
         "title": "Almagest",
@@ -63198,20 +63000,6 @@
         "radarTop": "PEAK"
       },
       {
-        "title": "Override",
-        "type": "L",
-        "notes": 2204,
-        "radar": {
-          "NOTES": 0,
-          "PEAK": 0,
-          "SCRATCH": 0,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 0
-        },
-        "radarTop": "CHORD"
-      },
-      {
         "title": "perditus†paradisus",
         "type": "A",
         "notes": 2065,
@@ -63308,6 +63096,90 @@
           "CHORD": 137.32
         },
         "radarTop": "PEAK"
+      },
+      {
+        "title": "共鳴遊戯の華",
+        "type": "A",
+        "notes": 2000,
+        "radar": {
+          "NOTES": 155.12,
+          "PEAK": 144.73,
+          "SCRATCH": 34.49,
+          "SOFLAN": 0,
+          "CHARGE": 157.99,
+          "CHORD": 125.94
+        },
+        "radarTop": "CHARGE"
+      },
+      {
+        "title": "嘆きの樹",
+        "type": "A",
+        "notes": 2000,
+        "radar": {
+          "NOTES": 155.5,
+          "PEAK": 167.85,
+          "SCRATCH": 48.18,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 160.21
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "栄冠のカンパネラ",
+        "type": "A",
+        "notes": 2000,
+        "radar": {
+          "NOTES": 165.78,
+          "PEAK": 185.71,
+          "SCRATCH": 24.2,
+          "SOFLAN": 0,
+          "CHARGE": 196.98,
+          "CHORD": 152.75
+        },
+        "radarTop": "CHARGE"
+      },
+      {
+        "title": "焔極OVERKILL",
+        "type": "A",
+        "notes": 1901,
+        "radar": {
+          "NOTES": 151.34,
+          "PEAK": 147.36,
+          "SCRATCH": 122.88,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 136.41
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "煉獄のエルフェリア",
+        "type": "A",
+        "notes": 2000,
+        "radar": {
+          "NOTES": 155.62,
+          "PEAK": 166.07,
+          "SCRATCH": 53.32,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 163.94
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "駅猫のワルツ",
+        "type": "A",
+        "notes": 1558,
+        "radar": {
+          "NOTES": 137.52,
+          "PEAK": 128.94,
+          "SCRATCH": 84.89,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 96.65
+        },
+        "radarTop": "NOTES"
       },
       {
         "title": "BLACK.by X-Cross Fade",
@@ -63532,104 +63404,6 @@
           "CHORD": 142.69
         },
         "radarTop": "PEAK"
-      },
-      {
-        "title": "金野火織の金色提言",
-        "type": "A",
-        "notes": 1630,
-        "radar": {
-          "NOTES": 132.96,
-          "PEAK": 138.15,
-          "SCRATCH": 87.36,
-          "SOFLAN": 0,
-          "CHARGE": 23.45,
-          "CHORD": 123.51
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "東京神話",
-        "type": "A",
-        "notes": 1505,
-        "radar": {
-          "NOTES": 126.95,
-          "PEAK": 148.68,
-          "SCRATCH": 81.73,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 108.77
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "二人ノ廃城幽踊宴",
-        "type": "A",
-        "notes": 1927,
-        "radar": {
-          "NOTES": 153.16,
-          "PEAK": 131.57,
-          "SCRATCH": 51.56,
-          "SOFLAN": 151.41,
-          "CHARGE": 0,
-          "CHORD": 126.82
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "天空の夜明け",
-        "type": "A",
-        "notes": 2072,
-        "radar": {
-          "NOTES": 156.61,
-          "PEAK": 148.68,
-          "SCRATCH": 15.98,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 147.91
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "千年ノ理",
-        "type": "L",
-        "notes": 2183,
-        "radar": {
-          "NOTES": 168.08,
-          "PEAK": 178.57,
-          "SCRATCH": 21.36,
-          "SOFLAN": 0,
-          "CHARGE": 133.37,
-          "CHORD": 198.04
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "超青少年ノ為ノ超多幸ナ超古典的超舞曲",
-        "type": "L",
-        "notes": 2110,
-        "radar": {
-          "NOTES": 168.1,
-          "PEAK": 155.35,
-          "SCRATCH": 11.05,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 166.01
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "恋する☆宇宙戦争っ!!",
-        "type": "L",
-        "notes": 2355,
-        "radar": {
-          "NOTES": 181.74,
-          "PEAK": 146.05,
-          "SCRATCH": 76.16,
-          "SOFLAN": 0,
-          "CHARGE": 48.84,
-          "CHORD": 163.16
-        },
-        "radarTop": "NOTES"
       },
       {
         "title": "Ancient Scapes",
@@ -64108,6 +63882,104 @@
         "radarTop": "PEAK"
       },
       {
+        "title": "二人ノ廃城幽踊宴",
+        "type": "A",
+        "notes": 1927,
+        "radar": {
+          "NOTES": 153.16,
+          "PEAK": 131.57,
+          "SCRATCH": 51.56,
+          "SOFLAN": 151.41,
+          "CHARGE": 0,
+          "CHORD": 126.82
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "千年ノ理",
+        "type": "L",
+        "notes": 2183,
+        "radar": {
+          "NOTES": 168.08,
+          "PEAK": 178.57,
+          "SCRATCH": 21.36,
+          "SOFLAN": 0,
+          "CHARGE": 133.37,
+          "CHORD": 198.04
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "天空の夜明け",
+        "type": "A",
+        "notes": 2072,
+        "radar": {
+          "NOTES": 156.61,
+          "PEAK": 148.68,
+          "SCRATCH": 15.98,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 147.91
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "恋する☆宇宙戦争っ!!",
+        "type": "L",
+        "notes": 2355,
+        "radar": {
+          "NOTES": 181.74,
+          "PEAK": 146.05,
+          "SCRATCH": 76.16,
+          "SOFLAN": 0,
+          "CHARGE": 48.84,
+          "CHORD": 163.16
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "東京神話",
+        "type": "A",
+        "notes": 1505,
+        "radar": {
+          "NOTES": 126.95,
+          "PEAK": 148.68,
+          "SCRATCH": 81.73,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 108.77
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "超青少年ノ為ノ超多幸ナ超古典的超舞曲",
+        "type": "L",
+        "notes": 2110,
+        "radar": {
+          "NOTES": 168.1,
+          "PEAK": 155.35,
+          "SCRATCH": 11.05,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 166.01
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "金野火織の金色提言",
+        "type": "A",
+        "notes": 1630,
+        "radar": {
+          "NOTES": 132.96,
+          "PEAK": 138.15,
+          "SCRATCH": 87.36,
+          "SOFLAN": 0,
+          "CHARGE": 23.45,
+          "CHORD": 123.51
+        },
+        "radarTop": "PEAK"
+      },
+      {
         "title": "255",
         "type": "A",
         "notes": 1676,
@@ -64120,48 +63992,6 @@
           "CHORD": 143.58
         },
         "radarTop": "NOTES"
-      },
-      {
-        "title": "音楽",
-        "type": "A",
-        "notes": 1487,
-        "radar": {
-          "NOTES": 101.91,
-          "PEAK": 139.47,
-          "SCRATCH": 5.99,
-          "SOFLAN": 175.48,
-          "CHARGE": 0,
-          "CHORD": 119.87
-        },
-        "radarTop": "SOFLAN"
-      },
-      {
-        "title": "恋愛=精度×認識力",
-        "type": "A",
-        "notes": 1756,
-        "radar": {
-          "NOTES": 138.03,
-          "PEAK": 122.36,
-          "SCRATCH": 66.43,
-          "SOFLAN": 182.05,
-          "CHARGE": 67.5,
-          "CHORD": 149.1
-        },
-        "radarTop": "SOFLAN"
-      },
-      {
-        "title": "真 地獄超特急 -HELL or HELL-",
-        "type": "A",
-        "notes": 1727,
-        "radar": {
-          "NOTES": 132.27,
-          "PEAK": 128.94,
-          "SCRATCH": 159.94,
-          "SOFLAN": 0,
-          "CHARGE": 164.25,
-          "CHORD": 134.62
-        },
-        "radarTop": "CHARGE"
       },
       {
         "title": "Be quiet",
@@ -64374,6 +64204,48 @@
         "radarTop": "SCRATCH"
       },
       {
+        "title": "恋愛=精度×認識力",
+        "type": "A",
+        "notes": 1756,
+        "radar": {
+          "NOTES": 138.03,
+          "PEAK": 122.36,
+          "SCRATCH": 66.43,
+          "SOFLAN": 182.05,
+          "CHARGE": 67.5,
+          "CHORD": 149.1
+        },
+        "radarTop": "SOFLAN"
+      },
+      {
+        "title": "真 地獄超特急 -HELL or HELL-",
+        "type": "A",
+        "notes": 1727,
+        "radar": {
+          "NOTES": 132.27,
+          "PEAK": 128.94,
+          "SCRATCH": 159.94,
+          "SOFLAN": 0,
+          "CHARGE": 164.25,
+          "CHORD": 134.62
+        },
+        "radarTop": "CHARGE"
+      },
+      {
+        "title": "音楽",
+        "type": "A",
+        "notes": 1487,
+        "radar": {
+          "NOTES": 101.91,
+          "PEAK": 139.47,
+          "SCRATCH": 5.99,
+          "SOFLAN": 175.48,
+          "CHARGE": 0,
+          "CHORD": 119.87
+        },
+        "radarTop": "SOFLAN"
+      },
+      {
         "title": "2 Beasts Unchained",
         "type": "A",
         "notes": 1780,
@@ -64386,62 +64258,6 @@
           "CHORD": 126.82
         },
         "radarTop": "NOTES"
-      },
-      {
-        "title": "世界の果てに約束の凱歌を -ReUnion-",
-        "type": "A",
-        "notes": 1983,
-        "radar": {
-          "NOTES": 155.66,
-          "PEAK": 151.78,
-          "SCRATCH": 52.65,
-          "SOFLAN": 0,
-          "CHARGE": 53.98,
-          "CHORD": 164.39
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "津軽雪",
-        "type": "A",
-        "notes": 1953,
-        "radar": {
-          "NOTES": 147.78,
-          "PEAK": 150,
-          "SCRATCH": 36.93,
-          "SOFLAN": 0,
-          "CHARGE": 25,
-          "CHORD": 140.56
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "華麗なる大犬円舞曲",
-        "type": "A",
-        "notes": 1849,
-        "radar": {
-          "NOTES": 141.81,
-          "PEAK": 140.78,
-          "SCRATCH": 59.23,
-          "SOFLAN": 135.74,
-          "CHARGE": 0,
-          "CHORD": 132.32
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "閠槞彁の願い",
-        "type": "A",
-        "notes": 1613,
-        "radar": {
-          "NOTES": 127.53,
-          "PEAK": 158.92,
-          "SCRATCH": 52.41,
-          "SOFLAN": 0,
-          "CHARGE": 143.6,
-          "CHORD": 119.4
-        },
-        "radarTop": "PEAK"
       },
       {
         "title": "ABSOLUTE EVIL",
@@ -64766,20 +64582,6 @@
         "radarTop": "PEAK"
       },
       {
-        "title": "Mächö Mönky",
-        "type": "A",
-        "notes": 1588,
-        "radar": {
-          "NOTES": 127.19,
-          "PEAK": 136.84,
-          "SCRATCH": 125.4,
-          "SOFLAN": 0,
-          "CHARGE": 2.34,
-          "CHORD": 133.6
-        },
-        "radarTop": "PEAK"
-      },
-      {
         "title": "MENDES",
         "type": "A",
         "notes": 1831,
@@ -65046,34 +64848,6 @@
         "radarTop": "NOTES"
       },
       {
-        "title": "キャトられ♥恋はモ~モク",
-        "type": "A",
-        "notes": 1988,
-        "radar": {
-          "NOTES": 142.43,
-          "PEAK": 139.47,
-          "SCRATCH": 86.12,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 135.58
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "ピアノ協奏曲第1番\"蠍火\"",
-        "type": "A",
-        "notes": 1414,
-        "radar": {
-          "NOTES": 107.58,
-          "PEAK": 142.1,
-          "SCRATCH": 49.89,
-          "SOFLAN": 160.09,
-          "CHARGE": 0,
-          "CHORD": 106.72
-        },
-        "radarTop": "SOFLAN"
-      },
-      {
         "title": "ピアノ協奏曲第1番”蠍火” (BlackY Remix)",
         "type": "A",
         "notes": 1926,
@@ -65088,6 +64862,62 @@
         "radarTop": "PEAK"
       },
       {
+        "title": "世界の果てに約束の凱歌を -ReUnion-",
+        "type": "A",
+        "notes": 1983,
+        "radar": {
+          "NOTES": 155.66,
+          "PEAK": 151.78,
+          "SCRATCH": 52.65,
+          "SOFLAN": 0,
+          "CHARGE": 53.98,
+          "CHORD": 164.39
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "津軽雪",
+        "type": "A",
+        "notes": 1953,
+        "radar": {
+          "NOTES": 147.78,
+          "PEAK": 150,
+          "SCRATCH": 36.93,
+          "SOFLAN": 0,
+          "CHARGE": 25,
+          "CHORD": 140.56
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "華麗なる大犬円舞曲",
+        "type": "A",
+        "notes": 1849,
+        "radar": {
+          "NOTES": 141.81,
+          "PEAK": 140.78,
+          "SCRATCH": 59.23,
+          "SOFLAN": 135.74,
+          "CHARGE": 0,
+          "CHORD": 132.32
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "閠槞彁の願い",
+        "type": "A",
+        "notes": 1613,
+        "radar": {
+          "NOTES": 127.53,
+          "PEAK": 158.92,
+          "SCRATCH": 52.41,
+          "SOFLAN": 0,
+          "CHARGE": 143.6,
+          "CHORD": 119.4
+        },
+        "radarTop": "PEAK"
+      },
+      {
         "title": "199024club -Re:BounceKiller-",
         "type": "A",
         "notes": 1260,
@@ -65098,48 +64928,6 @@
           "SOFLAN": 0,
           "CHARGE": 0,
           "CHORD": 88.3
-        },
-        "radarTop": "SCRATCH"
-      },
-      {
-        "title": "烽火連天の刃",
-        "type": "A",
-        "notes": 1771,
-        "radar": {
-          "NOTES": 140.26,
-          "PEAK": 117.1,
-          "SCRATCH": 57.7,
-          "SOFLAN": 0,
-          "CHARGE": 184.94,
-          "CHORD": 119.74
-        },
-        "radarTop": "CHARGE"
-      },
-      {
-        "title": "水鏡の異界",
-        "type": "A",
-        "notes": 1661,
-        "radar": {
-          "NOTES": 137.33,
-          "PEAK": 119.73,
-          "SCRATCH": 121.78,
-          "SOFLAN": 0,
-          "CHARGE": 165.61,
-          "CHORD": 107.8
-        },
-        "radarTop": "CHARGE"
-      },
-      {
-        "title": "灼熱Beach Side Bunny (かめりあ's \"Summertime D'n'B\" Remix)",
-        "type": "A",
-        "notes": 1647,
-        "radar": {
-          "NOTES": 125.87,
-          "PEAK": 117.1,
-          "SCRATCH": 175.14,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 117.33
         },
         "radarTop": "SCRATCH"
       },
@@ -65298,18 +65086,46 @@
         "radarTop": "SCRATCH"
       },
       {
-        "title": "†渚の小悪魔ラヴリィ~レイディオ† (IIDX EDIT)",
+        "title": "水鏡の異界",
         "type": "A",
-        "notes": 1835,
+        "notes": 1661,
         "radar": {
-          "NOTES": 163.43,
-          "PEAK": 138.15,
-          "SCRATCH": 96.19,
+          "NOTES": 137.33,
+          "PEAK": 119.73,
+          "SCRATCH": 121.78,
+          "SOFLAN": 0,
+          "CHARGE": 165.61,
+          "CHORD": 107.8
+        },
+        "radarTop": "CHARGE"
+      },
+      {
+        "title": "灼熱Beach Side Bunny (かめりあ's \"Summertime D'n'B\" Remix)",
+        "type": "A",
+        "notes": 1647,
+        "radar": {
+          "NOTES": 125.87,
+          "PEAK": 117.1,
+          "SCRATCH": 175.14,
           "SOFLAN": 0,
           "CHARGE": 0,
-          "CHORD": 148.03
+          "CHORD": 117.33
         },
-        "radarTop": "NOTES"
+        "radarTop": "SCRATCH"
+      },
+      {
+        "title": "烽火連天の刃",
+        "type": "A",
+        "notes": 1771,
+        "radar": {
+          "NOTES": 140.26,
+          "PEAK": 117.1,
+          "SCRATCH": 57.7,
+          "SOFLAN": 0,
+          "CHARGE": 184.94,
+          "CHORD": 119.74
+        },
+        "radarTop": "CHARGE"
       },
       {
         "title": "1116",
@@ -65324,132 +65140,6 @@
           "CHORD": 137.95
         },
         "radarTop": "PEAK"
-      },
-      {
-        "title": "仮想空間の旅人たち",
-        "type": "L",
-        "notes": 1943,
-        "radar": {
-          "NOTES": 149.92,
-          "PEAK": 155.35,
-          "SCRATCH": 15.74,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 155.74
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "轟け!恋のビーンボール!!",
-        "type": "A",
-        "notes": 1834,
-        "radar": {
-          "NOTES": 161.27,
-          "PEAK": 142.1,
-          "SCRATCH": 84.04,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 148.74
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "魅惑のYUMMYスイーツ",
-        "type": "A",
-        "notes": 1586,
-        "radar": {
-          "NOTES": 129.57,
-          "PEAK": 131.57,
-          "SCRATCH": 86.3,
-          "SOFLAN": 0,
-          "CHARGE": 128.06,
-          "CHORD": 116.38
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "未完成ノ蒸氣驅動乙女",
-        "type": "A",
-        "notes": 1538,
-        "radar": {
-          "NOTES": 130.35,
-          "PEAK": 123.68,
-          "SCRATCH": 19.75,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 93.19
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "少年は空を辿る",
-        "type": "A",
-        "notes": 1729,
-        "radar": {
-          "NOTES": 134.3,
-          "PEAK": 135.52,
-          "SCRATCH": 44.7,
-          "SOFLAN": 0,
-          "CHARGE": 101.85,
-          "CHORD": 127.59
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "逆月",
-        "type": "A",
-        "notes": 1920,
-        "radar": {
-          "NOTES": 156.73,
-          "PEAK": 143.42,
-          "SCRATCH": 52.97,
-          "SOFLAN": 0,
-          "CHARGE": 118.95,
-          "CHORD": 168.07
-        },
-        "radarTop": "CHORD"
-      },
-      {
-        "title": "子供の落書き帳",
-        "type": "A",
-        "notes": 1395,
-        "radar": {
-          "NOTES": 143.1,
-          "PEAK": 146.05,
-          "SCRATCH": 52.31,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 113.51
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "電腦都市",
-        "type": "A",
-        "notes": 1738,
-        "radar": {
-          "NOTES": 150.77,
-          "PEAK": 127.63,
-          "SCRATCH": 100.29,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 146.18
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "抱きしめてモナムール",
-        "type": "A",
-        "notes": 2110,
-        "radar": {
-          "NOTES": 154.4,
-          "PEAK": 127.63,
-          "SCRATCH": 58.14,
-          "SOFLAN": 0,
-          "CHARGE": 32.64,
-          "CHORD": 150.36
-        },
-        "radarTop": "NOTES"
       },
       {
         "title": "Arkadia",
@@ -65872,20 +65562,6 @@
         "radarTop": "PEAK"
       },
       {
-        "title": "Übertreffen",
-        "type": "L",
-        "notes": 1655,
-        "radar": {
-          "NOTES": 164.24,
-          "PEAK": 143.42,
-          "SCRATCH": 41.28,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 133.32
-        },
-        "radarTop": "NOTES"
-      },
-      {
         "title": "Vermilion Carol",
         "type": "A",
         "notes": 1837,
@@ -65998,6 +65674,132 @@
         "radarTop": "NOTES"
       },
       {
+        "title": "仮想空間の旅人たち",
+        "type": "L",
+        "notes": 1943,
+        "radar": {
+          "NOTES": 149.92,
+          "PEAK": 155.35,
+          "SCRATCH": 15.74,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 155.74
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "子供の落書き帳",
+        "type": "A",
+        "notes": 1395,
+        "radar": {
+          "NOTES": 143.1,
+          "PEAK": 146.05,
+          "SCRATCH": 52.31,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 113.51
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "少年は空を辿る",
+        "type": "A",
+        "notes": 1729,
+        "radar": {
+          "NOTES": 134.3,
+          "PEAK": 135.52,
+          "SCRATCH": 44.7,
+          "SOFLAN": 0,
+          "CHARGE": 101.85,
+          "CHORD": 127.59
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "抱きしめてモナムール",
+        "type": "A",
+        "notes": 2110,
+        "radar": {
+          "NOTES": 154.4,
+          "PEAK": 127.63,
+          "SCRATCH": 58.14,
+          "SOFLAN": 0,
+          "CHARGE": 32.64,
+          "CHORD": 150.36
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "未完成ノ蒸氣驅動乙女",
+        "type": "A",
+        "notes": 1538,
+        "radar": {
+          "NOTES": 130.35,
+          "PEAK": 123.68,
+          "SCRATCH": 19.75,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 93.19
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "轟け!恋のビーンボール!!",
+        "type": "A",
+        "notes": 1834,
+        "radar": {
+          "NOTES": 161.27,
+          "PEAK": 142.1,
+          "SCRATCH": 84.04,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 148.74
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "逆月",
+        "type": "A",
+        "notes": 1920,
+        "radar": {
+          "NOTES": 156.73,
+          "PEAK": 143.42,
+          "SCRATCH": 52.97,
+          "SOFLAN": 0,
+          "CHARGE": 118.95,
+          "CHORD": 168.07
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "電腦都市",
+        "type": "A",
+        "notes": 1738,
+        "radar": {
+          "NOTES": 150.77,
+          "PEAK": 127.63,
+          "SCRATCH": 100.29,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 146.18
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "魅惑のYUMMYスイーツ",
+        "type": "A",
+        "notes": 1586,
+        "radar": {
+          "NOTES": 129.57,
+          "PEAK": 131.57,
+          "SCRATCH": 86.3,
+          "SOFLAN": 0,
+          "CHARGE": 128.06,
+          "CHORD": 116.38
+        },
+        "radarTop": "PEAK"
+      },
+      {
         "title": "24h Endurance Race",
         "type": "A",
         "notes": 1743,
@@ -66010,62 +65812,6 @@
           "CHORD": 107.84
         },
         "radarTop": "NOTES"
-      },
-      {
-        "title": "雪上断火",
-        "type": "A",
-        "notes": 1544,
-        "radar": {
-          "NOTES": 117.73,
-          "PEAK": 115.78,
-          "SCRATCH": 175.89,
-          "SOFLAN": 63.57,
-          "CHARGE": 0,
-          "CHORD": 130.67
-        },
-        "radarTop": "SCRATCH"
-      },
-      {
-        "title": "廿",
-        "type": "L",
-        "notes": 1731,
-        "radar": {
-          "NOTES": 135.22,
-          "PEAK": 138.15,
-          "SCRATCH": 137.28,
-          "SOFLAN": 49.48,
-          "CHARGE": 0,
-          "CHORD": 135.12
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "灼熱 Lost Summer Dayz",
-        "type": "A",
-        "notes": 1453,
-        "radar": {
-          "NOTES": 113.31,
-          "PEAK": 115.78,
-          "SCRATCH": 170.21,
-          "SOFLAN": 0,
-          "CHARGE": 33.43,
-          "CHORD": 114.57
-        },
-        "radarTop": "SCRATCH"
-      },
-      {
-        "title": "焱影",
-        "type": "A",
-        "notes": 1437,
-        "radar": {
-          "NOTES": 120.96,
-          "PEAK": 98.57,
-          "SCRATCH": 165.38,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 108.59
-        },
-        "radarTop": "SCRATCH"
       },
       {
         "title": "AIR RAID FROM THA UNDAGROUND",
@@ -66138,6 +65884,62 @@
         "radarTop": "SCRATCH"
       },
       {
+        "title": "廿",
+        "type": "L",
+        "notes": 1731,
+        "radar": {
+          "NOTES": 135.22,
+          "PEAK": 138.15,
+          "SCRATCH": 137.28,
+          "SOFLAN": 49.48,
+          "CHARGE": 0,
+          "CHORD": 135.12
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "灼熱 Lost Summer Dayz",
+        "type": "A",
+        "notes": 1453,
+        "radar": {
+          "NOTES": 113.31,
+          "PEAK": 115.78,
+          "SCRATCH": 170.21,
+          "SOFLAN": 0,
+          "CHARGE": 33.43,
+          "CHORD": 114.57
+        },
+        "radarTop": "SCRATCH"
+      },
+      {
+        "title": "焱影",
+        "type": "A",
+        "notes": 1437,
+        "radar": {
+          "NOTES": 120.96,
+          "PEAK": 98.57,
+          "SCRATCH": 165.38,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 108.59
+        },
+        "radarTop": "SCRATCH"
+      },
+      {
+        "title": "雪上断火",
+        "type": "A",
+        "notes": 1544,
+        "radar": {
+          "NOTES": 117.73,
+          "PEAK": 115.78,
+          "SCRATCH": 175.89,
+          "SOFLAN": 63.57,
+          "CHARGE": 0,
+          "CHORD": 130.67
+        },
+        "radarTop": "SCRATCH"
+      },
+      {
         "title": "#MAGiCVLGiRL_TRVP_B3VTZ",
         "type": "A",
         "notes": 1753,
@@ -66150,104 +65952,6 @@
           "CHORD": 131.76
         },
         "radarTop": "NOTES"
-      },
-      {
-        "title": "龍と少女とデコヒーレンス",
-        "type": "L",
-        "notes": 1713,
-        "radar": {
-          "NOTES": 134.25,
-          "PEAK": 128.94,
-          "SCRATCH": 35.4,
-          "SOFLAN": 0,
-          "CHARGE": 86.34,
-          "CHORD": 117.64
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "儚キ戀ノ幻想譚",
-        "type": "A",
-        "notes": 1808,
-        "radar": {
-          "NOTES": 150.28,
-          "PEAK": 131.57,
-          "SCRATCH": 104.55,
-          "SOFLAN": 0,
-          "CHARGE": 9.21,
-          "CHORD": 145.31
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "不沈艦CANDY",
-        "type": "A",
-        "notes": 1682,
-        "radar": {
-          "NOTES": 134.56,
-          "PEAK": 138.15,
-          "SCRATCH": 25.64,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 135.37
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "神謳 -RESONANCE-",
-        "type": "A",
-        "notes": 2047,
-        "radar": {
-          "NOTES": 154.28,
-          "PEAK": 134.21,
-          "SCRATCH": 34.06,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 151.61
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "深淵に捧ぐレクイエム",
-        "type": "A",
-        "notes": 1537,
-        "radar": {
-          "NOTES": 127.76,
-          "PEAK": 127.63,
-          "SCRATCH": 15.74,
-          "SOFLAN": 0,
-          "CHARGE": 188.09,
-          "CHORD": 115.81
-        },
-        "radarTop": "CHARGE"
-      },
-      {
-        "title": "疾風迅雷",
-        "type": "A",
-        "notes": 1493,
-        "radar": {
-          "NOTES": 126.36,
-          "PEAK": 113.15,
-          "SCRATCH": 24.04,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 98.08
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "A MINSTREL ~ ver. short-scape ~",
-        "type": "L",
-        "notes": 1954,
-        "radar": {
-          "NOTES": 155.44,
-          "PEAK": 140.78,
-          "SCRATCH": 22.61,
-          "SOFLAN": 0,
-          "CHARGE": 48.39,
-          "CHORD": 200
-        },
-        "radarTop": "CHORD"
       },
       {
         "title": "AA -rebuild-",
@@ -67062,32 +66766,88 @@
         "radarTop": "NOTES"
       },
       {
-        "title": "魔法のかくれんぼ",
+        "title": "不沈艦CANDY",
         "type": "A",
-        "notes": 1454,
+        "notes": 1682,
         "radar": {
-          "NOTES": 119.05,
-          "PEAK": 135.52,
-          "SCRATCH": 10.14,
-          "SOFLAN": 128.64,
-          "CHARGE": 165.58,
-          "CHORD": 106.05
+          "NOTES": 134.56,
+          "PEAK": 138.15,
+          "SCRATCH": 25.64,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 135.37
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "儚キ戀ノ幻想譚",
+        "type": "A",
+        "notes": 1808,
+        "radar": {
+          "NOTES": 150.28,
+          "PEAK": 131.57,
+          "SCRATCH": 104.55,
+          "SOFLAN": 0,
+          "CHARGE": 9.21,
+          "CHORD": 145.31
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "深淵に捧ぐレクイエム",
+        "type": "A",
+        "notes": 1537,
+        "radar": {
+          "NOTES": 127.76,
+          "PEAK": 127.63,
+          "SCRATCH": 15.74,
+          "SOFLAN": 0,
+          "CHARGE": 188.09,
+          "CHORD": 115.81
         },
         "radarTop": "CHARGE"
       },
       {
-        "title": "摩天楼",
+        "title": "疾風迅雷",
         "type": "A",
-        "notes": 1309,
+        "notes": 1493,
         "radar": {
-          "NOTES": 99.96,
-          "PEAK": 131.57,
-          "SCRATCH": 12.79,
+          "NOTES": 126.36,
+          "PEAK": 113.15,
+          "SCRATCH": 24.04,
           "SOFLAN": 0,
-          "CHARGE": 176.06,
-          "CHORD": 100.85
+          "CHARGE": 0,
+          "CHORD": 98.08
         },
-        "radarTop": "CHARGE"
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "神謳 -RESONANCE-",
+        "type": "A",
+        "notes": 2047,
+        "radar": {
+          "NOTES": 154.28,
+          "PEAK": 134.21,
+          "SCRATCH": 34.06,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 151.61
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "龍と少女とデコヒーレンス",
+        "type": "L",
+        "notes": 1713,
+        "radar": {
+          "NOTES": 134.25,
+          "PEAK": 128.94,
+          "SCRATCH": 35.4,
+          "SOFLAN": 0,
+          "CHARGE": 86.34,
+          "CHORD": 117.64
+        },
+        "radarTop": "NOTES"
       },
       {
         "title": "FANTASTIC THREE",
@@ -67202,6 +66962,34 @@
         "radarTop": "SOFLAN"
       },
       {
+        "title": "摩天楼",
+        "type": "A",
+        "notes": 1309,
+        "radar": {
+          "NOTES": 99.96,
+          "PEAK": 131.57,
+          "SCRATCH": 12.79,
+          "SOFLAN": 0,
+          "CHARGE": 176.06,
+          "CHORD": 100.85
+        },
+        "radarTop": "CHARGE"
+      },
+      {
+        "title": "魔法のかくれんぼ",
+        "type": "A",
+        "notes": 1454,
+        "radar": {
+          "NOTES": 119.05,
+          "PEAK": 135.52,
+          "SCRATCH": 10.14,
+          "SOFLAN": 128.64,
+          "CHARGE": 165.58,
+          "CHORD": 106.05
+        },
+        "radarTop": "CHARGE"
+      },
+      {
         "title": "#CMFLG",
         "type": "A",
         "notes": 1748,
@@ -67212,202 +67000,6 @@
           "SOFLAN": 0,
           "CHARGE": 6.09,
           "CHORD": 122.15
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "禊",
-        "type": "A",
-        "notes": 1631,
-        "radar": {
-          "NOTES": 131.6,
-          "PEAK": 119.73,
-          "SCRATCH": 57.61,
-          "SOFLAN": 0,
-          "CHARGE": 156.69,
-          "CHORD": 113.21
-        },
-        "radarTop": "CHARGE"
-      },
-      {
-        "title": "狂イ咲ケ焔ノ華",
-        "type": "A",
-        "notes": 1860,
-        "radar": {
-          "NOTES": 139.12,
-          "PEAK": 139.47,
-          "SCRATCH": 46.32,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 109.54
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "童話回廊",
-        "type": "A",
-        "notes": 1592,
-        "radar": {
-          "NOTES": 140.23,
-          "PEAK": 130.26,
-          "SCRATCH": 57.75,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 125.1
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "旋律のドグマ~Misérables~",
-        "type": "A",
-        "notes": 2002,
-        "radar": {
-          "NOTES": 141.45,
-          "PEAK": 122.36,
-          "SCRATCH": 35,
-          "SOFLAN": 0,
-          "CHARGE": 1.87,
-          "CHORD": 130.13
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "紫陽花 -AZISAI-",
-        "type": "A",
-        "notes": 1490,
-        "radar": {
-          "NOTES": 114.35,
-          "PEAK": 115.78,
-          "SCRATCH": 70.45,
-          "SOFLAN": 0,
-          "CHARGE": 47.65,
-          "CHORD": 109.48
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "電光",
-        "type": "A",
-        "notes": 1560,
-        "radar": {
-          "NOTES": 123.7,
-          "PEAK": 121.05,
-          "SCRATCH": 113.44,
-          "SOFLAN": 0,
-          "CHARGE": 116.44,
-          "CHORD": 112.65
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "電人、暁に斃れる。",
-        "type": "A",
-        "notes": 1725,
-        "radar": {
-          "NOTES": 135.18,
-          "PEAK": 123.68,
-          "SCRATCH": 43.96,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 111.93
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "天邪鬼",
-        "type": "A",
-        "notes": 1693,
-        "radar": {
-          "NOTES": 139.21,
-          "PEAK": 128.94,
-          "SCRATCH": 56.91,
-          "SOFLAN": 0,
-          "CHARGE": 7.65,
-          "CHORD": 131.79
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "最小三倍完全数",
-        "type": "A",
-        "notes": 1314,
-        "radar": {
-          "NOTES": 118.08,
-          "PEAK": 117.1,
-          "SCRATCH": 68.74,
-          "SOFLAN": 0,
-          "CHARGE": 1.56,
-          "CHORD": 111.69
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "表裏一体!?怪盗いいんちょの悩み♥",
-        "type": "A",
-        "notes": 1815,
-        "radar": {
-          "NOTES": 142.24,
-          "PEAK": 113.15,
-          "SCRATCH": 65.09,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 141.04
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "夏色DIARY - L.E.D.-G STYLE MIX -",
-        "type": "A",
-        "notes": 1590,
-        "radar": {
-          "NOTES": 135.61,
-          "PEAK": 126.31,
-          "SCRATCH": 59.03,
-          "SOFLAN": 0,
-          "CHARGE": 45.23,
-          "CHORD": 112.54
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "華爛漫 -Flowers-",
-        "type": "L",
-        "notes": 1597,
-        "radar": {
-          "NOTES": 147.01,
-          "PEAK": 132.89,
-          "SCRATCH": 35.54,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 145.2
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "恋する☆宇宙戦争っ!!",
-        "type": "A",
-        "notes": 1835,
-        "radar": {
-          "NOTES": 142.1,
-          "PEAK": 125,
-          "SCRATCH": 59.8,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 109.71
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "ACTØ",
-        "type": "A",
-        "notes": 1534,
-        "radar": {
-          "NOTES": 122.02,
-          "PEAK": 115.78,
-          "SCRATCH": 58.53,
-          "SOFLAN": 0,
-          "CHARGE": 3.12,
-          "CHORD": 118.8
         },
         "radarTop": "NOTES"
       },
@@ -67874,20 +67466,6 @@
         "radarTop": "NOTES"
       },
       {
-        "title": "Ōu Legends",
-        "type": "A",
-        "notes": 1687,
-        "radar": {
-          "NOTES": 137.1,
-          "PEAK": 119.73,
-          "SCRATCH": 48.55,
-          "SOFLAN": 0,
-          "CHARGE": 136.05,
-          "CHORD": 120.22
-        },
-        "radarTop": "NOTES"
-      },
-      {
         "title": "Out of Control",
         "type": "A",
         "notes": 1598,
@@ -68182,32 +67760,158 @@
         "radarTop": "NOTES"
       },
       {
-        "title": "神のシナリオ",
+        "title": "最小三倍完全数",
         "type": "A",
-        "notes": 1652,
+        "notes": 1314,
         "radar": {
-          "NOTES": 129.42,
-          "PEAK": 126.31,
-          "SCRATCH": 51.36,
+          "NOTES": 118.08,
+          "PEAK": 117.1,
+          "SCRATCH": 68.74,
           "SOFLAN": 0,
-          "CHARGE": 187.01,
-          "CHORD": 119.95
+          "CHARGE": 1.56,
+          "CHORD": 111.69
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "夏色DIARY - L.E.D.-G STYLE MIX -",
+        "type": "A",
+        "notes": 1590,
+        "radar": {
+          "NOTES": 135.61,
+          "PEAK": 126.31,
+          "SCRATCH": 59.03,
+          "SOFLAN": 0,
+          "CHARGE": 45.23,
+          "CHORD": 112.54
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "天邪鬼",
+        "type": "A",
+        "notes": 1693,
+        "radar": {
+          "NOTES": 139.21,
+          "PEAK": 128.94,
+          "SCRATCH": 56.91,
+          "SOFLAN": 0,
+          "CHARGE": 7.65,
+          "CHORD": 131.79
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "恋する☆宇宙戦争っ!!",
+        "type": "A",
+        "notes": 1835,
+        "radar": {
+          "NOTES": 142.1,
+          "PEAK": 125,
+          "SCRATCH": 59.8,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 109.71
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "狂イ咲ケ焔ノ華",
+        "type": "A",
+        "notes": 1860,
+        "radar": {
+          "NOTES": 139.12,
+          "PEAK": 139.47,
+          "SCRATCH": 46.32,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 109.54
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "禊",
+        "type": "A",
+        "notes": 1631,
+        "radar": {
+          "NOTES": 131.6,
+          "PEAK": 119.73,
+          "SCRATCH": 57.61,
+          "SOFLAN": 0,
+          "CHARGE": 156.69,
+          "CHORD": 113.21
         },
         "radarTop": "CHARGE"
       },
       {
-        "title": "海神",
+        "title": "童話回廊",
         "type": "A",
-        "notes": 1629,
+        "notes": 1592,
         "radar": {
-          "NOTES": 124.47,
-          "PEAK": 114.47,
-          "SCRATCH": 72.37,
+          "NOTES": 140.23,
+          "PEAK": 130.26,
+          "SCRATCH": 57.75,
           "SOFLAN": 0,
-          "CHARGE": 151.58,
-          "CHORD": 124.72
+          "CHARGE": 0,
+          "CHORD": 125.1
         },
-        "radarTop": "CHARGE"
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "紫陽花 -AZISAI-",
+        "type": "A",
+        "notes": 1490,
+        "radar": {
+          "NOTES": 114.35,
+          "PEAK": 115.78,
+          "SCRATCH": 70.45,
+          "SOFLAN": 0,
+          "CHARGE": 47.65,
+          "CHORD": 109.48
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "華爛漫 -Flowers-",
+        "type": "L",
+        "notes": 1597,
+        "radar": {
+          "NOTES": 147.01,
+          "PEAK": 132.89,
+          "SCRATCH": 35.54,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 145.2
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "電人、暁に斃れる。",
+        "type": "A",
+        "notes": 1725,
+        "radar": {
+          "NOTES": 135.18,
+          "PEAK": 123.68,
+          "SCRATCH": 43.96,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 111.93
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "電光",
+        "type": "A",
+        "notes": 1560,
+        "radar": {
+          "NOTES": 123.7,
+          "PEAK": 121.05,
+          "SCRATCH": 113.44,
+          "SOFLAN": 0,
+          "CHARGE": 116.44,
+          "CHORD": 112.65
+        },
+        "radarTop": "NOTES"
       },
       {
         "title": "Adularia",
@@ -68294,74 +67998,32 @@
         "radarTop": "NOTES"
       },
       {
-        "title": "九尾狐夜行",
+        "title": "海神",
         "type": "A",
-        "notes": 1521,
+        "notes": 1629,
         "radar": {
-          "NOTES": 133.71,
-          "PEAK": 121.05,
-          "SCRATCH": 51.24,
+          "NOTES": 124.47,
+          "PEAK": 114.47,
+          "SCRATCH": 72.37,
           "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 134.12
+          "CHARGE": 151.58,
+          "CHORD": 124.72
         },
-        "radarTop": "CHORD"
+        "radarTop": "CHARGE"
       },
       {
-        "title": "少年A",
+        "title": "神のシナリオ",
         "type": "A",
-        "notes": 1449,
+        "notes": 1652,
         "radar": {
-          "NOTES": 100.56,
-          "PEAK": 109.21,
-          "SCRATCH": 60.67,
-          "SOFLAN": 54.18,
-          "CHARGE": 0,
-          "CHORD": 85.68
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "刃図羅",
-        "type": "A",
-        "notes": 1746,
-        "radar": {
-          "NOTES": 130.75,
+          "NOTES": 129.42,
           "PEAK": 126.31,
-          "SCRATCH": 43.65,
+          "SCRATCH": 51.36,
           "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 126.21
+          "CHARGE": 187.01,
+          "CHORD": 119.95
         },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "終焔のClaudia",
-        "type": "A",
-        "notes": 1406,
-        "radar": {
-          "NOTES": 122.9,
-          "PEAK": 121.05,
-          "SCRATCH": 42.67,
-          "SOFLAN": 94.93,
-          "CHARGE": 0,
-          "CHORD": 116.48
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "華蝶風雪",
-        "type": "L",
-        "notes": 2014,
-        "radar": {
-          "NOTES": 158.78,
-          "PEAK": 118.42,
-          "SCRATCH": 29.9,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 179.94
-        },
-        "radarTop": "CHORD"
+        "radarTop": "CHARGE"
       },
       {
         "title": "AA",
@@ -68612,20 +68274,6 @@
           "SOFLAN": 0,
           "CHARGE": 0,
           "CHORD": 112.42
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "Pārvatī",
-        "type": "A",
-        "notes": 1467,
-        "radar": {
-          "NOTES": 119.27,
-          "PEAK": 119.73,
-          "SCRATCH": 52.12,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 100.73
         },
         "radarTop": "PEAK"
       },
@@ -68910,18 +68558,74 @@
         "radarTop": "NOTES"
       },
       {
-        "title": "桜",
+        "title": "九尾狐夜行",
         "type": "A",
-        "notes": 1123,
+        "notes": 1521,
         "radar": {
-          "NOTES": 109.24,
-          "PEAK": 118.42,
-          "SCRATCH": 58.82,
-          "SOFLAN": 151.6,
+          "NOTES": 133.71,
+          "PEAK": 121.05,
+          "SCRATCH": 51.24,
+          "SOFLAN": 0,
           "CHARGE": 0,
-          "CHORD": 109.62
+          "CHORD": 134.12
         },
-        "radarTop": "SOFLAN"
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "刃図羅",
+        "type": "A",
+        "notes": 1746,
+        "radar": {
+          "NOTES": 130.75,
+          "PEAK": 126.31,
+          "SCRATCH": 43.65,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 126.21
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "少年A",
+        "type": "A",
+        "notes": 1449,
+        "radar": {
+          "NOTES": 100.56,
+          "PEAK": 109.21,
+          "SCRATCH": 60.67,
+          "SOFLAN": 54.18,
+          "CHARGE": 0,
+          "CHORD": 85.68
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "終焔のClaudia",
+        "type": "A",
+        "notes": 1406,
+        "radar": {
+          "NOTES": 122.9,
+          "PEAK": 121.05,
+          "SCRATCH": 42.67,
+          "SOFLAN": 94.93,
+          "CHARGE": 0,
+          "CHORD": 116.48
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "華蝶風雪",
+        "type": "L",
+        "notes": 2014,
+        "radar": {
+          "NOTES": 158.78,
+          "PEAK": 118.42,
+          "SCRATCH": 29.9,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 179.94
+        },
+        "radarTop": "CHORD"
       },
       {
         "title": "eRAseRmOToRpHAntOM",
@@ -68994,6 +68698,20 @@
         "radarTop": "CHORD"
       },
       {
+        "title": "桜",
+        "type": "A",
+        "notes": 1123,
+        "radar": {
+          "NOTES": 109.24,
+          "PEAK": 118.42,
+          "SCRATCH": 58.82,
+          "SOFLAN": 151.6,
+          "CHARGE": 0,
+          "CHORD": 109.62
+        },
+        "radarTop": "SOFLAN"
+      },
+      {
         "title": "《PL|RAYER》",
         "type": "A",
         "notes": 1420,
@@ -69006,34 +68724,6 @@
           "CHORD": 119.27
         },
         "radarTop": "CHORD"
-      },
-      {
-        "title": "紅牡丹",
-        "type": "A",
-        "notes": 1445,
-        "radar": {
-          "NOTES": 133.55,
-          "PEAK": 123.68,
-          "SCRATCH": 92.25,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 126.33
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "黒髪乱れし修羅となりて",
-        "type": "A",
-        "notes": 1745,
-        "radar": {
-          "NOTES": 140.68,
-          "PEAK": 119.73,
-          "SCRATCH": 40.53,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 130.07
-        },
-        "radarTop": "NOTES"
       },
       {
         "title": "Apocalypse",
@@ -69316,18 +69006,32 @@
         "radarTop": "PEAK"
       },
       {
-        "title": "雪月花",
+        "title": "紅牡丹",
         "type": "A",
-        "notes": 1287,
+        "notes": 1445,
         "radar": {
-          "NOTES": 0.01,
-          "PEAK": 0.4,
-          "SCRATCH": 0.06,
-          "SOFLAN": 0.22,
-          "CHARGE": 1.23,
-          "CHORD": 0.22
+          "NOTES": 133.55,
+          "PEAK": 123.68,
+          "SCRATCH": 92.25,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 126.33
         },
-        "radarTop": "CHARGE"
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "黒髪乱れし修羅となりて",
+        "type": "A",
+        "notes": 1745,
+        "radar": {
+          "NOTES": 140.68,
+          "PEAK": 119.73,
+          "SCRATCH": 40.53,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 130.07
+        },
+        "radarTop": "NOTES"
       },
       {
         "title": "mosaic",
@@ -69372,18 +69076,18 @@
         "radarTop": "PEAK"
       },
       {
-        "title": "千年ノ理",
+        "title": "雪月花",
         "type": "A",
-        "notes": 1608,
+        "notes": 1287,
         "radar": {
-          "NOTES": 124.07,
-          "PEAK": 123.68,
-          "SCRATCH": 15.74,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 135.56
+          "NOTES": 0.01,
+          "PEAK": 0.4,
+          "SCRATCH": 0.06,
+          "SOFLAN": 0.22,
+          "CHARGE": 1.23,
+          "CHORD": 0.22
         },
-        "radarTop": "CHORD"
+        "radarTop": "CHARGE"
       },
       {
         "title": "A",
@@ -69512,6 +69216,20 @@
         "radarTop": "SOFLAN"
       },
       {
+        "title": "千年ノ理",
+        "type": "A",
+        "notes": 1608,
+        "radar": {
+          "NOTES": 124.07,
+          "PEAK": 123.68,
+          "SCRATCH": 15.74,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 135.56
+        },
+        "radarTop": "CHORD"
+      },
+      {
         "title": "27th style",
         "type": "L",
         "notes": 1765,
@@ -69524,132 +69242,6 @@
           "CHORD": 133.01
         },
         "radarTop": "SCRATCH"
-      },
-      {
-        "title": "見習い天使と星降りの丘",
-        "type": "A",
-        "notes": 1706,
-        "radar": {
-          "NOTES": 149.7,
-          "PEAK": 148.68,
-          "SCRATCH": 60.73,
-          "SOFLAN": 0,
-          "CHARGE": 102.08,
-          "CHORD": 141.16
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "光風霽月",
-        "type": "A",
-        "notes": 1783,
-        "radar": {
-          "NOTES": 138.73,
-          "PEAK": 113.15,
-          "SCRATCH": 78.79,
-          "SOFLAN": 0,
-          "CHARGE": 39.74,
-          "CHORD": 117.52
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "鬼華-修羅の舞-",
-        "type": "A",
-        "notes": 2286,
-        "radar": {
-          "NOTES": 177.17,
-          "PEAK": 151.78,
-          "SCRATCH": 71.93,
-          "SOFLAN": 0,
-          "CHARGE": 126.76,
-          "CHORD": 170.9
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "多極性ニューロンの崩壊による人間の末路",
-        "type": "A",
-        "notes": 1749,
-        "radar": {
-          "NOTES": 149.22,
-          "PEAK": 143.42,
-          "SCRATCH": 39.78,
-          "SOFLAN": 0,
-          "CHARGE": 144.07,
-          "CHORD": 128.67
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "東京神話",
-        "type": "L",
-        "notes": 1903,
-        "radar": {
-          "NOTES": 160.32,
-          "PEAK": 200,
-          "SCRATCH": 81.12,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 150.72
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "情熱タンデムRUNAWAY",
-        "type": "A",
-        "notes": 1727,
-        "radar": {
-          "NOTES": 134.26,
-          "PEAK": 109.21,
-          "SCRATCH": 61.17,
-          "SOFLAN": 0,
-          "CHARGE": 34.81,
-          "CHORD": 124.79
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "終末を追う者",
-        "type": "A",
-        "notes": 1651,
-        "radar": {
-          "NOTES": 146.78,
-          "PEAK": 130.26,
-          "SCRATCH": 76.43,
-          "SOFLAN": 0,
-          "CHARGE": 104.08,
-          "CHORD": 135.23
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "天泣",
-        "type": "A",
-        "notes": 1869,
-        "radar": {
-          "NOTES": 145.19,
-          "PEAK": 127.63,
-          "SCRATCH": 59.99,
-          "SOFLAN": 0,
-          "CHARGE": 93.79,
-          "CHORD": 139.94
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "恋歌疾風!かるたクイーンいろは",
-        "type": "A",
-        "notes": 1643,
-        "radar": {
-          "NOTES": 126.4,
-          "PEAK": 131.57,
-          "SCRATCH": 63.9,
-          "SOFLAN": 26.42,
-          "CHARGE": 0,
-          "CHORD": 128.46
-        },
-        "radarTop": "PEAK"
       },
       {
         "title": "ALL OK!!",
@@ -69678,34 +69270,6 @@
           "CHORD": 111.08
         },
         "radarTop": "SCRATCH"
-      },
-      {
-        "title": "CaptivAte2~覚醒~",
-        "type": "L",
-        "notes": 1543,
-        "radar": {
-          "NOTES": 134.51,
-          "PEAK": 139.47,
-          "SCRATCH": 43.19,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 130.18
-        },
-        "radarTop": "PEAK"
-      },
-      {
-        "title": "Chronoxia",
-        "type": "A",
-        "notes": 1665,
-        "radar": {
-          "NOTES": 140.72,
-          "PEAK": 115.78,
-          "SCRATCH": 26.47,
-          "SOFLAN": 0,
-          "CHARGE": 106.81,
-          "CHORD": 127.83
-        },
-        "radarTop": "NOTES"
       },
       {
         "title": "concon",
@@ -69776,34 +69340,6 @@
           "CHORD": 125.29
         },
         "radarTop": "NOTES"
-      },
-      {
-        "title": "Hollywood Galaxy(DJ NAGAI Remix)",
-        "type": "A",
-        "notes": 1778,
-        "radar": {
-          "NOTES": 145.35,
-          "PEAK": 136.84,
-          "SCRATCH": 36.33,
-          "SOFLAN": 0,
-          "CHARGE": 11.87,
-          "CHORD": 137.56
-        },
-        "radarTop": "NOTES"
-      },
-      {
-        "title": "If",
-        "type": "L",
-        "notes": 1254,
-        "radar": {
-          "NOTES": 113.09,
-          "PEAK": 136.84,
-          "SCRATCH": 44.02,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 115.4
-        },
-        "radarTop": "PEAK"
       },
       {
         "title": "INAZUMA",
@@ -69888,20 +69424,6 @@
           "CHORD": 143.45
         },
         "radarTop": "NOTES"
-      },
-      {
-        "title": "Reflux",
-        "type": "L",
-        "notes": 1660,
-        "radar": {
-          "NOTES": 133.83,
-          "PEAK": 132.89,
-          "SCRATCH": 171.95,
-          "SOFLAN": 0,
-          "CHARGE": 165.55,
-          "CHORD": 126.02
-        },
-        "radarTop": "SCRATCH"
       },
       {
         "title": "Remain",
@@ -70086,20 +69608,6 @@
         "radarTop": "NOTES"
       },
       {
-        "title": "ポチコの幸せな日常",
-        "type": "A",
-        "notes": 1577,
-        "radar": {
-          "NOTES": 128.83,
-          "PEAK": 122.36,
-          "SCRATCH": 31.54,
-          "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 121.7
-        },
-        "radarTop": "NOTES"
-      },
-      {
         "title": "ユミル",
         "type": "L",
         "notes": 2020,
@@ -70114,20 +69622,370 @@
         "radarTop": "CHORD"
       },
       {
-        "title": "お米の美味しい炊き方、そしてお米を食べることによるその効果。",
-        "type": "L",
-        "notes": 1907,
+        "title": "光風霽月",
+        "type": "A",
+        "notes": 1783,
         "radar": {
-          "NOTES": 0,
-          "PEAK": 0,
-          "SCRATCH": 0,
+          "NOTES": 138.73,
+          "PEAK": 113.15,
+          "SCRATCH": 78.79,
+          "SOFLAN": 0,
+          "CHARGE": 39.74,
+          "CHORD": 117.52
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "多極性ニューロンの崩壊による人間の末路",
+        "type": "A",
+        "notes": 1749,
+        "radar": {
+          "NOTES": 149.22,
+          "PEAK": 143.42,
+          "SCRATCH": 39.78,
+          "SOFLAN": 0,
+          "CHARGE": 144.07,
+          "CHORD": 128.67
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "天泣",
+        "type": "A",
+        "notes": 1869,
+        "radar": {
+          "NOTES": 145.19,
+          "PEAK": 127.63,
+          "SCRATCH": 59.99,
+          "SOFLAN": 0,
+          "CHARGE": 93.79,
+          "CHORD": 139.94
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "恋歌疾風!かるたクイーンいろは",
+        "type": "A",
+        "notes": 1643,
+        "radar": {
+          "NOTES": 126.4,
+          "PEAK": 131.57,
+          "SCRATCH": 63.9,
+          "SOFLAN": 26.42,
+          "CHARGE": 0,
+          "CHORD": 128.46
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "情熱タンデムRUNAWAY",
+        "type": "A",
+        "notes": 1727,
+        "radar": {
+          "NOTES": 134.26,
+          "PEAK": 109.21,
+          "SCRATCH": 61.17,
+          "SOFLAN": 0,
+          "CHARGE": 34.81,
+          "CHORD": 124.79
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "東京神話",
+        "type": "L",
+        "notes": 1903,
+        "radar": {
+          "NOTES": 160.32,
+          "PEAK": 200,
+          "SCRATCH": 81.12,
           "SOFLAN": 0,
           "CHARGE": 0,
-          "CHORD": 0
+          "CHORD": 150.72
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "終末を追う者",
+        "type": "A",
+        "notes": 1651,
+        "radar": {
+          "NOTES": 146.78,
+          "PEAK": 130.26,
+          "SCRATCH": 76.43,
+          "SOFLAN": 0,
+          "CHARGE": 104.08,
+          "CHORD": 135.23
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "見習い天使と星降りの丘",
+        "type": "A",
+        "notes": 1706,
+        "radar": {
+          "NOTES": 149.7,
+          "PEAK": 148.68,
+          "SCRATCH": 60.73,
+          "SOFLAN": 0,
+          "CHARGE": 102.08,
+          "CHORD": 141.16
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "鬼華-修羅の舞-",
+        "type": "A",
+        "notes": 2286,
+        "radar": {
+          "NOTES": 177.17,
+          "PEAK": 151.78,
+          "SCRATCH": 71.93,
+          "SOFLAN": 0,
+          "CHARGE": 126.76,
+          "CHORD": 170.9
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "3y3s(Long ver.)",
+        "type": "A",
+        "notes": 3910,
+        "radar": {
+          "NOTES": 131.49,
+          "PEAK": 198.21,
+          "SCRATCH": 105.98,
+          "SOFLAN": 0,
+          "CHARGE": 188.81,
+          "CHORD": 200
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "A MINSTREL ~ ver. short-scape ~",
+        "type": "L",
+        "notes": 1954,
+        "radar": {
+          "NOTES": 155.44,
+          "PEAK": 140.78,
+          "SCRATCH": 22.61,
+          "SOFLAN": 0,
+          "CHARGE": 48.39,
+          "CHORD": 200
+        },
+        "radarTop": "CHORD"
+      },
+      {
+        "title": "ACTØ",
+        "type": "A",
+        "notes": 1534,
+        "radar": {
+          "NOTES": 122.02,
+          "PEAK": 115.78,
+          "SCRATCH": 58.53,
+          "SOFLAN": 0,
+          "CHARGE": 3.12,
+          "CHORD": 118.8
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "CaptivAte2~覚醒~",
+        "type": "L",
+        "notes": 1543,
+        "radar": {
+          "NOTES": 134.51,
+          "PEAK": 139.47,
+          "SCRATCH": 43.19,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 130.18
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "Chronoxia",
+        "type": "A",
+        "notes": 1665,
+        "radar": {
+          "NOTES": 140.72,
+          "PEAK": 115.78,
+          "SCRATCH": 26.47,
+          "SOFLAN": 0,
+          "CHARGE": 106.81,
+          "CHORD": 127.83
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "Hollywood Galaxy(DJ NAGAI Remix)",
+        "type": "A",
+        "notes": 1778,
+        "radar": {
+          "NOTES": 145.35,
+          "PEAK": 136.84,
+          "SCRATCH": 36.33,
+          "SOFLAN": 0,
+          "CHARGE": 11.87,
+          "CHORD": 137.56
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "If",
+        "type": "L",
+        "notes": 1254,
+        "radar": {
+          "NOTES": 113.09,
+          "PEAK": 136.84,
+          "SCRATCH": 44.02,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 115.4
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "Mächö Mönky",
+        "type": "A",
+        "notes": 1588,
+        "radar": {
+          "NOTES": 127.19,
+          "PEAK": 136.84,
+          "SCRATCH": 125.4,
+          "SOFLAN": 0,
+          "CHARGE": 2.34,
+          "CHORD": 133.6
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "Ōu Legends",
+        "type": "A",
+        "notes": 1687,
+        "radar": {
+          "NOTES": 137.1,
+          "PEAK": 119.73,
+          "SCRATCH": 48.55,
+          "SOFLAN": 0,
+          "CHARGE": 136.05,
+          "CHORD": 120.22
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "Pārvatī",
+        "type": "A",
+        "notes": 1467,
+        "radar": {
+          "NOTES": 119.27,
+          "PEAK": 119.73,
+          "SCRATCH": 52.12,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 100.73
+        },
+        "radarTop": "PEAK"
+      },
+      {
+        "title": "Reflux",
+        "type": "L",
+        "notes": 1660,
+        "radar": {
+          "NOTES": 133.83,
+          "PEAK": 132.89,
+          "SCRATCH": 171.95,
+          "SOFLAN": 0,
+          "CHARGE": 165.55,
+          "CHORD": 126.02
+        },
+        "radarTop": "SCRATCH"
+      },
+      {
+        "title": "Übertreffen",
+        "type": "L",
+        "notes": 1655,
+        "radar": {
+          "NOTES": 164.24,
+          "PEAK": 143.42,
+          "SCRATCH": 41.28,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 133.32
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "キャトられ♥恋はモ~モク",
+        "type": "A",
+        "notes": 1988,
+        "radar": {
+          "NOTES": 142.43,
+          "PEAK": 139.47,
+          "SCRATCH": 86.12,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 135.58
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "ピアノ協奏曲第1番\"蠍火\"",
+        "type": "A",
+        "notes": 1414,
+        "radar": {
+          "NOTES": 107.58,
+          "PEAK": 142.1,
+          "SCRATCH": 49.89,
+          "SOFLAN": 160.09,
+          "CHARGE": 0,
+          "CHORD": 106.72
+        },
+        "radarTop": "SOFLAN"
+      },
+      {
+        "title": "ポチコの幸せな日常",
+        "type": "A",
+        "notes": 1577,
+        "radar": {
+          "NOTES": 128.83,
+          "PEAK": 122.36,
+          "SCRATCH": 31.54,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 121.7
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "旋律のドグマ~Misérables~",
+        "type": "A",
+        "notes": 2002,
+        "radar": {
+          "NOTES": 141.45,
+          "PEAK": 122.36,
+          "SCRATCH": 35,
+          "SOFLAN": 0,
+          "CHARGE": 1.87,
+          "CHORD": 130.13
+        },
+        "radarTop": "NOTES"
+      },
+      {
+        "title": "表裏一体!?怪盗いいんちょの悩み♥",
+        "type": "A",
+        "notes": 1815,
+        "radar": {
+          "NOTES": 142.24,
+          "PEAK": 113.15,
+          "SCRATCH": 65.09,
+          "SOFLAN": 0,
+          "CHARGE": 0,
+          "CHORD": 141.04
         },
         "radarTop": "NOTES"
       }
     ]
   },
-  "version": "20260425123043-944d253a3645"
+  "version": "20260604113315-da9e3a2cb606"
 }
