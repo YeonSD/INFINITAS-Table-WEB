@@ -578,12 +578,15 @@ test('pending release admin flow is wired through snapshot, popup, and schema', 
 test('chart discovery candidate flow is wired through upload, admin UI, and schema', () => {
   const dataControllerSource = fs.readFileSync(new URL('../lib/app-data-controller.js', import.meta.url), 'utf8');
   const settingsSource = fs.readFileSync(new URL('../lib/settings-ui.js', import.meta.url), 'utf8');
+  const socialSource = fs.readFileSync(new URL('../lib/social-ui.js', import.meta.url), 'utf8');
   const uiSource = fs.readFileSync(new URL('../lib/ui.js', import.meta.url), 'utf8');
   const schemaSource = fs.readFileSync(new URL('../supabase/schema.sql', import.meta.url), 'utf8');
 
   assert.match(dataControllerSource, /collectChartDiscoveryCandidates/);
   assert.match(dataControllerSource, /report_chart_discovery_candidates/);
   assert.match(settingsSource, /chartDiscoveryCandidates/);
+  assert.match(socialSource, /chart_discovery_candidate/);
+  assert.match(socialSource, /data-discovery-promote/);
   assert.match(uiSource, /data-discovery-promote/);
   assert.match(schemaSource, /create table if not exists public\.chart_discovery_candidates/);
   assert.match(schemaSource, /admin_promote_chart_discovery_candidate/);
