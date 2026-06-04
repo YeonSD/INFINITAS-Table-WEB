@@ -1,5 +1,5 @@
 {
-  "publishedAt": "2026-06-04T11:58:52.863Z",
+  "publishedAt": "2026-06-04T13:43:11.498Z",
   "rankTables": {
     "SP10H": {
       "tableinfo": {
@@ -29995,14 +29995,14 @@
                 "atwikiNotes": 1336,
                 "typeInfo": "CHARGE",
                 "radar": {
-                  "NOTES": 0,
-                  "PEAK": 0,
-                  "SCRATCH": 0,
+                  "NOTES": 101.53,
+                  "PEAK": 105.26,
+                  "SCRATCH": 49.29,
                   "SOFLAN": 0,
-                  "CHARGE": 0,
-                  "CHORD": 0
+                  "CHARGE": 156.91,
+                  "CHORD": 93.68
                 },
-                "radarTop": "NOTES"
+                "radarTop": "CHARGE"
               }
             },
             {
@@ -61506,14 +61506,14 @@
         "type": "A",
         "notes": 1336,
         "radar": {
-          "NOTES": 0,
-          "PEAK": 0,
-          "SCRATCH": 0,
+          "NOTES": 101.53,
+          "PEAK": 105.26,
+          "SCRATCH": 49.29,
           "SOFLAN": 0,
-          "CHARGE": 0,
-          "CHORD": 0
+          "CHARGE": 156.91,
+          "CHORD": 93.68
         },
-        "radarTop": "NOTES"
+        "radarTop": "CHARGE"
       },
       {
         "title": "ADAMANT",
@@ -69987,5 +69987,5 @@
       }
     ]
   },
-  "version": "20260604115852-d80dfbfa9c3a"
+  "version": "20260604134311-0fe60ffa107d"
 }
